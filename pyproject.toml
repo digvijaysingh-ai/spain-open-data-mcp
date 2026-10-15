@@ -1,0 +1,63 @@
+[project]
+name = "spain-open-data-mcp"
+version = "0.1.0"
+description = "MCP server for market questions about Spain from public data (INE, OpenStreetMap, datos.gob.es), with every figure sourced, dated and checked."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Digvijay Singh", email = "180069985+digvijaysingh-ai@users.noreply.github.com" }
+]
+keywords = ["mcp", "spain", "open-data", "ine", "market-sizing", "openstreetmap"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=2.3,<3",
+    "pydantic>=2.14.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/digvijaysingh-ai/spain-open-data-mcp"
+Issues = "https://github.com/digvijaysingh-ai/spain-open-data-mcp/issues"
+
+[project.scripts]
+spain-open-data-mcp = "spain_open_data_mcp.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "respx>=0.23.1",
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]  # line length is left to `ruff format`; long strings stay readable
+
+[tool.pyright]
+include = ["src", "tests", "scripts"]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = ["network: hits real upstream APIs (deselect with -m 'not network')"]
+addopts = "-m 'not network'"
