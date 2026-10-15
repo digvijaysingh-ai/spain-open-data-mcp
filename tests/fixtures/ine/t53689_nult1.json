@@ -1,0 +1,632 @@
+[
+{
+"COD": "ADRH9974440",
+"Nombre": "Total Nacional. Dato base. Renta neta media por persona. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284048,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15036.0
+}
+]
+},
+{
+"COD": "ADRH9974439",
+"Nombre": "Total Nacional. Dato base. Renta neta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284052,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 38326.0
+}
+]
+},
+{
+"COD": "ADRH9974438",
+"Nombre": "Total Nacional. Dato base. Media de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 383098,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Media de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 22318.0
+}
+]
+},
+{
+"COD": "ADRH9974437",
+"Nombre": "Total Nacional. Dato base. Mediana de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382441,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Mediana de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19250.0
+}
+]
+},
+{
+"COD": "ADRH9974435",
+"Nombre": "Total Nacional. Dato base. Renta bruta media por persona. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382443,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18457.0
+}
+]
+},
+{
+"COD": "ADRH9974434",
+"Nombre": "Total Nacional. Dato base. Renta bruta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382444,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47046.0
+}
+]
+},
+{
+"COD": "ADRH9974391",
+"Nombre": "Castilla y León. Dato base. Renta neta media por persona. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284048,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15102.0
+}
+]
+},
+{
+"COD": "ADRH9974390",
+"Nombre": "Castilla y León. Dato base. Renta neta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284052,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 34252.0
+}
+]
+},
+{
+"COD": "ADRH9974389",
+"Nombre": "Castilla y León. Dato base. Media de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 383098,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Media de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 21587.0
+}
+]
+},
+{
+"COD": "ADRH9974388",
+"Nombre": "Castilla y León. Dato base. Mediana de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382441,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Mediana de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19250.0
+}
+]
+},
+{
+"COD": "ADRH9974386",
+"Nombre": "Castilla y León. Dato base. Renta bruta media por persona. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382443,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18200.0
+}
+]
+},
+{
+"COD": "ADRH9974385",
+"Nombre": "Castilla y León. Dato base. Renta bruta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382444,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 41278.0
+}
+]
+},
+{
+"COD": "ADRH87675",
+"Nombre": "Valladolid. Dato base. Renta neta media por persona. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284048,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15590.0
+}
+]
+},
+{
+"COD": "ADRH87674",
+"Nombre": "Valladolid. Dato base. Renta neta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284052,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 36785.0
+}
+]
+},
+{
+"COD": "ADRH9974185",
+"Nombre": "Valladolid. Dato base. Media de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 383098,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Media de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 22612.0
+}
+]
+},
+{
+"COD": "ADRH9974184",
+"Nombre": "Valladolid. Dato base. Mediana de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382441,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Mediana de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19950.0
+}
+]
+},
+{
+"COD": "ADRH9974182",
+"Nombre": "Valladolid. Dato base. Renta bruta media por persona. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382443,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19025.0
+}
+]
+},
+{
+"COD": "ADRH9974181",
+"Nombre": "Valladolid. Dato base. Renta bruta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382444,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 44890.0
+}
+]
+}
+]

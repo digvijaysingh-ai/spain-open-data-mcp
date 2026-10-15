@@ -1,0 +1,1262 @@
+[
+{
+"COD": "ADRH9536493",
+"Nombre": "Valladolid distrito 07. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 28.9
+}
+]
+},
+{
+"COD": "ADRH9536492",
+"Nombre": "Valladolid distrito 07. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH9536475",
+"Nombre": "Valladolid distrito 10. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.9
+}
+]
+},
+{
+"COD": "ADRH9536474",
+"Nombre": "Valladolid distrito 10. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH9536289",
+"Nombre": "Valladolid distrito 01. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 34.8
+}
+]
+},
+{
+"COD": "ADRH9536288",
+"Nombre": "Valladolid distrito 01. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH9536499",
+"Nombre": "Valladolid distrito 06. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.2
+}
+]
+},
+{
+"COD": "ADRH9536498",
+"Nombre": "Valladolid distrito 06. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH9536469",
+"Nombre": "Valladolid distrito 11. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 28.9
+}
+]
+},
+{
+"COD": "ADRH9536468",
+"Nombre": "Valladolid distrito 11. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH9536277",
+"Nombre": "Valladolid distrito 03. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.4
+}
+]
+},
+{
+"COD": "ADRH9536276",
+"Nombre": "Valladolid distrito 03. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH9536463",
+"Nombre": "Valladolid distrito 12. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.5
+}
+]
+},
+{
+"COD": "ADRH9536462",
+"Nombre": "Valladolid distrito 12. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH9536283",
+"Nombre": "Valladolid distrito 02. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.9
+}
+]
+},
+{
+"COD": "ADRH9536282",
+"Nombre": "Valladolid distrito 02. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.7
+}
+]
+},
+{
+"COD": "ADRH9536271",
+"Nombre": "Valladolid distrito 04. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 28.1
+}
+]
+},
+{
+"COD": "ADRH9536270",
+"Nombre": "Valladolid distrito 04. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH9536481",
+"Nombre": "Valladolid distrito 09. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 30.7
+}
+]
+},
+{
+"COD": "ADRH9536480",
+"Nombre": "Valladolid distrito 09. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.7
+}
+]
+},
+{
+"COD": "ADRH9339267",
+"Nombre": "Valladolid sección 04001. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.0
+}
+]
+},
+{
+"COD": "ADRH9339266",
+"Nombre": "Valladolid sección 04001. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH9331965",
+"Nombre": "Valladolid sección 10001. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.5
+}
+]
+},
+{
+"COD": "ADRH9331964",
+"Nombre": "Valladolid sección 10001. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH9536505",
+"Nombre": "Valladolid distrito 05. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.5
+}
+]
+},
+{
+"COD": "ADRH9536504",
+"Nombre": "Valladolid distrito 05. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.9
+}
+]
+},
+{
+"COD": "ADRH9536487",
+"Nombre": "Valladolid distrito 08. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.7
+}
+]
+},
+{
+"COD": "ADRH9536486",
+"Nombre": "Valladolid distrito 08. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH9339435",
+"Nombre": "Valladolid sección 01001. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 33.8
+}
+]
+},
+{
+"COD": "ADRH9339434",
+"Nombre": "Valladolid sección 01001. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH9339429",
+"Nombre": "Valladolid sección 01003. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 39.5
+}
+]
+},
+{
+"COD": "ADRH9339428",
+"Nombre": "Valladolid sección 01003. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.1
+}
+]
+},
+{
+"COD": "ADRH9320859",
+"Nombre": "Valladolid sección 12001. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.5
+}
+]
+},
+{
+"COD": "ADRH9320858",
+"Nombre": "Valladolid sección 12001. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH9572937",
+"Nombre": "Valladolid. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 30.5
+}
+]
+},
+{
+"COD": "ADRH9572936",
+"Nombre": "Valladolid. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.6
+}
+]
+}
+]

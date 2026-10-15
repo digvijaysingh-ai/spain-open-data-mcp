@@ -1,0 +1,3152 @@
+[
+{
+"COD": "ADRH10461881",
+"Nombre": "Valladolid distrito 05. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 50.2
+}
+]
+},
+{
+"COD": "ADRH10461880",
+"Nombre": "Valladolid distrito 05. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 23.8
+}
+]
+},
+{
+"COD": "ADRH10461879",
+"Nombre": "Valladolid distrito 05. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.6
+}
+]
+},
+{
+"COD": "ADRH10461878",
+"Nombre": "Valladolid distrito 05. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH10461877",
+"Nombre": "Valladolid distrito 05. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 22.9
+}
+]
+},
+{
+"COD": "ADRH10461866",
+"Nombre": "Valladolid distrito 08. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 53.3
+}
+]
+},
+{
+"COD": "ADRH10461865",
+"Nombre": "Valladolid distrito 08. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 33.4
+}
+]
+},
+{
+"COD": "ADRH10461864",
+"Nombre": "Valladolid distrito 08. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.5
+}
+]
+},
+{
+"COD": "ADRH10461863",
+"Nombre": "Valladolid distrito 08. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5.7
+}
+]
+},
+{
+"COD": "ADRH10461862",
+"Nombre": "Valladolid distrito 08. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6.1
+}
+]
+},
+{
+"COD": "ADRH10461871",
+"Nombre": "Valladolid distrito 07. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 56.9
+}
+]
+},
+{
+"COD": "ADRH10461870",
+"Nombre": "Valladolid distrito 07. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.2
+}
+]
+},
+{
+"COD": "ADRH10461869",
+"Nombre": "Valladolid distrito 07. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.3
+}
+]
+},
+{
+"COD": "ADRH10461868",
+"Nombre": "Valladolid distrito 07. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4.5
+}
+]
+},
+{
+"COD": "ADRH10461867",
+"Nombre": "Valladolid distrito 07. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8.1
+}
+]
+},
+{
+"COD": "ADRH10461901",
+"Nombre": "Valladolid distrito 01. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 43.5
+}
+]
+},
+{
+"COD": "ADRH10461900",
+"Nombre": "Valladolid distrito 01. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 21.9
+}
+]
+},
+{
+"COD": "ADRH10461899",
+"Nombre": "Valladolid distrito 01. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.4
+}
+]
+},
+{
+"COD": "ADRH10461898",
+"Nombre": "Valladolid distrito 01. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH10461897",
+"Nombre": "Valladolid distrito 01. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.8
+}
+]
+},
+{
+"COD": "ADRH10461876",
+"Nombre": "Valladolid distrito 06. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 55.2
+}
+]
+},
+{
+"COD": "ADRH10461875",
+"Nombre": "Valladolid distrito 06. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 30.2
+}
+]
+},
+{
+"COD": "ADRH10461874",
+"Nombre": "Valladolid distrito 06. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.8
+}
+]
+},
+{
+"COD": "ADRH10461873",
+"Nombre": "Valladolid distrito 06. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5.8
+}
+]
+},
+{
+"COD": "ADRH10461872",
+"Nombre": "Valladolid distrito 06. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7.0
+}
+]
+},
+{
+"COD": "ADRH10461891",
+"Nombre": "Valladolid distrito 03. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 53.0
+}
+]
+},
+{
+"COD": "ADRH10461890",
+"Nombre": "Valladolid distrito 03. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 24.2
+}
+]
+},
+{
+"COD": "ADRH10461889",
+"Nombre": "Valladolid distrito 03. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.8
+}
+]
+},
+{
+"COD": "ADRH10461888",
+"Nombre": "Valladolid distrito 03. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.1
+}
+]
+},
+{
+"COD": "ADRH10461887",
+"Nombre": "Valladolid distrito 03. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19.0
+}
+]
+},
+{
+"COD": "ADRH10461896",
+"Nombre": "Valladolid distrito 02. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 50.1
+}
+]
+},
+{
+"COD": "ADRH10461895",
+"Nombre": "Valladolid distrito 02. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 26.7
+}
+]
+},
+{
+"COD": "ADRH10461894",
+"Nombre": "Valladolid distrito 02. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.7
+}
+]
+},
+{
+"COD": "ADRH10461893",
+"Nombre": "Valladolid distrito 02. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.0
+}
+]
+},
+{
+"COD": "ADRH10461892",
+"Nombre": "Valladolid distrito 02. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19.5
+}
+]
+},
+{
+"COD": "ADRH10461886",
+"Nombre": "Valladolid distrito 04. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 57.6
+}
+]
+},
+{
+"COD": "ADRH10461885",
+"Nombre": "Valladolid distrito 04. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.2
+}
+]
+},
+{
+"COD": "ADRH10461884",
+"Nombre": "Valladolid distrito 04. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.7
+}
+]
+},
+{
+"COD": "ADRH10461883",
+"Nombre": "Valladolid distrito 04. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5.4
+}
+]
+},
+{
+"COD": "ADRH10461882",
+"Nombre": "Valladolid distrito 04. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6.2
+}
+]
+},
+{
+"COD": "ADRH10461861",
+"Nombre": "Valladolid distrito 09. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.2
+}
+]
+},
+{
+"COD": "ADRH10461860",
+"Nombre": "Valladolid distrito 09. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.4
+}
+]
+},
+{
+"COD": "ADRH10461859",
+"Nombre": "Valladolid distrito 09. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.6
+}
+]
+},
+{
+"COD": "ADRH10461858",
+"Nombre": "Valladolid distrito 09. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.1
+}
+]
+},
+{
+"COD": "ADRH10461857",
+"Nombre": "Valladolid distrito 09. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 17.6
+}
+]
+},
+{
+"COD": "ADRH10461856",
+"Nombre": "Valladolid distrito 10. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 61.0
+}
+]
+},
+{
+"COD": "ADRH10461855",
+"Nombre": "Valladolid distrito 10. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 24.7
+}
+]
+},
+{
+"COD": "ADRH10461854",
+"Nombre": "Valladolid distrito 10. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.1
+}
+]
+},
+{
+"COD": "ADRH10461853",
+"Nombre": "Valladolid distrito 10. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.7
+}
+]
+},
+{
+"COD": "ADRH10461852",
+"Nombre": "Valladolid distrito 10. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 9.7
+}
+]
+},
+{
+"COD": "ADRH10461851",
+"Nombre": "Valladolid distrito 11. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 60.7
+}
+]
+},
+{
+"COD": "ADRH10461850",
+"Nombre": "Valladolid distrito 11. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 24.3
+}
+]
+},
+{
+"COD": "ADRH10461849",
+"Nombre": "Valladolid distrito 11. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.0
+}
+]
+},
+{
+"COD": "ADRH10461848",
+"Nombre": "Valladolid distrito 11. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.6
+}
+]
+},
+{
+"COD": "ADRH10461847",
+"Nombre": "Valladolid distrito 11. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10.5
+}
+]
+},
+{
+"COD": "ADRH10461846",
+"Nombre": "Valladolid distrito 12. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 60.2
+}
+]
+},
+{
+"COD": "ADRH10461845",
+"Nombre": "Valladolid distrito 12. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18.0
+}
+]
+},
+{
+"COD": "ADRH10461844",
+"Nombre": "Valladolid distrito 12. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.9
+}
+]
+},
+{
+"COD": "ADRH10461843",
+"Nombre": "Valladolid distrito 12. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.7
+}
+]
+},
+{
+"COD": "ADRH10461842",
+"Nombre": "Valladolid distrito 12. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18.3
+}
+]
+},
+{
+"COD": "ADRH10286986",
+"Nombre": "Valladolid sección 04001. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 51.6
+}
+]
+},
+{
+"COD": "ADRH10286985",
+"Nombre": "Valladolid sección 04001. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 36.6
+}
+]
+},
+{
+"COD": "ADRH10286984",
+"Nombre": "Valladolid sección 04001. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.8
+}
+]
+},
+{
+"COD": "ADRH10286983",
+"Nombre": "Valladolid sección 04001. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4.4
+}
+]
+},
+{
+"COD": "ADRH10286982",
+"Nombre": "Valladolid sección 04001. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6.5
+}
+]
+},
+{
+"COD": "ADRH10286281",
+"Nombre": "Valladolid sección 10001. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 69.6
+}
+]
+},
+{
+"COD": "ADRH10286280",
+"Nombre": "Valladolid sección 10001. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 17.8
+}
+]
+},
+{
+"COD": "ADRH10286279",
+"Nombre": "Valladolid sección 10001. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.0
+}
+]
+},
+{
+"COD": "ADRH10286278",
+"Nombre": "Valladolid sección 10001. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3.2
+}
+]
+},
+{
+"COD": "ADRH10286277",
+"Nombre": "Valladolid sección 10001. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8.4
+}
+]
+},
+{
+"COD": "ADRH10287126",
+"Nombre": "Valladolid sección 01001. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 45.0
+}
+]
+},
+{
+"COD": "ADRH10287125",
+"Nombre": "Valladolid sección 01001. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 23.2
+}
+]
+},
+{
+"COD": "ADRH10287124",
+"Nombre": "Valladolid sección 01001. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.5
+}
+]
+},
+{
+"COD": "ADRH10287123",
+"Nombre": "Valladolid sección 01001. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.7
+}
+]
+},
+{
+"COD": "ADRH10287122",
+"Nombre": "Valladolid sección 01001. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 28.7
+}
+]
+},
+{
+"COD": "ADRH10287121",
+"Nombre": "Valladolid sección 01003. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 44.3
+}
+]
+},
+{
+"COD": "ADRH10287120",
+"Nombre": "Valladolid sección 01003. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 16.2
+}
+]
+},
+{
+"COD": "ADRH10287119",
+"Nombre": "Valladolid sección 01003. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 0.3
+}
+]
+},
+{
+"COD": "ADRH10287118",
+"Nombre": "Valladolid sección 01003. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH10287117",
+"Nombre": "Valladolid sección 01003. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 36.9
+}
+]
+},
+{
+"COD": "ADRH10285816",
+"Nombre": "Valladolid sección 12001. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 65.7
+}
+]
+},
+{
+"COD": "ADRH10285815",
+"Nombre": "Valladolid sección 12001. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19.7
+}
+]
+},
+{
+"COD": "ADRH10285814",
+"Nombre": "Valladolid sección 12001. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.6
+}
+]
+},
+{
+"COD": "ADRH10285813",
+"Nombre": "Valladolid sección 12001. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4.5
+}
+]
+},
+{
+"COD": "ADRH10285812",
+"Nombre": "Valladolid sección 12001. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8.6
+}
+]
+},
+{
+"COD": "ADRH10513841",
+"Nombre": "Valladolid. Porcentaje. Fuente de ingreso: salario. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322962,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: salario",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 56.8
+}
+]
+},
+{
+"COD": "ADRH10513840",
+"Nombre": "Valladolid. Porcentaje. Fuente de ingreso: pensiones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322963,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: pensiones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 26.8
+}
+]
+},
+{
+"COD": "ADRH10513839",
+"Nombre": "Valladolid. Porcentaje. Fuente de ingreso: prestaciones por desempleo. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322964,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: prestaciones por desempleo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1.2
+}
+]
+},
+{
+"COD": "ADRH10513838",
+"Nombre": "Valladolid. Porcentaje. Fuente de ingreso: otras prestaciones. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322965,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otras prestaciones",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4.1
+}
+]
+},
+{
+"COD": "ADRH10513837",
+"Nombre": "Valladolid. Porcentaje. Fuente de ingreso: otros ingresos. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Porcentaje",
+"Codigo": ""
+},
+{
+"Id": 322966,
+"T3_Variable": "Distribución de la fuente de ingresos",
+"Nombre": "Fuente de ingreso: otros ingresos",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11.1
+}
+]
+}
+]

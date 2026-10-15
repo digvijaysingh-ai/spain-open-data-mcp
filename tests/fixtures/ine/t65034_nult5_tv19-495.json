@@ -1,0 +1,4952 @@
+[
+{
+"COD": "CENSO3179540",
+"Nombre": "Valladolid. Total. Total. Todas las edades. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 15668,
+"T3_Variable": "Totales de edad",
+"Nombre": "Todas las edades",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 301798.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 299816.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 297129.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 295216.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 297370.0
+}
+]
+},
+{
+"COD": "CENSO29233568",
+"Nombre": "Valladolid. Total. De 0 a 4 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15073,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 0 a 4 años",
+"Codigo": "Y0T4"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8888.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 8914.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8987.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 9053.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 9628.0
+}
+]
+},
+{
+"COD": "CENSO29233613",
+"Nombre": "Valladolid. Total. De 5 a 9 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15664,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 5 a 9 años",
+"Codigo": "Y5T9"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10974.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 11329.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11389.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11674.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11929.0
+}
+]
+},
+{
+"COD": "CENSO29233601",
+"Nombre": "Valladolid. Total. De 10 a 14 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15660,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 10 a 14 años",
+"Codigo": "Y10T14"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 13301.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 13293.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13368.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 13262.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 13429.0
+}
+]
+},
+{
+"COD": "CENSO29233616",
+"Nombre": "Valladolid. Total. De 15 a 19 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15665,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 15 a 19 años",
+"Codigo": "Y15T19"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14542.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 14241.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13962.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 13611.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 13421.0
+}
+]
+},
+{
+"COD": "CENSO29233604",
+"Nombre": "Valladolid. Total. De 20 a 24 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15661,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 20 a 24 años",
+"Codigo": "Y20T24"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14941.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 14610.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13949.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 13391.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 13284.0
+}
+]
+},
+{
+"COD": "CENSO29233619",
+"Nombre": "Valladolid. Total. De 25 a 29 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15666,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 25 a 29 años",
+"Codigo": "Y25T29"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14409.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 13966.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13613.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 13071.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 13228.0
+}
+]
+},
+{
+"COD": "CENSO29233607",
+"Nombre": "Valladolid. Total. De 30 a 34 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15662,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 30 a 34 años",
+"Codigo": "Y30T34"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14163.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 13944.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13344.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 13030.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 13408.0
+}
+]
+},
+{
+"COD": "CENSO29233598",
+"Nombre": "Valladolid. Total. De 35 a 39 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15658,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 35 a 39 años",
+"Codigo": "Y35T39"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14925.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 15018.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15298.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 15666.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 16547.0
+}
+]
+},
+{
+"COD": "CENSO29233610",
+"Nombre": "Valladolid. Total. De 40 a 44 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15663,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 40 a 44 años",
+"Codigo": "Y40T44"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 18306.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 18855.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19683.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 20464.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 21783.0
+}
+]
+},
+{
+"COD": "CENSO29233622",
+"Nombre": "Valladolid. Total. De 45 a 49 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15667,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 45 a 49 años",
+"Codigo": "Y45T49"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 23187.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 23432.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 23342.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 23368.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 23221.0
+}
+]
+},
+{
+"COD": "CENSO29233571",
+"Nombre": "Valladolid. Total. De 50 a 54 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15648,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 50 a 54 años",
+"Codigo": "Y50T54"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 23565.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 23474.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 23423.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 23325.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 23427.0
+}
+]
+},
+{
+"COD": "CENSO29233574",
+"Nombre": "Valladolid. Total. De 55 a 59 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15649,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 55 a 59 años",
+"Codigo": "Y55T59"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 23304.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 23162.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 22966.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 22637.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 22644.0
+}
+]
+},
+{
+"COD": "CENSO29233577",
+"Nombre": "Valladolid. Total. De 60 a 64 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15650,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 60 a 64 años",
+"Codigo": "Y60T64"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 22003.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 21930.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 21656.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 21802.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 21839.0
+}
+]
+},
+{
+"COD": "CENSO29233580",
+"Nombre": "Valladolid. Total. De 65 a 69 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15651,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 65 a 69 años",
+"Codigo": "Y65T69"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 20833.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 20337.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 20034.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 19798.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 19567.0
+}
+]
+},
+{
+"COD": "CENSO29233583",
+"Nombre": "Valladolid. Total. De 70 a 74 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15652,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 70 a 74 años",
+"Codigo": "Y70T74"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 18626.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 18877.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19413.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 19595.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 19570.0
+}
+]
+},
+{
+"COD": "CENSO29233586",
+"Nombre": "Valladolid. Total. De 75 a 79 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15653,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 75 a 79 años",
+"Codigo": "Y75T79"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 18116.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 17995.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 17487.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 16990.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 16527.0
+}
+]
+},
+{
+"COD": "CENSO29233589",
+"Nombre": "Valladolid. Total. De 80 a 84 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15654,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 80 a 84 años",
+"Codigo": "Y80T84"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 13931.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 12705.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11598.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11045.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11013.0
+}
+]
+},
+{
+"COD": "CENSO29233592",
+"Nombre": "Valladolid. Total. De 85 a 89 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15655,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 85 a 89 años",
+"Codigo": "Y85T89"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7840.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 8058.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8175.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 8243.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 7980.0
+}
+]
+},
+{
+"COD": "CENSO29233595",
+"Nombre": "Valladolid. Total. De 90 a 94 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15656,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 90 a 94 años",
+"Codigo": "Y90T94"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4509.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 4299.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4108.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 3914.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 3738.0
+}
+]
+},
+{
+"COD": "CENSO29233565",
+"Nombre": "Valladolid. Total. De 95 a 99 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15070,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 95 a 99 años",
+"Codigo": "Y95T99"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1252.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 1203.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1167.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 1131.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 1060.0
+}
+]
+},
+{
+"COD": "CENSO29233562",
+"Nombre": "Valladolid. Total. 100 y más años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 15071,
+"T3_Variable": "Semiintervalos de edad",
+"Nombre": "100 y más años",
+"Codigo": "Y-GE100"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 183.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 174.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 167.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 146.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 127.0
+}
+]
+},
+{
+"COD": "CENSO3179480",
+"Nombre": "Valladolid. Hombres. Total. Todas las edades. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 15668,
+"T3_Variable": "Totales de edad",
+"Nombre": "Todas las edades",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 141394.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 140418.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 139108.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 138252.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 139390.0
+}
+]
+},
+{
+"COD": "CENSO29233634",
+"Nombre": "Valladolid. Hombres. De 0 a 4 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15073,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 0 a 4 años",
+"Codigo": "Y0T4"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4584.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 4521.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4565.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 4650.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 4928.0
+}
+]
+},
+{
+"COD": "CENSO29233679",
+"Nombre": "Valladolid. Hombres. De 5 a 9 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15664,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 5 a 9 años",
+"Codigo": "Y5T9"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5615.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 5835.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5886.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6046.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6088.0
+}
+]
+},
+{
+"COD": "CENSO29233667",
+"Nombre": "Valladolid. Hombres. De 10 a 14 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15660,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 10 a 14 años",
+"Codigo": "Y10T14"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6848.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 6860.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6826.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6713.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6852.0
+}
+]
+},
+{
+"COD": "CENSO29233682",
+"Nombre": "Valladolid. Hombres. De 15 a 19 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15665,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 15 a 19 años",
+"Codigo": "Y15T19"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7544.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7352.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7106.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6914.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6751.0
+}
+]
+},
+{
+"COD": "CENSO29233670",
+"Nombre": "Valladolid. Hombres. De 20 a 24 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15661,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 20 a 24 años",
+"Codigo": "Y20T24"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7566.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7328.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7027.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6709.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6677.0
+}
+]
+},
+{
+"COD": "CENSO29233685",
+"Nombre": "Valladolid. Hombres. De 25 a 29 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15666,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 25 a 29 años",
+"Codigo": "Y25T29"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7243.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7051.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6866.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6608.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6710.0
+}
+]
+},
+{
+"COD": "CENSO29233673",
+"Nombre": "Valladolid. Hombres. De 30 a 34 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15662,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 30 a 34 años",
+"Codigo": "Y30T34"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7002.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 6943.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6661.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6539.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6678.0
+}
+]
+},
+{
+"COD": "CENSO29233664",
+"Nombre": "Valladolid. Hombres. De 35 a 39 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15658,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 35 a 39 años",
+"Codigo": "Y35T39"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7295.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7395.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7505.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 7670.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 8116.0
+}
+]
+},
+{
+"COD": "CENSO29233676",
+"Nombre": "Valladolid. Hombres. De 40 a 44 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15663,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 40 a 44 años",
+"Codigo": "Y40T44"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8906.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 9128.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 9545.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 9998.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 10702.0
+}
+]
+},
+{
+"COD": "CENSO29233688",
+"Nombre": "Valladolid. Hombres. De 45 a 49 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15667,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 45 a 49 años",
+"Codigo": "Y45T49"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11324.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 11414.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11402.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11352.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11290.0
+}
+]
+},
+{
+"COD": "CENSO29233637",
+"Nombre": "Valladolid. Hombres. De 50 a 54 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15648,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 50 a 54 años",
+"Codigo": "Y50T54"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11229.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 11127.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11131.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11060.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11044.0
+}
+]
+},
+{
+"COD": "CENSO29233640",
+"Nombre": "Valladolid. Hombres. De 55 a 59 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15649,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 55 a 59 años",
+"Codigo": "Y55T59"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10858.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 10803.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10639.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 10452.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 10486.0
+}
+]
+},
+{
+"COD": "CENSO29233643",
+"Nombre": "Valladolid. Hombres. De 60 a 64 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15650,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 60 a 64 años",
+"Codigo": "Y60T64"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10028.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 9920.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 9773.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 9811.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 9765.0
+}
+]
+},
+{
+"COD": "CENSO29233646",
+"Nombre": "Valladolid. Hombres. De 65 a 69 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15651,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 65 a 69 años",
+"Codigo": "Y65T69"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 9181.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 8966.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8779.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 8718.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 8665.0
+}
+]
+},
+{
+"COD": "CENSO29233649",
+"Nombre": "Valladolid. Hombres. De 70 a 74 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15652,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 70 a 74 años",
+"Codigo": "Y70T74"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8041.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 8167.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 8558.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 8726.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 8747.0
+}
+]
+},
+{
+"COD": "CENSO29233652",
+"Nombre": "Valladolid. Hombres. De 75 a 79 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15653,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 75 a 79 años",
+"Codigo": "Y75T79"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7782.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7771.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7505.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 7306.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 7167.0
+}
+]
+},
+{
+"COD": "CENSO29233655",
+"Nombre": "Valladolid. Hombres. De 80 a 84 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15654,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 80 a 84 años",
+"Codigo": "Y80T84"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5814.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 5331.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4885.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 4635.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 4601.0
+}
+]
+},
+{
+"COD": "CENSO29233658",
+"Nombre": "Valladolid. Hombres. De 85 a 89 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15655,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 85 a 89 años",
+"Codigo": "Y85T89"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2903.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 2930.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2935.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 2917.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 2797.0
+}
+]
+},
+{
+"COD": "CENSO29233661",
+"Nombre": "Valladolid. Hombres. De 90 a 94 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15656,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 90 a 94 años",
+"Codigo": "Y90T94"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1316.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 1292.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1223.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 1147.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 1076.0
+}
+]
+},
+{
+"COD": "CENSO29233631",
+"Nombre": "Valladolid. Hombres. De 95 a 99 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15070,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 95 a 99 años",
+"Codigo": "Y95T99"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 288.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 261.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 265.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 261.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 232.0
+}
+]
+},
+{
+"COD": "CENSO29233628",
+"Nombre": "Valladolid. Hombres. 100 y más años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 15071,
+"T3_Variable": "Semiintervalos de edad",
+"Nombre": "100 y más años",
+"Codigo": "Y-GE100"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 27.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 23.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 26.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 20.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 18.0
+}
+]
+},
+{
+"COD": "CENSO3179420",
+"Nombre": "Valladolid. Mujeres. Total. Todas las edades. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 15668,
+"T3_Variable": "Totales de edad",
+"Nombre": "Todas las edades",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 160404.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 159398.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 158021.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 156964.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 157980.0
+}
+]
+},
+{
+"COD": "CENSO29233700",
+"Nombre": "Valladolid. Mujeres. De 0 a 4 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15073,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 0 a 4 años",
+"Codigo": "Y0T4"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4304.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 4393.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4422.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 4403.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 4700.0
+}
+]
+},
+{
+"COD": "CENSO29233745",
+"Nombre": "Valladolid. Mujeres. De 5 a 9 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15664,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 5 a 9 años",
+"Codigo": "Y5T9"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5359.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 5494.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5503.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 5628.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 5841.0
+}
+]
+},
+{
+"COD": "CENSO29233733",
+"Nombre": "Valladolid. Mujeres. De 10 a 14 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15660,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 10 a 14 años",
+"Codigo": "Y10T14"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6453.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 6433.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6542.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6549.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6577.0
+}
+]
+},
+{
+"COD": "CENSO29233748",
+"Nombre": "Valladolid. Mujeres. De 15 a 19 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15665,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 15 a 19 años",
+"Codigo": "Y15T19"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6998.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 6889.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6856.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6697.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6670.0
+}
+]
+},
+{
+"COD": "CENSO29233736",
+"Nombre": "Valladolid. Mujeres. De 20 a 24 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15661,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 20 a 24 años",
+"Codigo": "Y20T24"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7375.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7282.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6922.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6682.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6607.0
+}
+]
+},
+{
+"COD": "CENSO29233751",
+"Nombre": "Valladolid. Mujeres. De 25 a 29 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15666,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 25 a 29 años",
+"Codigo": "Y25T29"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7166.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 6915.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6747.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6463.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6518.0
+}
+]
+},
+{
+"COD": "CENSO29233739",
+"Nombre": "Valladolid. Mujeres. De 30 a 34 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15662,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 30 a 34 años",
+"Codigo": "Y30T34"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7161.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7001.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6683.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6491.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6730.0
+}
+]
+},
+{
+"COD": "CENSO29233730",
+"Nombre": "Valladolid. Mujeres. De 35 a 39 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15658,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 35 a 39 años",
+"Codigo": "Y35T39"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7630.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7623.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7793.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 7996.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 8431.0
+}
+]
+},
+{
+"COD": "CENSO29233742",
+"Nombre": "Valladolid. Mujeres. De 40 a 44 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15663,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 40 a 44 años",
+"Codigo": "Y40T44"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 9400.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 9727.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10138.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 10466.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11081.0
+}
+]
+},
+{
+"COD": "CENSO29233754",
+"Nombre": "Valladolid. Mujeres. De 45 a 49 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15667,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 45 a 49 años",
+"Codigo": "Y45T49"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11863.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 12018.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11940.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 12016.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 11931.0
+}
+]
+},
+{
+"COD": "CENSO29233703",
+"Nombre": "Valladolid. Mujeres. De 50 a 54 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15648,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 50 a 54 años",
+"Codigo": "Y50T54"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12336.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 12347.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12292.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 12265.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 12383.0
+}
+]
+},
+{
+"COD": "CENSO29233706",
+"Nombre": "Valladolid. Mujeres. De 55 a 59 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15649,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 55 a 59 años",
+"Codigo": "Y55T59"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12446.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 12359.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12327.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 12185.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 12158.0
+}
+]
+},
+{
+"COD": "CENSO29233709",
+"Nombre": "Valladolid. Mujeres. De 60 a 64 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15650,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 60 a 64 años",
+"Codigo": "Y60T64"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11975.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 12010.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11883.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11991.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 12074.0
+}
+]
+},
+{
+"COD": "CENSO29233712",
+"Nombre": "Valladolid. Mujeres. De 65 a 69 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15651,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 65 a 69 años",
+"Codigo": "Y65T69"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11652.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 11371.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11255.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 11080.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 10902.0
+}
+]
+},
+{
+"COD": "CENSO29233715",
+"Nombre": "Valladolid. Mujeres. De 70 a 74 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15652,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 70 a 74 años",
+"Codigo": "Y70T74"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10585.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 10710.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10855.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 10869.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 10823.0
+}
+]
+},
+{
+"COD": "CENSO29233718",
+"Nombre": "Valladolid. Mujeres. De 75 a 79 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15653,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 75 a 79 años",
+"Codigo": "Y75T79"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10334.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 10224.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 9982.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 9684.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 9360.0
+}
+]
+},
+{
+"COD": "CENSO29233721",
+"Nombre": "Valladolid. Mujeres. De 80 a 84 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15654,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 80 a 84 años",
+"Codigo": "Y80T84"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8117.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 7374.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 6713.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 6410.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 6412.0
+}
+]
+},
+{
+"COD": "CENSO29233724",
+"Nombre": "Valladolid. Mujeres. De 85 a 89 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15655,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 85 a 89 años",
+"Codigo": "Y85T89"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4937.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 5128.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 5240.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 5326.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 5183.0
+}
+]
+},
+{
+"COD": "CENSO29233727",
+"Nombre": "Valladolid. Mujeres. De 90 a 94 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15656,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 90 a 94 años",
+"Codigo": "Y90T94"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3193.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 3007.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2885.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 2767.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 2662.0
+}
+]
+},
+{
+"COD": "CENSO29233697",
+"Nombre": "Valladolid. Mujeres. De 95 a 99 años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15070,
+"T3_Variable": "Grupos de edad",
+"Nombre": "De 95 a 99 años",
+"Codigo": "Y95T99"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 964.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 942.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 902.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 870.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 828.0
+}
+]
+},
+{
+"COD": "CENSO29233694",
+"Nombre": "Valladolid. Mujeres. 100 y más años. Total. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "6"
+},
+{
+"Id": 15071,
+"T3_Variable": "Semiintervalos de edad",
+"Nombre": "100 y más años",
+"Codigo": "Y-GE100"
+},
+{
+"Id": 16420,
+"T3_Variable": "Nacionalidad",
+"Nombre": "Total",
+"Codigo": "000"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 156.0
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2024,
+"Valor": 151.0
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 141.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 126.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 109.0
+}
+]
+}
+]

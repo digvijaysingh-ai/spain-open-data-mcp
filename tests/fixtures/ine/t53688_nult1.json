@@ -1,0 +1,212 @@
+[
+{
+"COD": "ADRH9974944",
+"Nombre": "Total Nacional. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.1
+}
+]
+},
+{
+"COD": "ADRH9974943",
+"Nombre": "Total Nacional. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH9974930",
+"Nombre": "Castilla y León. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.3
+}
+]
+},
+{
+"COD": "ADRH9974929",
+"Nombre": "Castilla y León. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH9974858",
+"Nombre": "Valladolid. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.2
+}
+]
+},
+{
+"COD": "ADRH9974857",
+"Nombre": "Valladolid. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+}
+]

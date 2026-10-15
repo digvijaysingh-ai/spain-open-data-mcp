@@ -1,0 +1,72 @@
+[
+{
+"COD": "ADRH9572937",
+"Nombre": "Valladolid. Dato base. Índice de Gini. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382445,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Índice de Gini",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 30.5
+}
+]
+},
+{
+"COD": "ADRH9572936",
+"Nombre": "Valladolid. Dato base. Distribución de la renta P80/P20. ",
+"T3_Unidad": "Número",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382446,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Distribución de la renta P80/P20",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.6
+}
+]
+}
+]

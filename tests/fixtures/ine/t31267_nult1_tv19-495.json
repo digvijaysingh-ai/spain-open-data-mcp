@@ -1,0 +1,247 @@
+[
+{
+"COD": "ADRH7212136",
+"Nombre": "Valladolid. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.9
+}
+]
+},
+{
+"COD": "ADRH7041385",
+"Nombre": "Valladolid. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 14.1
+}
+]
+},
+{
+"COD": "ADRH7041384",
+"Nombre": "Valladolid. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.8
+}
+]
+},
+{
+"COD": "ADRH7152742",
+"Nombre": "Valladolid. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH7041383",
+"Nombre": "Valladolid. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 33.4
+}
+]
+},
+{
+"COD": "ADRH7152741",
+"Nombre": "Valladolid. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 296647.0
+}
+]
+},
+{
+"COD": "ADRH9961253",
+"Nombre": "Valladolid. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 92.8
+}
+]
+}
+]

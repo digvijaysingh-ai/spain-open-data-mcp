@@ -1,0 +1,380 @@
+[
+{
+"COD": "ADRH89165",
+"Nombre": "Valladolid. Dato base. Renta neta media por persona. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284048,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 16356.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 15417.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 14729.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 14247.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 14099.0
+}
+]
+},
+{
+"COD": "ADRH89164",
+"Nombre": "Valladolid. Dato base. Renta neta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 284052,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta neta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 37466.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 35425.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 34095.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 33294.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 33166.0
+}
+]
+},
+{
+"COD": "ADRH9815201",
+"Nombre": "Valladolid. Dato base. Media de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 383098,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Media de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 23428.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 22252.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 21328.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 20695.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 20655.0
+}
+]
+},
+{
+"COD": "ADRH9572941",
+"Nombre": "Valladolid. Dato base. Mediana de la renta por unidad de consumo. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382441,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Mediana de la renta por unidad de consumo",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 20650.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 19250.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 18550.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 17850.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 17850.0
+}
+]
+},
+{
+"COD": "ADRH9572939",
+"Nombre": "Valladolid. Dato base. Renta bruta media por persona. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382443,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por persona",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 20073.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 18812.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 17867.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 17171.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 17070.0
+}
+]
+},
+{
+"COD": "ADRH9572938",
+"Nombre": "Valladolid. Dato base. Renta bruta media por hogar. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+},
+{
+"Id": 382444,
+"T3_Variable": "SALDOS CONTABLES",
+"Nombre": "Renta bruta media por hogar",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 45981.0
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2022,
+"Valor": 43227.0
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2021,
+"Valor": 41359.0
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2020,
+"Valor": 40127.0
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2019,
+"Valor": 40156.0
+}
+]
+}
+]

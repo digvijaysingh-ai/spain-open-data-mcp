@@ -1,0 +1,125 @@
+[
+{
+"COD": "DPOP22387",
+"Nombre": "Valladolid. Total. Total habitantes. Personas. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 451,
+"T3_Variable": "Sexo",
+"Nombre": "Total",
+"Codigo": "0"
+},
+{
+"Id": 8677,
+"T3_Variable": "Tamaño de los municipios",
+"Nombre": "Total habitantes",
+"Codigo": "0"
+},
+{
+"Id": 20258,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Personas",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 302614.0
+}
+]
+},
+{
+"COD": "DPOP22388",
+"Nombre": "Valladolid. Hombres. Total habitantes. Personas. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 452,
+"T3_Variable": "Sexo",
+"Nombre": "Hombres",
+"Codigo": "1"
+},
+{
+"Id": 8677,
+"T3_Variable": "Tamaño de los municipios",
+"Nombre": "Total habitantes",
+"Codigo": "0"
+},
+{
+"Id": 20258,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Personas",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 141780.0
+}
+]
+},
+{
+"COD": "DPOP22389",
+"Nombre": "Valladolid. Mujeres. Total habitantes. Personas. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 453,
+"T3_Variable": "Sexo",
+"Nombre": "Mujeres",
+"Codigo": "2"
+},
+{
+"Id": 8677,
+"T3_Variable": "Tamaño de los municipios",
+"Nombre": "Total habitantes",
+"Codigo": "0"
+},
+{
+"Id": 20258,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Personas",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 160834.0
+}
+]
+}
+]

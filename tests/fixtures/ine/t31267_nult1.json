@@ -1,0 +1,4412 @@
+[
+{
+"COD": "ADRH7206371",
+"Nombre": "Valladolid distrito 05. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 49.0
+}
+]
+},
+{
+"COD": "ADRH7024090",
+"Nombre": "Valladolid distrito 05. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12.7
+}
+]
+},
+{
+"COD": "ADRH7024089",
+"Nombre": "Valladolid distrito 05. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.9
+}
+]
+},
+{
+"COD": "ADRH7141934",
+"Nombre": "Valladolid distrito 05. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.0
+}
+]
+},
+{
+"COD": "ADRH7024088",
+"Nombre": "Valladolid distrito 05. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 45.8
+}
+]
+},
+{
+"COD": "ADRH7141933",
+"Nombre": "Valladolid distrito 05. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4729.0
+}
+]
+},
+{
+"COD": "ADRH9950928",
+"Nombre": "Valladolid distrito 05. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364591,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 05",
+"Codigo": "4718605"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 94.4
+}
+]
+},
+{
+"COD": "ADRH7206368",
+"Nombre": "Valladolid distrito 08. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 50.4
+}
+]
+},
+{
+"COD": "ADRH7024081",
+"Nombre": "Valladolid distrito 08. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 11.6
+}
+]
+},
+{
+"COD": "ADRH7024080",
+"Nombre": "Valladolid distrito 08. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.3
+}
+]
+},
+{
+"COD": "ADRH7141928",
+"Nombre": "Valladolid distrito 08. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.1
+}
+]
+},
+{
+"COD": "ADRH7024079",
+"Nombre": "Valladolid distrito 08. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 37.8
+}
+]
+},
+{
+"COD": "ADRH7141927",
+"Nombre": "Valladolid distrito 08. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32609.0
+}
+]
+},
+{
+"COD": "ADRH9950925",
+"Nombre": "Valladolid distrito 08. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364653,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 08",
+"Codigo": "4718608"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 90.5
+}
+]
+},
+{
+"COD": "ADRH7206369",
+"Nombre": "Valladolid distrito 07. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.9
+}
+]
+},
+{
+"COD": "ADRH7024084",
+"Nombre": "Valladolid distrito 07. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13.7
+}
+]
+},
+{
+"COD": "ADRH7024083",
+"Nombre": "Valladolid distrito 07. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 28.7
+}
+]
+},
+{
+"COD": "ADRH7141930",
+"Nombre": "Valladolid distrito 07. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.2
+}
+]
+},
+{
+"COD": "ADRH7024082",
+"Nombre": "Valladolid distrito 07. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 36.7
+}
+]
+},
+{
+"COD": "ADRH7141929",
+"Nombre": "Valladolid distrito 07. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 19760.0
+}
+]
+},
+{
+"COD": "ADRH9950926",
+"Nombre": "Valladolid distrito 07. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364633,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 07",
+"Codigo": "4718607"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 91.6
+}
+]
+},
+{
+"COD": "ADRH7206366",
+"Nombre": "Valladolid distrito 10. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 46.6
+}
+]
+},
+{
+"COD": "ADRH7024075",
+"Nombre": "Valladolid distrito 10. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15.0
+}
+]
+},
+{
+"COD": "ADRH7024074",
+"Nombre": "Valladolid distrito 10. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 24.9
+}
+]
+},
+{
+"COD": "ADRH7141924",
+"Nombre": "Valladolid distrito 10. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH7024073",
+"Nombre": "Valladolid distrito 10. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.0
+}
+]
+},
+{
+"COD": "ADRH7141923",
+"Nombre": "Valladolid distrito 10. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 67867.0
+}
+]
+},
+{
+"COD": "ADRH9950923",
+"Nombre": "Valladolid distrito 10. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364698,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 10",
+"Codigo": "4718610"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 96.5
+}
+]
+},
+{
+"COD": "ADRH7206207",
+"Nombre": "Valladolid distrito 01. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 51.4
+}
+]
+},
+{
+"COD": "ADRH7023598",
+"Nombre": "Valladolid distrito 01. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12.2
+}
+]
+},
+{
+"COD": "ADRH7023597",
+"Nombre": "Valladolid distrito 01. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 34.3
+}
+]
+},
+{
+"COD": "ADRH7142118",
+"Nombre": "Valladolid distrito 01. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.1
+}
+]
+},
+{
+"COD": "ADRH7023596",
+"Nombre": "Valladolid distrito 01. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 41.7
+}
+]
+},
+{
+"COD": "ADRH7142117",
+"Nombre": "Valladolid distrito 01. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 3798.0
+}
+]
+},
+{
+"COD": "ADRH9950932",
+"Nombre": "Valladolid distrito 01. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364520,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 01",
+"Codigo": "4718601"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 94.9
+}
+]
+},
+{
+"COD": "ADRH7206370",
+"Nombre": "Valladolid distrito 06. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.6
+}
+]
+},
+{
+"COD": "ADRH7024087",
+"Nombre": "Valladolid distrito 06. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 14.4
+}
+]
+},
+{
+"COD": "ADRH7024086",
+"Nombre": "Valladolid distrito 06. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.9
+}
+]
+},
+{
+"COD": "ADRH7141932",
+"Nombre": "Valladolid distrito 06. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH7024085",
+"Nombre": "Valladolid distrito 06. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 33.8
+}
+]
+},
+{
+"COD": "ADRH7141931",
+"Nombre": "Valladolid distrito 06. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 36665.0
+}
+]
+},
+{
+"COD": "ADRH9950927",
+"Nombre": "Valladolid distrito 06. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364597,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 06",
+"Codigo": "4718606"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 89.7
+}
+]
+},
+{
+"COD": "ADRH7206365",
+"Nombre": "Valladolid distrito 11. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.2
+}
+]
+},
+{
+"COD": "ADRH7024072",
+"Nombre": "Valladolid distrito 11. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 14.7
+}
+]
+},
+{
+"COD": "ADRH7024071",
+"Nombre": "Valladolid distrito 11. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 25.8
+}
+]
+},
+{
+"COD": "ADRH7141922",
+"Nombre": "Valladolid distrito 11. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH7024070",
+"Nombre": "Valladolid distrito 11. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.0
+}
+]
+},
+{
+"COD": "ADRH7141921",
+"Nombre": "Valladolid distrito 11. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 51597.0
+}
+]
+},
+{
+"COD": "ADRH9950922",
+"Nombre": "Valladolid distrito 11. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364753,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 11",
+"Codigo": "4718611"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 94.5
+}
+]
+},
+{
+"COD": "ADRH7206205",
+"Nombre": "Valladolid distrito 03. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 49.4
+}
+]
+},
+{
+"COD": "ADRH7023592",
+"Nombre": "Valladolid distrito 03. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12.2
+}
+]
+},
+{
+"COD": "ADRH7023591",
+"Nombre": "Valladolid distrito 03. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 29.4
+}
+]
+},
+{
+"COD": "ADRH7142114",
+"Nombre": "Valladolid distrito 03. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.2
+}
+]
+},
+{
+"COD": "ADRH7023590",
+"Nombre": "Valladolid distrito 03. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 39.7
+}
+]
+},
+{
+"COD": "ADRH7142113",
+"Nombre": "Valladolid distrito 03. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 7508.0
+}
+]
+},
+{
+"COD": "ADRH9950930",
+"Nombre": "Valladolid distrito 03. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364542,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 03",
+"Codigo": "4718603"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 92.1
+}
+]
+},
+{
+"COD": "ADRH7206364",
+"Nombre": "Valladolid distrito 12. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 43.5
+}
+]
+},
+{
+"COD": "ADRH7024069",
+"Nombre": "Valladolid distrito 12. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 17.5
+}
+]
+},
+{
+"COD": "ADRH7024068",
+"Nombre": "Valladolid distrito 12. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18.8
+}
+]
+},
+{
+"COD": "ADRH7141920",
+"Nombre": "Valladolid distrito 12. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "ADRH7024067",
+"Nombre": "Valladolid distrito 12. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 21.3
+}
+]
+},
+{
+"COD": "ADRH7141919",
+"Nombre": "Valladolid distrito 12. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 4847.0
+}
+]
+},
+{
+"COD": "ADRH9950921",
+"Nombre": "Valladolid distrito 12. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364793,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 12",
+"Codigo": "4718612"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 97.4
+}
+]
+},
+{
+"COD": "ADRH7206206",
+"Nombre": "Valladolid distrito 02. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 50.3
+}
+]
+},
+{
+"COD": "ADRH7023595",
+"Nombre": "Valladolid distrito 02. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12.7
+}
+]
+},
+{
+"COD": "ADRH7023594",
+"Nombre": "Valladolid distrito 02. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.7
+}
+]
+},
+{
+"COD": "ADRH7142116",
+"Nombre": "Valladolid distrito 02. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.2
+}
+]
+},
+{
+"COD": "ADRH7023593",
+"Nombre": "Valladolid distrito 02. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 38.1
+}
+]
+},
+{
+"COD": "ADRH7142115",
+"Nombre": "Valladolid distrito 02. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 14367.0
+}
+]
+},
+{
+"COD": "ADRH9950931",
+"Nombre": "Valladolid distrito 02. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364526,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 02",
+"Codigo": "4718602"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 93.4
+}
+]
+},
+{
+"COD": "ADRH7206204",
+"Nombre": "Valladolid distrito 04. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.1
+}
+]
+},
+{
+"COD": "ADRH7023589",
+"Nombre": "Valladolid distrito 04. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15.1
+}
+]
+},
+{
+"COD": "ADRH7023588",
+"Nombre": "Valladolid distrito 04. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 26.9
+}
+]
+},
+{
+"COD": "ADRH7142112",
+"Nombre": "Valladolid distrito 04. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH7023587",
+"Nombre": "Valladolid distrito 04. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.7
+}
+]
+},
+{
+"COD": "ADRH7142111",
+"Nombre": "Valladolid distrito 04. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 42525.0
+}
+]
+},
+{
+"COD": "ADRH9950929",
+"Nombre": "Valladolid distrito 04. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364551,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 04",
+"Codigo": "4718604"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 88.3
+}
+]
+},
+{
+"COD": "ADRH7206367",
+"Nombre": "Valladolid distrito 09. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 52.5
+}
+]
+},
+{
+"COD": "ADRH7024078",
+"Nombre": "Valladolid distrito 09. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10.8
+}
+]
+},
+{
+"COD": "ADRH7024077",
+"Nombre": "Valladolid distrito 09. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 37.4
+}
+]
+},
+{
+"COD": "ADRH7141926",
+"Nombre": "Valladolid distrito 09. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.1
+}
+]
+},
+{
+"COD": "ADRH7024076",
+"Nombre": "Valladolid distrito 09. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 39.0
+}
+]
+},
+{
+"COD": "ADRH7141925",
+"Nombre": "Valladolid distrito 09. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10375.0
+}
+]
+},
+{
+"COD": "ADRH9950924",
+"Nombre": "Valladolid distrito 09. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364687,
+"T3_Variable": "Distritos",
+"Nombre": "Valladolid distrito 09",
+"Codigo": "4718609"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 94.8
+}
+]
+},
+{
+"COD": "ADRH7188612",
+"Nombre": "Valladolid sección 04001. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 52.7
+}
+]
+},
+{
+"COD": "ADRH6970813",
+"Nombre": "Valladolid sección 04001. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 10.1
+}
+]
+},
+{
+"COD": "ADRH6970812",
+"Nombre": "Valladolid sección 04001. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 37.0
+}
+]
+},
+{
+"COD": "ADRH7124854",
+"Nombre": "Valladolid sección 04001. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.2
+}
+]
+},
+{
+"COD": "ADRH6970811",
+"Nombre": "Valladolid sección 04001. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.7
+}
+]
+},
+{
+"COD": "ADRH7124853",
+"Nombre": "Valladolid sección 04001. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1242.0
+}
+]
+},
+{
+"COD": "ADRH9916426",
+"Nombre": "Valladolid sección 04001. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364552,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 04001",
+"Codigo": "4718604001"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 92.7
+}
+]
+},
+{
+"COD": "ADRH7187038",
+"Nombre": "Valladolid sección 10001. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 42.4
+}
+]
+},
+{
+"COD": "ADRH6966091",
+"Nombre": "Valladolid sección 10001. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 18.9
+}
+]
+},
+{
+"COD": "ADRH6966090",
+"Nombre": "Valladolid sección 10001. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 17.5
+}
+]
+},
+{
+"COD": "ADRH7128106",
+"Nombre": "Valladolid sección 10001. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.4
+}
+]
+},
+{
+"COD": "ADRH6966089",
+"Nombre": "Valladolid sección 10001. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 31.3
+}
+]
+},
+{
+"COD": "ADRH7128105",
+"Nombre": "Valladolid sección 10001. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1776.0
+}
+]
+},
+{
+"COD": "ADRH9916285",
+"Nombre": "Valladolid sección 10001. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364699,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 10001",
+"Codigo": "4718610001"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 93.7
+}
+]
+},
+{
+"COD": "ADRH7188640",
+"Nombre": "Valladolid sección 01001. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 50.4
+}
+]
+},
+{
+"COD": "ADRH6970897",
+"Nombre": "Valladolid sección 01001. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 12.1
+}
+]
+},
+{
+"COD": "ADRH6970896",
+"Nombre": "Valladolid sección 01001. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 32.6
+}
+]
+},
+{
+"COD": "ADRH7124910",
+"Nombre": "Valladolid sección 01001. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.0
+}
+]
+},
+{
+"COD": "ADRH6970895",
+"Nombre": "Valladolid sección 01001. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 43.8
+}
+]
+},
+{
+"COD": "ADRH7124909",
+"Nombre": "Valladolid sección 01001. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1336.0
+}
+]
+},
+{
+"COD": "ADRH9916454",
+"Nombre": "Valladolid sección 01001. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364521,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01001",
+"Codigo": "4718601001"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 92.7
+}
+]
+},
+{
+"COD": "ADRH7188639",
+"Nombre": "Valladolid sección 01003. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 49.5
+}
+]
+},
+{
+"COD": "ADRH6970894",
+"Nombre": "Valladolid sección 01003. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 13.8
+}
+]
+},
+{
+"COD": "ADRH6970893",
+"Nombre": "Valladolid sección 01003. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 30.8
+}
+]
+},
+{
+"COD": "ADRH7124908",
+"Nombre": "Valladolid sección 01003. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.0
+}
+]
+},
+{
+"COD": "ADRH6970892",
+"Nombre": "Valladolid sección 01003. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 45.4
+}
+]
+},
+{
+"COD": "ADRH7124907",
+"Nombre": "Valladolid sección 01003. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1013.0
+}
+]
+},
+{
+"COD": "ADRH9916453",
+"Nombre": "Valladolid sección 01003. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364522,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 01003",
+"Codigo": "4718601003"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 94.6
+}
+]
+},
+{
+"COD": "ADRH7185850",
+"Nombre": "Valladolid sección 12001. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 43.1
+}
+]
+},
+{
+"COD": "ADRH6962527",
+"Nombre": "Valladolid sección 12001. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 16.5
+}
+]
+},
+{
+"COD": "ADRH6962526",
+"Nombre": "Valladolid sección 12001. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 15.6
+}
+]
+},
+{
+"COD": "ADRH7130594",
+"Nombre": "Valladolid sección 12001. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.5
+}
+]
+},
+{
+"COD": "ADRH6962525",
+"Nombre": "Valladolid sección 12001. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 25.9
+}
+]
+},
+{
+"COD": "ADRH7130593",
+"Nombre": "Valladolid sección 12001. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 1035.0
+}
+]
+},
+{
+"COD": "ADRH9916192",
+"Nombre": "Valladolid sección 12001. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 364794,
+"T3_Variable": "Secciones",
+"Nombre": "Valladolid sección 12001",
+"Codigo": "4718612001"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 97.0
+}
+]
+},
+{
+"COD": "ADRH7212136",
+"Nombre": "Valladolid. Edad media de la población. Dato base. ",
+"T3_Unidad": "Años",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 274520,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Edad media de la población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 47.9
+}
+]
+},
+{
+"COD": "ADRH7041385",
+"Nombre": "Valladolid. Porcentaje de población menor de 18 años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366830,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población menor de 18 años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 14.1
+}
+]
+},
+{
+"COD": "ADRH7041384",
+"Nombre": "Valladolid. Porcentaje de población de 65 y más años. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366831,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población de 65 y más años",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 27.8
+}
+]
+},
+{
+"COD": "ADRH7152742",
+"Nombre": "Valladolid. Tamaño medio del hogar. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366832,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Tamaño medio del hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "ADRH7041383",
+"Nombre": "Valladolid. Porcentaje de hogares unipersonales. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 366833,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de hogares unipersonales",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 33.4
+}
+]
+},
+{
+"COD": "ADRH7152741",
+"Nombre": "Valladolid. Población. Dato base. ",
+"T3_Unidad": "Personas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 17338,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Población",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 296647.0
+}
+]
+},
+{
+"COD": "ADRH9961253",
+"Nombre": "Valladolid. Porcentaje de población española. Dato base. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 391401,
+"T3_Variable": "Conceptos demógraficos",
+"Nombre": "Porcentaje de población española",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2023,
+"Valor": 92.8
+}
+]
+}
+]
