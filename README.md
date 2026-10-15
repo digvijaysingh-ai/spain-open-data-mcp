@@ -1,0 +1,139 @@
+# spain-open-data-mcp
+
+<!-- mcp-name: io.github.digvijaysingh-ai/spain-open-data-mcp -->
+
+An MCP server that lets Claude, or any MCP client, answer business questions about Spain from
+public data: how many people live in an area, how old they are, what they earn, and how
+districts compare. Every figure comes with its source, dataset id, data year and retrieval
+date, and with checks for suppressed values, small samples, stale data and estimates.
+
+**Status: early development (milestone 1 of 4).** Population, households and income from INE
+work today, down to census tract. Business counts (OpenStreetMap), the national open-data
+catalogue (datos.gob.es), market sizing, price bands and charts are next. See
+[the roadmap](#roadmap).
+
+## What it can answer today
+
+- "How many people live in Valladolid, and how is the population changing?"
+- "Which districts of Valladolid have the highest household income?"
+- "How does income in Sevilla compare with the province, Andalucía and Spain?"
+- "Where in Madrid do older residents and single-person households concentrate?"
+
+## Tools
+
+| Tool | What it returns |
+|---|---|
+| `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. |
+| `demographics` | Population by sex and five-year age band, 5-year trend, household size and type. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
+| `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
+
+All tools are read-only. Each result has the same shape:
+
+```
+data        the figures
+sources     publisher, dataset, dataset id, URL, licence, data period, retrieval date
+checks      suppressed | missing | stale | thin_sample | estimate | cross_check | scope, with severity
+confidence  high | medium | low: the weakest input sets it
+```
+
+Example (abridged) for `income("Valladolid", sub_areas="district")`:
+
+```
+Household income: Valladolid (municipality, INE code 47186), 2023
+Net income per person €16,356, per household €37,466
+Inequality: Gini 30.5, P80/P20 2.6
+Net income per person by year: 2019 €14,099 ... 2023 €16,356 (+16.0%)
+Benchmark Valladolid (province): net per person €15,590; Valladolid is +4.9%
+Benchmark España (country): net per person €15,036; Valladolid is +8.8%
+Districts: 12 total. Net income per person across them: min €12,884, median €18,466, max €27,922
+...
+Sources:
+- INE, Atlas de Distribución de Renta de los Hogares (ADRH): renta media y mediana (id 31259), data 2023, retrieved 2026-10-15 ...
+Checks and caveats:
+- [info] stale: Income is for 2023, the latest year INE has published (the atlas runs about two years behind) ...
+Confidence: high
+```
+
+## How the data is checked
+
+- **Suppressed is not zero.** INE withholds values for small areas. These are reported as suppressed and left out of rankings, with a count.
+- **Top-coded incomes are flagged.** INE caps the highest incomes in its income atlas. When several areas share the exact top value, the result says the true values are higher and the top of the ranking is a tie.
+- **Two sources, one number.** Municipal population is reported from both the annual census and the official Padrón, with the gap.
+- **Spelling guesses are never silent.** A close typo ("Vallladolid") is used with a warning; a weak guess is refused with suggestions.
+- **Upstream changes fail loudly.** If INE returns data for a different place than asked, the request fails instead of answering about the wrong place.
+- **No personal data.** The server returns aggregate statistics only.
+
+## Install
+
+Requires [uv](https://docs.astral.sh/uv/). No API keys are needed.
+
+**Claude Code**
+
+```bash
+claude mcp add spain-open-data -- uvx --from git+https://github.com/digvijaysingh-ai/spain-open-data-mcp spain-open-data-mcp
+```
+
+**Claude Desktop**: add this to `claude_desktop_config.json` and restart Claude.
+
+```json
+{
+  "mcpServers": {
+    "spain-open-data": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/digvijaysingh-ai/spain-open-data-mcp", "spain-open-data-mcp"]
+    }
+  }
+}
+```
+
+A PyPI release (`uvx spain-open-data-mcp`) and a hosted URL for use as a custom connector in
+Claude are planned for milestone 4.
+
+### Settings
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `SPAIN_MCP_CACHE_DIR` | `~/.cache/spain-open-data-mcp` | On-disk cache of upstream responses |
+| `SPAIN_MCP_HTTP_TIMEOUT` | `60` | Seconds per upstream request |
+| `SPAIN_MCP_OFFLINE` | unset | `1` serves only from cache (tests, evals) |
+
+## Architecture
+
+```
+src/spain_open_data_mcp/
+  server.py        MCP tools, resource and error handling
+  tools/           one module per tool: fetch, check, render
+  sources/ine/     INE Tempus API client and table definitions
+  places/          place resolver and INE codes
+  core/            cached HTTP client, response envelope, errors
+  data/            bundled municipality list and INE table map (built by scripts/build_reference.py)
+```
+
+- Upstream responses are cached on disk with their original retrieval time, so cached figures still report when they were fetched. If an upstream service is down, the last cached copy is served and marked stale.
+- Requests are rate limited per host, retried with backoff, and identify the project in the User-Agent.
+- INE table ids are not hard-coded in the tools. `scripts/build_reference.py` rebuilds the map when INE publishes new tables, for example each October's income atlas.
+
+## Development
+
+```bash
+uv sync
+uv run pytest            # offline tests against recorded INE responses
+uv run ruff check . && uv run ruff format --check . && uv run pyright
+uv run spain-open-data-mcp          # stdio
+uv run spain-open-data-mcp http     # Streamable HTTP on 127.0.0.1:8000/mcp
+```
+
+Refresh the recorded test fixtures with `uv run python tests/fixtures/record_ine.py`.
+
+## Roadmap
+
+1. **Skeleton** (in progress): place resolver, `demographics`, `income`, CI.
+2. **Supply and catalogue**: OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE); datos.gob.es search and dataset reading; `market_size`, `price_band`, `compare_areas`, `chart`; rental reference index and crime statistics by municipality.
+3. **Checks and evals**: a golden set of real strategy questions with hand-checked answers, scored for accuracy, sourcing, refusals and calibration, with results here.
+4. **Publishing**: hosted connector, PyPI, MCP Registry, Claude connectors directory.
+
+## Data licences
+
+The code is MIT-licensed. Data keeps its source licence; see
+[data_licences.md](src/spain_open_data_mcp/data/data_licences.md). INE data is reused under
+CC BY 4.0: "Fuente: INE. Elaboración propia con datos extraídos del sitio web del INE: www.ine.es".
