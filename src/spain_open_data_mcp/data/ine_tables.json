@@ -1,0 +1,392 @@
+{
+  "padron_municipal": 29005,
+  "census_age_sex": 65034,
+  "census_age_sex_groups": {
+    "Provincias, municipios y secciones censales": 131610,
+    "Sexo": 131611,
+    "Edad": 131612
+  },
+  "census_province_value_ids": {
+    "01": 2,
+    "02": 3,
+    "03": 4,
+    "04": 5,
+    "05": 6,
+    "06": 7,
+    "07": 8,
+    "08": 9,
+    "09": 10,
+    "10": 11,
+    "11": 12,
+    "12": 13,
+    "13": 14,
+    "14": 15,
+    "15": 16,
+    "16": 17,
+    "17": 18,
+    "18": 19,
+    "19": 20,
+    "20": 21,
+    "21": 22,
+    "22": 23,
+    "23": 24,
+    "24": 25,
+    "25": 26,
+    "26": 27,
+    "27": 28,
+    "28": 29,
+    "29": 30,
+    "30": 31,
+    "31": 32,
+    "32": 53,
+    "33": 33,
+    "34": 34,
+    "35": 35,
+    "36": 36,
+    "37": 37,
+    "38": 38,
+    "39": 39,
+    "40": 40,
+    "41": 41,
+    "42": 42,
+    "43": 43,
+    "44": 44,
+    "45": 45,
+    "46": 46,
+    "47": 47,
+    "48": 48,
+    "49": 49,
+    "50": 50,
+    "51": 51,
+    "52": 52
+  },
+  "adrh_operation": 353,
+  "adrh_by_province": {
+    "01": {
+      "income": 30851,
+      "income_sources": 30852,
+      "inequality": 37732,
+      "demographics": 30859
+    },
+    "02": {
+      "income": 30656,
+      "income_sources": 30813,
+      "inequality": 37678,
+      "demographics": 30814
+    },
+    "03": {
+      "income": 30833,
+      "income_sources": 30834,
+      "inequality": 37733,
+      "demographics": 30841
+    },
+    "04": {
+      "income": 30842,
+      "income_sources": 30843,
+      "inequality": 37680,
+      "demographics": 30850
+    },
+    "05": {
+      "income": 30869,
+      "income_sources": 30870,
+      "inequality": 37683,
+      "demographics": 30877
+    },
+    "06": {
+      "income": 30878,
+      "income_sources": 30879,
+      "inequality": 37684,
+      "demographics": 30886
+    },
+    "07": {
+      "income": 30887,
+      "income_sources": 30888,
+      "inequality": 37685,
+      "demographics": 30895
+    },
+    "08": {
+      "income": 30896,
+      "income_sources": 30897,
+      "inequality": 37686,
+      "demographics": 30904
+    },
+    "09": {
+      "income": 30926,
+      "income_sources": 30927,
+      "inequality": 37687,
+      "demographics": 30934
+    },
+    "10": {
+      "income": 30935,
+      "income_sources": 30936,
+      "inequality": 37688,
+      "demographics": 30943
+    },
+    "11": {
+      "income": 30944,
+      "income_sources": 30945,
+      "inequality": 37689,
+      "demographics": 30952
+    },
+    "12": {
+      "income": 30962,
+      "income_sources": 30963,
+      "inequality": 37691,
+      "demographics": 30970
+    },
+    "13": {
+      "income": 30971,
+      "income_sources": 30972,
+      "inequality": 37692,
+      "demographics": 30979
+    },
+    "14": {
+      "income": 30980,
+      "income_sources": 30981,
+      "inequality": 37693,
+      "demographics": 30988
+    },
+    "15": {
+      "income": 30989,
+      "income_sources": 30990,
+      "inequality": 37694,
+      "demographics": 30997
+    },
+    "16": {
+      "income": 30998,
+      "income_sources": 30999,
+      "inequality": 37695,
+      "demographics": 31006
+    },
+    "17": {
+      "income": 31016,
+      "income_sources": 31017,
+      "inequality": 37697,
+      "demographics": 31024
+    },
+    "18": {
+      "income": 31025,
+      "income_sources": 31026,
+      "inequality": 37698,
+      "demographics": 31033
+    },
+    "19": {
+      "income": 31034,
+      "income_sources": 31035,
+      "inequality": 37699,
+      "demographics": 31042
+    },
+    "20": {
+      "income": 31007,
+      "income_sources": 31008,
+      "inequality": 37730,
+      "demographics": 31015
+    },
+    "21": {
+      "income": 31043,
+      "income_sources": 31044,
+      "inequality": 37700,
+      "demographics": 31051
+    },
+    "22": {
+      "income": 31052,
+      "income_sources": 31053,
+      "inequality": 37701,
+      "demographics": 31060
+    },
+    "23": {
+      "income": 31061,
+      "income_sources": 31062,
+      "inequality": 37702,
+      "demographics": 31069
+    },
+    "24": {
+      "income": 31070,
+      "income_sources": 31071,
+      "inequality": 37703,
+      "demographics": 31078
+    },
+    "25": {
+      "income": 31079,
+      "income_sources": 31080,
+      "inequality": 37704,
+      "demographics": 31087
+    },
+    "26": {
+      "income": 31169,
+      "income_sources": 31170,
+      "inequality": 37712,
+      "demographics": 31177
+    },
+    "27": {
+      "income": 31088,
+      "income_sources": 31089,
+      "inequality": 37705,
+      "demographics": 31096
+    },
+    "28": {
+      "income": 31097,
+      "income_sources": 31098,
+      "inequality": 37727,
+      "demographics": 31105
+    },
+    "29": {
+      "income": 31106,
+      "income_sources": 31107,
+      "inequality": 37706,
+      "demographics": 31114
+    },
+    "30": {
+      "income": 31115,
+      "income_sources": 31116,
+      "inequality": 37707,
+      "demographics": 31123
+    },
+    "31": {
+      "income": 31124,
+      "income_sources": 31125,
+      "inequality": 37731,
+      "demographics": 31132
+    },
+    "32": {
+      "income": 31133,
+      "income_sources": 31134,
+      "inequality": 37709,
+      "demographics": 31141
+    },
+    "33": {
+      "income": 30860,
+      "income_sources": 30861,
+      "inequality": 37682,
+      "demographics": 30868
+    },
+    "34": {
+      "income": 31142,
+      "income_sources": 31143,
+      "inequality": 37708,
+      "demographics": 31150
+    },
+    "35": {
+      "income": 31151,
+      "income_sources": 31152,
+      "inequality": 37710,
+      "demographics": 31159
+    },
+    "36": {
+      "income": 31160,
+      "income_sources": 31161,
+      "inequality": 37711,
+      "demographics": 31168
+    },
+    "37": {
+      "income": 31178,
+      "income_sources": 31179,
+      "inequality": 37713,
+      "demographics": 31186
+    },
+    "38": {
+      "income": 31187,
+      "income_sources": 31188,
+      "inequality": 37714,
+      "demographics": 31195
+    },
+    "39": {
+      "income": 30953,
+      "income_sources": 30954,
+      "inequality": 37690,
+      "demographics": 30961
+    },
+    "40": {
+      "income": 31196,
+      "income_sources": 31197,
+      "inequality": 37715,
+      "demographics": 31204
+    },
+    "41": {
+      "income": 31205,
+      "income_sources": 31206,
+      "inequality": 37716,
+      "demographics": 31213
+    },
+    "42": {
+      "income": 31214,
+      "income_sources": 31215,
+      "inequality": 37717,
+      "demographics": 31222
+    },
+    "43": {
+      "income": 31223,
+      "income_sources": 31224,
+      "inequality": 37718,
+      "demographics": 31231
+    },
+    "44": {
+      "income": 31232,
+      "income_sources": 31233,
+      "inequality": 37719,
+      "demographics": 31240
+    },
+    "45": {
+      "income": 31241,
+      "income_sources": 31242,
+      "inequality": 37720,
+      "demographics": 31249
+    },
+    "46": {
+      "income": 31250,
+      "income_sources": 31251,
+      "inequality": 37721,
+      "demographics": 31258
+    },
+    "47": {
+      "income": 31259,
+      "income_sources": 31260,
+      "inequality": 37722,
+      "demographics": 31267
+    },
+    "48": {
+      "income": 30917,
+      "income_sources": 30918,
+      "inequality": 37679,
+      "demographics": 30925
+    },
+    "49": {
+      "income": 31268,
+      "income_sources": 31269,
+      "inequality": 37723,
+      "demographics": 31276
+    },
+    "50": {
+      "income": 31277,
+      "income_sources": 31278,
+      "inequality": 37724,
+      "demographics": 31285
+    },
+    "51": {
+      "income": 31286,
+      "income_sources": 31287,
+      "inequality": 37608,
+      "demographics": 31294
+    },
+    "52": {
+      "income": 31295,
+      "income_sources": 31296,
+      "inequality": 37607,
+      "demographics": 31303
+    }
+  },
+  "adrh_national": {
+    "income": 30824,
+    "income_sources": 30825,
+    "inequality": 37677,
+    "demographics": 30832
+  },
+  "adrh_aggregates": {
+    "income": 53689,
+    "income_sources": 53687,
+    "inequality": 53688,
+    "demographics": 53776
+  },
+  "generated_at": "2026-10-15T11:29:31+00:00",
+  "padron_year": 2025
+}
