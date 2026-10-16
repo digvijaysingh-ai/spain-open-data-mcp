@@ -1,0 +1,47 @@
+name: Walking graphs
+
+# Builds the per-province walkable street graphs for walking-time catchments and publishes
+# them on the 'walk-v<schema>' release. Streets change slowly: quarterly, or by hand.
+on:
+  schedule:
+    - cron: "37 5 7 1,4,7,10 *" # 05:37 UTC on the 7th of January, April, July and October
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: walk-graphs
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked --group snapshot
+      - name: Release tag for this schema
+        run: echo "TAG=$(uv run python -c 'from spain_open_data_mcp.sources.geo.walk import RELEASE_TAG; print(RELEASE_TAG)')" >> "$GITHUB_ENV"
+      - name: Download extracts and tract geometry
+        run: |
+          mkdir -p build/downloads build/geometry
+          UA="spain-open-data-mcp (+https://github.com/digvijaysingh-ai/spain-open-data-mcp)"
+          curl -sSfL -A "$UA" -o build/downloads/spain-latest.osm.pbf https://download.geofabrik.de/europe/spain-latest.osm.pbf
+          curl -sSfL -A "$UA" -o build/downloads/canary-islands-latest.osm.pbf https://download.geofabrik.de/africa/canary-islands-latest.osm.pbf
+          gh release download geometry-v1 -p tracts_geometry.sqlite.gz -D build/geometry
+          gunzip build/geometry/tracts_geometry.sqlite.gz
+      - name: Build
+        run: uv run --group snapshot python scripts/build_walk_graphs.py --geometry build/geometry/tracts_geometry.sqlite
+      - name: Publish
+        run: |
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "Walking graphs" --latest=false --notes "Walkable street graphs per province."
+          fi
+          # Province files first, manifest last: clients read the manifest to find the files.
+          gh release upload "$TAG" build/walk/walk_*.npz --clobber
+          gh release upload "$TAG" build/walk/walk_manifest.json --clobber
+          gh release edit "$TAG" --notes "Walkable street graphs per province, from OpenStreetMap (© OpenStreetMap contributors, ODbL 1.0), for walking-time catchments. Province boundaries from INE census tracts (CC BY 4.0)."

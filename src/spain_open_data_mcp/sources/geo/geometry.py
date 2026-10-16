@@ -89,16 +89,33 @@ class Geometry:
 
     def circle_shares(self, lon: float, lat: float, radius_m: float) -> list[TractShare]:
         """Tracts touched by the circle, with the share of each tract's area inside it."""
-        import shapely
         from shapely.geometry import Point
 
+        return self._shares(lon, lat, radius_m, Point(0.0, 0.0).buffer(radius_m, quad_segs=32))
+
+    def area_shares(self, shape_wgs84: Any, lon: float, lat: float, reach_m: float) -> list[TractShare]:
+        """Tracts touched by any area (e.g. a walking area), centred near (lon, lat)."""
+        import shapely
+
+        m_lon = EARTH_M_PER_DEG_LAT * math.cos(math.radians(lat))
+
+        def local(xy: Any) -> Any:
+            out = xy.copy()
+            out[:, 0] = (xy[:, 0] - lon) * m_lon
+            out[:, 1] = (xy[:, 1] - lat) * EARTH_M_PER_DEG_LAT
+            return out
+
+        return self._shares(lon, lat, reach_m, shapely.transform(shape_wgs84, local))
+
+    def _shares(self, lon: float, lat: float, reach_m: float, area_local: Any) -> list[TractShare]:
+        import shapely
+
         m_per_deg_lon = EARTH_M_PER_DEG_LAT * math.cos(math.radians(lat))
-        dlon, dlat = radius_m / m_per_deg_lon, radius_m / EARTH_M_PER_DEG_LAT
+        dlon, dlat = reach_m / m_per_deg_lon, reach_m / EARTH_M_PER_DEG_LAT
         rows = self._db.execute(
             "SELECT code, area_km2, wkb FROM tract WHERE minx <= ? AND maxx >= ? AND miny <= ? AND maxy >= ?",
             (lon + dlon, lon - dlon, lat + dlat, lat - dlat),
         ).fetchall()
-        circle = Point(0.0, 0.0).buffer(radius_m, quad_segs=32)
 
         def local(xy: Any) -> Any:
             out = xy.copy()
@@ -109,9 +126,9 @@ class Geometry:
         shares = []
         for code, area_km2, blob in rows:
             shape = shapely.transform(self._shape(code, blob), local)
-            if shape.area <= 0 or not shape.intersects(circle):
+            if shape.area <= 0 or not shape.intersects(area_local):
                 continue
-            share = shape.intersection(circle).area / shape.area
+            share = shape.intersection(area_local).area / shape.area
             if share > 0.001:
                 shares.append(TractShare(code, min(share, 1.0), area_km2))
         return sorted(shares, key=lambda t: -t.share)

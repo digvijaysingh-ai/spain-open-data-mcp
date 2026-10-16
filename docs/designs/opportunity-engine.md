@@ -382,7 +382,12 @@ Decisions made while implementing, against live data:
   word ("Larios" -> "Marqués de Larios"; "Gran Vía" is not "Gran Vía de Hortaleza"). Nominatim
   is the fallback, with its town required to equal the municipality (it matched a village in
   the province of the same name). The point must then fall inside the municipality's tracts.
-- Walking-time catchments (E1.5) are the next step.
+- Walking-time catchments (E1.5): per-province walkable street graphs (footways, paths,
+  pedestrian and ordinary streets; motorways, trunk roads and foot=no excluded), simplified to
+  junctions, as compressed numpy files on the walk-v1 release, built quarterly in CI and
+  fetched per province on first use. Shortest walking distances at 4.5 km/h, reached streets
+  buffered by 30 m. Central Las Palmas, 10 minutes: 31 km of streets, 0.78 km², 0.09 s. Where
+  no graph is published, a labelled circle of speed x minutes / 1.3.
 
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.

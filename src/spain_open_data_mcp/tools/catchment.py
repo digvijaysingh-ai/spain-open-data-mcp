@@ -12,21 +12,23 @@ Residents are assumed to be spread evenly within a tract. Visitors are not count
 from __future__ import annotations
 
 import asyncio
+import math
 from collections import Counter, defaultdict
 
 from pydantic import BaseModel, Field
 
 from ..categories import BY_KEY, MARKET
 from ..core.envelope import Check, Envelope, Source, confidence_from, dedupe_sources
-from ..core.errors import DataError, PlaceNotFound
+from ..core.errors import DataError, PlaceNotFound, UpstreamError
 from ..engine import model
 from ..engine.estimate import Estimate
 from ..engine.inputs import COMPLETENESS_CATEGORIES, MarketContext
 from ..places.areas import population_of
 from ..places.codes import PROVINCES
 from ..places.resolver import place_from_code
-from ..sources.geo import geocode
+from ..sources.geo import geocode, walk
 from ..sources.geo.geometry import MAX_RADIUS_M, MIN_RADIUS_M, GeometryStore
+from ..sources.geo.walk import WalkGraphs
 from ..sources.ine.adrh import UnitValues, by_unit
 from ..sources.ine.datasets import ADRH_NAME, IneData, latest_year, source_for
 from ..sources.osm import snapshot as osm
@@ -35,6 +37,7 @@ from .common import fmt_eur, fmt_int, fmt_pct, to_result
 from .market import AreaOpportunity, Range, engine_checks, resolve_market_category
 
 THIN_RADIUS_M = 300
+MIN_WALK_MIN, MAX_WALK_MIN = 3, 30
 WIDE_RADIUS_M = 5_000
 
 
@@ -49,7 +52,10 @@ class CatchmentData(BaseModel):
     found: str = Field(description="What the address resolved to, without floor or door.")
     geocoder: str
     municipality: str | None
-    radius_m: int
+    radius_m: int = Field(description="Circle radius, or the reach used to find tracts for a walking area.")
+    walk_minutes: int | None = None
+    area_method: str = Field(description="'circle', 'walking network', or 'walking estimate (circle)'.")
+    area_km2: float
     tracts: int
     residents: int
     households: int | None
@@ -88,7 +94,15 @@ async def catchment(
     near: str,
     radius_m: int = 800,
     category: str | None = None,
+    walk_minutes: int | None = None,
+    walk_store: WalkGraphs | None = None,
 ) -> Envelope[CatchmentData]:
+    if walk_minutes is not None and not MIN_WALK_MIN <= walk_minutes <= MAX_WALK_MIN:
+        raise DataError(
+            problem=f"walk_minutes {walk_minutes} is out of range.",
+            cause=f"Walking catchments are {MIN_WALK_MIN} to {MAX_WALK_MIN} minutes.",
+            fix="Use e.g. 5, 10 or 15.",
+        )
     if not MIN_RADIUS_M <= radius_m <= MAX_RADIUS_M:
         raise DataError(
             problem=f"radius_m {radius_m} is out of range.",
@@ -111,8 +125,39 @@ async def catchment(
             cause=f"The point falls in {place_from_code(here[:5]).name}.",
             fix="Check the address, or pass coordinates as 'lat, lon'.",
         )
-    shares = await asyncio.to_thread(geo.circle_shares, loc.lon, loc.lat, radius_m)
     sources: list[Source] = []
+    walk_note: Check | None = None
+    shape = None  # walking area polygon, if any
+    method, area_km2 = "circle", math.pi * radius_m**2 / 1e6
+    if walk_minutes is not None:
+        reach = walk_minutes * walk.WALK_M_PER_MIN
+        try:
+            graphs_store = walk_store or walk.WalkGraphs()
+            provinces = await graphs_store.provinces_near(loc.lon, loc.lat, reach)
+            if not provinces:
+                raise UpstreamError(problem="no walking graph", cause="none published here", fix="")
+            graphs = [await graphs_store.graph(p) for p in provinces]
+            area = await asyncio.to_thread(walk.walk_area, graphs, loc.lon, loc.lat, walk_minutes)
+            shape, method, area_km2, radius_m = area.shape, "walking network", area.area_km2, int(reach)
+            walk_note = Check(
+                kind="scope",
+                severity="info",
+                message=f"Walking area: {area.street_km:.1f} km of streets reachable in {walk_minutes} minutes at "
+                f"{walk.WALK_M_PER_MIN * 60 / 1000:.1f} km/h, buffered by {walk.BUFFER_M:.0f} m (OpenStreetMap streets).",
+            )
+        except UpstreamError:
+            radius_m = int(walk.fallback_radius_m(walk_minutes))
+            method, area_km2 = "walking estimate (circle)", math.pi * radius_m**2 / 1e6
+            walk_note = Check(
+                kind="estimate",
+                severity="warning",
+                message=f"No walking graph available here yet: the area is a circle of {radius_m} m, about "
+                f"{walk_minutes} minutes' walk allowing for streets not being straight.",
+            )
+    if shape is not None:
+        shares = await asyncio.to_thread(geo.area_shares, shape, loc.lon, loc.lat, radius_m)
+    else:
+        shares = await asyncio.to_thread(geo.circle_shares, loc.lon, loc.lat, radius_m)
     checks: list[Check] = [
         Check(
             kind="scope",
@@ -159,7 +204,14 @@ async def catchment(
             r["income_hh"] += hh
 
     snap = await store.get()
-    places = await asyncio.to_thread(snap.within, loc.lon, loc.lat, radius_m, osm.Selection.all_businesses())
+    if shape is not None:
+        places = await asyncio.to_thread(
+            snap.within_shape, shape, loc.lon, loc.lat, radius_m, osm.Selection.all_businesses()
+        )
+    else:
+        places = await asyncio.to_thread(
+            snap.within, loc.lon, loc.lat, radius_m, osm.Selection.all_businesses()
+        )
     counts = Counter(c for c, _b in places if c)
     by_category = [
         CategoryCount(category=k, label=BY_KEY[k].label, count=n)
@@ -177,6 +229,9 @@ async def catchment(
         geocoder=loc.source,
         municipality=place_from_code(here[:5]).name,
         radius_m=radius_m,
+        walk_minutes=walk_minutes,
+        area_method=method,
+        area_km2=round(area_km2, 3),
         tracts=len(shares),
         residents=round(residents),
         households=round(households) if households else None,
@@ -231,7 +286,11 @@ async def catchment(
         too_small = residents < MARKET[key].min_population
         data.market = AreaOpportunity(
             code="catchment",
-            name=f"{radius_m} m around {loc.label}",
+            name=(
+                f"{walk_minutes} min walk from {loc.label}"
+                if walk_minutes
+                else f"{radius_m} m around {loc.label}"
+            ),
             level="catchment",
             population=round(residents),
             households=Range.of(Estimate.around(households, 0.03)) if households else None,
@@ -258,6 +317,8 @@ async def catchment(
             )
         )
 
+    if walk_note:
+        checks.append(walk_note)
     if radius_m < THIN_RADIUS_M:
         checks.append(
             Check(
@@ -317,7 +378,12 @@ def _as_result(a: AreaOpportunity, method: str, completeness: float | None):
 def render(env: Envelope[CatchmentData]) -> str:
     d = env.data
     lines = [
-        f"Catchment: {d.radius_m:,} m around {d.found} ({d.municipality}); {d.tracts} census tracts",
+        (
+            f"Catchment: {d.walk_minutes} minutes' walk from {d.found} ({d.municipality}; {d.area_method}, "
+            f"{d.area_km2:.2f} km²); {d.tracts} census tracts"
+            if d.walk_minutes
+            else f"Catchment: {d.radius_m:,} m around {d.found} ({d.municipality}); {d.tracts} census tracts"
+        ),
         f"Residents: {fmt_int(d.residents)}; households {fmt_int(d.households)} (average size {d.avg_household_size})",
         f"Net income per household: {fmt_eur(d.net_income_per_household)} ({d.income_year}); "
         f"aged 65+ {fmt_pct(d.pct_65_plus)}, under 18 {fmt_pct(d.pct_under_18)}",
@@ -344,6 +410,8 @@ def render(env: Envelope[CatchmentData]) -> str:
     return "\n".join(lines)
 
 
-async def catchment_tool(ine: IneData, store: osm.SnapshotStore, geo_store: GeometryStore, *args, **kwargs):
-    env = await catchment(ine, store, geo_store, *args, **kwargs)
+async def catchment_tool(
+    ine: IneData, store: osm.SnapshotStore, geo_store: GeometryStore, walk_store: WalkGraphs, *args, **kwargs
+):
+    env = await catchment(ine, store, geo_store, *args, walk_store=walk_store, **kwargs)
     return to_result(env, render(env))
