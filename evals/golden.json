@@ -1036,6 +1036,179 @@
     "Says residents are assumed evenly spread within census tracts."
    ],
    "checked_by": "tract shares x ADRH; checked 2026-10-16 (26,389)"
+  },
+  {
+   "id": "crime-47186",
+   "question": "How much recorded crime was there in Valladolid last year, and how does it compare with Spain?",
+   "tags": [
+    "crime"
+   ],
+   "calls": [
+    {
+     "tool": "crime",
+     "args": {
+      "place": "Valladolid"
+     },
+     "expect": [
+      {
+       "path": "data.period",
+       "equals": "enero-diciembre 2025"
+      },
+      {
+       "path": "data.area.rates.0.count",
+       "equals": 11781
+      },
+      {
+       "path": "data.area.rates.0.previous_count",
+       "equals": 11103
+      },
+      {
+       "path": "data.benchmarks.2.code",
+       "equals": "ES"
+      }
+     ]
+    }
+   ],
+   "answer_must_include": [
+    "11,781"
+   ],
+   "rubric": [
+    "Gives offences per 1,000 residents and compares with the province and Spain.",
+    "Says these are offences known to the police, not all crime."
+   ],
+   "checked_by": "Interior ministry Balance de Criminalidad 2025 Q4, municipal table, checked 2026-10-16"
+  },
+  {
+   "id": "crime-small-town",
+   "question": "Is Tordesillas a high-crime town?",
+   "tags": [
+    "crime",
+    "scope"
+   ],
+   "calls": [
+    {
+     "tool": "crime",
+     "args": {
+      "place": "Tordesillas"
+     },
+     "expect": [
+      {
+       "path": "data.area.code",
+       "equals": "47"
+      },
+      {
+       "check_kind": "scope",
+       "severity": "warning"
+      }
+     ]
+    }
+   ],
+   "answer_must_include": [],
+   "rubric": [
+    "Says the ministry does not publish towns under 20,000 residents and that the figures are for the province.",
+    "Does not present province figures as the town's."
+   ],
+   "checked_by": "crime tool behaviour; Tordesillas has under 10,000 residents"
+  },
+  {
+   "id": "rents-28079",
+   "question": "How fast have rents risen in Madrid city?",
+   "tags": [
+    "rents"
+   ],
+   "calls": [
+    {
+     "tool": "rents",
+     "args": {
+      "place": "28079"
+     },
+     "expect": [
+      {
+       "path": "data.area.latest_year",
+       "equals": 2024
+      },
+      {
+       "path": "data.area.annual_change_pct",
+       "equals": 3.6
+      },
+      {
+       "path": "data.area.index",
+       "equals": 122.6
+      }
+     ]
+    }
+   ],
+   "answer_must_include": [
+    "3.6"
+   ],
+   "rubric": [
+    "Gives the change over the last year and since 2015 from INE's rent index.",
+    "Says the index measures changes, not rents in euros."
+   ],
+   "checked_by": "INE IPVA table 59060, raw API, checked 2026-10-16"
+  },
+  {
+   "id": "rents-bilbao",
+   "question": "How much have rents gone up in Bilbao?",
+   "tags": [
+    "rents",
+    "refusal"
+   ],
+   "calls": [
+    {
+     "tool": "rents",
+     "args": {
+      "place": "Bilbao"
+     },
+     "expect_error": "does not cover"
+    }
+   ],
+   "answer_must_include": [],
+   "rubric": [
+    "Explains that INE's rent index does not cover the Basque Country and points to Eustat.",
+    "Does not substitute another region's figures."
+   ],
+   "checked_by": "IPVA coverage (state tax agency territory only)"
+  },
+  {
+   "id": "demographics-district-2807901",
+   "question": "How many people live in Madrid's Centro district, and how old are they?",
+   "tags": [
+    "population",
+    "district"
+   ],
+   "calls": [
+    {
+     "tool": "demographics",
+     "args": {
+      "place": "2807901"
+     },
+     "expect": [
+      {
+       "path": "data.area.population",
+       "equals": 141018,
+       "data_year": 2025
+      },
+      {
+       "path": "data.area.population_year",
+       "equals": 2025,
+       "data_year": 2025
+      },
+      {
+       "path": "data.area.age_bands",
+       "at_least_items": 21
+      }
+     ]
+    }
+   ],
+   "answer_must_include": [
+    "141,018"
+   ],
+   "rubric": [
+    "Gives the population and the age structure (share under 15 and 65+).",
+    "Names INE's census as the source."
+   ],
+   "checked_by": "INE table 65034 bulk file, sum of the district's 2025 tracts, checked 2026-10-16"
   }
  ]
 }

@@ -98,14 +98,14 @@ tells the model which tools to call and to answer with ranges, assumptions and a
 
 ## Evaluation
 
-A [golden set](evals/golden.json) of 33 questions: populations and incomes for ten cities
+A [golden set](evals/golden.json) of 38 questions: populations and incomes for ten cities
 (hand-checked against INE's raw API, independently of this server's code), place
-resolution, business counts and chains, market sizing, price bands, catchments, and
-privacy requests that must be declined.
+resolution, business counts and chains, market sizing, price bands, catchments, rents,
+recorded crime, district age structure, and privacy requests that must be declined.
 
 - **Layer 1, the server** ([evals/layer1.py](evals/layer1.py)): each question's tool calls and
   the facts they must return. Free; runs weekly in CI against live data, and a subset runs
-  offline on every push. Latest run (2026-10-16): **31 of 31 tool-backed questions pass**.
+  offline on every push. Latest run (2026-10-16): **36 of 36 tool-backed questions pass**.
   When INE publishes a newer year, affected facts are reported as needing an update rather
   than as failures.
 - **Layer 2, the assistant** ([evals/run_model.py](evals/run_model.py)): Claude answers each
