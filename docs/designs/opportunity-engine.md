@@ -404,6 +404,15 @@ Decisions made while implementing, against live data:
   fast-growing suburbs (where rural bars per resident set a high regional bar) often show as
   thinly mapped. Peer-based completeness (similar-sized towns) would fix it.
 
+## Golden set as built (2026-10-16)
+33 questions in evals/golden.json, each with the tool calls a correct answer needs and the
+facts they must return (layer 1), and required numbers plus rubric items for the answer
+(layer 2). Populations and incomes for ten cities were checked against INE's raw API with
+no project code involved. Layer 1 runs weekly against live data (31 of 31 pass on
+2026-10-16), and an offline subset runs on every push. Layer 2 needs the owner's API key: it
+runs locally, and monthly in CI on a 5-question subset once the ANTHROPIC_API_KEY secret is
+set with a spending cap.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.

@@ -46,6 +46,9 @@ dev = [
     "respx>=0.23.1",
     "ruff>=0.17.0",
 ]
+evals = [
+    "anthropic>=1.15.0",
+]
 snapshot = [
     "osmium>=4.3.1",
     "pyproj>=3.7.2",
@@ -63,7 +66,7 @@ ignore = ["E501"]  # line length is left to `ruff format`; long strings stay rea
 allowed-confusables = ["×", "÷"]  # formulas in docstrings and messages
 
 [tool.pyright]
-include = ["src", "tests", "scripts"]
+include = ["src", "tests", "scripts", "evals"]
 # Need the snapshot group (osmium, pyshp ship loose stubs) or Playwright (browser tests).
 exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py", "scripts/build_geometry.py", "scripts/build_walk_graphs.py", "tests/e2e"]
 pythonVersion = "3.11"

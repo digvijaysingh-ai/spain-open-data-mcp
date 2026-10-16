@@ -1,0 +1,55 @@
+name: Evals
+
+# Layer 1 (free): every golden question's tool calls and facts, against live data, weekly.
+# Layer 2 (paid): a 5-question model run, monthly, only if the ANTHROPIC_API_KEY repository
+# secret is set. Set a monthly spending cap for that key in the Anthropic console.
+on:
+  schedule:
+    - cron: "23 7 * * 1" # Mondays 07:23 UTC
+  workflow_dispatch:
+    inputs:
+      model_run:
+        description: "Also run the paid model subset"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  layer1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked
+      - run: uv run python evals/layer1.py
+
+  model:
+    # Monthly (first Monday) or by hand, and only when a key is configured.
+    if: github.event_name == 'workflow_dispatch' && inputs.model_run || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Skip without a key, or outside the first week on schedule
+        id: gate
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "No ANTHROPIC_API_KEY secret; skipping the paid run."; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%d)" -gt 7 ]; then echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "run=true" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v5
+        if: steps.gate.outputs.run == 'true'
+      - uses: astral-sh/setup-uv@v10.3.0
+        if: steps.gate.outputs.run == 'true'
+      - if: steps.gate.outputs.run == 'true'
+        run: |
+          uv sync --locked --group evals
+          uv run --group evals python evals/run_model.py --ids pop-47186 income-41091 privacy-address market-restaurants-valladolid price-gym-sevilla
+      - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          name: eval-results
+          path: evals/results/

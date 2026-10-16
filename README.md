@@ -87,6 +87,24 @@ calendar) and `spain-open-data://data-licences`.
 - **Upstream changes fail loudly.** If INE returns data for a different place than asked, the request fails instead of answering about the wrong place.
 - **No personal data.** The server returns aggregate statistics only. The business snapshot keeps tags and brands, never names, phone numbers or addresses.
 
+## Evaluation
+
+A [golden set](evals/golden.json) of 33 questions: populations and incomes for ten cities
+(hand-checked against INE's raw API, independently of this server's code), place
+resolution, business counts and chains, market sizing, price bands, catchments, and
+privacy requests that must be declined.
+
+- **Layer 1, the server** ([evals/layer1.py](evals/layer1.py)): each question's tool calls and
+  the facts they must return. Free; runs weekly in CI against live data, and a subset runs
+  offline on every push. Latest run (2026-10-16): **31 of 31 tool-backed questions pass**.
+  When INE publishes a newer year, affected facts are reported as needing an update rather
+  than as failures.
+- **Layer 2, the assistant** ([evals/run_model.py](evals/run_model.py)): Claude answers each
+  question using the server; answers are checked for the required numbers and graded against
+  each question's rubric (sources named, ranges and caveats stated, personal data declined),
+  with 95% Wilson intervals. Paid API calls; not yet run. Results will appear in
+  [evals/results/](evals/results/).
+
 ## Install
 
 Requires [uv](https://docs.astral.sh/uv/). No API keys are needed.
