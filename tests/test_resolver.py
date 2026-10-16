@@ -76,3 +76,28 @@ def test_weak_guess_is_refused():
 def test_bad_code():
     with pytest.raises(PlaceNotFound):
         place_from_code("123")
+
+
+@pytest.mark.parametrize(
+    ("official", "natural"),
+    [
+        ("Palmas de Gran Canaria, Las", "Las Palmas de Gran Canaria"),
+        ("Madrid, Comunidad de", "Comunidad de Madrid"),
+        ("Hospitalet de Llobregat, L'", "L'Hospitalet de Llobregat"),
+        ("Coruña, A", "A Coruña"),
+        ("Pobla de Mafumet, la", "La Pobla de Mafumet"),
+        ("Alacant/Alicante", "Alacant/Alicante"),
+        ("Valladolid", "Valladolid"),
+    ],
+)
+def test_natural_names(official: str, natural: str):
+    from spain_open_data_mcp.places.resolver import natural_name
+
+    assert natural_name(official) == natural
+
+
+def test_places_carry_both_names():
+    p = place_from_code("35016")
+    assert p.name == "Las Palmas de Gran Canaria" and p.official_name == "Palmas de Gran Canaria, Las"
+    assert p.province == "Las Palmas" and place_from_code("CA13").name == "Comunidad de Madrid"
+    assert resolve("Las Palmas de Gran Canaria")[0].code == "35016"

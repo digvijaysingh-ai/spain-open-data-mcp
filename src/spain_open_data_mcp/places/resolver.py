@@ -36,6 +36,9 @@ class Place(BaseModel):
     code: str = Field(description="INE code. Pass this to other tools.")
     level: Level
     name: str
+    official_name: str | None = Field(
+        default=None, description="INE's form of the name when it differs ('Palmas de Gran Canaria, Las')."
+    )
     province_code: str | None = None
     province: str | None = None
     ccaa_code: str | None = None
@@ -134,6 +137,11 @@ def municipalities_in(prefix: str) -> list[str]:
     return [c for c in _municipalities() if c.startswith(prefix)]
 
 
+def municipality_populations() -> dict[str, int]:
+    """Every municipality's official population (Padrón), by code."""
+    return {c: m.population or 0 for c, m in _municipalities().items()}
+
+
 def population_in(prefix: str) -> tuple[int, str]:
     """Official population (Padrón) of a CCAA ('CAxx'), province, municipality, or Spain ('').
 
@@ -146,10 +154,30 @@ def population_in(prefix: str) -> tuple[int, str]:
     return total, date
 
 
+_TRAILING = re.compile(r"^(.+), (.+)$")
+
+
+def natural_name(name: str) -> str:
+    """INE lists names with the article or prefix last: 'Palmas de Gran Canaria, Las',
+    'Madrid, Comunidad de', "Hospitalet de Llobregat, L'". Put it first, as people write them."""
+    parts = []
+    for part in name.split("/"):
+        m = _TRAILING.match(part.strip())
+        if m:
+            head, lead = m.group(1), m.group(2)
+            part = f"{lead}{head}" if lead.endswith("'") else f"{lead} {head}"
+            part = part[0].upper() + part[1:]
+        parts.append(part)
+    return "/".join(parts)
+
+
 def place_from_code(code: str) -> Place:
     code = code.strip().upper()
     if re.fullmatch(r"CA\d{2}", code) and code[2:] in CCAA:
-        return Place(code=code, level="ccaa", name=CCAA[code[2:]][0], ccaa_code=code)
+        official = CCAA[code[2:]][0]
+        return Place(
+            code=code, level="ccaa", name=natural_name(official), official_name=official, ccaa_code=code
+        )
     if not code.isdigit() or len(code) not in (2, 5, 7, 10):
         raise PlaceNotFound(
             problem=f"'{code}' is not a valid INE place code.",
@@ -167,12 +195,12 @@ def place_from_code(code: str) -> Place:
     pname, ccaa_code, _ = PROVINCES[prov]
     base: dict[str, Any] = {
         "province_code": prov,
-        "province": pname,
+        "province": natural_name(pname),
         "ccaa_code": f"CA{ccaa_code}",
-        "ccaa": CCAA[ccaa_code][0],
+        "ccaa": natural_name(CCAA[ccaa_code][0]),
     }
     if len(code) == 2:
-        return Place(code=code, level="province", name=pname, **base)
+        return Place(code=code, level="province", name=natural_name(pname), official_name=pname, **base)
     muni = _municipalities().get(code[:5])
     if muni is None:
         raise PlaceNotFound(
@@ -180,19 +208,21 @@ def place_from_code(code: str) -> Place:
             cause="The code is not in INE's current municipality list.",
             fix="Call resolve_place with the place name; municipalities sometimes merge or get new codes.",
         )
-    mbase: dict[str, Any] = {**base, "municipality_code": muni.code, "municipality": muni.name}
+    mname = natural_name(muni.name)
+    mbase: dict[str, Any] = {**base, "municipality_code": muni.code, "municipality": mname}
     if len(code) == 5:
         return Place(
             code=code,
             level="municipality",
-            name=muni.name,
+            name=mname,
+            official_name=muni.name,
             population=muni.population,
             population_date=muni.population_date,
             **mbase,
         )
     if len(code) == 7:
-        return Place(code=code, level="district", name=f"{muni.name} distrito {code[5:]}", **mbase)
-    return Place(code=code, level="tract", name=f"{muni.name} sección {code[5:7]}-{code[7:]}", **mbase)
+        return Place(code=code, level="district", name=f"{mname} distrito {code[5:]}", **mbase)
+    return Place(code=code, level="tract", name=f"{mname} sección {code[5:7]}-{code[7:]}", **mbase)
 
 
 def _population(p: Place) -> int:

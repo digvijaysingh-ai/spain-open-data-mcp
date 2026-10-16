@@ -310,3 +310,14 @@ async def test_store_offline_without_a_snapshot(tmp_path: Path):
 async def test_store_fixed_path_missing(tmp_path: Path):
     with pytest.raises(UpstreamError):
         await SnapshotStore(fixed_path=tmp_path / "nope.sqlite").get()
+
+
+async def test_similar_sized_municipalities(ine: IneData, store: SnapshotStore):
+    env = await businesses(ine, store, "Valladolid", "gym")
+    peers = env.data.peers
+    assert peers is not None and peers.municipalities >= 5
+    assert peers.population_from < 302_614 < peers.population_to
+    assert 0 <= peers.rank_pct <= 100
+    assert "Similar-sized municipalities" in render(env)
+    madrid = await businesses(ine, store, "28079", "gym")  # 10 Basic-Fit gyms: listed
+    assert "Chains:" in render(madrid)
