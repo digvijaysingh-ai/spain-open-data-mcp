@@ -413,6 +413,15 @@ no project code involved. Layer 1 runs weekly against live data (31 of 31 pass o
 runs locally, and monthly in CI on a 5-question subset once the ANTHROPIC_API_KEY secret is
 set with a spending cap.
 
+## Polish bundle as built (2026-10-16)
+- Natural names everywhere ('Las Palmas de Gran Canaria', 'Comunidad de Madrid', 'A Coruña'),
+  with INE's form kept as official_name.
+- businesses compares with similar-sized municipalities anywhere in Spain (±25% population):
+  median rate and percentile. Las Palmas supermarkets: 22% below its province, but above 71%
+  of the 7 Spanish cities its size.
+- Chain share stated in plain words; every answer's confidence line says what the level means.
+- Verify links: every figure's source carries the INE table page or release URL.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.

@@ -8,6 +8,7 @@ region.
 
 from __future__ import annotations
 
+import statistics
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from typing import Literal
@@ -26,7 +27,7 @@ from ..places.areas import (
     code_prefixes,
     population_of,
 )
-from ..places.resolver import Place, place_from_code
+from ..places.resolver import Place, municipality_populations, place_from_code
 from ..sources.ine.adrh import UnitValues, by_unit
 from ..sources.ine.datasets import ADRH_NAME, DIRCE_NAME, IneData, latest_year, register_source, source_for
 from ..sources.osm import snapshot as osm
@@ -81,6 +82,16 @@ class Coverage(BaseModel):
     ratio: float = Field(description="OSM places per DIRCE company. Near or above 1 suggests good coverage.")
 
 
+class PeerBenchmark(BaseModel):
+    """Municipalities of similar size anywhere in Spain."""
+
+    municipalities: int
+    population_from: int
+    population_to: int
+    median_per_10k_residents: float
+    rank_pct: float = Field(description="Share of peers with a lower rate than this place, 0-100.")
+
+
 class BusinessesData(BaseModel):
     query: str = Field(description="What was counted: a category, a sector, OSM tags, or all businesses.")
     categories: list[str] = Field(default_factory=list)
@@ -88,6 +99,7 @@ class BusinessesData(BaseModel):
     osm_date: str
     area: AreaCount
     benchmarks: list[AreaCount] = Field(default_factory=list)
+    peers: PeerBenchmark | None = None
     by_category: list[CategoryCount] = Field(default_factory=list)
     top_brands: list[BrandCount] = Field(default_factory=list)
     branded_share_pct: float | None = Field(default=None, description="Share of places tagged with a brand.")
@@ -337,6 +349,34 @@ def _benchmarks(snap: osm.Snapshot, sel: osm.Selection, p: Place, sources: list[
     return out
 
 
+PEER_BAND = 0.25  # peers: municipalities within ±25% of the place's population
+MIN_PEERS = 5
+
+
+def _peers(snap: osm.Snapshot, sel: osm.Selection, p: Place, main: AreaCount) -> PeerBenchmark | None:
+    """How the place compares with municipalities of similar size, anywhere in Spain."""
+    if p.level != "municipality" or not main.population or main.per_10k_residents is None:
+        return None
+    lo, hi = main.population * (1 - PEER_BAND), main.population * (1 + PEER_BAND)
+    counts = snap.count_by_unit(osm.Area(()), 5, sel)
+    rates = [
+        counts.get(code, 0) / pop * 10_000
+        for code, pop in municipality_populations().items()
+        if code != p.code and lo <= pop <= hi
+    ]
+    if len(rates) < MIN_PEERS:
+        return None
+    rates.sort()
+    below = sum(1 for r in rates if r < main.per_10k_residents)
+    return PeerBenchmark(
+        municipalities=len(rates),
+        population_from=round(lo),
+        population_to=round(hi),
+        median_per_10k_residents=round(statistics.median(rates), 2),
+        rank_pct=round(below / len(rates) * 100, 0),
+    )
+
+
 def _category_breakdown(
     snap: osm.Snapshot, area: osm.Area, what: _What, population: int | None
 ) -> list[CategoryCount]:
@@ -520,6 +560,7 @@ async def businesses(
     residents = await _residents(ine, p, sub_areas, sources)
     main = _main_count(snap, sel, p, residents, sources)
     bench = _benchmarks(snap, sel, p, sources)
+    peers = _peers(snap, sel, p, main)
     by_category = _category_breakdown(snap, area, what, main.population)
     top_brands, branded_share = _top_brands(snap, area, sel, main.count)
     subs, total_subs = (
@@ -538,6 +579,7 @@ async def businesses(
         osm_date=f"{snap.osm_date:%Y-%m-%d}",
         area=main,
         benchmarks=bench,
+        peers=peers,
         by_category=by_category,
         top_brands=top_brands,
         branded_share_pct=branded_share,
@@ -576,10 +618,17 @@ def render(env: Envelope[BusinessesData]) -> str:
         lines.append(
             f"Benchmark {b.name} ({b.level}): {fmt_int(b.count)}, {_fmt_rate(b.per_10k_residents)} per 10,000 residents{diff}"
         )
+    if d.peers:
+        q = d.peers
+        lines.append(
+            f"Similar-sized municipalities ({fmt_int(q.population_from)}-{fmt_int(q.population_to)} residents, "
+            f"{q.municipalities} of them): median {_fmt_rate(q.median_per_10k_residents)} per 10,000 residents; "
+            f"{a.name} is above {q.rank_pct:.0f}% of them"
+        )
     if d.top_brands:
         lines.append(
-            f"Brands: {fmt_pct(d.branded_share_pct)} of places carry a brand. Top: "
-            + ", ".join(f"{quoted(b.brand)} {b.count}" for b in d.top_brands)
+            f"Chains: {fmt_pct(d.branded_share_pct)} of places carry a brand name; the rest are independent or "
+            "untagged. Top: " + ", ".join(f"{quoted(b.brand)} {b.count}" for b in d.top_brands)
         )
     if d.by_category:
         lines.append("")

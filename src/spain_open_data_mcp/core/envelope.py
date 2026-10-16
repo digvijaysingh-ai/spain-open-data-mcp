@@ -91,5 +91,12 @@ def render_footer(sources: list[Source], checks: list[Check], confidence: Confid
         lines.append("Checks and caveats:")
         for c in checks:
             lines.append(f"- [{c.severity}] {c.kind}: {c.message}")
-    lines.append(f"Confidence: {confidence}")
+    lines.append(f"Confidence: {confidence} ({CONFIDENCE_MEANING[confidence]})")
     return "\n".join(lines)
+
+
+CONFIDENCE_MEANING: dict[Confidence, str] = {
+    "high": "official statistics for this place, no material caveats",
+    "medium": "at least one input is an estimate, a lower bound or a user assumption; see the caveats",
+    "low": "a serious caveat applies (see the caveats); treat the result as a rough indication only",
+}
