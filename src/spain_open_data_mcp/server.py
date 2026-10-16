@@ -24,6 +24,7 @@ from .places.resolver import Place, resolve
 from .sources.datosgob import DatosGob
 from .sources.geo.geometry import GeometryStore
 from .sources.geo.walk import WalkGraphs
+from .sources.ine.census_tracts import CensusStore
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
 from .sources.osm.snapshot import SnapshotStore
@@ -86,6 +87,7 @@ class _Services:
     _geo: GeometryStore | None = None
     _walk: WalkGraphs | None = None
     _datos: DatosGob | None = None
+    _census: CensusStore | None = None
 
     @classmethod
     def ine(cls) -> IneData:
@@ -116,6 +118,16 @@ class _Services:
     @classmethod
     def set_geo(cls, store: GeometryStore) -> None:
         cls._geo = store
+
+    @classmethod
+    def census(cls) -> CensusStore:
+        if cls._census is None:
+            cls._census = CensusStore()
+        return cls._census
+
+    @classmethod
+    def set_census(cls, store: CensusStore) -> None:
+        cls._census = store
 
     @classmethod
     def datos(cls) -> DatosGob:
@@ -231,12 +243,13 @@ async def demographics(
     """Population, sex, five-year age bands, 5-year trend, and household profile for a place in Spain.
 
     Municipality, province and CCAA: census population by age band (latest 1 January),
-    cross-checked against the official Padrón figure. Municipality, district and tract:
+    cross-checked against the official Padrón figure. District and tract: census age bands
+    and sex from INE's file by census tract. Municipality, district and tract:
     household size, single-person households, mean age, share under 18 and 65+ from INE's
     income atlas. Use sub_areas to compare a city's districts or tracts, e.g. to find
     where young families or older residents concentrate.
     """
-    return await demographics_mod.demographics_tool(_Services.ine(), place, sub_areas)
+    return await demographics_mod.demographics_tool(_Services.ine(), place, sub_areas, _Services.census())
 
 
 @mcp.tool(title="Household income", annotations=READ_ONLY)

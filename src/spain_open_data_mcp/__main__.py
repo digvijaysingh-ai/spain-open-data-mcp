@@ -16,7 +16,8 @@ def main() -> None:
     http.add_argument("--host", default=os.environ.get("HOST", "127.0.0.1"))
     http.add_argument("--port", type=int, default=int(os.environ.get("PORT", "8000")))
     pre = sub.add_parser(
-        "prefetch", help="Download the OpenStreetMap snapshot, tract shapes and walking graphs."
+        "prefetch",
+        help="Download the OpenStreetMap snapshot, tract shapes, census by tract and walking graphs.",
     )
     pre.add_argument("--no-walk", action="store_true", help="Skip the walking graphs (about 175 MB).")
     args = parser.parse_args()
@@ -44,9 +45,15 @@ async def prefetch(walk: bool = True) -> None:
     """Fetch every data file into the cache directory (used when building the server image)."""
     from .sources.geo.geometry import GeometryStore
     from .sources.geo.walk import WalkGraphs
+    from .sources.ine.census_tracts import CensusStore
     from .sources.osm.snapshot import SnapshotStore
 
-    for name, store in (("OpenStreetMap snapshot", SnapshotStore()), ("tract geometry", GeometryStore())):
+    stores = (
+        ("OpenStreetMap snapshot", SnapshotStore()),
+        ("tract geometry", GeometryStore()),
+        ("census by tract", CensusStore()),
+    )
+    for name, store in stores:
         await store.get()
         print(f"{name}: {store.db_path}")
     if walk:

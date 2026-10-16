@@ -1,0 +1,39 @@
+name: Census by tract
+
+# Builds the census-by-tract file (population by age band and sex, from INE's bulk file of
+# table 65034) and publishes it on the 'census-v<schema>' release. Run after INE publishes the
+# annual census (usually in spring).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked
+      - name: Release tag for this schema
+        run: echo "TAG=$(uv run python -c 'from spain_open_data_mcp.sources.ine.census_tracts import RELEASE_TAG; print(RELEASE_TAG)')" >> "$GITHUB_ENV"
+      - name: Download INE's bulk census file (about 1.6 GB)
+        run: |
+          mkdir -p build/downloads
+          curl -sSfL --compressed -A "spain-open-data-mcp (+https://github.com/digvijaysingh-ai/spain-open-data-mcp)" \
+            -o build/downloads/65034.csv "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/65034.csv"
+      - name: Build
+        run: uv run python scripts/build_census_tracts.py --csv build/downloads/65034.csv --out build/census
+      - name: Publish
+        run: |
+          gzip -9 -k build/census/census_tracts.sqlite
+          YEAR=$(jq -r .year build/census/census_manifest.json)
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "Census by tract" --latest=false --notes "Census population by tract."
+          fi
+          gh release upload "$TAG" build/census/census_tracts.sqlite.gz build/census/census_manifest.json --clobber
+          gh release edit "$TAG" --notes "INE annual census ${YEAR}: population by census tract, sex and five-year age band (table 65034, bulk file). Fuente: INE, CC BY 4.0."

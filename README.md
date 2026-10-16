@@ -38,7 +38,7 @@ quarter against INE's official business openings; until results exist the map sa
 | Tool | What it returns |
 |---|---|
 | `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. |
-| `demographics` | Population by sex and five-year age band, 5-year trend, household size and type. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
+| `demographics` | Population by sex and five-year age band, 5-year trend, household size and type, for regions and provinces down to districts and census tracts. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
 | `market_size` | Yearly spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment, plus foreign visitors' spend on food and drink in tourist towns. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
 | `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by opportunity for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
@@ -98,14 +98,14 @@ tells the model which tools to call and to answer with ranges, assumptions and a
 
 ## Evaluation
 
-A [golden set](evals/golden.json) of 33 questions: populations and incomes for ten cities
+A [golden set](evals/golden.json) of 38 questions: populations and incomes for ten cities
 (hand-checked against INE's raw API, independently of this server's code), place
-resolution, business counts and chains, market sizing, price bands, catchments, and
-privacy requests that must be declined.
+resolution, business counts and chains, market sizing, price bands, catchments, rents,
+recorded crime, district age structure, and privacy requests that must be declined.
 
 - **Layer 1, the server** ([evals/layer1.py](evals/layer1.py)): each question's tool calls and
   the facts they must return. Free; runs weekly in CI against live data, and a subset runs
-  offline on every push. Latest run (2026-10-16): **31 of 31 tool-backed questions pass**.
+  offline on every push. Latest run (2026-10-16): **36 of 36 tool-backed questions pass**.
   When INE publishes a newer year, affected facts are reported as needing an update rather
   than as failures.
 - **Layer 2, the assistant** ([evals/run_model.py](evals/run_model.py)): Claude answers each
@@ -155,6 +155,7 @@ Claude are being prepared (milestone 4).
 | `SPAIN_MCP_OFFLINE` | unset | `1` serves only from cache (tests, evals) |
 | `SPAIN_MCP_GEOMETRY_DB` | unset | Path to the census tract geometry file. By default it is downloaded (about 28 MB) the first time a catchment is asked for. |
 | `SPAIN_MCP_HTTP_CACHE_MB` | `0` (no limit) | Cap on the cache of upstream responses; oldest dropped first |
+| `SPAIN_MCP_CENSUS_DB` | unset | Path to the census-by-tract file (age bands for districts and tracts). By default it is downloaded (about 3 MB) on first use. |
 | `SPAIN_MCP_OSM_DB` | unset | Path to an OpenStreetMap snapshot file. By default it is downloaded (about 21 MB) on first use and refreshed monthly. |
 
 ## Architecture

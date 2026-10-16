@@ -3,13 +3,16 @@
 from __future__ import annotations
 
 import re
+from datetime import datetime
 from typing import Literal
 
 from pydantic import BaseModel, Field
 
 from ..core.envelope import Check, Envelope, Source, confidence_from, dedupe_sources
+from ..core.errors import UpstreamError
 from ..places.resolver import Place
 from ..sources.ine.adrh import UnitValues, by_unit
+from ..sources.ine.census_tracts import CensusStore
 from ..sources.ine.datasets import (
     ADRH_NAME,
     CENSUS_NAME,
@@ -18,7 +21,7 @@ from ..sources.ine.datasets import (
     latest_year,
     source_for,
 )
-from ..sources.ine.tempus import Series
+from ..sources.ine.tempus import ATTRIBUTION, LICENCE, Series
 from .common import fmt_int, fmt_pct, pct_diff, resolve_place_arg, to_result
 
 SubAreaLevel = Literal["none", "district", "tract"]
@@ -188,17 +191,64 @@ def household_profile(u: UnitValues) -> HouseholdProfile:
     )
 
 
+async def _tract_census(
+    census: CensusStore, p: Place, area: AreaDemographics, checks: list[Check]
+) -> Source | None:
+    """Age bands, sex and trend for a district or tract from the census-by-tract file."""
+    try:
+        tracts = await census.get()
+    except UpstreamError as e:
+        checks.append(Check(kind="missing", severity="info", message=f"Age bands unavailable: {e.problem}"))
+        return None
+    series = tracts.series(p.code)
+    if not series:
+        checks.append(
+            Check(
+                kind="missing",
+                severity="info",
+                message=f"No {tracts.year} census figures for this {p.level}: INE redrew its tracts after the "
+                "income atlas year, so the code no longer exists. Use the district or municipality.",
+            )
+        )
+        return None
+    census_summary(series, area)
+    if p.level == "tract":
+        checks.append(
+            Check(
+                kind="scope",
+                severity="info",
+                message=f"Age bands follow INE's {tracts.year} tract boundaries; the household profile follows "
+                "the income atlas year's. Most tracts are unchanged between the two.",
+            )
+        )
+    return Source(
+        publisher="INE (Instituto Nacional de Estadística)",
+        dataset=CENSUS_NAME + " (secciones censales, fichero completo)",
+        dataset_id="65034",
+        url=tracts.meta.get("source_url", "https://www.ine.es/jaxiT3/Tabla.htm?t=65034"),
+        licence=LICENCE,
+        attribution=ATTRIBUTION,
+        data_period=f"{tracts.year}-01-01",
+        retrieved_at=datetime.fromisoformat(tracts.meta["built_at"]),
+    )
+
+
 async def demographics(
-    ine: IneData, place: str, sub_areas: SubAreaLevel = "none"
+    ine: IneData, place: str, sub_areas: SubAreaLevel = "none", census: CensusStore | None = None
 ) -> Envelope[DemographicsData]:
     p, checks = resolve_place_arg(place)
     sources: list[Source] = []
     area = AreaDemographics(place=p)
 
+    if p.level in ("district", "tract") and census is not None:
+        src = await _tract_census(census, p, area, checks)
+        if src:
+            sources.append(src)
+
     if p.level in ("municipality", "province", "ccaa"):
-        census = await ine.census_age_sex(p, last_n=5)
-        census_summary(census.series, area)
-        sources.append(source_for(census, CENSUS_NAME, f"{area.population_year}-01-01"))
+        table = await ine.census_age_sex(p, last_n=5)
+        census_summary(table.series, area)
+        sources.append(source_for(table, CENSUS_NAME, f"{area.population_year}-01-01"))
 
     if p.level == "municipality":
         padron = await ine.padron(p.code)
@@ -233,7 +283,7 @@ async def demographics(
         units = by_unit(adrh.series)
         if p.code in units:
             area.households = household_profile(units[p.code])
-            if p.level in ("district", "tract") and area.households.population:
+            if p.level in ("district", "tract") and area.households.population and area.population is None:
                 area.population = area.households.population
                 area.population_year = area.households.year
         year = latest_year(adrh.series)
@@ -367,6 +417,8 @@ def render(env: Envelope[DemographicsData]) -> str:
     return "\n".join(lines)
 
 
-async def demographics_tool(ine: IneData, place: str, sub_areas: SubAreaLevel = "none"):
-    env = await demographics(ine, place, sub_areas)
+async def demographics_tool(
+    ine: IneData, place: str, sub_areas: SubAreaLevel = "none", census: CensusStore | None = None
+):
+    env = await demographics(ine, place, sub_areas, census)
     return to_result(env, render(env))

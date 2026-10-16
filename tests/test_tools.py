@@ -47,3 +47,22 @@ def test_top_coding_detected():
     assert top_coded([36918, 36918, 36918, 20000]) == (36918, 3)
     assert top_coded([36918, 30000, 20000]) is None
     assert top_coded([None, None]) is None
+
+
+async def test_demographics_district_age_bands_from_census_file(ine: IneData, tmp_path):
+    from spain_open_data_mcp.sources.ine.census_tracts import CensusStore
+    from tests.fixtures.census_mini import make_census
+
+    store = CensusStore(fixed_path=make_census(tmp_path / "census.sqlite"))
+    env = await demographics(ine, "4718601", census=store)
+    a = env.data.area
+    assert a.population == 1800 and a.population_year == 2025
+    assert a.male == 880 and a.female == 920
+    assert sum(b.population or 0 for b in a.age_bands) == 1800
+    # 2021-2022 are dropped: one tract did not exist yet, and a partial sum would look like decline.
+    assert [y.year for y in a.population_trend] == [2023, 2024, 2025]
+    assert a.households is not None  # the income atlas profile is still there
+    assert "65034" in {s.dataset_id for s in env.sources}
+    env = await demographics(ine, "4718601002", census=store)  # not in the census file
+    assert any("redrew" in c.message for c in env.checks)
+    assert not env.data.area.age_bands
