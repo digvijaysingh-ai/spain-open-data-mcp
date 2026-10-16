@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import sys
 import time
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -26,6 +27,7 @@ from tests.fixtures.ine_mock import fixture_name  # noqa: E402
 OUT = Path(__file__).parent / "ine"
 BASE = "https://servicios.ine.es/wstempus/js/ES"
 KEEP_TRACTS = {"4718601001", "4718601003", "4718604001", "4718610001", "4718612001"}
+KEEP_CNAE = (" 56 ", " 561 ", " 563 ", " 931 ", " 960 ", " 862 ", " 472 ")
 
 client = httpx.Client(headers={"User-Agent": settings.user_agent}, timeout=300)
 
@@ -59,7 +61,13 @@ def keep(series: dict[str, Any]) -> bool:
     return True
 
 
-def record(table_id: int, params: list[tuple[str, Any]]) -> None:
+def keep_cnae(series: dict[str, Any]) -> bool:
+    return any(c in series["Nombre"] for c in KEEP_CNAE)
+
+
+def record(
+    table_id: int, params: list[tuple[str, Any]], keep: Callable[[dict[str, Any]], bool] = keep
+) -> None:
     raw = fetch(table_id, params)
     trimmed = [s for s in raw if keep(s)]
     name = fixture_name(table_id, params)
@@ -82,6 +90,12 @@ def main() -> None:
         record(prov[kind], [("nult", 1), ("tip", "AM")])
         record(agg[kind], [("nult", n), ("tip", "AM")])
         record(agg[kind], [("nult", 1), ("tip", "AM")])
+    dirce = [("tv", f"{var}:{val}") for var, val in t["dirce_total_filters"]]
+    record(
+        t["dirce_companies"],
+        [("nult", 1), ("tip", "AM"), ("tv", f"70:{t['dirce_region_value_ids']['CA07']}"), *dirce],
+        keep_cnae,
+    )
 
 
 if __name__ == "__main__":

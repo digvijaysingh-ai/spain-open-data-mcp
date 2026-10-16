@@ -7,6 +7,7 @@ renumbering by INE is fixed by re-running the script, not by editing code.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime
 from functools import lru_cache
@@ -24,12 +25,15 @@ from .tempus import ATTRIBUTION, LICENCE, TABLE_PAGE, Series, TableResult, Tempu
 VAR_PROVINCE = 115
 VAR_MUNICIPALITY = 19
 VAR_SEX = 18
+VAR_CCAA = 70
+VAR_NATIONAL = 349
 
 AdrhKind = Literal["income", "demographics", "inequality", "income_sources"]
 
 ADRH_NAME = "Atlas de Distribución de Renta de los Hogares (ADRH)"
 CENSUS_NAME = "Censo anual de población: población por sexo y edad"
 PADRON_NAME = "Cifras oficiales de población de los municipios (Padrón)"
+DIRCE_NAME = "Directorio Central de Empresas (DIRCE): empresas por comunidad autónoma y actividad principal"
 
 # Statistics change once a year; refetch weekly at most.
 TTL = 7 * DAY
@@ -142,9 +146,37 @@ class IneData:
                 )
         return await self.tempus.table(table_id, last_n=last_n, ttl_s=TTL)
 
+    async def dirce_companies(self, region: str) -> tuple[TableResult, dict[str, int]]:
+        """Companies on 1 January by CNAE code ('56', '561', ...) for a CCAA ('CA07') or 'ES'.
+
+        DIRCE counts companies (including the self-employed) by the region of their
+        registered office, not premises: a chain counts once.
+        """
+        t = tables()
+        var = VAR_NATIONAL if region == "ES" else VAR_CCAA
+        filters = [(var, t["dirce_region_value_ids"][region])]
+        filters += [(v, i) for v, i in t["dirce_total_filters"]]
+        result = await self.tempus.table(t["dirce_companies"], last_n=1, filters=filters, ttl_s=TTL)
+        check_units(result, {region})
+        return result, dirce_by_cnae(result.series)
+
     async def adrh_benchmarks(self, kind: AdrhKind, last_n: int = 1) -> TableResult:
         """Spain, CCAA and province values for comparison."""
         return await self.tempus.table(tables()["adrh_aggregates"][kind], last_n=last_n, ttl_s=TTL)
+
+
+_CNAE_IN_NAME = re.compile(r"\.\s(\d{2,4})\s")
+
+
+def dirce_by_cnae(series: list[Series]) -> dict[str, int]:
+    """CNAE code -> latest company count. The code is only in the series name ('... 561 Restaurantes')."""
+    out: dict[str, int] = {}
+    for s in series:
+        m = _CNAE_IN_NAME.search(s.name)
+        p = s.latest()
+        if m and p and p.value is not None:
+            out[m.group(1)] = int(p.value)
+    return out
 
 
 def check_units(result: TableResult, expected: set[str]) -> None:

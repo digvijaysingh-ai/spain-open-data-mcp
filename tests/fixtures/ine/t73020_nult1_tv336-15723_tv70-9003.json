@@ -1,0 +1,331 @@
+[
+{
+"COD": "DIR243153",
+"Nombre": "Castilla y León. Total. 472 Comercio al por menor de productos alimenticios, bebidas y tabaco en establecimientos especializados.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 21936,
+"T3_Variable": "Actividad principal",
+"Nombre": "Comercio al por menor de productos alimenticios, bebidas y tabaco en establecimientos especializados",
+"Codigo": "EHC"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4532.0
+}
+]
+},
+{
+"COD": "DIR243582",
+"Nombre": "Castilla y León. Total. 56 Servicios de comidas y bebidas.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 17586,
+"T3_Variable": "Actividad principal",
+"Nombre": "Servicios de comidas y bebidas",
+"Codigo": "FGX"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12969.0
+}
+]
+},
+{
+"COD": "DIR243595",
+"Nombre": "Castilla y León. Total. 561 Restaurantes y puestos de comidas.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 21939,
+"T3_Variable": "Actividad principal",
+"Nombre": "Restaurantes y puestos de comidas",
+"Codigo": "FGB"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2332.0
+}
+]
+},
+{
+"COD": "DIR243621",
+"Nombre": "Castilla y León. Total. 563 Establecimientos de bebidas.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 21941,
+"T3_Variable": "Actividad principal",
+"Nombre": "Establecimientos de bebidas",
+"Codigo": "FGD"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 10248.0
+}
+]
+},
+{
+"COD": "DIR244882",
+"Nombre": "Castilla y León. Total. 862 Actividades médicas y odontológicas.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18329,
+"T3_Variable": "Actividad principal",
+"Nombre": "Actividades médicas y odontológicas",
+"Codigo": "IGC"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2687.0
+}
+]
+},
+{
+"COD": "DIR245103",
+"Nombre": "Castilla y León. Total. 931 Actividades deportivas.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18340,
+"T3_Variable": "Actividad principal",
+"Nombre": "Actividades deportivas",
+"Codigo": "JDB"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1596.0
+}
+]
+},
+{
+"COD": "DIR245233",
+"Nombre": "Castilla y León. Total. 960 Otros servicios personales.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18347,
+"T3_Variable": "Actividad principal",
+"Nombre": "Otros servicios personales",
+"Codigo": "JGA"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6706.0
+}
+]
+}
+]

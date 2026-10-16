@@ -134,6 +134,18 @@ def municipalities_in(prefix: str) -> list[str]:
     return [c for c in _municipalities() if c.startswith(prefix)]
 
 
+def population_in(prefix: str) -> tuple[int, str]:
+    """Official population (Padrón) of a CCAA ('CAxx'), province, municipality, or Spain ('').
+
+    Returns (population, reference date).
+    """
+    munis = _municipalities()
+    codes = municipalities_in(prefix) if prefix else list(munis)
+    total = sum(munis[c].population or 0 for c in codes)
+    date = next((munis[c].population_date for c in codes), "")
+    return total, date
+
+
 def place_from_code(code: str) -> Place:
     code = code.strip().upper()
     if re.fullmatch(r"CA\d{2}", code) and code[2:] in CCAA:

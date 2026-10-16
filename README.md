@@ -7,9 +7,9 @@ public data: how many people live in an area, how old they are, what they earn, 
 districts compare. Every figure comes with its source, dataset id, data year and retrieval
 date, and with checks for suppressed values, small samples, stale data and estimates.
 
-**Status: early development (milestone 1 of 4).** Population, households and income from INE
-work today, down to census tract. Business counts (OpenStreetMap), the national open-data
-catalogue (datos.gob.es), market sizing, price bands and charts are next. See
+**Status: early development (milestone 2 of 4).** Population, households and income from INE,
+and business counts from OpenStreetMap, work today, down to census tract. The national
+open-data catalogue (datos.gob.es), market sizing, price bands and charts are next. See
 [the roadmap](#roadmap).
 
 ## What it can answer today
@@ -18,6 +18,8 @@ catalogue (datos.gob.es), market sizing, price bands and charts are next. See
 - "Which districts of Valladolid have the highest household income?"
 - "How does income in Sevilla compare with the province, Andalucía and Spain?"
 - "Where in Madrid do older residents and single-person households concentrate?"
+- "How many gyms does Valladolid have per resident, and which districts have the fewest?"
+- "Which supermarket chains dominate in Las Palmas?"
 
 ## Tools
 
@@ -26,6 +28,7 @@ catalogue (datos.gob.es), market sizing, price bands and charts are next. See
 | `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. |
 | `demographics` | Population by sex and five-year age band, 5-year trend, household size and type. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
+| `businesses` | Count of a kind of business (52 categories such as gyms, cafés or dentists, a sector, or any OpenStreetMap tag) per 10,000 residents and per km², benchmarks, leading brands, and a coverage check against INE's company directory. Optional district or tract ranking. |
 
 All tools are read-only. Each result has the same shape:
 
@@ -60,8 +63,9 @@ Confidence: high
 - **Top-coded incomes are flagged.** INE caps the highest incomes in its income atlas. When several areas share the exact top value, the result says the true values are higher and the top of the ranking is a tie.
 - **Two sources, one number.** Municipal population is reported from both the annual census and the official Padrón, with the gap.
 - **Spelling guesses are never silent.** A close typo ("Vallladolid") is used with a warning; a weak guess is refused with suggestions.
+- **Map gaps are measured.** OpenStreetMap counts are lower bounds. Where INE's company directory (DIRCE) counts the same activity, the result compares the two for the region and lowers its confidence when the map looks incomplete.
 - **Upstream changes fail loudly.** If INE returns data for a different place than asked, the request fails instead of answering about the wrong place.
-- **No personal data.** The server returns aggregate statistics only.
+- **No personal data.** The server returns aggregate statistics only. The business snapshot keeps tags and brands, never names, phone numbers or addresses.
 
 ## Install
 
@@ -96,6 +100,7 @@ Claude are planned for milestone 4.
 | `SPAIN_MCP_CACHE_DIR` | `~/.cache/spain-open-data-mcp` | On-disk cache of upstream responses |
 | `SPAIN_MCP_HTTP_TIMEOUT` | `60` | Seconds per upstream request |
 | `SPAIN_MCP_OFFLINE` | unset | `1` serves only from cache (tests, evals) |
+| `SPAIN_MCP_OSM_DB` | unset | Path to an OpenStreetMap snapshot file. By default it is downloaded (about 21 MB) on first use and refreshed monthly. |
 
 ## Architecture
 
@@ -104,6 +109,7 @@ src/spain_open_data_mcp/
   server.py        MCP tools, resource and error handling
   tools/           one module per tool: fetch, check, render
   sources/ine/     INE Tempus API client and table definitions
+  sources/osm/     OpenStreetMap snapshot: business categories, download, queries
   places/          place resolver and INE codes
   core/            cached HTTP client, response envelope, errors
   data/            bundled municipality list and INE table map (built by scripts/build_reference.py)
@@ -111,6 +117,7 @@ src/spain_open_data_mcp/
 
 - Upstream responses are cached on disk with their original retrieval time, so cached figures still report when they were fetched. If an upstream service is down, the last cached copy is served and marked stale.
 - Requests are rate limited per host, retried with backoff, and identify the project in the User-Agent.
+- Business counts come from a monthly snapshot rather than live Overpass queries, which are slow and rate limited. `scripts/build_osm_snapshot.py` reads the Geofabrik extracts for Spain and the Canary Islands, keeps shops and services, and places each one in an INE census tract. A [GitHub Action](.github/workflows/osm-snapshot.yml) publishes it on the [osm-snapshot-v1 release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot-v1) each month.
 - INE table ids are not hard-coded in the tools. `scripts/build_reference.py` rebuilds the map when INE publishes new tables, for example each October's income atlas.
 
 ## Development
@@ -123,12 +130,15 @@ uv run spain-open-data-mcp          # stdio
 uv run spain-open-data-mcp http     # Streamable HTTP on 127.0.0.1:8000/mcp
 ```
 
-Refresh the recorded test fixtures with `uv run python tests/fixtures/record_ine.py`.
+Refresh the recorded test fixtures with `uv run python tests/fixtures/record_ine.py`. Build the
+OpenStreetMap snapshot locally (a 1.5 GB download, then about 5 minutes) with
+`uv run --group snapshot python scripts/build_osm_snapshot.py`, then point `SPAIN_MCP_OSM_DB` at
+`build/osm/osm_businesses.sqlite`.
 
 ## Roadmap
 
-1. **Skeleton** (in progress): place resolver, `demographics`, `income`, CI.
-2. **Supply and catalogue**: OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE); datos.gob.es search and dataset reading; `market_size`, `price_band`, `compare_areas`, `chart`; rental reference index and crime statistics by municipality.
+1. **Skeleton**: place resolver, `demographics`, `income`, CI.
+2. **Supply and catalogue** (in progress): OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE) (done); datos.gob.es search and dataset reading; `market_size`, `price_band`, `compare_areas`, `chart`; rental reference index and crime statistics by municipality.
 3. **Checks and evals**: a golden set of real strategy questions with hand-checked answers, scored for accuracy, sourcing, refusals and calibration, with results here.
 4. **Publishing**: hosted connector, PyPI, MCP Registry, Claude connectors directory.
 
@@ -137,3 +147,5 @@ Refresh the recorded test fixtures with `uv run python tests/fixtures/record_ine
 The code is MIT-licensed. Data keeps its source licence; see
 [data_licences.md](src/spain_open_data_mcp/data/data_licences.md). INE data is reused under
 CC BY 4.0: "Fuente: INE. Elaboración propia con datos extraídos del sitio web del INE: www.ine.es".
+OpenStreetMap data is © OpenStreetMap contributors, under the
+[Open Database Licence](https://www.openstreetmap.org/copyright).
