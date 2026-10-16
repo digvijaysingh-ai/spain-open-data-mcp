@@ -118,12 +118,17 @@ def iso_date(value: str) -> str | None:
     return value or None
 
 
+def _str(value: Any) -> str:
+    return value if isinstance(value, str) else ""
+
+
 def _uri_tail(value: Any) -> str | None:
     if isinstance(value, list):
         return ", ".join(t for v in value if (t := _uri_tail(v))) or None
     if isinstance(value, dict):
         value = value.get("_about") or value.get("value")
-    return _last(value).replace("_", " ").lower() if isinstance(value, str) and _last(value) else None
+    tail = _last(value) if isinstance(value, str) else None
+    return tail.replace("_", " ").lower() if tail else None
 
 
 def licence_name(uri: str) -> str:
@@ -144,12 +149,12 @@ def parse(item: dict[str, Any]) -> Dataset:
     for d in dists:
         d["_format"] = file_format(d.get("format"))
     formats = sorted({d["_format"] for d in dists})
-    lic = item.get("license") if isinstance(item.get("license"), str) else ""
+    lic = _str(item.get("license"))
     return Dataset(
         id=_last(about) or "",
         title=clean_text(_text(item.get("title")), 200) or "(untitled)",
         description=clean_text(_text(item.get("description")), 400) or "",
-        publisher_uri=item.get("publisher") if isinstance(item.get("publisher"), str) else "",
+        publisher_uri=_str(item.get("publisher")),
         publisher=None,
         licence=licence_name(lic),
         licence_url=lic,
