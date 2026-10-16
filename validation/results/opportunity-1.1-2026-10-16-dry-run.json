@@ -1,0 +1,61 @@
+{
+ "method": "opportunity-1.1",
+ "registered_at": "2026-10-16",
+ "as_of": "2026-10-16",
+ "dry_run": true,
+ "status": "dry run (not evidence)",
+ "quarters": [
+  "2026T1",
+  "2026T2"
+ ],
+ "categories": {
+  "bar": {
+   "division": "56",
+   "lift": null,
+   "population_baseline_lift": {
+    "lift": 1.1090153426841631,
+    "ci_low": 0.7712717359861009,
+    "ci_high": 1.622214214052544,
+    "top_mean": 0.113729224715119,
+    "bottom_mean": 0.10254973068258803,
+    "n_areas": 52
+   }
+  },
+  "gym": {
+   "division": "93",
+   "lift": null,
+   "population_baseline_lift": {
+    "lift": 0.9892217221648644,
+    "ci_low": 0.7473909323008526,
+    "ci_high": 1.3828635445831146,
+    "top_mean": 0.08580517943167895,
+    "bottom_mean": 0.08674008820176171,
+    "n_areas": 52
+   }
+  },
+  "pharmacy": {
+   "division": "47",
+   "lift": null,
+   "population_baseline_lift": {
+    "lift": 1.578580181705502,
+    "ci_low": 1.1058072587989476,
+    "ci_high": 2.394713181097404,
+    "top_mean": 0.06998214605688198,
+    "bottom_mean": 0.04433233539095435,
+    "n_areas": 52
+   }
+  },
+  "restaurant": {
+   "division": "56",
+   "lift": null,
+   "population_baseline_lift": {
+    "lift": 1.1090153426841631,
+    "ci_low": 0.7712717359861009,
+    "ci_high": 1.622214214052544,
+    "top_mean": 0.113729224715119,
+    "bottom_mean": 0.10254973068258803,
+    "n_areas": 52
+   }
+  }
+ }
+}
