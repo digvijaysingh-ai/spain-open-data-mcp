@@ -20,6 +20,9 @@ from .core.http import HttpClient
 from .places.resolver import Place, resolve
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
+from .sources.osm.categories import BY_KEY, SECTORS
+from .sources.osm.snapshot import SnapshotStore
+from .tools import businesses as businesses_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
 from .tools.common import to_result
@@ -27,8 +30,9 @@ from .tools.common import to_result
 log = logging.getLogger(__name__)
 
 INSTRUCTIONS = """\
-Answers questions about Spain's population, households and income from official
-public data (INE), down to municipality, district and census tract.
+Answers questions about Spain's population, households, income and businesses from
+official public data (INE) and OpenStreetMap, down to municipality, district and
+census tract.
 
 How to use:
 - Start with resolve_place to turn a place name into an INE code, then pass the code
@@ -63,6 +67,7 @@ class _Services:
     """Created on first use so importing the module has no side effects."""
 
     _ine: IneData | None = None
+    _osm: SnapshotStore | None = None
 
     @classmethod
     def ine(cls) -> IneData:
@@ -73,6 +78,16 @@ class _Services:
     @classmethod
     def set_ine(cls, ine: IneData) -> None:
         cls._ine = ine
+
+    @classmethod
+    def osm(cls) -> SnapshotStore:
+        if cls._osm is None:
+            cls._osm = SnapshotStore()
+        return cls._osm
+
+    @classmethod
+    def set_osm(cls, store: SnapshotStore) -> None:
+        cls._osm = store
 
 
 P = ParamSpec("P")
@@ -192,6 +207,45 @@ async def income(
     euros of the data year; the atlas runs about two years behind.
     """
     return await income_mod.income_tool(_Services.ine(), place, sub_areas, rank_by, years)
+
+
+@mcp.tool(title="Businesses and competitors", annotations=READ_ONLY)
+@guarded
+async def businesses(
+    place: PlaceArg,
+    category: Annotated[
+        str | None,
+        Field(
+            description="What to count. A category: "
+            + ", ".join(BY_KEY)
+            + ". Plain words work too ('gyms', 'peluquerías'). Or a sector: "
+            + ", ".join(SECTORS)
+            + ". Or OpenStreetMap tags: 'shop=bakery' or 'amenity=bar,amenity=pub'. Leave empty for all "
+            "businesses, broken down by category."
+        ),
+    ] = None,
+    sub_areas: Annotated[
+        businesses_mod.SubAreaLevel,
+        Field(description="For a municipality, also count by 'district' or census 'tract'. Default 'none'."),
+    ] = "none",
+    rank_by: Annotated[
+        businesses_mod.RankBy,
+        Field(description="How to rank sub-areas: 'count', 'per_10k_residents' or 'per_km2'."),
+    ] = "count",
+) -> Annotated[CallToolResult, Envelope[businesses_mod.BusinessesData]]:
+    """Count businesses of a kind in a place in Spain, per 10,000 residents and per km², from OpenStreetMap.
+
+    Use it to size competition and supply: how many gyms, cafés or dentists an area has,
+    how that compares with the province, region and Spain, which brands dominate, and
+    which districts or tracts are over- or under-served (rank sub-areas by
+    per_10k_residents). Counts are lower bounds because OpenStreetMap is mapped by
+    volunteers; where INE's company directory covers the same activity, the result says
+    how complete the map looks in that region. Returns counts and brands only, never
+    lists of individual premises.
+    """
+    return await businesses_mod.businesses_tool(
+        _Services.ine(), _Services.osm(), place, category, sub_areas, rank_by
+    )
 
 
 @mcp.resource(

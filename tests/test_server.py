@@ -1,13 +1,17 @@
+from pathlib import Path
+
 from mcp import Client
 
 from spain_open_data_mcp.server import _Services, mcp
 from spain_open_data_mcp.sources.ine.datasets import IneData
+from spain_open_data_mcp.sources.osm.snapshot import SnapshotStore
+from tests.fixtures.osm_mini import make_snapshot
 
 
 async def test_tools_are_annotated_for_the_connector_directory():
     async with Client(mcp) as c:
         tools = (await c.list_tools()).tools
-    assert {t.name for t in tools} == {"resolve_place", "demographics", "income"}
+    assert {t.name for t in tools} == {"resolve_place", "demographics", "income", "businesses"}
     for t in tools:
         assert t.title, t.name
         assert t.annotations and t.annotations.read_only_hint is True, t.name
@@ -25,6 +29,17 @@ async def test_call_income_through_mcp(ine: IneData):
     text = r.content[0].text  # type: ignore[union-attr]
     assert "€16,356" in text and "Sources:" in text and "Confidence:" in text
     assert r.structured_content and r.structured_content["data"]["figures"]["net_income_per_person"] == 16356
+
+
+async def test_call_businesses_through_mcp(ine: IneData, tmp_path: Path):
+    _Services.set_ine(ine)
+    _Services.set_osm(SnapshotStore(fixed_path=make_snapshot(tmp_path / "mini.sqlite")))
+    async with Client(mcp) as c:
+        r = await c.call_tool("businesses", {"place": "Valladolid", "category": "gimnasios"})
+    assert not r.is_error
+    text = r.content[0].text  # type: ignore[union-attr]
+    assert "Count: 6" in text and "© OpenStreetMap contributors" in text
+    assert r.structured_content and r.structured_content["data"]["area"]["count"] == 6
 
 
 async def test_errors_are_actionable():
