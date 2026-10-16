@@ -11,6 +11,7 @@ The code of spain-open-data-mcp is MIT-licensed. The data it returns keeps the l
 | INE, Directorio Central de Empresas (DIRCE, table 73020) | Companies by region and activity, to check OpenStreetMap coverage | CC BY 4.0 | Fuente: INE |
 | INE, census tract boundaries (seccionado) | Placing businesses in tracts, area in km² | CC BY 4.0 | Fuente: INE |
 | OpenStreetMap, via Geofabrik extracts | Business counts and brands | ODbL 1.0 | © OpenStreetMap contributors |
+| datos.gob.es catalogue and the datasets it lists | find_datasets, read_dataset | Each dataset's own licence (often CC BY 4.0), shown with every result | The publisher named in the result, and datos.gob.es |
 
 INE requires the citation "Fuente: INE" or "Elaboración propia con datos extraídos del sitio web del
 INE: www.ine.es", and that reuse does not suggest INE endorses it. See the
@@ -34,3 +35,8 @@ server builds is a derived database under the same licence; it is published with
 This server returns aggregate statistics only. It does not hold or return data about identifiable people.
 The OpenStreetMap snapshot keeps each place's tags, brand and location, never its name, phone number or
 address, and the tools return counts and brands rather than lists of premises.
+
+read_dataset shows rows of public datasets as their publishers published them. Columns that look
+like personal data (surnames, ID numbers, emails, phone numbers, dates of birth, bank accounts,
+number plates, home addresses) are withheld by name or by their values, and the result lists
+what was withheld.

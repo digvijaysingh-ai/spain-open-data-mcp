@@ -14,12 +14,13 @@ from mcp.server.mcpserver.exceptions import ToolError
 from mcp_types import CallToolResult, ToolAnnotations
 from pydantic import Field
 
-from . import __version__
+from . import __version__, prompts
 from .categories import BY_KEY, MARKET, SECTORS
 from .core.envelope import Check, Envelope, confidence_from
 from .core.errors import DataError
 from .core.http import HttpClient
 from .places.resolver import Place, resolve
+from .sources.datosgob import DatosGob
 from .sources.geo.geometry import GeometryStore
 from .sources.geo.walk import WalkGraphs
 from .sources.ine.datasets import IneData, register_source
@@ -29,6 +30,7 @@ from .status import data_status
 from .tools import businesses as businesses_mod
 from .tools import catchment as catchment_mod
 from .tools import chart as chart_mod
+from .tools import datasets as datasets_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
 from .tools import market as market_mod
@@ -80,6 +82,7 @@ class _Services:
     _osm: SnapshotStore | None = None
     _geo: GeometryStore | None = None
     _walk: WalkGraphs | None = None
+    _datos: DatosGob | None = None
 
     @classmethod
     def ine(cls) -> IneData:
@@ -110,6 +113,16 @@ class _Services:
     @classmethod
     def set_geo(cls, store: GeometryStore) -> None:
         cls._geo = store
+
+    @classmethod
+    def datos(cls) -> DatosGob:
+        if cls._datos is None:
+            cls._datos = DatosGob(HttpClient())
+        return cls._datos
+
+    @classmethod
+    def set_datos(cls, client: DatosGob) -> None:
+        cls._datos = client
 
     @classmethod
     def walk(cls) -> WalkGraphs:
@@ -451,6 +464,63 @@ async def chart(
     underlying tool, and a source line on the image. If drawing fails the text still comes back.
     """
     return await chart_mod.chart(_Services.ine(), _Services.osm(), kind, place, category, sub_areas)
+
+
+@mcp.tool(title="Find open datasets", annotations=READ_ONLY)
+@guarded
+async def find_datasets(
+    query: Annotated[
+        str, Field(description="Topic; Spanish works best, e.g. 'turismo', 'aparcamiento', 'licencias'.")
+    ],
+    place: Annotated[
+        str | None, Field(description="Optional place; datasets about it are preferred.")
+    ] = None,
+    limit: Annotated[int, Field(ge=1, le=25, description="How many datasets to return.")] = 10,
+) -> Annotated[CallToolResult, Envelope[datasets_mod.FindData]]:
+    """Search Spain's national open-data catalogue (datos.gob.es) for datasets on a topic.
+
+    Returns each dataset's title, publisher, licence, file formats, update frequency and last
+    change, and an id to pass to read_dataset. Use when a question needs data this server does
+    not hold directly (parking, licences, local events, tourist offices, transport).
+    """
+    return await datasets_mod.find_datasets_tool(_Services.datos(), query, place, limit)
+
+
+@mcp.tool(title="Read an open dataset", annotations=READ_ONLY)
+@guarded
+async def read_dataset(
+    dataset_id: Annotated[str, Field(description="An id from find_datasets.")],
+    file_index: Annotated[
+        int | None,
+        Field(ge=0, description="Which file of the dataset (from 0); default: the first CSV or JSON."),
+    ] = None,
+) -> Annotated[CallToolResult, Envelope[datasets_mod.ReadData]]:
+    """Read a datos.gob.es dataset: its columns and up to 20 sample rows, with its licence.
+
+    Reads CSV and JSON files listed in the catalogue (the first 5 MB). Columns that look like
+    personal data (names, ID numbers, emails, phones) are withheld. Values are shown as the
+    publisher published them.
+    """
+    return await datasets_mod.read_dataset_tool(_Services.datos(), dataset_id, file_index)
+
+
+@mcp.prompt(
+    title="Size a market", description="Market size, competitors and opportunity for a business in a place."
+)
+def size_a_market(business: str, place: str) -> str:
+    return prompts.size_a_market(business, place)
+
+
+@mcp.prompt(
+    title="Pick a location", description="Rank areas for a new business and check a specific address."
+)
+def pick_a_location(business: str, area: str, near: str | None = None) -> str:
+    return prompts.pick_a_location(business, area, near)
+
+
+@mcp.prompt(title="Explore public datasets", description="Find and summarise open datasets on datos.gob.es.")
+def explore_public_datasets(topic: str, place: str | None = None) -> str:
+    return prompts.explore_public_datasets(topic, place)
 
 
 @mcp.resource(
