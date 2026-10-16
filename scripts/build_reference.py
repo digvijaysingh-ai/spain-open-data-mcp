@@ -6,8 +6,9 @@ Writes:
 - municipalities.csv: every INE municipality with code, name, province, official
   population (Padrón, table 29005) and the INE value id used to filter census tables.
 - ine_tables.json: which INE table holds each income atlas (ADRH) indicator set for
-  each province. INE renumbers these tables at times, so this is rebuilt rather than
-  hand-maintained. Re-run after each ADRH release (October each year).
+  each province, and the company directory (DIRCE) table with its filter ids. INE
+  renumbers these tables at times, so this is rebuilt rather than hand-maintained.
+  Re-run after each ADRH release (October each year).
 
 Data: INE, CC BY 4.0. "Elaboración propia con datos extraídos del sitio web del INE: www.ine.es"
 """
@@ -33,6 +34,8 @@ OUT = Path(__file__).resolve().parents[1] / "src" / "spain_open_data_mcp" / "dat
 PADRON_MUNICIPAL = 29005
 CENSUS_AGE_SEX = 65034
 ADRH_OPERATION = 353
+DIRCE_OPERATION = 43
+DIRCE_BY_CCAA_CNAE = "Empresas por CCAA, actividad principal (grupos CNAE 2009)"
 ADRH_KINDS = {
     "Indicadores de renta media y mediana": "income",
     "Indicadores demográficos": "demographics",
@@ -129,10 +132,38 @@ def build_tables() -> dict[str, Any]:
     }
 
 
+def build_dirce() -> dict[str, Any]:
+    """Companies by region and CNAE group: the table id and the Tempus ids to filter it."""
+    print("DIRCE companies by region and activity...")
+    table = next(
+        t["Id"]
+        for t in get(f"TABLAS_OPERACION/{DIRCE_OPERATION}")
+        if t["Nombre"].startswith(DIRCE_BY_CCAA_CNAE)
+    )
+    regions: dict[str, int] = {}
+    totals: dict[str, int] = {}
+    for g in get(f"GRUPOS_TABLA/{table}"):
+        for v in get(f"VALORES_GRUPOSTABLA/{table}/{g['Id']}"):
+            if v["FK_Variable"] == 70:
+                regions[f"CA{v['Codigo']}"] = v["Id"]
+            elif v["FK_Variable"] == 349:
+                regions["ES"] = v["Id"]
+            elif v["FK_Variable"] == 336 and v["Nombre"] == "Total":  # size band
+                totals[str(v["FK_Variable"])] = v["Id"]
+    if len(regions) != 20 or len(totals) != 1:
+        raise SystemExit(f"DIRCE table {table}: unexpected layout ({len(regions)} regions, {totals})")
+    return {
+        "dirce_companies": table,
+        "dirce_region_value_ids": dict(sorted(regions.items())),
+        # 'Total' size band: every company, one series per activity.
+        "dirce_total_filters": [[int(k), v] for k, v in sorted(totals.items())],
+    }
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     padron_year = build_municipalities()
-    tables = build_tables()
+    tables = build_tables() | build_dirce()
     tables["generated_at"] = datetime.now(UTC).isoformat(timespec="seconds")
     tables["padron_year"] = padron_year
     (OUT / "ine_tables.json").write_text(json.dumps(tables, indent=2, ensure_ascii=False) + "\n")
