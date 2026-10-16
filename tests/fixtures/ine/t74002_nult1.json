@@ -1,0 +1,412 @@
+[
+{
+"COD": "EPF511922",
+"Nombre": "Total Nacional. Total. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 20227,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 35184.66
+}
+]
+},
+{
+"COD": "EPF511928",
+"Nombre": "Total Nacional. Hasta 999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 291541,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "Hasta 999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 15906.7
+}
+]
+},
+{
+"COD": "EPF511934",
+"Nombre": "Total Nacional. De 1.000 a 1.999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 291543,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "De 1.000 a 1.999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 22011.4
+}
+]
+},
+{
+"COD": "EPF511946",
+"Nombre": "Total Nacional. De 2.000 a 2.999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 291545,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "De 2.000 a 2.999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 29989.74
+}
+]
+},
+{
+"COD": "EPF511940",
+"Nombre": "Total Nacional. 3.000 euros o más. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 291544,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "3.000 euros o más",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 45843.34
+}
+]
+},
+{
+"COD": "EPF511562",
+"Nombre": "Castilla y León. Total. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 20227,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 31673.3
+}
+]
+},
+{
+"COD": "EPF511568",
+"Nombre": "Castilla y León. Hasta 999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291541,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "Hasta 999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12922.01
+}
+]
+},
+{
+"COD": "EPF511574",
+"Nombre": "Castilla y León. De 1.000 a 1.999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291543,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "De 1.000 a 1.999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 20521.59
+}
+]
+},
+{
+"COD": "EPF511586",
+"Nombre": "Castilla y León. De 2.000 a 2.999 euros. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291545,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "De 2.000 a 2.999 euros",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 29177.92
+}
+]
+},
+{
+"COD": "EPF511580",
+"Nombre": "Castilla y León. 3.000 euros o más. Gasto medio por hogar. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291544,
+"T3_Variable": "Nivel de ingresos mensuales netos regulares del hogar",
+"Nombre": "3.000 euros o más",
+"Codigo": ""
+},
+{
+"Id": 8858,
+"T3_Variable": "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto",
+"Nombre": "Gasto medio por hogar",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 42056.59
+}
+]
+}
+]

@@ -417,5 +417,10 @@
       336,
       15723
     ]
-  ]
+  ],
+  "epf": {
+    "spend_by_code": 73993,
+    "spend_by_income": 74002,
+    "cv_by_subgroup": 74005
+  }
 }

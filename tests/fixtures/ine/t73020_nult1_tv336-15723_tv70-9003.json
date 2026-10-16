@@ -47,6 +47,53 @@
 ]
 },
 {
+"COD": "DIR243543",
+"Nombre": "Castilla y León. Total. 552 Alojamientos turísticos y otros alojamientos de corta estancia.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18253,
+"T3_Variable": "Actividad principal",
+"Nombre": "Alojamientos turísticos y otros alojamientos de corta estancia",
+"Codigo": "FFC"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1082.0
+}
+]
+},
+{
 "COD": "DIR243582",
 "Nombre": "Castilla y León. Total. 56 Servicios de comidas y bebidas.",
 "T3_Unidad": "Empresas",
@@ -188,6 +235,100 @@
 ]
 },
 {
+"COD": "DIR244375",
+"Nombre": "Castilla y León. Total. 750 Actividades veterinarias.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 21947,
+"T3_Variable": "Actividad principal",
+"Nombre": "Actividades veterinarias",
+"Codigo": "HFA"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 652.0
+}
+]
+},
+{
+"COD": "DIR244830",
+"Nombre": "Castilla y León. Total. 855 Otra educación.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18326,
+"T3_Variable": "Actividad principal",
+"Nombre": "Otra educación",
+"Codigo": "IFF"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3709.0
+}
+]
+},
+{
 "COD": "DIR244882",
 "Nombre": "Castilla y León. Total. 862 Actividades médicas y odontológicas.",
 "T3_Unidad": "Empresas",
@@ -231,6 +372,53 @@
 "T3_Periodo": "A",
 "Anyo": 2025,
 "Valor": 2687.0
+}
+]
+},
+{
+"COD": "DIR244895",
+"Nombre": "Castilla y León. Total. 869 Otras actividades sanitarias.",
+"T3_Unidad": "Empresas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 15723,
+"T3_Variable": "Estrato de asalariados",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 15740,
+"T3_Variable": "Condición jurídica",
+"Nombre": "Total",
+"Codigo": "01"
+},
+{
+"Id": 18330,
+"T3_Variable": "Actividad principal",
+"Nombre": "Otras actividades sanitarias",
+"Codigo": "IGJ"
+},
+{
+"Id": 94,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Empresas",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3093.0
 }
 ]
 },

@@ -8,7 +8,8 @@ districts compare. Every figure comes with its source, dataset id, data year and
 date, and with checks for suppressed values, small samples, stale data and estimates.
 
 **Status: early development (milestone 2 of 4).** Population, households and income from INE,
-and business counts from OpenStreetMap, work today, down to census tract. The national
+business counts from OpenStreetMap, and market size in euros with an opportunity score work
+today, down to census tract. The national
 open-data catalogue (datos.gob.es), market sizing, price bands and charts are next. See
 [the roadmap](#roadmap).
 
@@ -20,6 +21,8 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 - "Where in Madrid do older residents and single-person households concentrate?"
 - "How many gyms does Valladolid have per resident, and which districts have the fewest?"
 - "Which supermarket chains dominate in Las Palmas?"
+- "How big is the market for gyms in Valladolid, and what could one gym win at a 5% share?"
+- "Which towns in Valladolid province are under-served for pharmacies?"
 
 ## Tools
 
@@ -28,6 +31,8 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 | `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. |
 | `demographics` | Population by sex and five-year age band, 5-year trend, household size and type. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
+| `market_size` | Yearly household spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
+| `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by opportunity for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
 | `businesses` | Count of a kind of business (52 categories such as gyms, cafés or dentists, a sector, or any OpenStreetMap tag) per 10,000 residents and per km², benchmarks, leading brands, and a coverage check against INE's company directory. Optional district or tract ranking. |
 
 All tools are read-only. Each result has the same shape:

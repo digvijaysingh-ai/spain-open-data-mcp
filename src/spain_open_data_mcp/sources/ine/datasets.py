@@ -19,6 +19,7 @@ from ...core.errors import DataError
 from ...core.http import DAY
 from ...places.codes import PROVINCES
 from ...places.resolver import Place, census_value_id
+from .epf import Epf, parse_epf
 from .tempus import ATTRIBUTION, LICENCE, TABLE_PAGE, Series, TableResult, TempusClient
 
 # Tempus variable ids (stable across tables)
@@ -33,6 +34,7 @@ AdrhKind = Literal["income", "demographics", "inequality", "income_sources"]
 ADRH_NAME = "Atlas de Distribución de Renta de los Hogares (ADRH)"
 CENSUS_NAME = "Censo anual de población: población por sexo y edad"
 PADRON_NAME = "Cifras oficiales de población de los municipios (Padrón)"
+EPF_NAME = "Encuesta de Presupuestos Familiares (EPF): gasto de los hogares"
 DIRCE_NAME = "Directorio Central de Empresas (DIRCE): empresas por comunidad autónoma y actividad principal"
 
 # Statistics change once a year; refetch weekly at most.
@@ -159,6 +161,17 @@ class IneData:
         result = await self.tempus.table(t["dirce_companies"], last_n=1, filters=filters, ttl_s=TTL)
         check_units(result, {region})
         return result, dirce_by_cnae(result.series)
+
+    async def epf(self) -> tuple[Epf, list[TableResult]]:
+        """Household spending by COICOP code, by income band, and coefficients of variation.
+
+        Three survey years, all regions; a few MB, refreshed monthly at most.
+        """
+        t = tables()["epf"]
+        spend = await self.tempus.table(t["spend_by_code"], last_n=3, ttl_s=30 * DAY)
+        income = await self.tempus.table(t["spend_by_income"], last_n=1, ttl_s=30 * DAY)
+        cv = await self.tempus.table(t["cv_by_subgroup"], last_n=1, ttl_s=30 * DAY)
+        return parse_epf(spend.series, income.series, cv.series), [spend, income, cv]
 
     async def adrh_benchmarks(self, kind: AdrhKind, last_n: int = 1) -> TableResult:
         """Spain, CCAA and province values for comparison."""

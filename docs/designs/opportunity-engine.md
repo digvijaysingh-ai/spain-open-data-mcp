@@ -330,6 +330,23 @@ answer says so); snapshot queries < 100 ms; geometry for a catchment < 300 ms; c
 - Not raised: DIRCE counts companies at head office. Chain-dominated categories already have
   no CNAE yardstick, and DIRCE premises by activity are not published in Tempus.
 
+## Method 1.0 as built (2026-10-16)
+Decisions made while implementing, against live data:
+- Supply without a DIRCE yardstick (supermarkets, pharmacies, opticians, clothes, home, gyms,
+  childcare) is the mapped count with a high end of x1.5, flagged as a lower bound. The
+  planned coverage proxy (another sector's OSM-vs-DIRCE coverage) was dropped: it turned
+  1,857 mapped Madrid pharmacies into 15,298 (about 2,900 exist; OSM maps about 18,300 of
+  Spain's roughly 22,000 pharmacies) and 35 Valladolid gyms into 427.
+- The score's reference is the area's region (autonomous community): market per business in
+  the area over market per business in the region. Log-population peer bands (OV2) need
+  national per-municipality inputs and come with the atlas, which computes them anyway.
+- In rankings, areas whose map looks thin (completeness under 0.5) are ranked after all
+  others and labelled, instead of sinking the confidence of the whole ranking.
+- Regional EPF ratios are computed year by year over the codes both the region and Spain
+  publish, so one unpublished code no longer discards a region's year.
+- Categories sharing spending codes (restaurant, cafe, bar, fast food on 11.1.1; hairdresser
+  and beauty on 13.1.2) split the pool by national share of mapped places.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.
@@ -337,6 +354,6 @@ answer says so); snapshot queries < 100 ms; geometry for a catchment < 300 ms; c
 - [x] **T4 (P2, human ~4h / CC ~20min)** areas module, split businesses() (5.1).
 - [x] **T5 (P2, human ~4h / CC ~30min)** verify EPF 73993/74002/74005 (done; findings in Validation > Spike results). engine/categories table still to do.
 - [x] **T6 (P2, human ~4h / CC ~1h)** backtest spike in 3 cities (done; OSM backtest dropped, see Validation).
-- [ ] **T7 (P2, human ~1w / CC ~3h)** pure engine: ranges, completeness flag, minimum population, method version, property tests (1.1, CM2, 6.1, 10.1).
+- [x] **T7 (P2, human ~1w / CC ~3h)** pure engine: ranges, completeness flag, minimum population, method version, property tests (1.1, CM2, 6.1, 10.1).
 - [ ] **T8 (P2, human ~3d / CC ~2h)** bundle yearly INE inputs into the snapshot release (CM6).
 - [ ] **T9 (P2, human ~1d / CC ~30min)** data-status resource, job failure auto-issues, structured call logs (8.1).

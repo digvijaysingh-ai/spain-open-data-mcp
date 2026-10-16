@@ -14,6 +14,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
+from ..categories import BY_KEY, BY_TAG, CATEGORIES, SECTORS, Category, find_category
 from ..core.envelope import Check, Confidence, Envelope, Source, confidence_from, dedupe_sources
 from ..core.errors import DataError
 from ..core.text import quoted
@@ -29,7 +30,6 @@ from ..places.resolver import Place, place_from_code
 from ..sources.ine.adrh import UnitValues, by_unit
 from ..sources.ine.datasets import ADRH_NAME, DIRCE_NAME, IneData, latest_year, register_source, source_for
 from ..sources.osm import snapshot as osm
-from ..sources.osm.categories import BY_KEY, BY_TAG, CATEGORIES, SECTORS, Category, find_category
 from .common import fmt_int, fmt_pct, pct_diff, resolve_place_arg, to_result
 
 SubAreaLevel = Literal["none", "district", "tract"]

@@ -34,6 +34,12 @@ OUT = Path(__file__).resolve().parents[1] / "src" / "spain_open_data_mcp" / "dat
 PADRON_MUNICIPAL = 29005
 CENSUS_AGE_SEX = 65034
 ADRH_OPERATION = 353
+EPF_OPERATION = 314
+EPF_TABLES = {
+    "spend_by_code": "Gasto por códigos de gasto (4 dígitos COICOP/EPF), según comunidad autónoma",
+    "spend_by_income": "Gasto por nivel de ingresos del hogar (reducida), según comunidad autónoma",
+    "cv_by_subgroup": "Coeficiente de variación por comunidad autónoma de residencia y subgrupos de gasto (3",
+}
 DIRCE_OPERATION = 43
 DIRCE_BY_CCAA_CNAE = "Empresas por CCAA, actividad principal (grupos CNAE 2009)"
 ADRH_KINDS = {
@@ -132,6 +138,19 @@ def build_tables() -> dict[str, Any]:
     }
 
 
+def build_epf() -> dict[str, Any]:
+    """Household budget survey (EPF): spend by COICOP code, by income band, and its CVs."""
+    print("EPF household spending tables...")
+    names = {t["Nombre"]: t["Id"] for t in get(f"TABLAS_OPERACION/{EPF_OPERATION}")}
+    out = {}
+    for key, prefix in EPF_TABLES.items():
+        found = [i for n, i in names.items() if n.startswith(prefix)]
+        if len(found) != 1:
+            raise SystemExit(f"EPF table '{prefix}': found {found}")
+        out[key] = found[0]
+    return {"epf": out}
+
+
 def build_dirce() -> dict[str, Any]:
     """Companies by region and CNAE group: the table id and the Tempus ids to filter it."""
     print("DIRCE companies by region and activity...")
@@ -163,7 +182,7 @@ def build_dirce() -> dict[str, Any]:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     padron_year = build_municipalities()
-    tables = build_tables() | build_dirce()
+    tables = build_tables() | build_dirce() | build_epf()
     tables["generated_at"] = datetime.now(UTC).isoformat(timespec="seconds")
     tables["padron_year"] = padron_year
     (OUT / "ine_tables.json").write_text(json.dumps(tables, indent=2, ensure_ascii=False) + "\n")
