@@ -18,26 +18,19 @@ leaves older installs on their last good snapshot instead of breaking them.
 
 from __future__ import annotations
 
-import asyncio
-import gzip
-import hashlib
-import json
 import logging
-import os
-import shutil
+import math
 import sqlite3
-import time
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass
 from datetime import datetime
 from functools import cached_property
 from pathlib import Path
-
-import httpx
+from typing import Any
 
 from ...categories import NOT_IN_TOTAL
-from ...config import PROJECT_URL, settings
-from ...core.errors import UpstreamError
+from ...config import PROJECT_URL
+from ...core.assets import AssetCorrupt, AssetSpec, ReleaseStore
 from ...core.text import clean_text
 
 log = logging.getLogger(__name__)
@@ -109,8 +102,7 @@ class Selection:
         return cls(f"(category IS NULL OR category NOT IN ({','.join('?' * len(keys))}))", tuple(keys))
 
 
-class SnapshotCorrupt(Exception):
-    """The snapshot file is unreadable, truncated or not a snapshot."""
+SnapshotCorrupt = AssetCorrupt  # the snapshot file is unreadable, truncated or not a snapshot
 
 
 class Snapshot:
@@ -203,6 +195,22 @@ class Snapshot:
         ).fetchall()
         return dict(rows)
 
+    def within(
+        self, lon: float, lat: float, radius_m: float, sel: Selection | None = None
+    ) -> list[tuple[str | None, str | None]]:
+        """(category, brand) of each place within radius_m of a point."""
+        m_lat = 110_574.0
+        m_lon = m_lat * math.cos(math.radians(lat))
+        dlon, dlat = radius_m / m_lon, radius_m / m_lat
+        where = "lon BETWEEN ? AND ? AND lat BETWEEN ? AND ?"
+        args: list[object] = [lon - dlon, lon + dlon, lat - dlat, lat + dlat]
+        if sel is not None:
+            where += f" AND {sel.sql}"
+            args += list(sel.args)
+        rows = self._db.execute(f"SELECT category, brand, lon, lat FROM poi WHERE {where}", args).fetchall()
+        r2 = radius_m * radius_m
+        return [(c, b) for c, b, x, y in rows if ((x - lon) * m_lon) ** 2 + ((y - lat) * m_lat) ** 2 <= r2]
+
     def tags_like(self, pattern: str, limit: int = 8) -> list[str]:
         rows = self._db.execute(
             "SELECT tag FROM poi WHERE tag LIKE ? GROUP BY tag ORDER BY count(*) DESC LIMIT ?",
@@ -214,178 +222,23 @@ class Snapshot:
         self._db.close()
 
 
-def _sha256(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1 << 20), b""):
-            h.update(chunk)
-    return h.hexdigest()
+SPEC = AssetSpec(
+    label="OpenStreetMap snapshot",
+    db_name=DB_NAME,
+    manifest_name=MANIFEST_NAME,
+    schema_version=SCHEMA_VERSION,
+    release_url=RELEASE_URL,
+    env_var="SPAIN_MCP_OSM_DB",
+    subdir="osm",
+    build_script="scripts/build_osm_snapshot.py",
+)
 
 
-class SnapshotStore:
-    """Finds, downloads and refreshes the snapshot. One per process."""
+class SnapshotStore(ReleaseStore[Snapshot]):
+    """Finds, downloads and refreshes the OpenStreetMap snapshot (see core/assets.py)."""
 
-    def __init__(
-        self,
-        directory: Path | None = None,
-        *,
-        fixed_path: Path | None = None,
-        release_url: str = RELEASE_URL,
-        transport: httpx.AsyncBaseTransport | None = None,
-        offline: bool | None = None,
-    ) -> None:
-        env_path = os.environ.get("SPAIN_MCP_OSM_DB")
-        self.fixed_path = fixed_path or (Path(env_path) if env_path else None)
-        self.directory = directory or settings.cache_dir / "osm"
-        self.release_url = release_url
-        self.transport = transport
-        self.offline = settings.offline if offline is None else offline
-        self._snapshot: Snapshot | None = None
-        self._checked_at = 0.0
-        self._lock = asyncio.Lock()
-
-    @property
-    def db_path(self) -> Path:
-        return self.directory / DB_NAME
-
-    async def get(self) -> Snapshot:
-        async with self._lock:
-            if self.fixed_path:
-                if self._snapshot is None:
-                    if not self.fixed_path.exists():
-                        raise UpstreamError(
-                            problem="The OpenStreetMap snapshot is missing.",
-                            cause=f"SPAIN_MCP_OSM_DB points to {self.fixed_path}, which does not exist.",
-                            fix="Fix the path, or unset SPAIN_MCP_OSM_DB to download the published snapshot.",
-                        )
-                    try:
-                        self._snapshot = Snapshot(self.fixed_path)
-                    except SnapshotCorrupt as e:
-                        raise UpstreamError(
-                            problem="The OpenStreetMap snapshot file is damaged.",
-                            cause=f"{self.fixed_path}: {e}.",
-                            fix="Rebuild it with scripts/build_osm_snapshot.py, or unset SPAIN_MCP_OSM_DB "
-                            "to download the published snapshot.",
-                        ) from e
-                return self._snapshot
-            if self._snapshot is None or time.time() - self._checked_at > CHECK_EVERY_S:
-                try:
-                    await self._refresh()
-                except SnapshotCorrupt as e:
-                    # Damaged local copy (interrupted write, full disk): start again, once.
-                    log.warning("snapshot %s is damaged (%s); downloading it again", self.db_path, e)
-                    self._discard()
-                    try:
-                        await self._refresh()
-                    except SnapshotCorrupt as e2:
-                        self._discard()
-                        raise UpstreamError(
-                            problem="The OpenStreetMap snapshot is damaged, and so was a fresh download.",
-                            cause=str(e2),
-                            fix="Check free disk space in the cache directory and try again, or set "
-                            "SPAIN_MCP_OSM_DB to a snapshot you built.",
-                        ) from e2
-            assert self._snapshot is not None
-            return self._snapshot
-
-    def _discard(self) -> None:
-        if self._snapshot is not None:
-            self._snapshot.close()
-            self._snapshot = None
-        for name in (DB_NAME, MANIFEST_NAME, "checked_at"):
-            (self.directory / name).unlink(missing_ok=True)
-
-    async def _refresh(self) -> None:
-        have = self.db_path.exists()
-        marker = self.directory / "checked_at"
-        if have and self.offline:
-            self._open(None)
-            return
-        if have and marker.exists() and time.time() - marker.stat().st_mtime < CHECK_EVERY_S:
-            self._checked_at = marker.stat().st_mtime
-            self._open(None)
-            return
-        try:
-            await self._download_if_newer()
-            self.directory.mkdir(parents=True, exist_ok=True)
-            marker.touch()
-            self._checked_at = time.time()
-            self._open(None)
-        except (httpx.HTTPError, OSError, ValueError, UpstreamError) as e:
-            if not have:
-                if isinstance(e, UpstreamError):
-                    raise
-                raise UpstreamError(
-                    problem="The OpenStreetMap business snapshot could not be downloaded.",
-                    cause=f"{type(e).__name__}: {e}",
-                    fix="Try again in a minute. If it keeps failing, download osm_businesses.sqlite.gz "
-                    f"from {self.release_url}, unzip it and set SPAIN_MCP_OSM_DB to its path.",
-                ) from e
-            log.warning("snapshot refresh failed, using local copy: %s", e)
-            self._checked_at = time.time()
-            self._open(f"the check for a newer snapshot failed ({type(e).__name__})")
-
-    def _open(self, stale_reason: str | None) -> None:
-        if self._snapshot is not None and self._snapshot.path == self.db_path:
-            self._snapshot.stale_reason = stale_reason
-            return
-        self._snapshot = Snapshot(self.db_path, stale_reason=stale_reason)
-
-    async def _download_if_newer(self) -> None:
-        if self.offline:
-            raise UpstreamError(
-                problem="The OpenStreetMap snapshot is not on this machine.",
-                cause="Offline mode (SPAIN_MCP_OFFLINE=1) does not download it.",
-                fix="Unset SPAIN_MCP_OFFLINE once to download it, or set SPAIN_MCP_OSM_DB.",
-            )
-        async with httpx.AsyncClient(
-            headers={"User-Agent": settings.user_agent},
-            follow_redirects=True,
-            timeout=httpx.Timeout(settings.http_timeout_s, read=300),
-            transport=self.transport,
-        ) as client:
-            r = await client.get(self.release_url + MANIFEST_NAME)
-            r.raise_for_status()
-            manifest = json.loads(r.text)
-            if int(manifest.get("schema_version", 0)) != SCHEMA_VERSION:
-                raise UpstreamError(
-                    problem="The published OpenStreetMap snapshot has a different format.",
-                    cause=f"It is schema {manifest.get('schema_version')}; this server reads schema "
-                    f"{SCHEMA_VERSION}.",
-                    fix="Upgrade spain-open-data-mcp to the latest version.",
-                )
-            local = self.directory / MANIFEST_NAME
-            if (
-                self.db_path.exists()
-                and local.exists()
-                and json.loads(local.read_text(encoding="utf-8")).get("sha256") == manifest["sha256"]
-            ):
-                return
-            self.directory.mkdir(parents=True, exist_ok=True)
-            tmp = self.directory / (DB_NAME + ".part")
-            gz = self.directory / (DB_NAME + ".gz.part")
-            log.info("downloading OSM snapshot %s", manifest.get("osm_timestamp"))
-            async with client.stream("GET", self.release_url + manifest["file"] + ".gz") as resp:
-                resp.raise_for_status()
-                with gz.open("wb") as f:
-                    async for chunk in resp.aiter_bytes(1 << 20):
-                        f.write(chunk)
-            await asyncio.to_thread(_gunzip, gz, tmp)
-            gz.unlink()
-            digest = await asyncio.to_thread(_sha256, tmp)
-            if digest != manifest["sha256"]:
-                tmp.unlink()
-                raise ValueError("downloaded snapshot does not match the manifest checksum")
-            if self._snapshot is not None:
-                self._snapshot.close()
-                self._snapshot = None
-            tmp.replace(self.db_path)
-            local.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-
-
-def _gunzip(src: Path, dest: Path) -> None:
-    with gzip.open(src, "rb") as fin, dest.open("wb") as fout:
-        shutil.copyfileobj(fin, fout, 1 << 20)
+    def __init__(self, directory: Path | None = None, **kwargs: Any) -> None:
+        super().__init__(SPEC, lambda path, stale: Snapshot(path, stale_reason=stale), directory, **kwargs)
 
 
 def area_for_codes(codes: Iterable[str]) -> Area:

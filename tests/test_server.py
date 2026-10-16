@@ -20,6 +20,7 @@ async def test_tools_are_annotated_for_the_connector_directory():
         "compare_areas",
         "price_band",
         "chart",
+        "catchment",
     }
     for t in tools:
         assert t.title, t.name
