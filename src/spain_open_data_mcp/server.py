@@ -5,6 +5,7 @@ from __future__ import annotations
 import functools
 import logging
 import time
+import traceback
 from collections.abc import Awaitable, Callable
 from importlib import resources
 from typing import Annotated, Any, ParamSpec
@@ -152,7 +153,9 @@ def guarded(fn: Callable[P, Awaitable[CallToolResult]]) -> Callable[P, Awaitable
             raise ToolError(e.render()) from e
         except Exception as e:
             outcome = "bug"
-            log.exception("tool %s failed", fn.__name__)
+            # Where it failed, not the message: messages can quote request URLs with addresses.
+            where = "".join(traceback.format_tb(e.__traceback__)[-3:])
+            log.error("tool %s failed: %s\n%s", fn.__name__, type(e).__name__, where)
             raise ToolError(
                 f"Problem: the {fn.__name__} tool failed unexpectedly.\n"
                 f"Cause: {type(e).__name__} inside the server (a bug, not your input).\n"

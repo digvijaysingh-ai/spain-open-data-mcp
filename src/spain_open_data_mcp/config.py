@@ -25,6 +25,8 @@ class Settings:
     user_agent: str = f"spain-open-data-mcp/{__version__} (+{PROJECT_URL})"
     http_timeout_s: float = float(os.environ.get("SPAIN_MCP_HTTP_TIMEOUT", "60"))
     offline: bool = os.environ.get("SPAIN_MCP_OFFLINE", "") == "1"
+    # Upper bound on the on-disk HTTP cache; oldest responses are dropped past it. 0 = no limit.
+    http_cache_mb: int = int(os.environ.get("SPAIN_MCP_HTTP_CACHE_MB", "0"))
 
 
 settings = Settings()

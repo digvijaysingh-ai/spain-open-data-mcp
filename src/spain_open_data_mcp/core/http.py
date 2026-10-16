@@ -51,23 +51,40 @@ class Fetched:
 
 
 class _Cache:
-    def __init__(self, path: Path) -> None:
+    def __init__(self, path: Path, max_bytes: int = 0) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         self._db = sqlite3.connect(path, check_same_thread=False)
         self._db.execute(
             "CREATE TABLE IF NOT EXISTS http (key TEXT PRIMARY KEY, fetched_at REAL NOT NULL, body BLOB NOT NULL)"
         )
         self._db.commit()
+        self._max = max_bytes
+        self._size = self._db.execute("SELECT coalesce(sum(length(body)), 0) FROM http").fetchone()[0]
 
     def get(self, key: str) -> tuple[float, bytes] | None:
         row = self._db.execute("SELECT fetched_at, body FROM http WHERE key = ?", (key,)).fetchone()
         return (row[0], row[1]) if row else None
 
     def put(self, key: str, fetched_at: float, body: bytes) -> None:
+        old = self._db.execute("SELECT length(body) FROM http WHERE key = ?", (key,)).fetchone()
         self._db.execute(
             "INSERT OR REPLACE INTO http (key, fetched_at, body) VALUES (?, ?, ?)", (key, fetched_at, body)
         )
+        self._size += len(body) - (old[0] if old else 0)
+        if self._max and self._size > self._max:
+            self._evict(int(self._max * 0.8))
         self._db.commit()
+
+    def _evict(self, target: int) -> None:
+        """Drop the oldest responses until the cache holds at most `target` bytes."""
+        rows = self._db.execute("SELECT key, length(body) FROM http ORDER BY fetched_at").fetchall()
+        drop = []
+        for key, size in rows:
+            if self._size <= target:
+                break
+            drop.append((key,))
+            self._size -= size
+        self._db.executemany("DELETE FROM http WHERE key = ?", drop)
 
 
 class HttpClient:
@@ -78,7 +95,9 @@ class HttpClient:
         transport: httpx.AsyncBaseTransport | None = None,
         offline: bool | None = None,
     ) -> None:
-        self._cache = _Cache(cache_path or settings.cache_dir / "http.sqlite")
+        self._cache = _Cache(
+            cache_path or settings.cache_dir / "http.sqlite", settings.http_cache_mb * 1_000_000
+        )
         self._offline = settings.offline if offline is None else offline
         self._client = httpx.AsyncClient(
             headers={"User-Agent": settings.user_agent, "Accept": "application/json"},

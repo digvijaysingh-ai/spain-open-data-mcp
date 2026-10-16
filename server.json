@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.digvijaysingh-ai/spain-open-data-mcp",
+  "title": "Spain Open Data",
+  "description": "Market sizing, prices, rents, crime and locations in Spain from INE and other public data",
+  "repository": {
+    "url": "https://github.com/digvijaysingh-ai/spain-open-data-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://digvijaysingh-ai.github.io/spain-open-data-mcp/",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "spain-open-data-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
