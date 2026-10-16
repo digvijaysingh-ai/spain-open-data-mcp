@@ -27,7 +27,7 @@ from tests.fixtures.ine_mock import fixture_name  # noqa: E402
 OUT = Path(__file__).parent / "ine"
 BASE = "https://servicios.ine.es/wstempus/js/ES"
 KEEP_TRACTS = {"4718601001", "4718601003", "4718604001", "4718610001", "4718612001"}
-KEEP_CNAE = (" 56 ", " 561 ", " 563 ", " 931 ", " 960 ", " 862 ", " 472 ")
+KEEP_CNAE = (" 56 ", " 561 ", " 563 ", " 931 ", " 960 ", " 862 ", " 869 ", " 472 ", " 750 ", " 855 ", " 552 ")
 
 client = httpx.Client(headers={"User-Agent": settings.user_agent}, timeout=300)
 
@@ -65,6 +65,16 @@ def keep_cnae(series: dict[str, Any]) -> bool:
     return any(c in series["Nombre"] for c in KEEP_CNAE)
 
 
+def keep_epf(series: dict[str, Any]) -> bool:
+    """Spain and Castilla y León; for spend tables, only euros per household."""
+    names = [m.get("Nombre", "") for m in series.get("MetaData", [])]
+    measure_ok = not any(
+        n.startswith(("Gasto medio por persona", "Gasto medio por unidad", "Distribución", "Índice"))
+        for n in names
+    )
+    return keep(series) and measure_ok
+
+
 def record(
     table_id: int, params: list[tuple[str, Any]], keep: Callable[[dict[str, Any]], bool] = keep
 ) -> None:
@@ -91,6 +101,8 @@ def main() -> None:
         record(agg[kind], [("nult", n), ("tip", "AM")])
         record(agg[kind], [("nult", 1), ("tip", "AM")])
     dirce = [("tv", f"{var}:{val}") for var, val in t["dirce_total_filters"]]
+    for key, n in (("spend_by_code", 3), ("spend_by_income", 1), ("cv_by_subgroup", 1)):
+        record(t["epf"][key], [("nult", n), ("tip", "AM")], keep_epf)
     record(
         t["dirce_companies"],
         [("nult", 1), ("tip", "AM"), ("tv", f"70:{t['dirce_region_value_ids']['CA07']}"), *dirce],

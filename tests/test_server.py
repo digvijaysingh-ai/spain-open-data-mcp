@@ -11,7 +11,14 @@ from tests.fixtures.osm_mini import make_snapshot
 async def test_tools_are_annotated_for_the_connector_directory():
     async with Client(mcp) as c:
         tools = (await c.list_tools()).tools
-    assert {t.name for t in tools} == {"resolve_place", "demographics", "income", "businesses"}
+    assert {t.name for t in tools} == {
+        "resolve_place",
+        "demographics",
+        "income",
+        "businesses",
+        "market_size",
+        "compare_areas",
+    }
     for t in tools:
         assert t.title, t.name
         assert t.annotations and t.annotations.read_only_hint is True, t.name

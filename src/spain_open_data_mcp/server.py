@@ -14,27 +14,30 @@ from mcp_types import CallToolResult, ToolAnnotations
 from pydantic import Field
 
 from . import __version__
+from .categories import BY_KEY, MARKET, SECTORS
 from .core.envelope import Check, Envelope, confidence_from
 from .core.errors import DataError
 from .core.http import HttpClient
 from .places.resolver import Place, resolve
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
-from .sources.osm.categories import BY_KEY, SECTORS
 from .sources.osm.snapshot import SnapshotStore
 from .tools import businesses as businesses_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
+from .tools import market as market_mod
 from .tools.common import to_result
 
 log = logging.getLogger(__name__)
 
 INSTRUCTIONS = """\
-Answers questions about Spain's population, households, income and businesses from
-official public data (INE) and OpenStreetMap, down to municipality, district and
-census tract.
+Answers market questions about Spain from official public data (INE) and OpenStreetMap:
+population, households, income, businesses, market size in euros and where the
+opportunity is, down to municipality, district and census tract.
 
 How to use:
+- For "how big is the market" use market_size; for "where should I open" use
+  compare_areas. Both give low, base and high values: report the range, not just the base.
 - Start with resolve_place to turn a place name into an INE code, then pass the code
   to other tools. Tools also accept names directly.
 - Every result lists its sources (dataset id, URL, data year, retrieval date) and
@@ -245,6 +248,79 @@ async def businesses(
     """
     return await businesses_mod.businesses_tool(
         _Services.ine(), _Services.osm(), place, category, sub_areas, rank_by
+    )
+
+
+MarketCategoryArg = Annotated[
+    str,
+    Field(
+        description="Business category: "
+        + ", ".join(k for k, m in MARKET.items() if not m.visitor_only)
+        + ". Plain words work too ('gyms', 'peluquerías')."
+    ),
+]
+
+
+@mcp.tool(title="Market size in euros", annotations=READ_ONLY)
+@guarded
+async def market_size(
+    place: PlaceArg,
+    category: MarketCategoryArg,
+    spend_per_household: Annotated[
+        float | None,
+        Field(description="Override INE's yearly spend per household on the category, in euros."),
+    ] = None,
+    capture_share: Annotated[
+        float | None,
+        Field(
+            description="Share of the market one business could win (0-1), to estimate obtainable revenue."
+        ),
+    ] = None,
+    competitors: Annotated[
+        float | None, Field(description="Override the estimated number of competing businesses.")
+    ] = None,
+) -> Annotated[CallToolResult, Envelope[market_mod.MarketData]]:
+    """Size the yearly market for a business category in a place in Spain, in euros, with a range.
+
+    Market = households × INE household spending on the category × an income adjustment.
+    Supply = competing businesses, calibrated against INE's company directory. Returns market
+    per business and an opportunity score against the region (1.0 = same as the region), with
+    every assumption listed. Assumptions can be overridden to test scenarios. Use for "how big
+    is the market for X in Y" and "is Y under-served for X".
+    """
+    return await market_mod.market_size_tool(
+        _Services.ine(), _Services.osm(), place, category, spend_per_household, capture_share, competitors
+    )
+
+
+@mcp.tool(title="Compare areas for a business", annotations=READ_ONLY)
+@guarded
+async def compare_areas(
+    within: Annotated[
+        str,
+        Field(
+            description="A municipality (compares its districts or tracts) or a province or region (compares "
+            "its municipalities)."
+        ),
+    ],
+    category: MarketCategoryArg,
+    level: Annotated[
+        market_mod.CompareLevel,
+        Field(
+            description="'district' or 'tract' within a municipality; 'municipality' within a province or region."
+        ),
+    ] = "auto",
+    limit: Annotated[int, Field(ge=1, le=40, description="How many areas to return, best first.")] = 20,
+) -> Annotated[CallToolResult, Envelope[market_mod.CompareData]]:
+    """Rank areas by opportunity for a business category: where is there most market per business.
+
+    Each area gets a yearly market in euros, estimated competing businesses and an opportunity
+    score against its region, all with ranges. Areas are ranked by the cautious (low) end of
+    the score; areas too small for the category are left out and counted. Use for "where in
+    Valladolid should I open a gym" or "which towns in Málaga province lack pharmacies".
+    """
+    return await market_mod.compare_areas_tool(
+        _Services.ine(), _Services.osm(), within, category, level, limit
     )
 
 

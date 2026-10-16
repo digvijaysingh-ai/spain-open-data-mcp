@@ -41,14 +41,14 @@ from pyproj import Geod, Transformer
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from spain_open_data_mcp.config import settings  # noqa: E402
-from spain_open_data_mcp.core.text import clean_text  # noqa: E402
-from spain_open_data_mcp.sources.osm.categories import (  # noqa: E402
+from spain_open_data_mcp.categories import (  # noqa: E402
     CATEGORIES_VERSION,
     LISTED_KEYS,
     OPEN_KEYS,
     classify,
 )
+from spain_open_data_mcp.config import settings  # noqa: E402
+from spain_open_data_mcp.core.text import clean_text  # noqa: E402
 from spain_open_data_mcp.sources.osm.snapshot import (  # noqa: E402
     DB_NAME,
     INDEX_SQL,

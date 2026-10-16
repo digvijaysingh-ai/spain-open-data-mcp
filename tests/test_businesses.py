@@ -10,10 +10,10 @@ from pathlib import Path
 import httpx
 import pytest
 
+from spain_open_data_mcp.categories import CATEGORIES, classify, find_category
 from spain_open_data_mcp.core.errors import DataError, UpstreamError
 from spain_open_data_mcp.core.text import clean_text
 from spain_open_data_mcp.sources.ine.datasets import IneData
-from spain_open_data_mcp.sources.osm.categories import CATEGORIES, classify, find_category
 from spain_open_data_mcp.sources.osm.snapshot import (
     DB_NAME,
     MANIFEST_NAME,

@@ -1,0 +1,3012 @@
+[
+{
+"COD": "EPF584226",
+"Nombre": "Total Nacional. Total. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 311041,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Total",
+"Codigo": "00"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 0.74
+}
+]
+},
+{
+"COD": "EPF584225",
+"Nombre": "Total Nacional. Bebidas no alcohólicas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310447,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bebidas no alcohólicas",
+"Codigo": "01.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.37
+}
+]
+},
+{
+"COD": "EPF584224",
+"Nombre": "Total Nacional. Bebidas alcohólicas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310448,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bebidas alcohólicas",
+"Codigo": "02.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.87
+}
+]
+},
+{
+"COD": "EPF584223",
+"Nombre": "Total Nacional. Tabaco. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310449,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Tabaco",
+"Codigo": "02.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.89
+}
+]
+},
+{
+"COD": "EPF584222",
+"Nombre": "Total Nacional. Calzado. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310451,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Calzado",
+"Codigo": "03.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.94
+}
+]
+},
+{
+"COD": "EPF584221",
+"Nombre": "Total Nacional. Suministro de agua y otros servicios relacionados con la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310455,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Suministro de agua y otros servicios relacionados con la vivienda",
+"Codigo": "04.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.04
+}
+]
+},
+{
+"COD": "EPF584220",
+"Nombre": "Total Nacional. Electricidad, gas y otros combustibles. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310456,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Electricidad, gas y otros combustibles",
+"Codigo": "04.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 0.71
+}
+]
+},
+{
+"COD": "EPF584219",
+"Nombre": "Total Nacional. Artículos textiles para el hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310458,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Artículos textiles para el hogar",
+"Codigo": "05.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.98
+}
+]
+},
+{
+"COD": "EPF584218",
+"Nombre": "Total Nacional. Bienes y servicios para el mantenimiento corriente del hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310461,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bienes y servicios para el mantenimiento corriente del hogar",
+"Codigo": "05.6 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.77
+}
+]
+},
+{
+"COD": "EPF584217",
+"Nombre": "Total Nacional. Utilización de vehículos personales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310465,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Utilización de vehículos personales",
+"Codigo": "07.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.88
+}
+]
+},
+{
+"COD": "EPF584216",
+"Nombre": "Total Nacional. Paquetes turísticos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310473,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Paquetes turísticos",
+"Codigo": "09.7 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.25
+}
+]
+},
+{
+"COD": "EPF584215",
+"Nombre": "Total Nacional. Servicios de alojamiento. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 310479,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de alojamiento",
+"Codigo": "11.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.23
+}
+]
+},
+{
+"COD": "EPF584214",
+"Nombre": "Total Nacional. Productos alimenticios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438017,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Productos alimenticios",
+"Codigo": "01.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 0.88
+}
+]
+},
+{
+"COD": "EPF584213",
+"Nombre": "Total Nacional. Artículos de vestir. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438021,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Artículos de vestir",
+"Codigo": "03.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.68
+}
+]
+},
+{
+"COD": "EPF584212",
+"Nombre": "Total Nacional. Alquileres reales de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438023,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Alquileres reales de la vivienda",
+"Codigo": "04.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "EPF584211",
+"Nombre": "Total Nacional. Alquileres imputados de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438024,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Alquileres imputados de la vivienda",
+"Codigo": "04.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.08
+}
+]
+},
+{
+"COD": "EPF584210",
+"Nombre": "Total Nacional. Gastos corrientes de mantenimiento y reparación de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438025,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Gastos corrientes de mantenimiento y reparación de la vivienda",
+"Codigo": "04.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.57
+}
+]
+},
+{
+"COD": "EPF584209",
+"Nombre": "Total Nacional. Muebles, artículos de amueblamiento, alfombras y otros revestimientos para suelos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438028,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Muebles, artículos de amueblamiento, alfombras y otros revestimientos para suelos",
+"Codigo": "05.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.12
+}
+]
+},
+{
+"COD": "EPF584208",
+"Nombre": "Total Nacional. Electrodomésticos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438030,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Electrodomésticos",
+"Codigo": "05.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.45
+}
+]
+},
+{
+"COD": "EPF584207",
+"Nombre": "Total Nacional. Cristalería, vajilla, cubertería y otros utensilios del hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438031,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Cristalería, vajilla, cubertería y otros utensilios del hogar",
+"Codigo": "05.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.54
+}
+]
+},
+{
+"COD": "EPF584206",
+"Nombre": "Total Nacional. Herramientas para casa y jardín. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438032,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Herramientas para casa y jardín",
+"Codigo": "05.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.12
+}
+]
+},
+{
+"COD": "EPF584205",
+"Nombre": "Total Nacional. Medicamentos y productos sanitarios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438034,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Medicamentos y productos sanitarios",
+"Codigo": "06.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.97
+}
+]
+},
+{
+"COD": "EPF584204",
+"Nombre": "Total Nacional. Servicios médicos y paramédicos y otros servicios de salud. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438035,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios médicos y paramédicos y otros servicios de salud",
+"Codigo": "06.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.22
+}
+]
+},
+{
+"COD": "EPF584203",
+"Nombre": "Total Nacional. Compra de vehículos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438036,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Compra de vehículos",
+"Codigo": "07.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.05
+}
+]
+},
+{
+"COD": "EPF584202",
+"Nombre": "Total Nacional. Servicios de transporte de pasajeros y de mercancías. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438038,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de transporte de pasajeros y de mercancías",
+"Codigo": "07.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.06
+}
+]
+},
+{
+"COD": "EPF584201",
+"Nombre": "Total Nacional. Equipos de información y de comunicaciones y software. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438039,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Equipos de información y de comunicaciones y software",
+"Codigo": "08.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.36
+}
+]
+},
+{
+"COD": "EPF584200",
+"Nombre": "Total Nacional. Servicios de información y comunicaciones. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438040,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de información y comunicaciones",
+"Codigo": "08.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 0.76
+}
+]
+},
+{
+"COD": "EPF584199",
+"Nombre": "Total Nacional. Equipos para el ocio, la cultura y el deporte. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438041,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Equipos para el ocio, la cultura y el deporte",
+"Codigo": "09.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.23
+}
+]
+},
+{
+"COD": "EPF584198",
+"Nombre": "Total Nacional. Juegos, juguetes y pasatiempos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438042,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Juegos, juguetes y pasatiempos",
+"Codigo": "09.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.87
+}
+]
+},
+{
+"COD": "EPF584197",
+"Nombre": "Total Nacional. Jardinería y mascotas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438043,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Jardinería y mascotas",
+"Codigo": "09.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.45
+}
+]
+},
+{
+"COD": "EPF584196",
+"Nombre": "Total Nacional. Servicios recreativos y deportivos y juegos de azar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438044,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios recreativos y deportivos y juegos de azar",
+"Codigo": "09.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.27
+}
+]
+},
+{
+"COD": "EPF584195",
+"Nombre": "Total Nacional. Servicios culturales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438045,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios culturales",
+"Codigo": "09.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "EPF584194",
+"Nombre": "Total Nacional. Libros, prensa y papelería. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438046,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Libros, prensa y papelería",
+"Codigo": "09.6 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.19
+}
+]
+},
+{
+"COD": "EPF584193",
+"Nombre": "Total Nacional. Enseñanza Infantil y Primaria. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438048,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Infantil y Primaria",
+"Codigo": "10.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.06
+}
+]
+},
+{
+"COD": "EPF584192",
+"Nombre": "Total Nacional. Enseñanza Secundaria y Postsecundaria no superior. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438049,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Secundaria y Postsecundaria no superior",
+"Codigo": "10.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.46
+}
+]
+},
+{
+"COD": "EPF584191",
+"Nombre": "Total Nacional. Enseñanza Superior. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438050,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Superior",
+"Codigo": "10.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.24
+}
+]
+},
+{
+"COD": "EPF584190",
+"Nombre": "Total Nacional. Enseñanzas no relacionadas con el sistema educativo. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438051,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanzas no relacionadas con el sistema educativo",
+"Codigo": "10.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.2
+}
+]
+},
+{
+"COD": "EPF584189",
+"Nombre": "Total Nacional. Restauración. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438052,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Restauración",
+"Codigo": "11.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.47
+}
+]
+},
+{
+"COD": "EPF584188",
+"Nombre": "Total Nacional. Servicios de seguros. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438054,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de seguros",
+"Codigo": "12.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.19
+}
+]
+},
+{
+"COD": "EPF584187",
+"Nombre": "Total Nacional. Servicios financieros no declarados en otra parte. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438055,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios financieros no declarados en otra parte",
+"Codigo": "12.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12.36
+}
+]
+},
+{
+"COD": "EPF584186",
+"Nombre": "Total Nacional. Cuidados personales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438056,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Cuidados personales",
+"Codigo": "13.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.31
+}
+]
+},
+{
+"COD": "EPF584185",
+"Nombre": "Total Nacional. Efectos personales no declarados anteriormente. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438057,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Efectos personales no declarados anteriormente",
+"Codigo": "13.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.61
+}
+]
+},
+{
+"COD": "EPF584184",
+"Nombre": "Total Nacional. Protección social y otros servicios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 438058,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Protección social y otros servicios",
+"Codigo": "13.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.65
+}
+]
+},
+{
+"COD": "EPF583925",
+"Nombre": "Castilla y León. Total. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 311041,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Total",
+"Codigo": "00"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.3
+}
+]
+},
+{
+"COD": "EPF583924",
+"Nombre": "Castilla y León. Bebidas no alcohólicas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310447,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bebidas no alcohólicas",
+"Codigo": "01.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.98
+}
+]
+},
+{
+"COD": "EPF583923",
+"Nombre": "Castilla y León. Bebidas alcohólicas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310448,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bebidas alcohólicas",
+"Codigo": "02.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.43
+}
+]
+},
+{
+"COD": "EPF583922",
+"Nombre": "Castilla y León. Tabaco. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310449,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Tabaco",
+"Codigo": "02.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 9.95
+}
+]
+},
+{
+"COD": "EPF583921",
+"Nombre": "Castilla y León. Calzado. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310451,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Calzado",
+"Codigo": "03.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.99
+}
+]
+},
+{
+"COD": "EPF583920",
+"Nombre": "Castilla y León. Suministro de agua y otros servicios relacionados con la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310455,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Suministro de agua y otros servicios relacionados con la vivienda",
+"Codigo": "04.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.56
+}
+]
+},
+{
+"COD": "EPF583919",
+"Nombre": "Castilla y León. Electricidad, gas y otros combustibles. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310456,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Electricidad, gas y otros combustibles",
+"Codigo": "04.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.61
+}
+]
+},
+{
+"COD": "EPF583918",
+"Nombre": "Castilla y León. Artículos textiles para el hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310458,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Artículos textiles para el hogar",
+"Codigo": "05.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 16.94
+}
+]
+},
+{
+"COD": "EPF583917",
+"Nombre": "Castilla y León. Bienes y servicios para el mantenimiento corriente del hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310461,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Bienes y servicios para el mantenimiento corriente del hogar",
+"Codigo": "05.6 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.77
+}
+]
+},
+{
+"COD": "EPF583916",
+"Nombre": "Castilla y León. Utilización de vehículos personales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310465,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Utilización de vehículos personales",
+"Codigo": "07.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.94
+}
+]
+},
+{
+"COD": "EPF583915",
+"Nombre": "Castilla y León. Paquetes turísticos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310473,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Paquetes turísticos",
+"Codigo": "09.7 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 13.9
+}
+]
+},
+{
+"COD": "EPF583914",
+"Nombre": "Castilla y León. Servicios de alojamiento. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 310479,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de alojamiento",
+"Codigo": "11.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11.97
+}
+]
+},
+{
+"COD": "EPF583913",
+"Nombre": "Castilla y León. Productos alimenticios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438017,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Productos alimenticios",
+"Codigo": "01.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.38
+}
+]
+},
+{
+"COD": "EPF583912",
+"Nombre": "Castilla y León. Artículos de vestir. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438021,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Artículos de vestir",
+"Codigo": "03.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.92
+}
+]
+},
+{
+"COD": "EPF583911",
+"Nombre": "Castilla y León. Alquileres reales de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438023,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Alquileres reales de la vivienda",
+"Codigo": "04.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 9.89
+}
+]
+},
+{
+"COD": "EPF583910",
+"Nombre": "Castilla y León. Alquileres imputados de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438024,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Alquileres imputados de la vivienda",
+"Codigo": "04.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.8
+}
+]
+},
+{
+"COD": "EPF583909",
+"Nombre": "Castilla y León. Gastos corrientes de mantenimiento y reparación de la vivienda. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438025,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Gastos corrientes de mantenimiento y reparación de la vivienda",
+"Codigo": "04.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12.63
+}
+]
+},
+{
+"COD": "EPF583908",
+"Nombre": "Castilla y León. Muebles, artículos de amueblamiento, alfombras y otros revestimientos para suelos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438028,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Muebles, artículos de amueblamiento, alfombras y otros revestimientos para suelos",
+"Codigo": "05.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11.66
+}
+]
+},
+{
+"COD": "EPF583907",
+"Nombre": "Castilla y León. Electrodomésticos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438030,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Electrodomésticos",
+"Codigo": "05.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.69
+}
+]
+},
+{
+"COD": "EPF583906",
+"Nombre": "Castilla y León. Cristalería, vajilla, cubertería y otros utensilios del hogar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438031,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Cristalería, vajilla, cubertería y otros utensilios del hogar",
+"Codigo": "05.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 11.44
+}
+]
+},
+{
+"COD": "EPF583905",
+"Nombre": "Castilla y León. Herramientas para casa y jardín. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438032,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Herramientas para casa y jardín",
+"Codigo": "05.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14.89
+}
+]
+},
+{
+"COD": "EPF583904",
+"Nombre": "Castilla y León. Medicamentos y productos sanitarios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438034,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Medicamentos y productos sanitarios",
+"Codigo": "06.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.72
+}
+]
+},
+{
+"COD": "EPF583903",
+"Nombre": "Castilla y León. Servicios médicos y paramédicos y otros servicios de salud. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438035,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios médicos y paramédicos y otros servicios de salud",
+"Codigo": "06.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.51
+}
+]
+},
+{
+"COD": "EPF583902",
+"Nombre": "Castilla y León. Compra de vehículos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438036,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Compra de vehículos",
+"Codigo": "07.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 13.08
+}
+]
+},
+{
+"COD": "EPF583901",
+"Nombre": "Castilla y León. Servicios de transporte de pasajeros y de mercancías. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438038,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de transporte de pasajeros y de mercancías",
+"Codigo": "07.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 9.5
+}
+]
+},
+{
+"COD": "EPF583900",
+"Nombre": "Castilla y León. Equipos de información y de comunicaciones y software. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438039,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Equipos de información y de comunicaciones y software",
+"Codigo": "08.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.85
+}
+]
+},
+{
+"COD": "EPF583899",
+"Nombre": "Castilla y León. Servicios de información y comunicaciones. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438040,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de información y comunicaciones",
+"Codigo": "08.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.66
+}
+]
+},
+{
+"COD": "EPF583898",
+"Nombre": "Castilla y León. Equipos para el ocio, la cultura y el deporte. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438041,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Equipos para el ocio, la cultura y el deporte",
+"Codigo": "09.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 38.87
+}
+]
+},
+{
+"COD": "EPF583897",
+"Nombre": "Castilla y León. Juegos, juguetes y pasatiempos. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438042,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Juegos, juguetes y pasatiempos",
+"Codigo": "09.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14.41
+}
+]
+},
+{
+"COD": "EPF583896",
+"Nombre": "Castilla y León. Jardinería y mascotas. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438043,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Jardinería y mascotas",
+"Codigo": "09.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 12.38
+}
+]
+},
+{
+"COD": "EPF583895",
+"Nombre": "Castilla y León. Servicios recreativos y deportivos y juegos de azar. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438044,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios recreativos y deportivos y juegos de azar",
+"Codigo": "09.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.75
+}
+]
+},
+{
+"COD": "EPF583894",
+"Nombre": "Castilla y León. Servicios culturales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438045,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios culturales",
+"Codigo": "09.5 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.84
+}
+]
+},
+{
+"COD": "EPF583893",
+"Nombre": "Castilla y León. Libros, prensa y papelería. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438046,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Libros, prensa y papelería",
+"Codigo": "09.6 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.28
+}
+]
+},
+{
+"COD": "EPF583892",
+"Nombre": "Castilla y León. Enseñanza Infantil y Primaria. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438048,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Infantil y Primaria",
+"Codigo": "10.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 16.97
+}
+]
+},
+{
+"COD": "EPF583891",
+"Nombre": "Castilla y León. Enseñanza Secundaria y Postsecundaria no superior. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438049,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Secundaria y Postsecundaria no superior",
+"Codigo": "10.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 24.06
+}
+]
+},
+{
+"COD": "EPF583890",
+"Nombre": "Castilla y León. Enseñanza Superior. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438050,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanza Superior",
+"Codigo": "10.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 20.36
+}
+]
+},
+{
+"COD": "EPF583889",
+"Nombre": "Castilla y León. Enseñanzas no relacionadas con el sistema educativo. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438051,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Enseñanzas no relacionadas con el sistema educativo",
+"Codigo": "10.4 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 18.63
+}
+]
+},
+{
+"COD": "EPF583888",
+"Nombre": "Castilla y León. Restauración. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438052,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Restauración",
+"Codigo": "11.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.33
+}
+]
+},
+{
+"COD": "EPF583887",
+"Nombre": "Castilla y León. Servicios de seguros. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438054,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios de seguros",
+"Codigo": "12.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.32
+}
+]
+},
+{
+"COD": "EPF583886",
+"Nombre": "Castilla y León. Servicios financieros no declarados en otra parte. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438055,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Servicios financieros no declarados en otra parte",
+"Codigo": "12.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 25.96
+}
+]
+},
+{
+"COD": "EPF583885",
+"Nombre": "Castilla y León. Cuidados personales. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438056,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Cuidados personales",
+"Codigo": "13.1 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.96
+}
+]
+},
+{
+"COD": "EPF583884",
+"Nombre": "Castilla y León. Efectos personales no declarados anteriormente. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438057,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Efectos personales no declarados anteriormente",
+"Codigo": "13.2 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14.42
+}
+]
+},
+{
+"COD": "EPF583883",
+"Nombre": "Castilla y León. Protección social y otros servicios. Coeficiente de variación. ",
+"T3_Unidad": "Porcentaje",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 438058,
+"T3_Variable": "Subgrupos COICOP/EPF",
+"Nombre": "Protección social y otros servicios",
+"Codigo": "13.3 T"
+},
+{
+"Id": 8911,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Coeficiente de variación",
+"Codigo": "CV"
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 17.67
+}
+]
+}
+]

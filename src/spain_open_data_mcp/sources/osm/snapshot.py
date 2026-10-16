@@ -35,10 +35,10 @@ from pathlib import Path
 
 import httpx
 
+from ...categories import NOT_IN_TOTAL
 from ...config import PROJECT_URL, settings
 from ...core.errors import UpstreamError
 from ...core.text import clean_text
-from .categories import NOT_IN_TOTAL
 
 log = logging.getLogger(__name__)
 

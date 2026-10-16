@@ -1,8 +1,11 @@
-"""Business categories: how OpenStreetMap tags map to the categories the tools accept.
+"""Business categories: the one registry every tool and build script uses.
 
-Shared by the snapshot builder (scripts/build_osm_snapshot.py), which stores a category
-for each place, and by the `businesses` tool, which counts them. Changing a mapping
-needs a snapshot rebuild; bump CATEGORIES_VERSION so the tool can tell.
+- OSM tags -> category: used by the snapshot builder (scripts/build_osm_snapshot.py) to
+  store a category for each place, and by `businesses` to count them. Changing a mapping
+  needs a snapshot rebuild; bump CATEGORIES_VERSION so the tool can tell.
+- Market profile (MARKET, below): for the 20 atlas categories, which household spending
+  codes (INE's EPF, COICOP 2018) make up the category's spending pool, the minimum
+  population worth scoring, and whether residents spend locally or travel to spend.
 
 `cnae` is the CNAE 2009 code that INE's company directory (DIRCE) counts for the same
 activity. It is set only where most businesses run a single site, so a count of
@@ -15,6 +18,7 @@ from __future__ import annotations
 import unicodedata
 from collections.abc import Mapping
 from dataclasses import dataclass
+from typing import Literal
 
 CATEGORIES_VERSION = 1
 
@@ -53,6 +57,10 @@ class Category:
     # False for categories that are mostly public services (state schools, hospitals),
     # which are left out of 'all businesses' totals.
     in_total: bool = True
+
+    @property
+    def market(self) -> MarketProfile | None:
+        return MARKET.get(self.key)
 
 
 _FOOD_SERVICE = ("56", "Servicios de comidas y bebidas")
@@ -490,3 +498,64 @@ def find_category(text: str) -> Category | None:
             if key:
                 return BY_KEY[key]
     return None
+
+
+# Market profiles
+
+Scope = Literal["local", "destination"]
+
+
+@dataclass(frozen=True)
+class MarketProfile:
+    """How the opportunity engine sizes a category's market.
+
+    ecoicop: EPF spending codes (4-digit, or a prefix such as "01." for all food) whose
+        household spend is the category's pool. Categories with identical codes form a
+        family (restaurants, cafés and bars share 11.1.1) and split the pool by their
+        national share of mapped places.
+    scope: "local" if residents mostly buy near home (bakery, pharmacy, hairdresser), so
+        district-level demand is meaningful; "destination" if they travel to spend
+        (restaurants, clothes), so it is scored at municipality level and up.
+    min_population: below this an area is too small to score.
+    tourism: visitors add to demand.
+    visitor_only: only visitors buy it locally (accommodation).
+    """
+
+    ecoicop: tuple[str, ...]
+    scope: Scope
+    min_population: int
+    tourism: bool = False
+    visitor_only: bool = False
+
+
+_FOOD_SPEND = ("11.1.1",)
+MARKET: Mapping[str, MarketProfile] = {
+    "restaurant": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
+    "cafe": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
+    "bar": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
+    "fast_food": MarketProfile(_FOOD_SPEND, "destination", 2_000, tourism=True),
+    "bakery": MarketProfile(("01.1.1", "01.1.8"), "local", 1_000, tourism=True),
+    "butcher": MarketProfile(("01.1.2", "01.1.3"), "local", 1_000),
+    "greengrocer": MarketProfile(("01.1.6", "01.1.7"), "local", 1_000),
+    "supermarket": MarketProfile(("01.",), "local", 1_000, tourism=True),
+    "pharmacy": MarketProfile(("06.1.1", "06.1.2"), "local", 1_000),
+    "optician": MarketProfile(("06.1.3",), "destination", 5_000),
+    "dentist": MarketProfile(("06.2.1",), "local", 3_000),
+    "physiotherapy": MarketProfile(("06.2.2",), "local", 3_000),
+    "hairdresser": MarketProfile(("13.1.2",), "local", 1_000),
+    "beauty_salon": MarketProfile(("13.1.2",), "local", 2_000),
+    "veterinary": MarketProfile(("09.3.2",), "local", 5_000),
+    "gym": MarketProfile(("09.4.1",), "local", 5_000),
+    "childcare": MarketProfile(("10.1.0",), "local", 3_000),
+    "private_school": MarketProfile(("10.4.0",), "local", 5_000),
+    "clothes": MarketProfile(("03.1.1", "03.1.2", "03.2.0"), "destination", 5_000, tourism=True),
+    "home": MarketProfile(("05.",), "destination", 10_000),
+    "guest_house": MarketProfile(("11.2.0",), "destination", 0, tourism=True, visitor_only=True),
+}
+ATLAS_CATEGORIES: tuple[str, ...] = tuple(k for k in MARKET if k != "fast_food")
+
+
+def family(key: str) -> list[Category]:
+    """Categories sharing the same spending codes as `key` (itself included)."""
+    profile = MARKET[key]
+    return [BY_KEY[k] for k, m in MARKET.items() if m.ecoicop == profile.ecoicop]
