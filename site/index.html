@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spain Opportunity Atlas</title>
+  <meta name="description" content="Where in Spain there is most market per business, by category, from INE and OpenStreetMap data. Every number sourced, with ranges.">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="title">
+      <h1>Spain Opportunity Atlas</h1>
+      <p class="sub">Market per business compared with the region, by municipality. 1.0 means the same as the region.</p>
+    </div>
+    <div class="controls">
+      <label for="category">Category</label>
+      <select id="category" aria-describedby="status"></select>
+      <button id="view-toggle" type="button" aria-pressed="false">List</button>
+      <button id="peninsula" type="button">Mainland</button>
+      <button id="canarias" type="button">Canary Islands</button>
+    </div>
+  </header>
+  <p id="status" class="status" role="status">Loading…</p>
+  <main>
+    <div id="map" role="region" aria-label="Map of opportunity scores"></div>
+    <aside id="card" class="card" hidden aria-live="polite"></aside>
+    <section id="list" class="list" hidden aria-label="Top municipalities">
+      <h2>Highest cautious scores</h2>
+      <ol id="top"></ol>
+    </section>
+  </main>
+  <section class="legend" aria-label="Legend">
+    <span class="dot low"></span> below the region
+    <span class="dot mid"></span> about the same
+    <span class="dot high"></span> above the region
+    <span class="dot thin"></span> map too thin to trust
+    <span class="note">Towns too small for the category are not drawn. Circle size = residents.</span>
+  </section>
+  <details class="table-view">
+    <summary>Table view (all scored municipalities)</summary>
+    <div class="table-wrap"><table id="table"><thead><tr>
+      <th scope="col">Municipality</th><th scope="col">Residents</th><th scope="col">Market €/yr</th>
+      <th scope="col">Businesses (est.)</th><th scope="col">Score (low–high)</th>
+    </tr></thead><tbody></tbody></table></div>
+  </details>
+  <footer class="credits">
+    Data: <a href="https://www.ine.es">Fuente: INE</a> (EPF, DIRCE, Padrón, income atlas, tourism), CC BY 4.0 ·
+    © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, ODbL 1.0 ·
+    Basemap <a href="https://openfreemap.org">OpenFreeMap</a> ·
+    Method and code: <a href="https://github.com/digvijaysingh-ai/spain-open-data-mcp/blob/main/docs/designs/opportunity-engine.md">spain-open-data-mcp</a>
+  </footer>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

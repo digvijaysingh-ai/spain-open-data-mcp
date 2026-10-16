@@ -1,0 +1,77 @@
+name: Atlas
+
+# Builds the Spain Opportunity Atlas with the same engine as the tools, smoke-tests the page
+# in a browser, deploys it to GitHub Pages, and attaches the full CSV, the djcrafted hero
+# file and a dated registration of the frozen scores to the 'atlas' release.
+on:
+  schedule:
+    - cron: "41 6 5 * *" # 06:41 UTC on the 5th, after the OSM snapshot on the 3rd
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atlas
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SPAIN_MCP_CACHE_DIR: ${{ github.workspace }}/.cache/spain-open-data-mcp
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked
+      - name: Cache INE responses (monthly)
+        uses: actions/cache@v4
+        with:
+          path: .cache/spain-open-data-mcp/http.sqlite
+          key: ine-${{ github.run_id }}
+          restore-keys: ine-
+      - name: Tract geometry (for map positions)
+        run: |
+          mkdir -p build/geometry
+          gh release download geometry-v1 -p tracts_geometry.sqlite.gz -D build/geometry
+          gunzip build/geometry/tracts_geometry.sqlite.gz
+      - name: Build atlas
+        run: uv run python scripts/build_atlas.py --out build/atlas --geometry build/geometry/tracts_geometry.sqlite
+      - name: Assemble site
+        run: |
+          mkdir -p build/site
+          cp site/* build/site/
+          cp -r build/atlas/site build/site/data
+          cp build/atlas/hero_spain.json build/site/data/
+      - name: Browser smoke test
+        run: |
+          uv run --with playwright python -m playwright install --with-deps chromium
+          uv run --with playwright pytest -m e2e tests/e2e --site build/site -p no:cacheprovider
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+      - name: Release files
+        run: |
+          METHOD=$(python3 -c "import json; print(json.load(open('build/atlas/registration.json'))['method'])")
+          STAMP=$(date -u +%Y%m%d)
+          cp build/atlas/registration.json "build/atlas/registration-${METHOD}-${STAMP}.json"
+          gzip -9 -k build/atlas/atlas.csv
+          if ! gh release view atlas >/dev/null 2>&1; then
+            gh release create atlas --title "Spain Opportunity Atlas" --latest=false --notes "Monthly atlas."
+          fi
+          gh release upload atlas build/atlas/atlas.csv.gz build/atlas/hero_spain.json "build/atlas/registration-${METHOD}-${STAMP}.json" --clobber
+          gh release edit atlas --notes "Spain Opportunity Atlas, method ${METHOD}, built ${STAMP}. atlas.csv.gz has every input behind every score; registration files are the dated, checksummed predictions scored each quarter against INE's business demography (CODEM). Map: https://digvijaysingh-ai.github.io/spain-open-data-mcp/. Data: Fuente: INE (CC BY 4.0); © OpenStreetMap contributors (ODbL 1.0)."
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

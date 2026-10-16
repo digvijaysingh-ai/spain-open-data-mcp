@@ -72,5 +72,8 @@ typeCheckingMode = "standard"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
-markers = ["network: hits real upstream APIs (deselect with -m 'not network')"]
-addopts = "-m 'not network'"
+markers = [
+    "network: hits real upstream APIs (deselect with -m 'not network')",
+    "e2e: browser tests of the atlas page (need Playwright and a built site)",
+]
+addopts = "-m 'not network and not e2e'"

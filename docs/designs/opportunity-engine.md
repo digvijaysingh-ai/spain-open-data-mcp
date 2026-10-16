@@ -389,6 +389,21 @@ Decisions made while implementing, against live data:
   buffered by 30 m. Central Las Palmas, 10 minutes: 31 km of streets, 0.78 km², 0.09 s. Where
   no graph is published, a labelled circle of speed x minutes / 1.3.
 
+## Atlas as built (2026-10-16)
+- scripts/build_atlas.py runs the same MarketContext.evaluate as the tools for every
+  municipality and category, and for districts of cities over 100,000 residents for local
+  categories. Areas below a category's minimum population are kept in the CSV, not drawn.
+- Outputs: atlas.csv (every input per row), per-category JSON for the page, a registration
+  (method, date, SHA-256 of the CSV) and hero_spain.json. Workflow `atlas` (monthly, after the
+  snapshot) builds, runs the Playwright smoke test, deploys to GitHub Pages and attaches the
+  files to the `atlas` release; registrations accumulate there, dated, one per build.
+- hero_spain.json carries descriptive figures only (calibrated restaurants per 1,000 residents
+  and market per restaurant), not the unvalidated score, which keeps OV4's intent while the
+  forward test runs. Pages serves it with an open CORS header, so djcrafted.com can fetch it.
+- Known limitation for method 1.2: map completeness compares a town with its whole region, so
+  fast-growing suburbs (where rural bars per resident set a high regional bar) often show as
+  thinly mapped. Peer-based completeness (similar-sized towns) would fix it.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.
