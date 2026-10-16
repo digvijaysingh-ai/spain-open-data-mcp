@@ -1,0 +1,62 @@
+name: Release
+
+# On a version tag (v0.1.0): test, build, publish to PyPI (trusted publishing, no token), then
+# list the version on the MCP Registry (GitHub OIDC, no token).
+#
+# One-time setup on PyPI: add a trusted publisher for project 'spain-open-data-mcp' with owner
+# 'digvijaysingh-ai', repository 'spain-open-data-mcp', workflow 'release.yml', environment 'pypi'.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - name: Versions agree
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          for v in "$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)" \
+                   "$(jq -r .version server.json)" "$(jq -r '.packages[0].version' server.json)" \
+                   "$(sed -n 's/^__version__ = "\(.*\)"/\1/p' src/spain_open_data_mcp/__init__.py)"; do
+            if [ "$v" != "$TAG" ]; then echo "version $v does not match tag $TAG"; exit 1; fi
+          done
+      - run: uv sync --locked
+      - run: uv run pytest -q
+      - run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  pypi:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@v1.14.2
+
+  registry:
+    needs: pypi
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install mcp-publisher
+        run: |
+          curl -sSfL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - run: ./mcp-publisher login github-oidc
+      - run: ./mcp-publisher publish

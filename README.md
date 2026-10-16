@@ -137,8 +137,14 @@ claude mcp add spain-open-data -- uvx --from git+https://github.com/digvijaysing
 }
 ```
 
+**Self-hosted over HTTP**: `spain-open-data-mcp http --host 0.0.0.0 --port 8080` serves
+Streamable HTTP at `/mcp`, or build the [Dockerfile](Dockerfile), which includes the data files.
+`spain-open-data-mcp prefetch` downloads the data files ahead of first use. Deployment to Cloud
+Run is in [docs/deploy.md](docs/deploy.md); the [privacy policy](docs/privacy.md) covers the
+hosted server.
+
 A PyPI release (`uvx spain-open-data-mcp`) and a hosted URL for use as a custom connector in
-Claude are planned for milestone 4.
+Claude are being prepared (milestone 4).
 
 ### Settings
 
@@ -148,6 +154,7 @@ Claude are planned for milestone 4.
 | `SPAIN_MCP_HTTP_TIMEOUT` | `60` | Seconds per upstream request |
 | `SPAIN_MCP_OFFLINE` | unset | `1` serves only from cache (tests, evals) |
 | `SPAIN_MCP_GEOMETRY_DB` | unset | Path to the census tract geometry file. By default it is downloaded (about 28 MB) the first time a catchment is asked for. |
+| `SPAIN_MCP_HTTP_CACHE_MB` | `0` (no limit) | Cap on the cache of upstream responses; oldest dropped first |
 | `SPAIN_MCP_OSM_DB` | unset | Path to an OpenStreetMap snapshot file. By default it is downloaded (about 21 MB) on first use and refreshed monthly. |
 
 ## Architecture
