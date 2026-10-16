@@ -1,0 +1,40 @@
+name: Crime data
+
+# Rebuilds data/crime.json from the Interior ministry's quarterly crime balance. When the
+# ministry has published a new quarter, pushes the update to a 'data/crime-<date>' branch and
+# opens an issue with a link to open the pull request (CI runs on that pull request).
+on:
+  schedule:
+    - cron: "17 6 3 * *"  # the 3rd of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked
+      - name: Build
+        run: uv run python scripts/build_crime.py
+      - name: Publish a branch if the periods changed
+        run: |
+          periods() { python3 -c "import json,sys; d=json.load(open(sys.argv[1])); print({k: v['label'] for k, v in d['periods'].items()})" "$1"; }
+          git show HEAD:src/spain_open_data_mcp/data/crime.json > /tmp/old.json
+          OLD=$(periods /tmp/old.json); NEW=$(periods src/spain_open_data_mcp/data/crime.json)
+          echo "before: $OLD"; echo "after: $NEW"
+          if [ "$OLD" = "$NEW" ]; then echo "No new quarter."; exit 0; fi
+          BRANCH="data/crime-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -am "Crime data: $NEW"
+          git push origin "$BRANCH"
+          gh issue create --title "New crime data: $NEW" --body "The crime-data workflow rebuilt data/crime.json ($OLD → $NEW) on branch \`$BRANCH\`. Open the pull request: https://github.com/${{ github.repository }}/compare/main...$BRANCH?expand=1"

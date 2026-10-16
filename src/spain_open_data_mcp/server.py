@@ -30,11 +30,13 @@ from .status import data_status
 from .tools import businesses as businesses_mod
 from .tools import catchment as catchment_mod
 from .tools import chart as chart_mod
+from .tools import crime as crime_mod
 from .tools import datasets as datasets_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
 from .tools import market as market_mod
 from .tools import price as price_mod
+from .tools import rents as rents_mod
 from .tools.common import to_result
 
 log = logging.getLogger(__name__)
@@ -464,6 +466,32 @@ async def chart(
     underlying tool, and a source line on the image. If drawing fails the text still comes back.
     """
     return await chart_mod.chart(_Services.ine(), _Services.osm(), kind, place, category, sub_areas)
+
+
+@mcp.tool(title="Rents", annotations=READ_ONLY)
+@guarded
+async def rents(place: PlaceArg) -> Annotated[CallToolResult, Envelope[rents_mod.RentsData]]:
+    """How housing rents have changed in a place: INE's rent index (IPVA, 2015 = 100) with the
+    change over the last year, five years and since 2015, against province, region and Spain.
+
+    Covers municipalities over 10,000 residents, districts of provincial capitals, provinces and
+    regions (not the Basque Country or Navarra). Gives changes, not rents in euros.
+    """
+    return await rents_mod.rents_tool(_Services.ine(), place)
+
+
+@mcp.tool(title="Crime", annotations=LOCAL_READ_ONLY)
+@guarded
+async def crime(place: PlaceArg) -> Annotated[CallToolResult, Envelope[crime_mod.CrimeData]]:
+    """Recorded crime in a place from the Interior ministry: offences by type (theft, burglary,
+    robbery, assault, drugs, cybercrime and more) for the latest full year, per 1,000 residents,
+    the change on the year before, the latest year-to-date figures, and province, region and
+    Spain for comparison.
+
+    Published for municipalities over 20,000 residents, provinces and regions; smaller places
+    get the province's figures, and the result says so.
+    """
+    return await crime_mod.crime_tool(place)
 
 
 @mcp.tool(title="Find open datasets", annotations=READ_ONLY)

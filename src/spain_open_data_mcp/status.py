@@ -12,7 +12,7 @@ from datetime import UTC, date, datetime
 from . import __version__
 from .config import settings
 from .engine.model import METHOD_VERSION
-from .sources.ine.datasets import tables
+from .sources.ine.datasets import IPVA_TABLES, tables
 from .sources.osm import snapshot as osm
 
 OSM_STALE_DAYS = 45
@@ -24,6 +24,8 @@ RELEASES: dict[str, str] = {
     "INE official population (Padrón)": "yearly, in December",
     "INE consumer prices (CPI)": "monthly, mid-month",
     "OpenStreetMap snapshot": "monthly, on the 3rd",
+    "INE rent index (IPVA)": "yearly, in the autumn",
+    "Interior ministry crime balance": "quarterly, about ten weeks after each quarter",
 }
 
 
@@ -43,6 +45,14 @@ def _snapshot_line() -> str:
     return f"| OpenStreetMap snapshot | {when:%Y-%m-%d} | {meta.get('built_at', '')[:10]} | {flag} |"
 
 
+def _crime_line() -> str:
+    from .tools.crime import crime_data
+
+    d = crime_data()
+    p = d["periods"]
+    return f"| Interior ministry crime balance, bundled | {p['year']['label']}; latest {p['latest']['label']} | {d['built_at'][:10]} | |"
+
+
 def _cached_lines() -> list[str]:
     """When each key INE table was last fetched, from the HTTP cache."""
     path = settings.cache_dir / "http.sqlite"
@@ -52,6 +62,7 @@ def _cached_lines() -> list[str]:
         "INE household budget survey (EPF)": t["epf"]["spend_by_code"],
         "INE company directory (DIRCE)": t["dirce_companies"],
         "INE consumer prices (CPI)": t["cpi"]["national"],
+        "INE rent index (IPVA), municipalities": IPVA_TABLES["municipality"],
     }
     if not path.exists():
         return [f"| {name} | | not fetched yet | |" for name in wanted]
@@ -80,6 +91,7 @@ def data_status() -> str:
         "|---|---|---|---|",
         _snapshot_line(),
         f"| INE official population (Padrón), bundled | {t['padron_year']}-01-01 | {t['generated_at'][:10]} | |",
+        _crime_line(),
         *_cached_lines(),
         "",
         "## Release calendar",

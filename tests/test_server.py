@@ -23,6 +23,8 @@ async def test_tools_are_annotated_for_the_connector_directory():
         "catchment",
         "find_datasets",
         "read_dataset",
+        "rents",
+        "crime",
     }
     for t in tools:
         assert t.title, t.name
