@@ -4,9 +4,10 @@ from __future__ import annotations
 
 import functools
 import logging
+import time
 from collections.abc import Awaitable, Callable
 from importlib import resources
-from typing import Annotated, ParamSpec
+from typing import Annotated, Any, ParamSpec
 
 from mcp.server import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
@@ -22,10 +23,13 @@ from .places.resolver import Place, resolve
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
 from .sources.osm.snapshot import SnapshotStore
+from .status import data_status
 from .tools import businesses as businesses_mod
+from .tools import chart as chart_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
 from .tools import market as market_mod
+from .tools import price as price_mod
 from .tools.common import to_result
 
 log = logging.getLogger(__name__)
@@ -101,11 +105,17 @@ def guarded(fn: Callable[P, Awaitable[CallToolResult]]) -> Callable[P, Awaitable
 
     @functools.wraps(fn)
     async def wrapper(*args: P.args, **kwargs: P.kwargs) -> CallToolResult:
+        # One log line per call: tool, outcome and duration. Never the arguments, which can
+        # hold addresses.
+        started = time.monotonic()
+        outcome = "ok"
         try:
             return await fn(*args, **kwargs)
         except DataError as e:
+            outcome = type(e).__name__
             raise ToolError(e.render()) from e
         except Exception as e:
+            outcome = "bug"
             log.exception("tool %s failed", fn.__name__)
             raise ToolError(
                 f"Problem: the {fn.__name__} tool failed unexpectedly.\n"
@@ -113,6 +123,8 @@ def guarded(fn: Callable[P, Awaitable[CallToolResult]]) -> Callable[P, Awaitable
                 "Fix: try again; if it repeats, report it at "
                 "https://github.com/digvijaysingh-ai/spain-open-data-mcp/issues"
             ) from e
+        finally:
+            log.info("tool=%s outcome=%s ms=%d", fn.__name__, outcome, (time.monotonic() - started) * 1000)
 
     return wrapper
 
@@ -322,6 +334,70 @@ async def compare_areas(
     return await market_mod.compare_areas_tool(
         _Services.ine(), _Services.osm(), within, category, level, limit
     )
+
+
+@mcp.tool(title="Price range for a place", annotations=READ_ONLY)
+@guarded
+async def price_band(
+    place: PlaceArg,
+    reference_price: Annotated[
+        float, Field(description="Price elsewhere, in euros, e.g. 39.9 for a monthly gym fee.")
+    ],
+    category: Annotated[
+        str | None,
+        Field(description="Market category, to uprate with its own CPI group (e.g. 'gym', 'restaurant')."),
+    ] = None,
+    price_month: Annotated[
+        str | None, Field(description="Month the reference price applied, YYYY-MM, to uprate it to today.")
+    ] = None,
+    reference_place: Annotated[
+        str, Field(description="Where the reference price applies: 'ES' (Spain, default) or a place.")
+    ] = "ES",
+) -> Annotated[CallToolResult, Envelope[price_mod.PriceBand]]:
+    """Suggest a price range for a place from local purchasing power and inflation.
+
+    Public data has no competitor prices, so this adjusts a price you know (from elsewhere or
+    an earlier date) to this place today: CPI for the category's group since that month, then
+    local median income per consumption unit against the reference place. Returns a range
+    from no local adjustment to full adjustment, labelled as an estimate.
+    """
+    return await price_mod.price_band_tool(
+        _Services.ine(), place, reference_price, category, price_month, reference_place
+    )
+
+
+@mcp.tool(title="Chart", annotations=READ_ONLY)
+@guarded
+async def chart(
+    kind: Annotated[
+        chart_mod.ChartKind,
+        Field(
+            description="'opportunity' (needs category; ranks areas within the place), 'income' (by district or "
+            "tract), 'age_pyramid' or 'population_trend'."
+        ),
+    ],
+    place: PlaceArg,
+    category: Annotated[str | None, Field(description="Business category, for kind 'opportunity'.")] = None,
+    sub_areas: Annotated[
+        chart_mod.ChartSubAreas, Field(description="For 'income': districts or tracts.")
+    ] = "district",
+) -> Annotated[CallToolResult, Envelope[Any]]:
+    """Draw a chart (PNG) of a tool result: an opportunity ranking with ranges, income by district,
+    an age pyramid or a population trend. Returns the image, the same text and sources as the
+    underlying tool, and a source line on the image. If drawing fails the text still comes back.
+    """
+    return await chart_mod.chart(_Services.ine(), _Services.osm(), kind, place, category, sub_areas)
+
+
+@mcp.resource(
+    "spain-open-data://status",
+    name="data-status",
+    title="Data status",
+    mime_type="text/markdown",
+)
+def status() -> str:
+    """How fresh each data source is on this server, and when the next releases are due."""
+    return data_status()
 
 
 @mcp.resource(

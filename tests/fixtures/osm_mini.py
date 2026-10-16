@@ -20,6 +20,11 @@ PLACES: list[tuple[str, str | None, str, str | None, int]] = [
     ("4718610001", "cafe", "amenity=cafe", None, 2),
     ("4718601001", "school", "amenity=school", None, 1),  # not in 'all businesses'
     ("4718604001", None, "shop=gift", None, 1),
+    # One pharmacy per district, so the map completeness check has something to measure
+    ("4718601001", "pharmacy", "amenity=pharmacy", None, 1),
+    ("4718604001", "pharmacy", "amenity=pharmacy", None, 1),
+    ("4718610001", "pharmacy", "amenity=pharmacy", None, 1),
+    ("4718612001", "pharmacy", "amenity=pharmacy", None, 1),
     # Elsewhere in the province of Valladolid
     ("4700101001", "gym", "leisure=fitness_centre", None, 1),
     # Madrid and Las Palmas

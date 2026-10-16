@@ -151,6 +151,38 @@ def build_epf() -> dict[str, Any]:
     return {"epf": out}
 
 
+CPI_OPERATION = 25
+# The 2025 base republished CPI tables under several similar names; pin the ids and check the
+# names, so a renumbering fails loudly here instead of silently picking another table.
+CPI_TABLES = {
+    "national": (76125, "Índices nacionales: general y de grupos ECOICOP ver.2"),
+    "national_groups_since_2002": (
+        78680,
+        "Índice nacionales de grupos ECOICOP ver. 2. Series desde enero de 2002",
+    ),
+    "provincial": (76141, "Índices provinciales: general y de grupos ECOICOP ver.2"),
+}
+
+
+def build_cpi() -> dict[str, Any]:
+    """Consumer price index (2025 base) table ids, and province value ids for filtering."""
+    print("CPI tables...")
+    names = {t["Id"]: t["Nombre"].strip() for t in get(f"TABLAS_OPERACION/{CPI_OPERATION}")}
+    for key, (table_id, name) in CPI_TABLES.items():
+        if names.get(table_id) != name:
+            raise SystemExit(f"CPI {key}: table {table_id} is now '{names.get(table_id)}', expected '{name}'")
+    provincial = CPI_TABLES["provincial"][0]
+    groups = {g["Nombre"]: g["Id"] for g in get(f"GRUPOS_TABLA/{provincial}")}
+    prov_ids = {
+        v["Codigo"]: v["Id"]
+        for v in get(f"VALORES_GRUPOSTABLA/{provincial}/{groups['Provincias']}")
+        if v["FK_Variable"] == 115
+    }
+    out: dict[str, Any] = {k: v[0] for k, v in CPI_TABLES.items()}
+    out["province_value_ids"] = dict(sorted(prov_ids.items()))
+    return {"cpi": out}
+
+
 def build_dirce() -> dict[str, Any]:
     """Companies by region and CNAE group: the table id and the Tempus ids to filter it."""
     print("DIRCE companies by region and activity...")
@@ -182,7 +214,7 @@ def build_dirce() -> dict[str, Any]:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     padron_year = build_municipalities()
-    tables = build_tables() | build_dirce() | build_epf()
+    tables = build_tables() | build_dirce() | build_epf() | build_cpi()
     tables["generated_at"] = datetime.now(UTC).isoformat(timespec="seconds")
     tables["padron_year"] = padron_year
     (OUT / "ine_tables.json").write_text(json.dumps(tables, indent=2, ensure_ascii=False) + "\n")

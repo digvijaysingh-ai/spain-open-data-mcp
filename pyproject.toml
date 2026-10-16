@@ -19,6 +19,7 @@ classifiers = [
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
     "mcp>=2.3,<3",
     "pydantic>=2.14.1",
 ]

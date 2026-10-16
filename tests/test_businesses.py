@@ -114,8 +114,8 @@ def test_area_prefix_matching(snapshot_path: Path):
 
 def test_all_businesses_leaves_out_public_services(snapshot_path: Path):
     snap = Snapshot(snapshot_path)
-    assert snap.count(Area(("47186",))) == 20
-    assert snap.count(Area(("47186",)), Selection.all_businesses()) == 19
+    assert snap.count(Area(("47186",))) == 24
+    assert snap.count(Area(("47186",)), Selection.all_businesses()) == 23
 
 
 # The tool
@@ -155,9 +155,9 @@ async def test_food_and_drink_cross_check_uses_the_whole_division(ine: IneData, 
 async def test_all_businesses_by_category(ine: IneData, store: SnapshotStore):
     env = await businesses(ine, store, "47186")
     d = env.data
-    assert d.area.count == 19
+    assert d.area.count == 23
     cats = {c.category: c.count for c in d.by_category}
-    assert cats == {"bar": 6, "gym": 6, "restaurant": 4, "cafe": 2, "other": 1}
+    assert cats == {"bar": 6, "gym": 6, "restaurant": 4, "pharmacy": 4, "cafe": 2, "other": 1}
     assert d.coverage is None
     assert env.confidence == "medium"  # never high for volunteer-mapped data
 

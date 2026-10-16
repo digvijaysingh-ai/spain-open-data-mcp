@@ -173,6 +173,21 @@ class IneData:
         cv = await self.tempus.table(t["cv_by_subgroup"], last_n=1, ttl_s=30 * DAY)
         return parse_epf(spend.series, income.series, cv.series), [spend, income, cv]
 
+    async def cpi_national(self) -> TableResult:
+        """National CPI, general and groups, 2025 base (from January 2025)."""
+        return await self.tempus.table(tables()["cpi"]["national"], last_n=24, ttl_s=DAY)
+
+    async def cpi_groups_since_2002(self) -> TableResult:
+        """National CPI by ECOICOP group on the 2025 base, monthly since January 2002."""
+        return await self.tempus.table(tables()["cpi"]["national_groups_since_2002"], last_n=400, ttl_s=DAY)
+
+    async def cpi_province(self, province: str) -> TableResult:
+        t = tables()["cpi"]
+        vid = t["province_value_ids"][province]
+        result = await self.tempus.table(t["provincial"], last_n=2, filters=[(VAR_PROVINCE, vid)], ttl_s=DAY)
+        check_units(result, {province})
+        return result
+
     async def adrh_benchmarks(self, kind: AdrhKind, last_n: int = 1) -> TableResult:
         """Spain, CCAA and province values for comparison."""
         return await self.tempus.table(tables()["adrh_aggregates"][kind], last_n=last_n, ttl_s=TTL)

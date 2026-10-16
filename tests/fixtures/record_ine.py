@@ -75,6 +75,16 @@ def keep_epf(series: dict[str, Any]) -> bool:
     return keep(series) and measure_ok
 
 
+def keep_cpi(series: dict[str, Any]) -> bool:
+    """General index and the groups the tests use; index levels and annual change only."""
+    meta = {
+        m.get("T3_Variable", ""): (m.get("Codigo"), m.get("Nombre", "")) for m in series.get("MetaData", [])
+    }
+    group = next((c for v, (c, _n) in meta.items() if v.startswith("Grupos ECOICOP")), None)
+    kind = next((n for v, (_c, n) in meta.items() if v.startswith("Índices y Tasas")), None)
+    return group in ("00", "09", "11", "13") and kind in ("Índice", "Variación anual")
+
+
 def record(
     table_id: int, params: list[tuple[str, Any]], keep: Callable[[dict[str, Any]], bool] = keep
 ) -> None:
@@ -100,6 +110,15 @@ def main() -> None:
         record(prov[kind], [("nult", 1), ("tip", "AM")])
         record(agg[kind], [("nult", n), ("tip", "AM")])
         record(agg[kind], [("nult", 1), ("tip", "AM")])
+    record(prov["income"], [("nult", 1), ("tip", "AM"), ("tv", f"19:{vid}")])
+    cpi = t["cpi"]
+    record(cpi["national"], [("nult", 24), ("tip", "AM")], keep_cpi)
+    record(cpi["national_groups_since_2002"], [("nult", 400), ("tip", "AM")], keep_cpi)
+    record(
+        cpi["provincial"],
+        [("nult", 2), ("tip", "AM"), ("tv", f"115:{cpi['province_value_ids']['47']}")],
+        keep_cpi,
+    )
     dirce = [("tv", f"{var}:{val}") for var, val in t["dirce_total_filters"]]
     for key, n in (("spend_by_code", 3), ("spend_by_income", 1), ("cv_by_subgroup", 1)):
         record(t["epf"][key], [("nult", n), ("tip", "AM")], keep_epf)

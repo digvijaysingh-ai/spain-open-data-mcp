@@ -23,6 +23,7 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 - "Which supermarket chains dominate in Las Palmas?"
 - "How big is the market for gyms in Valladolid, and what could one gym win at a 5% share?"
 - "Which towns in Valladolid province are under-served for pharmacies?"
+- "A gym charged €40 a month in Madrid in 2023. What fits in Sevilla today?"
 
 ## Tools
 
@@ -33,6 +34,8 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
 | `market_size` | Yearly household spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
 | `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by opportunity for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
+| `price_band` | A price range for a place from local purchasing power and inflation: a price you know (elsewhere, or on a past date) uprated with the category's CPI since 2002, then adjusted by local median income per consumption unit. Labelled as an estimate: public data has no competitor prices. |
+| `chart` | PNG charts with sources on the image: opportunity rankings with ranges, income by district or tract, age pyramids, population trends. If drawing fails, the text answer still comes back. |
 | `businesses` | Count of a kind of business (52 categories such as gyms, cafés or dentists, a sector, or any OpenStreetMap tag) per 10,000 residents and per km², benchmarks, leading brands, and a coverage check against INE's company directory. Optional district or tract ranking. |
 
 All tools are read-only. Each result has the same shape:
@@ -61,6 +64,9 @@ Checks and caveats:
 - [info] stale: Income is for 2023, the latest year INE has published (the atlas runs about two years behind) ...
 Confidence: high
 ```
+
+Resources: `spain-open-data://status` (how fresh each source is, and the INE release
+calendar) and `spain-open-data://data-licences`.
 
 ## How the data is checked
 

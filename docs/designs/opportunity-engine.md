@@ -356,4 +356,4 @@ Decisions made while implementing, against live data:
 - [x] **T6 (P2, human ~4h / CC ~1h)** backtest spike in 3 cities (done; OSM backtest dropped, see Validation).
 - [x] **T7 (P2, human ~1w / CC ~3h)** pure engine: ranges, completeness flag, minimum population, method version, property tests (1.1, CM2, 6.1, 10.1).
 - [ ] **T8 (P2, human ~3d / CC ~2h)** bundle yearly INE inputs into the snapshot release (CM6).
-- [ ] **T9 (P2, human ~1d / CC ~30min)** data-status resource, job failure auto-issues, structured call logs (8.1).
+- [x] **T9 (P2, human ~1d / CC ~30min)** data-status resource, job failure auto-issues, structured call logs (8.1).
