@@ -1,0 +1,1570 @@
+[
+{
+"COD": "IPC290751",
+"Nombre": "Nacional. Índice general. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 304092,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Índice general",
+"Codigo": "00"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 104.978
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 104.638
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 103.899
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 103.598
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 102.951
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 102.883
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 102.44
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 101.261
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 100.836
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.289
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100.943
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 100.748
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 100.059
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 100.345
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 100.305
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 100.382
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 99.714
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 99.647
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 99.024
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 98.966
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 98.579
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 98.411
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 97.968
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 97.729
+}
+]
+},
+{
+"COD": "IPC290750",
+"Nombre": "Nacional. Índice general. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 304092,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Índice general",
+"Codigo": "00"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 4.9
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.3
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3.6
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 3.4
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2.3
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 2.3
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 3.1
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 2.7
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 2.7
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 2.3
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 2.0
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 2.2
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 2.3
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 2.8
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 2.4
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 1.8
+}
+]
+},
+{
+"COD": "IPC290787",
+"Nombre": "Nacional. Actividades recreativas, deporte y cultura. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418057,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Actividades recreativas, deporte y cultura",
+"Codigo": "09"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 103.541
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 106.198
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 105.432
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 103.102
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 101.166
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 101.489
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 100.115
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 98.875
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 98.792
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.647
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 98.543
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 98.913
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 99.938
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 104.939
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 103.217
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 101.116
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 98.648
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 100.778
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 97.773
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 97.559
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 96.927
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 100.676
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 96.912
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 98.409
+}
+]
+},
+{
+"COD": "IPC290786",
+"Nombre": "Nacional. Actividades recreativas, deporte y cultura. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418057,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Actividades recreativas, deporte y cultura",
+"Codigo": "09"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 3.6
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 1.2
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 2.1
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2.6
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 0.7
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 2.4
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1.3
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1.9
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1.7
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 0.5
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 1.1
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 1.2
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 1.2
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 1.1
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 1.3
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 3.8
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 0.2
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 2.1
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 2.7
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 3.9
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 2.8
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 2.6
+}
+]
+},
+{
+"COD": "IPC290795",
+"Nombre": "Nacional. Restaurantes y servicios de alojamiento. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418059,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Restaurantes y servicios de alojamiento",
+"Codigo": "11"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 106.55
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 106.132
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 105.909
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 105.616
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 104.837
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 104.199
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 102.936
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 102.074
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 101.115
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.073
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100.918
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 101.434
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 101.557
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 101.304
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 100.993
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 100.603
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 100.074
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 99.553
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 98.34
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 97.428
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 96.723
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 96.671
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 96.616
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 97.148
+}
+]
+},
+{
+"COD": "IPC290794",
+"Nombre": "Nacional. Restaurantes y servicios de alojamiento. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418059,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Restaurantes y servicios de alojamiento",
+"Codigo": "11"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 4.9
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.8
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 4.9
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 5.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 4.8
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 4.7
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4.7
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 4.8
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 4.5
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 4.6
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 4.5
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 4.4
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 4.3
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 4.3
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 4.2
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 4.1
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 4.3
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 4.5
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 4.1
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 4.1
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 4.3
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 4.1
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 4.2
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 4.3
+}
+]
+},
+{
+"COD": "IPC290803",
+"Nombre": "Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418061,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Cuidado personal, protección social, y bienes y servicios diversos",
+"Codigo": "13"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 103.31
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 103.325
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 103.124
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 103.405
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 103.151
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 103.161
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 102.77
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 102.39
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 101.56
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.008
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100.868
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 100.496
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 100.16
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 100.135
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 99.907
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 100.31
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 100.072
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 99.856
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 99.524
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 99.037
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 98.627
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 98.179
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 98.057
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 97.695
+}
+]
+},
+{
+"COD": "IPC290802",
+"Nombre": "Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00"
+},
+{
+"Id": 418061,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Cuidado personal, protección social, y bienes y servicios diversos",
+"Codigo": "13"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 3.1
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 3.1
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 3.1
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 3.3
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 3.3
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 3.4
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 2.9
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 3.3
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 3.0
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 3.1
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 2.9
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 2.8
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 2.6
+}
+]
+}
+]

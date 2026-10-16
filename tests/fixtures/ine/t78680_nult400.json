@@ -1,0 +1,6326 @@
+[
+{
+"COD": "IPC290787",
+"Nombre": "Nacional. Actividades recreativas, deporte y cultura. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00",
+"Nota": "Codficación para el CERTI"
+},
+{
+"Id": 418057,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Actividades recreativas, deporte y cultura",
+"Codigo": "09"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 103.541
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 106.198
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 105.432
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 103.102
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 101.166
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 101.489
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 100.115
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 98.875
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 98.792
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.647
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 98.543
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 98.913
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 99.938
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 104.939
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 103.217
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 101.116
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 98.648
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 100.778
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 97.773
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 97.559
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 96.927
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 100.676
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 96.912
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 98.409
+},
+{
+"Fecha": "2024-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2024,
+"Valor": 98.853
+},
+{
+"Fecha": "2024-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2024,
+"Valor": 103.68
+},
+{
+"Fecha": "2024-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2024,
+"Valor": 101.949
+},
+{
+"Fecha": "2024-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2024,
+"Valor": 100.024
+},
+{
+"Fecha": "2024-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2024,
+"Valor": 97.368
+},
+{
+"Fecha": "2024-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2024,
+"Valor": 97.107
+},
+{
+"Fecha": "2024-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2024,
+"Valor": 97.556
+},
+{
+"Fecha": "2024-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2024,
+"Valor": 95.573
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2024,
+"Valor": 94.377
+},
+{
+"Fecha": "2023-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2023,
+"Valor": 96.936
+},
+{
+"Fecha": "2023-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2023,
+"Valor": 94.268
+},
+{
+"Fecha": "2023-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2023,
+"Valor": 95.904
+},
+{
+"Fecha": "2023-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2023,
+"Valor": 97.555
+},
+{
+"Fecha": "2023-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2023,
+"Valor": 101.244
+},
+{
+"Fecha": "2023-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2023,
+"Valor": 100.224
+},
+{
+"Fecha": "2023-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2023,
+"Valor": 96.722
+},
+{
+"Fecha": "2023-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2023,
+"Valor": 94.387
+},
+{
+"Fecha": "2023-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2023,
+"Valor": 94.774
+},
+{
+"Fecha": "2023-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2023,
+"Valor": 93.461
+},
+{
+"Fecha": "2023-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2023,
+"Valor": 92.328
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2023,
+"Valor": 91.039
+},
+{
+"Fecha": "2022-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2022,
+"Valor": 93.596
+},
+{
+"Fecha": "2022-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2022,
+"Valor": 91.597
+},
+{
+"Fecha": "2022-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2022,
+"Valor": 91.743
+},
+{
+"Fecha": "2022-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2022,
+"Valor": 91.871
+},
+{
+"Fecha": "2022-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2022,
+"Valor": 93.356
+},
+{
+"Fecha": "2022-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2022,
+"Valor": 92.212
+},
+{
+"Fecha": "2022-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2022,
+"Valor": 90.769
+},
+{
+"Fecha": "2022-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2022,
+"Valor": 89.448
+},
+{
+"Fecha": "2022-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2022,
+"Valor": 90.085
+},
+{
+"Fecha": "2022-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2022,
+"Valor": 88.538
+},
+{
+"Fecha": "2022-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2022,
+"Valor": 88.804
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2022,
+"Valor": 88.074
+},
+{
+"Fecha": "2021-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2021,
+"Valor": 88.901
+},
+{
+"Fecha": "2021-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2021,
+"Valor": 87.727
+},
+{
+"Fecha": "2021-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2021,
+"Valor": 87.927
+},
+{
+"Fecha": "2021-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2021,
+"Valor": 87.958
+},
+{
+"Fecha": "2021-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2021,
+"Valor": 88.762
+},
+{
+"Fecha": "2021-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2021,
+"Valor": 88.083
+},
+{
+"Fecha": "2021-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2021,
+"Valor": 87.397
+},
+{
+"Fecha": "2021-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2021,
+"Valor": 86.943
+},
+{
+"Fecha": "2021-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2021,
+"Valor": 87.075
+},
+{
+"Fecha": "2021-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2021,
+"Valor": 87.191
+},
+{
+"Fecha": "2021-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2021,
+"Valor": 87.071
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2021,
+"Valor": 86.782
+},
+{
+"Fecha": "2020-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2020,
+"Valor": 87.179
+},
+{
+"Fecha": "2020-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2020,
+"Valor": 85.908
+},
+{
+"Fecha": "2020-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2020,
+"Valor": 86.397
+},
+{
+"Fecha": "2020-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2020,
+"Valor": 86.907
+},
+{
+"Fecha": "2020-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2020,
+"Valor": 89.059
+},
+{
+"Fecha": "2020-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2020,
+"Valor": 88.784
+},
+{
+"Fecha": "2020-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2020,
+"Valor": 87.979
+},
+{
+"Fecha": "2020-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2020,
+"Valor": 86.512
+},
+{
+"Fecha": "2020-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2020,
+"Valor": 88.0
+},
+{
+"Fecha": "2020-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2020,
+"Valor": 87.13
+},
+{
+"Fecha": "2020-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2020,
+"Valor": 87.244
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2020,
+"Valor": 86.397
+},
+{
+"Fecha": "2019-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2019,
+"Valor": 88.504
+},
+{
+"Fecha": "2019-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2019,
+"Valor": 86.441
+},
+{
+"Fecha": "2019-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2019,
+"Valor": 86.79
+},
+{
+"Fecha": "2019-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2019,
+"Valor": 87.775
+},
+{
+"Fecha": "2019-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2019,
+"Valor": 90.891
+},
+{
+"Fecha": "2019-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2019,
+"Valor": 89.794
+},
+{
+"Fecha": "2019-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2019,
+"Valor": 88.018
+},
+{
+"Fecha": "2019-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2019,
+"Valor": 86.304
+},
+{
+"Fecha": "2019-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2019,
+"Valor": 87.73
+},
+{
+"Fecha": "2019-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2019,
+"Valor": 86.811
+},
+{
+"Fecha": "2019-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2019,
+"Valor": 86.48
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2019,
+"Valor": 85.688
+},
+{
+"Fecha": "2018-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2018,
+"Valor": 87.855
+},
+{
+"Fecha": "2018-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2018,
+"Valor": 85.932
+},
+{
+"Fecha": "2018-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2018,
+"Valor": 86.548
+},
+{
+"Fecha": "2018-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2018,
+"Valor": 87.151
+},
+{
+"Fecha": "2018-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2018,
+"Valor": 90.271
+},
+{
+"Fecha": "2018-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2018,
+"Valor": 89.55
+},
+{
+"Fecha": "2018-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2018,
+"Valor": 87.79
+},
+{
+"Fecha": "2018-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2018,
+"Valor": 86.886
+},
+{
+"Fecha": "2018-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2018,
+"Valor": 86.804
+},
+{
+"Fecha": "2018-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2018,
+"Valor": 87.75
+},
+{
+"Fecha": "2018-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2018,
+"Valor": 87.382
+},
+{
+"Fecha": "2018-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2018,
+"Valor": 85.965
+},
+{
+"Fecha": "2017-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2017,
+"Valor": 87.465
+},
+{
+"Fecha": "2017-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2017,
+"Valor": 85.961
+},
+{
+"Fecha": "2017-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2017,
+"Valor": 86.088
+},
+{
+"Fecha": "2017-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2017,
+"Valor": 87.768
+},
+{
+"Fecha": "2017-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2017,
+"Valor": 90.936
+},
+{
+"Fecha": "2017-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2017,
+"Valor": 89.883
+},
+{
+"Fecha": "2017-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2017,
+"Valor": 86.972
+},
+{
+"Fecha": "2017-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2017,
+"Valor": 85.891
+},
+{
+"Fecha": "2017-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2017,
+"Valor": 88.154
+},
+{
+"Fecha": "2017-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2017,
+"Valor": 86.596
+},
+{
+"Fecha": "2017-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2017,
+"Valor": 86.646
+},
+{
+"Fecha": "2017-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2017,
+"Valor": 86.332
+},
+{
+"Fecha": "2016-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2016,
+"Valor": 87.783
+},
+{
+"Fecha": "2016-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2016,
+"Valor": 84.646
+},
+{
+"Fecha": "2016-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2016,
+"Valor": 84.477
+},
+{
+"Fecha": "2016-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2016,
+"Valor": 85.749
+},
+{
+"Fecha": "2016-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2016,
+"Valor": 89.787
+},
+{
+"Fecha": "2016-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2016,
+"Valor": 88.154
+},
+{
+"Fecha": "2016-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2016,
+"Valor": 85.183
+},
+{
+"Fecha": "2016-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2016,
+"Valor": 84.141
+},
+{
+"Fecha": "2016-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2016,
+"Valor": 84.205
+},
+{
+"Fecha": "2016-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2016,
+"Valor": 86.2
+},
+{
+"Fecha": "2016-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2016,
+"Valor": 85.27
+},
+{
+"Fecha": "2016-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2016,
+"Valor": 84.736
+},
+{
+"Fecha": "2015-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2015,
+"Valor": 86.504
+},
+{
+"Fecha": "2015-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2015,
+"Valor": 85.375
+},
+{
+"Fecha": "2015-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2015,
+"Valor": 85.455
+},
+{
+"Fecha": "2015-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2015,
+"Valor": 86.328
+},
+{
+"Fecha": "2015-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2015,
+"Valor": 88.698
+},
+{
+"Fecha": "2015-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2015,
+"Valor": 87.94
+},
+{
+"Fecha": "2015-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2015,
+"Valor": 85.956
+},
+{
+"Fecha": "2015-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2015,
+"Valor": 85.222
+},
+{
+"Fecha": "2015-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2015,
+"Valor": 86.085
+},
+{
+"Fecha": "2015-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2015,
+"Valor": 85.517
+},
+{
+"Fecha": "2015-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2015,
+"Valor": 84.682
+},
+{
+"Fecha": "2015-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2015,
+"Valor": 84.245
+},
+{
+"Fecha": "2014-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2014,
+"Valor": 85.709
+},
+{
+"Fecha": "2014-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2014,
+"Valor": 84.052
+},
+{
+"Fecha": "2014-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2014,
+"Valor": 84.681
+},
+{
+"Fecha": "2014-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2014,
+"Valor": 85.502
+},
+{
+"Fecha": "2014-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2014,
+"Valor": 88.309
+},
+{
+"Fecha": "2014-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2014,
+"Valor": 87.261
+},
+{
+"Fecha": "2014-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2014,
+"Valor": 85.781
+},
+{
+"Fecha": "2014-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2014,
+"Valor": 85.034
+},
+{
+"Fecha": "2014-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2014,
+"Valor": 86.324
+},
+{
+"Fecha": "2014-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2014,
+"Valor": 84.824
+},
+{
+"Fecha": "2014-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2014,
+"Valor": 84.544
+},
+{
+"Fecha": "2014-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2014,
+"Valor": 83.757
+},
+{
+"Fecha": "2013-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2013,
+"Valor": 85.644
+},
+{
+"Fecha": "2013-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2013,
+"Valor": 84.28
+},
+{
+"Fecha": "2013-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2013,
+"Valor": 85.411
+},
+{
+"Fecha": "2013-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2013,
+"Valor": 86.324
+},
+{
+"Fecha": "2013-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2013,
+"Valor": 88.926
+},
+{
+"Fecha": "2013-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2013,
+"Valor": 87.748
+},
+{
+"Fecha": "2013-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2013,
+"Valor": 85.609
+},
+{
+"Fecha": "2013-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2013,
+"Valor": 85.046
+},
+{
+"Fecha": "2013-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2013,
+"Valor": 85.315
+},
+{
+"Fecha": "2013-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2013,
+"Valor": 86.067
+},
+{
+"Fecha": "2013-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2013,
+"Valor": 84.382
+},
+{
+"Fecha": "2013-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2013,
+"Valor": 83.851
+},
+{
+"Fecha": "2012-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2012,
+"Valor": 85.744
+},
+{
+"Fecha": "2012-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2012,
+"Valor": 83.88
+},
+{
+"Fecha": "2012-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2012,
+"Valor": 85.132
+},
+{
+"Fecha": "2012-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2012,
+"Valor": 85.109
+},
+{
+"Fecha": "2012-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2012,
+"Valor": 86.169
+},
+{
+"Fecha": "2012-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2012,
+"Valor": 85.098
+},
+{
+"Fecha": "2012-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2012,
+"Valor": 82.874
+},
+{
+"Fecha": "2012-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2012,
+"Valor": 82.181
+},
+{
+"Fecha": "2012-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2012,
+"Valor": 83.74
+},
+{
+"Fecha": "2012-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2012,
+"Valor": 82.535
+},
+{
+"Fecha": "2012-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2012,
+"Valor": 81.679
+},
+{
+"Fecha": "2012-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2012,
+"Valor": 81.408
+},
+{
+"Fecha": "2011-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2011,
+"Valor": 83.542
+},
+{
+"Fecha": "2011-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2011,
+"Valor": 81.412
+},
+{
+"Fecha": "2011-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2011,
+"Valor": 81.867
+},
+{
+"Fecha": "2011-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2011,
+"Valor": 82.56
+},
+{
+"Fecha": "2011-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2011,
+"Valor": 84.819
+},
+{
+"Fecha": "2011-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2011,
+"Valor": 83.401
+},
+{
+"Fecha": "2011-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2011,
+"Valor": 81.079
+},
+{
+"Fecha": "2011-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2011,
+"Valor": 80.646
+},
+{
+"Fecha": "2011-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2011,
+"Valor": 81.997
+},
+{
+"Fecha": "2011-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2011,
+"Valor": 80.45
+},
+{
+"Fecha": "2011-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2011,
+"Valor": 79.934
+},
+{
+"Fecha": "2011-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2011,
+"Valor": 79.371
+},
+{
+"Fecha": "2010-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2010,
+"Valor": 80.857
+},
+{
+"Fecha": "2010-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2010,
+"Valor": 79.487
+},
+{
+"Fecha": "2010-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2010,
+"Valor": 80.306
+},
+{
+"Fecha": "2010-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2010,
+"Valor": 81.028
+},
+{
+"Fecha": "2010-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2010,
+"Valor": 83.241
+},
+{
+"Fecha": "2010-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2010,
+"Valor": 82.073
+},
+{
+"Fecha": "2010-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2010,
+"Valor": 80.421
+},
+{
+"Fecha": "2010-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2010,
+"Valor": 79.797
+},
+{
+"Fecha": "2010-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2010,
+"Valor": 80.286
+},
+{
+"Fecha": "2010-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2010,
+"Valor": 80.39
+},
+{
+"Fecha": "2010-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2010,
+"Valor": 79.2
+},
+{
+"Fecha": "2010-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2010,
+"Valor": 79.445
+},
+{
+"Fecha": "2009-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2009,
+"Valor": 81.099
+},
+{
+"Fecha": "2009-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2009,
+"Valor": 79.782
+},
+{
+"Fecha": "2009-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2009,
+"Valor": 80.354
+},
+{
+"Fecha": "2009-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2009,
+"Valor": 80.989
+},
+{
+"Fecha": "2009-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2009,
+"Valor": 82.67
+},
+{
+"Fecha": "2009-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2009,
+"Valor": 81.976
+},
+{
+"Fecha": "2009-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2009,
+"Valor": 81.05
+},
+{
+"Fecha": "2009-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2009,
+"Valor": 80.511
+},
+{
+"Fecha": "2009-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2009,
+"Valor": 81.87
+},
+{
+"Fecha": "2009-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2009,
+"Valor": 80.447
+},
+{
+"Fecha": "2009-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2009,
+"Valor": 80.172
+},
+{
+"Fecha": "2009-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2009,
+"Valor": 79.94
+},
+{
+"Fecha": "2008-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2008,
+"Valor": 80.984
+},
+{
+"Fecha": "2008-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2008,
+"Valor": 79.607
+},
+{
+"Fecha": "2008-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2008,
+"Valor": 80.349
+},
+{
+"Fecha": "2008-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2008,
+"Valor": 80.718
+},
+{
+"Fecha": "2008-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2008,
+"Valor": 82.269
+},
+{
+"Fecha": "2008-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2008,
+"Valor": 80.816
+},
+{
+"Fecha": "2008-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2008,
+"Valor": 79.51
+},
+{
+"Fecha": "2008-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2008,
+"Valor": 78.883
+},
+{
+"Fecha": "2008-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2008,
+"Valor": 78.553
+},
+{
+"Fecha": "2008-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2008,
+"Valor": 79.411
+},
+{
+"Fecha": "2008-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2008,
+"Valor": 78.198
+},
+{
+"Fecha": "2008-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2008,
+"Valor": 77.813
+},
+{
+"Fecha": "2007-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2007,
+"Valor": 78.852
+},
+{
+"Fecha": "2007-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2007,
+"Valor": 77.46
+},
+{
+"Fecha": "2007-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2007,
+"Valor": 78.055
+},
+{
+"Fecha": "2007-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2007,
+"Valor": 78.69
+},
+{
+"Fecha": "2007-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2007,
+"Valor": 80.134
+},
+{
+"Fecha": "2007-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2007,
+"Valor": 78.8
+},
+{
+"Fecha": "2007-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2007,
+"Valor": 77.676
+},
+{
+"Fecha": "2007-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2007,
+"Valor": 77.424
+},
+{
+"Fecha": "2007-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2007,
+"Valor": 77.97
+},
+{
+"Fecha": "2007-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2007,
+"Valor": 77.248
+},
+{
+"Fecha": "2007-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2007,
+"Valor": 76.609
+},
+{
+"Fecha": "2007-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2007,
+"Valor": 76.133
+},
+{
+"Fecha": "2006-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2006,
+"Valor": 77.631
+},
+{
+"Fecha": "2006-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2006,
+"Valor": 76.133
+},
+{
+"Fecha": "2006-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2006,
+"Valor": 76.852
+},
+{
+"Fecha": "2006-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2006,
+"Valor": 77.825
+},
+{
+"Fecha": "2006-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2006,
+"Valor": 79.136
+},
+{
+"Fecha": "2006-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2006,
+"Valor": 77.913
+},
+{
+"Fecha": "2006-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2006,
+"Valor": 76.542
+},
+{
+"Fecha": "2006-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2006,
+"Valor": 75.897
+},
+{
+"Fecha": "2006-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2006,
+"Valor": 76.683
+},
+{
+"Fecha": "2006-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2006,
+"Valor": 75.57
+},
+{
+"Fecha": "2006-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2006,
+"Valor": 75.623
+},
+{
+"Fecha": "2006-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2006,
+"Valor": 75.377
+},
+{
+"Fecha": "2005-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2005,
+"Valor": 76.758
+},
+{
+"Fecha": "2005-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2005,
+"Valor": 75.459
+},
+{
+"Fecha": "2005-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2005,
+"Valor": 75.831
+},
+{
+"Fecha": "2005-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2005,
+"Valor": 76.214
+},
+{
+"Fecha": "2005-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2005,
+"Valor": 77.329
+},
+{
+"Fecha": "2005-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2005,
+"Valor": 76.183
+},
+{
+"Fecha": "2005-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2005,
+"Valor": 74.973
+},
+{
+"Fecha": "2005-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2005,
+"Valor": 74.274
+},
+{
+"Fecha": "2005-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2005,
+"Valor": 74.55
+},
+{
+"Fecha": "2005-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2005,
+"Valor": 75.244
+},
+{
+"Fecha": "2005-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2005,
+"Valor": 74.417
+},
+{
+"Fecha": "2005-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2005,
+"Valor": 74.045
+},
+{
+"Fecha": "2004-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2004,
+"Valor": 74.962
+},
+{
+"Fecha": "2004-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2004,
+"Valor": 74.069
+},
+{
+"Fecha": "2004-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2004,
+"Valor": 74.686
+},
+{
+"Fecha": "2004-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2004,
+"Valor": 75.36
+},
+{
+"Fecha": "2004-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2004,
+"Valor": 76.395
+},
+{
+"Fecha": "2004-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2004,
+"Valor": 74.945
+},
+{
+"Fecha": "2004-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2004,
+"Valor": 74.121
+},
+{
+"Fecha": "2004-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2004,
+"Valor": 73.303
+},
+{
+"Fecha": "2004-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2004,
+"Valor": 74.373
+},
+{
+"Fecha": "2004-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2004,
+"Valor": 73.333
+},
+{
+"Fecha": "2004-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2004,
+"Valor": 72.944
+},
+{
+"Fecha": "2004-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2004,
+"Valor": 72.639
+},
+{
+"Fecha": "2003-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2003,
+"Valor": 73.718
+},
+{
+"Fecha": "2003-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2003,
+"Valor": 72.793
+},
+{
+"Fecha": "2003-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2003,
+"Valor": 73.62
+},
+{
+"Fecha": "2003-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2003,
+"Valor": 73.626
+},
+{
+"Fecha": "2003-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2003,
+"Valor": 74.915
+},
+{
+"Fecha": "2003-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2003,
+"Valor": 73.465
+},
+{
+"Fecha": "2003-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2003,
+"Valor": 72.345
+},
+{
+"Fecha": "2003-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2003,
+"Valor": 71.807
+},
+{
+"Fecha": "2003-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2003,
+"Valor": 73.121
+},
+{
+"Fecha": "2003-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2003,
+"Valor": 71.709
+},
+{
+"Fecha": "2003-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2003,
+"Valor": 71.479
+},
+{
+"Fecha": "2003-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2003,
+"Valor": 71.101
+},
+{
+"Fecha": "2002-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2002,
+"Valor": 72.023
+},
+{
+"Fecha": "2002-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2002,
+"Valor": 70.802
+},
+{
+"Fecha": "2002-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2002,
+"Valor": 71.024
+},
+{
+"Fecha": "2002-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2002,
+"Valor": 71.538
+},
+{
+"Fecha": "2002-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2002,
+"Valor": 72.84
+},
+{
+"Fecha": "2002-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2002,
+"Valor": 71.74
+},
+{
+"Fecha": "2002-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2002,
+"Valor": 70.894
+},
+{
+"Fecha": "2002-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2002,
+"Valor": 70.347
+},
+{
+"Fecha": "2002-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2002,
+"Valor": 69.878
+},
+{
+"Fecha": "2002-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2002,
+"Valor": 70.197
+},
+{
+"Fecha": "2002-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2002,
+"Valor": 68.794
+},
+{
+"Fecha": "2002-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2002,
+"Valor": 68.671
+}
+]
+},
+{
+"COD": "IPC290795",
+"Nombre": "Nacional. Restaurantes y servicios de alojamiento. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00",
+"Nota": "Codficación para el CERTI"
+},
+{
+"Id": 418059,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Restaurantes y servicios de alojamiento",
+"Codigo": "11"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 106.55
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 106.132
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 105.909
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 105.616
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 104.837
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 104.199
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 102.936
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 102.074
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 101.115
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.073
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100.918
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 101.434
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 101.557
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 101.304
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 100.993
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 100.603
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 100.074
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 99.553
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 98.34
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 97.428
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 96.723
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 96.671
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 96.616
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 97.148
+},
+{
+"Fecha": "2024-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2024,
+"Valor": 97.343
+},
+{
+"Fecha": "2024-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2024,
+"Valor": 97.132
+},
+{
+"Fecha": "2024-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2024,
+"Valor": 96.93
+},
+{
+"Fecha": "2024-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2024,
+"Valor": 96.598
+},
+{
+"Fecha": "2024-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2024,
+"Valor": 95.961
+},
+{
+"Fecha": "2024-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2024,
+"Valor": 95.254
+},
+{
+"Fecha": "2024-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2024,
+"Valor": 94.457
+},
+{
+"Fecha": "2024-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2024,
+"Valor": 93.62
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2024,
+"Valor": 92.752
+},
+{
+"Fecha": "2023-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2023,
+"Valor": 92.838
+},
+{
+"Fecha": "2023-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2023,
+"Valor": 92.682
+},
+{
+"Fecha": "2023-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2023,
+"Valor": 93.135
+},
+{
+"Fecha": "2023-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2023,
+"Valor": 92.933
+},
+{
+"Fecha": "2023-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2023,
+"Valor": 92.859
+},
+{
+"Fecha": "2023-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2023,
+"Valor": 92.603
+},
+{
+"Fecha": "2023-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2023,
+"Valor": 92.006
+},
+{
+"Fecha": "2023-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2023,
+"Valor": 91.183
+},
+{
+"Fecha": "2023-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2023,
+"Valor": 90.864
+},
+{
+"Fecha": "2023-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2023,
+"Valor": 89.506
+},
+{
+"Fecha": "2023-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2023,
+"Valor": 88.751
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2023,
+"Valor": 87.989
+},
+{
+"Fecha": "2022-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2022,
+"Valor": 87.989
+},
+{
+"Fecha": "2022-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2022,
+"Valor": 87.383
+},
+{
+"Fecha": "2022-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2022,
+"Valor": 87.604
+},
+{
+"Fecha": "2022-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2022,
+"Valor": 87.447
+},
+{
+"Fecha": "2022-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2022,
+"Valor": 87.3
+},
+{
+"Fecha": "2022-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2022,
+"Valor": 86.926
+},
+{
+"Fecha": "2022-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2022,
+"Valor": 86.158
+},
+{
+"Fecha": "2022-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2022,
+"Valor": 85.03
+},
+{
+"Fecha": "2022-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2022,
+"Valor": 84.416
+},
+{
+"Fecha": "2022-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2022,
+"Valor": 83.032
+},
+{
+"Fecha": "2022-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2022,
+"Valor": 82.23
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2022,
+"Valor": 81.617
+},
+{
+"Fecha": "2021-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2021,
+"Valor": 81.617
+},
+{
+"Fecha": "2021-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2021,
+"Valor": 81.228
+},
+{
+"Fecha": "2021-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2021,
+"Valor": 81.16
+},
+{
+"Fecha": "2021-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2021,
+"Valor": 81.051
+},
+{
+"Fecha": "2021-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2021,
+"Valor": 81.156
+},
+{
+"Fecha": "2021-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2021,
+"Valor": 80.793
+},
+{
+"Fecha": "2021-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2021,
+"Valor": 80.358
+},
+{
+"Fecha": "2021-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2021,
+"Valor": 79.981
+},
+{
+"Fecha": "2021-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2021,
+"Valor": 79.773
+},
+{
+"Fecha": "2021-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2021,
+"Valor": 79.546
+},
+{
+"Fecha": "2021-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2021,
+"Valor": 79.387
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2021,
+"Valor": 79.282
+},
+{
+"Fecha": "2020-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2020,
+"Valor": 79.192
+},
+{
+"Fecha": "2020-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2020,
+"Valor": 79.223
+},
+{
+"Fecha": "2020-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2020,
+"Valor": 79.603
+},
+{
+"Fecha": "2020-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2020,
+"Valor": 79.9
+},
+{
+"Fecha": "2020-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2020,
+"Valor": 80.093
+},
+{
+"Fecha": "2020-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2020,
+"Valor": 79.889
+},
+{
+"Fecha": "2020-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2020,
+"Valor": 80.753
+},
+{
+"Fecha": "2020-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2020,
+"Valor": 80.484
+},
+{
+"Fecha": "2020-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2020,
+"Valor": 80.14
+},
+{
+"Fecha": "2020-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2020,
+"Valor": 79.577
+},
+{
+"Fecha": "2020-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2020,
+"Valor": 79.352
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2020,
+"Valor": 78.778
+},
+{
+"Fecha": "2019-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2019,
+"Valor": 78.943
+},
+{
+"Fecha": "2019-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2019,
+"Valor": 79.006
+},
+{
+"Fecha": "2019-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2019,
+"Valor": 79.377
+},
+{
+"Fecha": "2019-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2019,
+"Valor": 79.697
+},
+{
+"Fecha": "2019-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2019,
+"Valor": 79.719
+},
+{
+"Fecha": "2019-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2019,
+"Valor": 79.66
+},
+{
+"Fecha": "2019-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2019,
+"Valor": 79.34
+},
+{
+"Fecha": "2019-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2019,
+"Valor": 79.088
+},
+{
+"Fecha": "2019-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2019,
+"Valor": 78.778
+},
+{
+"Fecha": "2019-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2019,
+"Valor": 78.108
+},
+{
+"Fecha": "2019-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2019,
+"Valor": 77.68
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2019,
+"Valor": 77.266
+},
+{
+"Fecha": "2018-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2018,
+"Valor": 77.4
+},
+{
+"Fecha": "2018-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2018,
+"Valor": 77.43
+},
+{
+"Fecha": "2018-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2018,
+"Valor": 77.866
+},
+{
+"Fecha": "2018-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2018,
+"Valor": 78.154
+},
+{
+"Fecha": "2018-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2018,
+"Valor": 78.223
+},
+{
+"Fecha": "2018-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2018,
+"Valor": 78.067
+},
+{
+"Fecha": "2018-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2018,
+"Valor": 77.613
+},
+{
+"Fecha": "2018-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2018,
+"Valor": 77.369
+},
+{
+"Fecha": "2018-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2018,
+"Valor": 77.027
+},
+{
+"Fecha": "2018-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2018,
+"Valor": 76.76
+},
+{
+"Fecha": "2018-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2018,
+"Valor": 76.306
+},
+{
+"Fecha": "2018-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2018,
+"Valor": 75.917
+},
+{
+"Fecha": "2017-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2017,
+"Valor": 76.009
+},
+{
+"Fecha": "2017-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2017,
+"Valor": 75.872
+},
+{
+"Fecha": "2017-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2017,
+"Valor": 76.408
+},
+{
+"Fecha": "2017-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2017,
+"Valor": 76.67
+},
+{
+"Fecha": "2017-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2017,
+"Valor": 76.84
+},
+{
+"Fecha": "2017-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2017,
+"Valor": 76.532
+},
+{
+"Fecha": "2017-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2017,
+"Valor": 76.303
+},
+{
+"Fecha": "2017-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2017,
+"Valor": 75.867
+},
+{
+"Fecha": "2017-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2017,
+"Valor": 75.836
+},
+{
+"Fecha": "2017-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2017,
+"Valor": 75.082
+},
+{
+"Fecha": "2017-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2017,
+"Valor": 74.769
+},
+{
+"Fecha": "2017-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2017,
+"Valor": 74.447
+},
+{
+"Fecha": "2016-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2016,
+"Valor": 74.596
+},
+{
+"Fecha": "2016-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2016,
+"Valor": 74.506
+},
+{
+"Fecha": "2016-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2016,
+"Valor": 74.816
+},
+{
+"Fecha": "2016-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2016,
+"Valor": 74.98
+},
+{
+"Fecha": "2016-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2016,
+"Valor": 75.134
+},
+{
+"Fecha": "2016-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2016,
+"Valor": 74.926
+},
+{
+"Fecha": "2016-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2016,
+"Valor": 74.646
+},
+{
+"Fecha": "2016-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2016,
+"Valor": 74.494
+},
+{
+"Fecha": "2016-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2016,
+"Valor": 74.342
+},
+{
+"Fecha": "2016-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2016,
+"Valor": 74.201
+},
+{
+"Fecha": "2016-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2016,
+"Valor": 73.818
+},
+{
+"Fecha": "2016-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2016,
+"Valor": 73.552
+},
+{
+"Fecha": "2015-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2015,
+"Valor": 73.564
+},
+{
+"Fecha": "2015-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2015,
+"Valor": 73.535
+},
+{
+"Fecha": "2015-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2015,
+"Valor": 73.907
+},
+{
+"Fecha": "2015-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2015,
+"Valor": 74.139
+},
+{
+"Fecha": "2015-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2015,
+"Valor": 74.997
+},
+{
+"Fecha": "2015-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2015,
+"Valor": 74.387
+},
+{
+"Fecha": "2015-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2015,
+"Valor": 73.958
+},
+{
+"Fecha": "2015-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2015,
+"Valor": 73.665
+},
+{
+"Fecha": "2015-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2015,
+"Valor": 73.537
+},
+{
+"Fecha": "2015-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2015,
+"Valor": 73.045
+},
+{
+"Fecha": "2015-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2015,
+"Valor": 72.797
+},
+{
+"Fecha": "2015-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2015,
+"Valor": 72.644
+},
+{
+"Fecha": "2014-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2014,
+"Valor": 72.88
+},
+{
+"Fecha": "2014-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2014,
+"Valor": 72.814
+},
+{
+"Fecha": "2014-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2014,
+"Valor": 73.185
+},
+{
+"Fecha": "2014-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2014,
+"Valor": 73.504
+},
+{
+"Fecha": "2014-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2014,
+"Valor": 74.266
+},
+{
+"Fecha": "2014-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2014,
+"Valor": 73.7
+},
+{
+"Fecha": "2014-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2014,
+"Valor": 73.217
+},
+{
+"Fecha": "2014-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2014,
+"Valor": 73.018
+},
+{
+"Fecha": "2014-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2014,
+"Valor": 73.101
+},
+{
+"Fecha": "2014-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2014,
+"Valor": 72.516
+},
+{
+"Fecha": "2014-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2014,
+"Valor": 72.328
+},
+{
+"Fecha": "2014-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2014,
+"Valor": 72.239
+},
+{
+"Fecha": "2013-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2013,
+"Valor": 72.411
+},
+{
+"Fecha": "2013-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2013,
+"Valor": 72.417
+},
+{
+"Fecha": "2013-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2013,
+"Valor": 72.75
+},
+{
+"Fecha": "2013-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2013,
+"Valor": 73.0
+},
+{
+"Fecha": "2013-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2013,
+"Valor": 73.815
+},
+{
+"Fecha": "2013-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2013,
+"Valor": 73.375
+},
+{
+"Fecha": "2013-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2013,
+"Valor": 72.897
+},
+{
+"Fecha": "2013-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2013,
+"Valor": 72.685
+},
+{
+"Fecha": "2013-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2013,
+"Valor": 72.602
+},
+{
+"Fecha": "2013-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2013,
+"Valor": 72.355
+},
+{
+"Fecha": "2013-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2013,
+"Valor": 72.152
+},
+{
+"Fecha": "2013-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2013,
+"Valor": 72.14
+},
+{
+"Fecha": "2012-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2012,
+"Valor": 72.285
+},
+{
+"Fecha": "2012-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2012,
+"Valor": 72.288
+},
+{
+"Fecha": "2012-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2012,
+"Valor": 72.57
+},
+{
+"Fecha": "2012-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2012,
+"Valor": 72.7
+},
+{
+"Fecha": "2012-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2012,
+"Valor": 73.356
+},
+{
+"Fecha": "2012-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2012,
+"Valor": 72.828
+},
+{
+"Fecha": "2012-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2012,
+"Valor": 72.387
+},
+{
+"Fecha": "2012-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2012,
+"Valor": 72.213
+},
+{
+"Fecha": "2012-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2012,
+"Valor": 72.381
+},
+{
+"Fecha": "2012-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2012,
+"Valor": 71.864
+},
+{
+"Fecha": "2012-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2012,
+"Valor": 71.705
+},
+{
+"Fecha": "2012-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2012,
+"Valor": 71.662
+},
+{
+"Fecha": "2011-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2011,
+"Valor": 71.731
+},
+{
+"Fecha": "2011-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2011,
+"Valor": 71.618
+},
+{
+"Fecha": "2011-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2011,
+"Valor": 71.825
+},
+{
+"Fecha": "2011-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2011,
+"Valor": 72.073
+},
+{
+"Fecha": "2011-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2011,
+"Valor": 72.863
+},
+{
+"Fecha": "2011-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2011,
+"Valor": 72.281
+},
+{
+"Fecha": "2011-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2011,
+"Valor": 71.754
+},
+{
+"Fecha": "2011-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2011,
+"Valor": 71.551
+},
+{
+"Fecha": "2011-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2011,
+"Valor": 71.656
+},
+{
+"Fecha": "2011-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2011,
+"Valor": 71.253
+},
+{
+"Fecha": "2011-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2011,
+"Valor": 71.045
+},
+{
+"Fecha": "2011-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2011,
+"Valor": 70.957
+},
+{
+"Fecha": "2010-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2010,
+"Valor": 70.892
+},
+{
+"Fecha": "2010-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2010,
+"Valor": 70.752
+},
+{
+"Fecha": "2010-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2010,
+"Valor": 70.889
+},
+{
+"Fecha": "2010-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2010,
+"Valor": 71.063
+},
+{
+"Fecha": "2010-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2010,
+"Valor": 71.755
+},
+{
+"Fecha": "2010-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2010,
+"Valor": 71.108
+},
+{
+"Fecha": "2010-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2010,
+"Valor": 70.507
+},
+{
+"Fecha": "2010-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2010,
+"Valor": 70.306
+},
+{
+"Fecha": "2010-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2010,
+"Valor": 70.322
+},
+{
+"Fecha": "2010-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2010,
+"Valor": 69.975
+},
+{
+"Fecha": "2010-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2010,
+"Valor": 69.85
+},
+{
+"Fecha": "2010-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2010,
+"Valor": 69.752
+},
+{
+"Fecha": "2009-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2009,
+"Valor": 69.708
+},
+{
+"Fecha": "2009-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2009,
+"Valor": 69.681
+},
+{
+"Fecha": "2009-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2009,
+"Valor": 69.875
+},
+{
+"Fecha": "2009-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2009,
+"Valor": 70.043
+},
+{
+"Fecha": "2009-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2009,
+"Valor": 70.87
+},
+{
+"Fecha": "2009-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2009,
+"Valor": 70.25
+},
+{
+"Fecha": "2009-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2009,
+"Valor": 69.778
+},
+{
+"Fecha": "2009-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2009,
+"Valor": 69.625
+},
+{
+"Fecha": "2009-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2009,
+"Valor": 69.729
+},
+{
+"Fecha": "2009-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2009,
+"Valor": 69.305
+},
+{
+"Fecha": "2009-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2009,
+"Valor": 69.135
+},
+{
+"Fecha": "2009-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2009,
+"Valor": 69.025
+},
+{
+"Fecha": "2008-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2008,
+"Valor": 68.865
+},
+{
+"Fecha": "2008-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2008,
+"Valor": 68.853
+},
+{
+"Fecha": "2008-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2008,
+"Valor": 69.026
+},
+{
+"Fecha": "2008-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2008,
+"Valor": 69.149
+},
+{
+"Fecha": "2008-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2008,
+"Valor": 69.793
+},
+{
+"Fecha": "2008-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2008,
+"Valor": 69.234
+},
+{
+"Fecha": "2008-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2008,
+"Valor": 68.544
+},
+{
+"Fecha": "2008-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2008,
+"Valor": 68.219
+},
+{
+"Fecha": "2008-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2008,
+"Valor": 68.064
+},
+{
+"Fecha": "2008-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2008,
+"Valor": 67.707
+},
+{
+"Fecha": "2008-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2008,
+"Valor": 67.051
+},
+{
+"Fecha": "2008-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2008,
+"Valor": 66.659
+},
+{
+"Fecha": "2007-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2007,
+"Valor": 66.185
+},
+{
+"Fecha": "2007-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2007,
+"Valor": 65.91
+},
+{
+"Fecha": "2007-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2007,
+"Valor": 65.958
+},
+{
+"Fecha": "2007-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2007,
+"Valor": 65.98
+},
+{
+"Fecha": "2007-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2007,
+"Valor": 66.561
+},
+{
+"Fecha": "2007-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2007,
+"Valor": 66.033
+},
+{
+"Fecha": "2007-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2007,
+"Valor": 65.423
+},
+{
+"Fecha": "2007-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2007,
+"Valor": 65.108
+},
+{
+"Fecha": "2007-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2007,
+"Valor": 65.121
+},
+{
+"Fecha": "2007-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2007,
+"Valor": 64.379
+},
+{
+"Fecha": "2007-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2007,
+"Valor": 63.96
+},
+{
+"Fecha": "2007-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2007,
+"Valor": 63.597
+},
+{
+"Fecha": "2006-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2006,
+"Valor": 63.096
+},
+{
+"Fecha": "2006-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2006,
+"Valor": 62.902
+},
+{
+"Fecha": "2006-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2006,
+"Valor": 62.926
+},
+{
+"Fecha": "2006-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2006,
+"Valor": 62.92
+},
+{
+"Fecha": "2006-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2006,
+"Valor": 63.389
+},
+{
+"Fecha": "2006-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2006,
+"Valor": 62.87
+},
+{
+"Fecha": "2006-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2006,
+"Valor": 62.326
+},
+{
+"Fecha": "2006-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2006,
+"Valor": 62.061
+},
+{
+"Fecha": "2006-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2006,
+"Valor": 62.043
+},
+{
+"Fecha": "2006-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2006,
+"Valor": 61.509
+},
+{
+"Fecha": "2006-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2006,
+"Valor": 61.125
+},
+{
+"Fecha": "2006-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2006,
+"Valor": 60.788
+},
+{
+"Fecha": "2005-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2005,
+"Valor": 60.444
+},
+{
+"Fecha": "2005-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2005,
+"Valor": 60.237
+},
+{
+"Fecha": "2005-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2005,
+"Valor": 60.262
+},
+{
+"Fecha": "2005-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2005,
+"Valor": 60.272
+},
+{
+"Fecha": "2005-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2005,
+"Valor": 60.709
+},
+{
+"Fecha": "2005-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2005,
+"Valor": 60.184
+},
+{
+"Fecha": "2005-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2005,
+"Valor": 59.67
+},
+{
+"Fecha": "2005-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2005,
+"Valor": 59.385
+},
+{
+"Fecha": "2005-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2005,
+"Valor": 59.226
+},
+{
+"Fecha": "2005-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2005,
+"Valor": 58.998
+},
+{
+"Fecha": "2005-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2005,
+"Valor": 58.496
+},
+{
+"Fecha": "2005-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2005,
+"Valor": 58.185
+},
+{
+"Fecha": "2004-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2004,
+"Valor": 57.974
+},
+{
+"Fecha": "2004-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2004,
+"Valor": 57.793
+},
+{
+"Fecha": "2004-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2004,
+"Valor": 57.764
+},
+{
+"Fecha": "2004-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2004,
+"Valor": 57.777
+},
+{
+"Fecha": "2004-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2004,
+"Valor": 58.233
+},
+{
+"Fecha": "2004-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2004,
+"Valor": 57.717
+},
+{
+"Fecha": "2004-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2004,
+"Valor": 57.204
+},
+{
+"Fecha": "2004-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2004,
+"Valor": 56.951
+},
+{
+"Fecha": "2004-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2004,
+"Valor": 56.941
+},
+{
+"Fecha": "2004-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2004,
+"Valor": 56.531
+},
+{
+"Fecha": "2004-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2004,
+"Valor": 56.236
+},
+{
+"Fecha": "2004-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2004,
+"Valor": 55.967
+},
+{
+"Fecha": "2003-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2003,
+"Valor": 55.65
+},
+{
+"Fecha": "2003-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2003,
+"Valor": 55.499
+},
+{
+"Fecha": "2003-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2003,
+"Valor": 55.543
+},
+{
+"Fecha": "2003-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2003,
+"Valor": 55.546
+},
+{
+"Fecha": "2003-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2003,
+"Valor": 56.011
+},
+{
+"Fecha": "2003-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2003,
+"Valor": 55.486
+},
+{
+"Fecha": "2003-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2003,
+"Valor": 54.994
+},
+{
+"Fecha": "2003-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2003,
+"Valor": 54.766
+},
+{
+"Fecha": "2003-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2003,
+"Valor": 54.747
+},
+{
+"Fecha": "2003-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2003,
+"Valor": 54.36
+},
+{
+"Fecha": "2003-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2003,
+"Valor": 54.014
+},
+{
+"Fecha": "2003-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2003,
+"Valor": 53.764
+},
+{
+"Fecha": "2002-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2002,
+"Valor": 53.482
+},
+{
+"Fecha": "2002-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2002,
+"Valor": 53.341
+},
+{
+"Fecha": "2002-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2002,
+"Valor": 53.338
+},
+{
+"Fecha": "2002-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2002,
+"Valor": 53.384
+},
+{
+"Fecha": "2002-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2002,
+"Valor": 53.658
+},
+{
+"Fecha": "2002-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2002,
+"Valor": 53.241
+},
+{
+"Fecha": "2002-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2002,
+"Valor": 52.848
+},
+{
+"Fecha": "2002-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2002,
+"Valor": 52.624
+},
+{
+"Fecha": "2002-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2002,
+"Valor": 52.436
+},
+{
+"Fecha": "2002-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2002,
+"Valor": 52.092
+},
+{
+"Fecha": "2002-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2002,
+"Valor": 51.584
+},
+{
+"Fecha": "2002-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2002,
+"Valor": 51.1
+}
+]
+},
+{
+"COD": "IPC290803",
+"Nombre": "Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Totales Territoriales",
+"Nombre": "Nacional",
+"Codigo": "00",
+"Nota": "Codficación para el CERTI"
+},
+{
+"Id": 418061,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Cuidado personal, protección social, y bienes y servicios diversos",
+"Codigo": "13"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 103.31
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 103.325
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 103.124
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 103.405
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 103.151
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 103.161
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 102.77
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 102.39
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 101.56
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 101.008
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100.868
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 100.496
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 100.16
+},
+{
+"Fecha": "2025-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2025,
+"Valor": 100.135
+},
+{
+"Fecha": "2025-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2025,
+"Valor": 99.907
+},
+{
+"Fecha": "2025-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2025,
+"Valor": 100.31
+},
+{
+"Fecha": "2025-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2025,
+"Valor": 100.072
+},
+{
+"Fecha": "2025-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2025,
+"Valor": 99.856
+},
+{
+"Fecha": "2025-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2025,
+"Valor": 99.524
+},
+{
+"Fecha": "2025-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2025,
+"Valor": 99.037
+},
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2025,
+"Valor": 98.627
+},
+{
+"Fecha": "2024-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2024,
+"Valor": 98.179
+},
+{
+"Fecha": "2024-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2024,
+"Valor": 98.057
+},
+{
+"Fecha": "2024-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2024,
+"Valor": 97.695
+},
+{
+"Fecha": "2024-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2024,
+"Valor": 97.246
+},
+{
+"Fecha": "2024-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2024,
+"Valor": 97.329
+},
+{
+"Fecha": "2024-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2024,
+"Valor": 97.077
+},
+{
+"Fecha": "2024-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2024,
+"Valor": 97.427
+},
+{
+"Fecha": "2024-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2024,
+"Valor": 97.161
+},
+{
+"Fecha": "2024-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2024,
+"Valor": 96.934
+},
+{
+"Fecha": "2024-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2024,
+"Valor": 96.379
+},
+{
+"Fecha": "2024-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2024,
+"Valor": 96.108
+},
+{
+"Fecha": "2024-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2024,
+"Valor": 95.634
+},
+{
+"Fecha": "2023-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2023,
+"Valor": 95.434
+},
+{
+"Fecha": "2023-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2023,
+"Valor": 95.395
+},
+{
+"Fecha": "2023-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2023,
+"Valor": 95.183
+},
+{
+"Fecha": "2023-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2023,
+"Valor": 95.027
+},
+{
+"Fecha": "2023-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2023,
+"Valor": 94.975
+},
+{
+"Fecha": "2023-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2023,
+"Valor": 94.673
+},
+{
+"Fecha": "2023-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2023,
+"Valor": 94.796
+},
+{
+"Fecha": "2023-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2023,
+"Valor": 94.577
+},
+{
+"Fecha": "2023-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2023,
+"Valor": 94.539
+},
+{
+"Fecha": "2023-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2023,
+"Valor": 93.965
+},
+{
+"Fecha": "2023-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2023,
+"Valor": 93.26
+},
+{
+"Fecha": "2023-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2023,
+"Valor": 92.628
+},
+{
+"Fecha": "2022-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2022,
+"Valor": 92.094
+},
+{
+"Fecha": "2022-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2022,
+"Valor": 91.693
+},
+{
+"Fecha": "2022-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2022,
+"Valor": 91.263
+},
+{
+"Fecha": "2022-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2022,
+"Valor": 90.725
+},
+{
+"Fecha": "2022-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2022,
+"Valor": 90.622
+},
+{
+"Fecha": "2022-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2022,
+"Valor": 90.193
+},
+{
+"Fecha": "2022-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2022,
+"Valor": 90.234
+},
+{
+"Fecha": "2022-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2022,
+"Valor": 89.654
+},
+{
+"Fecha": "2022-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2022,
+"Valor": 89.326
+},
+{
+"Fecha": "2022-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2022,
+"Valor": 88.814
+},
+{
+"Fecha": "2022-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2022,
+"Valor": 88.28
+},
+{
+"Fecha": "2022-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2022,
+"Valor": 87.738
+},
+{
+"Fecha": "2021-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2021,
+"Valor": 87.588
+},
+{
+"Fecha": "2021-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2021,
+"Valor": 87.371
+},
+{
+"Fecha": "2021-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2021,
+"Valor": 87.047
+},
+{
+"Fecha": "2021-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2021,
+"Valor": 86.814
+},
+{
+"Fecha": "2021-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2021,
+"Valor": 86.75
+},
+{
+"Fecha": "2021-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2021,
+"Valor": 86.658
+},
+{
+"Fecha": "2021-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2021,
+"Valor": 86.948
+},
+{
+"Fecha": "2021-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2021,
+"Valor": 86.598
+},
+{
+"Fecha": "2021-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2021,
+"Valor": 86.698
+},
+{
+"Fecha": "2021-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2021,
+"Valor": 86.483
+},
+{
+"Fecha": "2021-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2021,
+"Valor": 86.468
+},
+{
+"Fecha": "2021-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2021,
+"Valor": 86.586
+},
+{
+"Fecha": "2020-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2020,
+"Valor": 86.866
+},
+{
+"Fecha": "2020-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2020,
+"Valor": 86.797
+},
+{
+"Fecha": "2020-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2020,
+"Valor": 86.725
+},
+{
+"Fecha": "2020-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2020,
+"Valor": 86.643
+},
+{
+"Fecha": "2020-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2020,
+"Valor": 86.621
+},
+{
+"Fecha": "2020-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2020,
+"Valor": 86.435
+},
+{
+"Fecha": "2020-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2020,
+"Valor": 86.651
+},
+{
+"Fecha": "2020-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2020,
+"Valor": 86.433
+},
+{
+"Fecha": "2020-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2020,
+"Valor": 86.232
+},
+{
+"Fecha": "2020-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2020,
+"Valor": 86.049
+},
+{
+"Fecha": "2020-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2020,
+"Valor": 85.917
+},
+{
+"Fecha": "2020-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2020,
+"Valor": 85.76
+},
+{
+"Fecha": "2019-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2019,
+"Valor": 85.923
+},
+{
+"Fecha": "2019-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2019,
+"Valor": 85.748
+},
+{
+"Fecha": "2019-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2019,
+"Valor": 85.569
+},
+{
+"Fecha": "2019-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2019,
+"Valor": 85.399
+},
+{
+"Fecha": "2019-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2019,
+"Valor": 85.317
+},
+{
+"Fecha": "2019-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2019,
+"Valor": 85.028
+},
+{
+"Fecha": "2019-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2019,
+"Valor": 85.488
+},
+{
+"Fecha": "2019-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2019,
+"Valor": 85.326
+},
+{
+"Fecha": "2019-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2019,
+"Valor": 85.322
+},
+{
+"Fecha": "2019-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2019,
+"Valor": 85.158
+},
+{
+"Fecha": "2019-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2019,
+"Valor": 85.065
+},
+{
+"Fecha": "2019-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2019,
+"Valor": 84.855
+},
+{
+"Fecha": "2018-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2018,
+"Valor": 85.091
+},
+{
+"Fecha": "2018-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2018,
+"Valor": 84.846
+},
+{
+"Fecha": "2018-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2018,
+"Valor": 84.744
+},
+{
+"Fecha": "2018-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2018,
+"Valor": 84.503
+},
+{
+"Fecha": "2018-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2018,
+"Valor": 84.552
+},
+{
+"Fecha": "2018-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2018,
+"Valor": 84.39
+},
+{
+"Fecha": "2018-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2018,
+"Valor": 84.659
+},
+{
+"Fecha": "2018-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2018,
+"Valor": 84.577
+},
+{
+"Fecha": "2018-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2018,
+"Valor": 84.436
+},
+{
+"Fecha": "2018-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2018,
+"Valor": 84.278
+},
+{
+"Fecha": "2018-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2018,
+"Valor": 84.23
+},
+{
+"Fecha": "2018-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2018,
+"Valor": 84.084
+},
+{
+"Fecha": "2017-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2017,
+"Valor": 84.508
+},
+{
+"Fecha": "2017-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2017,
+"Valor": 84.216
+},
+{
+"Fecha": "2017-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2017,
+"Valor": 84.18
+},
+{
+"Fecha": "2017-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2017,
+"Valor": 84.093
+},
+{
+"Fecha": "2017-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2017,
+"Valor": 84.1
+},
+{
+"Fecha": "2017-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2017,
+"Valor": 83.975
+},
+{
+"Fecha": "2017-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2017,
+"Valor": 84.346
+},
+{
+"Fecha": "2017-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2017,
+"Valor": 84.213
+},
+{
+"Fecha": "2017-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2017,
+"Valor": 84.195
+},
+{
+"Fecha": "2017-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2017,
+"Valor": 84.113
+},
+{
+"Fecha": "2017-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2017,
+"Valor": 83.959
+},
+{
+"Fecha": "2017-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2017,
+"Valor": 84.213
+},
+{
+"Fecha": "2016-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2016,
+"Valor": 84.572
+},
+{
+"Fecha": "2016-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2016,
+"Valor": 84.497
+},
+{
+"Fecha": "2016-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2016,
+"Valor": 84.441
+},
+{
+"Fecha": "2016-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2016,
+"Valor": 84.225
+},
+{
+"Fecha": "2016-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2016,
+"Valor": 84.099
+},
+{
+"Fecha": "2016-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2016,
+"Valor": 84.134
+},
+{
+"Fecha": "2016-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2016,
+"Valor": 84.423
+},
+{
+"Fecha": "2016-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2016,
+"Valor": 84.427
+},
+{
+"Fecha": "2016-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2016,
+"Valor": 84.332
+},
+{
+"Fecha": "2016-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2016,
+"Valor": 84.147
+},
+{
+"Fecha": "2016-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2016,
+"Valor": 84.104
+},
+{
+"Fecha": "2016-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2016,
+"Valor": 84.062
+},
+{
+"Fecha": "2015-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2015,
+"Valor": 84.289
+},
+{
+"Fecha": "2015-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2015,
+"Valor": 84.226
+},
+{
+"Fecha": "2015-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2015,
+"Valor": 84.161
+},
+{
+"Fecha": "2015-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2015,
+"Valor": 84.076
+},
+{
+"Fecha": "2015-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2015,
+"Valor": 84.023
+},
+{
+"Fecha": "2015-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2015,
+"Valor": 84.104
+},
+{
+"Fecha": "2015-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2015,
+"Valor": 84.479
+},
+{
+"Fecha": "2015-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2015,
+"Valor": 84.318
+},
+{
+"Fecha": "2015-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2015,
+"Valor": 84.215
+},
+{
+"Fecha": "2015-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2015,
+"Valor": 84.114
+},
+{
+"Fecha": "2015-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2015,
+"Valor": 83.991
+},
+{
+"Fecha": "2015-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2015,
+"Valor": 84.0
+},
+{
+"Fecha": "2014-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2014,
+"Valor": 83.892
+},
+{
+"Fecha": "2014-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2014,
+"Valor": 83.807
+},
+{
+"Fecha": "2014-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2014,
+"Valor": 83.77
+},
+{
+"Fecha": "2014-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2014,
+"Valor": 83.648
+},
+{
+"Fecha": "2014-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2014,
+"Valor": 83.593
+},
+{
+"Fecha": "2014-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2014,
+"Valor": 83.569
+},
+{
+"Fecha": "2014-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2014,
+"Valor": 83.924
+},
+{
+"Fecha": "2014-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2014,
+"Valor": 83.859
+},
+{
+"Fecha": "2014-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2014,
+"Valor": 83.748
+},
+{
+"Fecha": "2014-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2014,
+"Valor": 83.78
+},
+{
+"Fecha": "2014-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2014,
+"Valor": 83.736
+},
+{
+"Fecha": "2014-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2014,
+"Valor": 83.78
+},
+{
+"Fecha": "2013-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2013,
+"Valor": 84.137
+},
+{
+"Fecha": "2013-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2013,
+"Valor": 84.167
+},
+{
+"Fecha": "2013-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2013,
+"Valor": 84.123
+},
+{
+"Fecha": "2013-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2013,
+"Valor": 84.027
+},
+{
+"Fecha": "2013-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2013,
+"Valor": 84.046
+},
+{
+"Fecha": "2013-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2013,
+"Valor": 84.003
+},
+{
+"Fecha": "2013-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2013,
+"Valor": 84.441
+},
+{
+"Fecha": "2013-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2013,
+"Valor": 84.491
+},
+{
+"Fecha": "2013-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2013,
+"Valor": 84.396
+},
+{
+"Fecha": "2013-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2013,
+"Valor": 84.328
+},
+{
+"Fecha": "2013-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2013,
+"Valor": 84.291
+},
+{
+"Fecha": "2013-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2013,
+"Valor": 84.23
+},
+{
+"Fecha": "2012-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2012,
+"Valor": 84.478
+},
+{
+"Fecha": "2012-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2012,
+"Valor": 84.481
+},
+{
+"Fecha": "2012-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2012,
+"Valor": 84.208
+},
+{
+"Fecha": "2012-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2012,
+"Valor": 83.242
+},
+{
+"Fecha": "2012-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2012,
+"Valor": 81.982
+},
+{
+"Fecha": "2012-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2012,
+"Valor": 81.106
+},
+{
+"Fecha": "2012-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2012,
+"Valor": 81.52
+},
+{
+"Fecha": "2012-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2012,
+"Valor": 81.509
+},
+{
+"Fecha": "2012-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2012,
+"Valor": 81.549
+},
+{
+"Fecha": "2012-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2012,
+"Valor": 81.27
+},
+{
+"Fecha": "2012-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2012,
+"Valor": 81.084
+},
+{
+"Fecha": "2012-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2012,
+"Valor": 81.046
+},
+{
+"Fecha": "2011-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2011,
+"Valor": 81.156
+},
+{
+"Fecha": "2011-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2011,
+"Valor": 80.844
+},
+{
+"Fecha": "2011-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2011,
+"Valor": 80.723
+},
+{
+"Fecha": "2011-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2011,
+"Valor": 80.527
+},
+{
+"Fecha": "2011-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2011,
+"Valor": 80.441
+},
+{
+"Fecha": "2011-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2011,
+"Valor": 80.246
+},
+{
+"Fecha": "2011-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2011,
+"Valor": 80.551
+},
+{
+"Fecha": "2011-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2011,
+"Valor": 80.388
+},
+{
+"Fecha": "2011-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2011,
+"Valor": 80.131
+},
+{
+"Fecha": "2011-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2011,
+"Valor": 79.933
+},
+{
+"Fecha": "2011-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2011,
+"Valor": 79.857
+},
+{
+"Fecha": "2011-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2011,
+"Valor": 79.729
+},
+{
+"Fecha": "2010-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2010,
+"Valor": 79.748
+},
+{
+"Fecha": "2010-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2010,
+"Valor": 79.479
+},
+{
+"Fecha": "2010-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2010,
+"Valor": 79.261
+},
+{
+"Fecha": "2010-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2010,
+"Valor": 78.972
+},
+{
+"Fecha": "2010-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2010,
+"Valor": 78.849
+},
+{
+"Fecha": "2010-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2010,
+"Valor": 78.513
+},
+{
+"Fecha": "2010-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2010,
+"Valor": 78.444
+},
+{
+"Fecha": "2010-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2010,
+"Valor": 78.15
+},
+{
+"Fecha": "2010-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2010,
+"Valor": 78.064
+},
+{
+"Fecha": "2010-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2010,
+"Valor": 77.863
+},
+{
+"Fecha": "2010-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2010,
+"Valor": 77.683
+},
+{
+"Fecha": "2010-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2010,
+"Valor": 77.542
+},
+{
+"Fecha": "2009-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2009,
+"Valor": 77.718
+},
+{
+"Fecha": "2009-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2009,
+"Valor": 77.574
+},
+{
+"Fecha": "2009-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2009,
+"Valor": 77.468
+},
+{
+"Fecha": "2009-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2009,
+"Valor": 77.418
+},
+{
+"Fecha": "2009-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2009,
+"Valor": 77.312
+},
+{
+"Fecha": "2009-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2009,
+"Valor": 77.226
+},
+{
+"Fecha": "2009-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2009,
+"Valor": 77.58
+},
+{
+"Fecha": "2009-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2009,
+"Valor": 77.432
+},
+{
+"Fecha": "2009-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2009,
+"Valor": 77.421
+},
+{
+"Fecha": "2009-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2009,
+"Valor": 77.136
+},
+{
+"Fecha": "2009-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2009,
+"Valor": 76.882
+},
+{
+"Fecha": "2009-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2009,
+"Valor": 76.785
+},
+{
+"Fecha": "2008-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2008,
+"Valor": 76.931
+},
+{
+"Fecha": "2008-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2008,
+"Valor": 76.758
+},
+{
+"Fecha": "2008-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2008,
+"Valor": 76.708
+},
+{
+"Fecha": "2008-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2008,
+"Valor": 76.507
+},
+{
+"Fecha": "2008-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2008,
+"Valor": 76.299
+},
+{
+"Fecha": "2008-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2008,
+"Valor": 76.225
+},
+{
+"Fecha": "2008-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2008,
+"Valor": 76.337
+},
+{
+"Fecha": "2008-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2008,
+"Valor": 76.095
+},
+{
+"Fecha": "2008-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2008,
+"Valor": 75.894
+},
+{
+"Fecha": "2008-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2008,
+"Valor": 75.384
+},
+{
+"Fecha": "2008-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2008,
+"Valor": 74.899
+},
+{
+"Fecha": "2008-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2008,
+"Valor": 74.622
+},
+{
+"Fecha": "2007-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2007,
+"Valor": 74.313
+},
+{
+"Fecha": "2007-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2007,
+"Valor": 74.062
+},
+{
+"Fecha": "2007-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2007,
+"Valor": 73.918
+},
+{
+"Fecha": "2007-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2007,
+"Valor": 73.748
+},
+{
+"Fecha": "2007-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2007,
+"Valor": 73.67
+},
+{
+"Fecha": "2007-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2007,
+"Valor": 73.599
+},
+{
+"Fecha": "2007-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2007,
+"Valor": 73.693
+},
+{
+"Fecha": "2007-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2007,
+"Valor": 73.519
+},
+{
+"Fecha": "2007-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2007,
+"Valor": 73.378
+},
+{
+"Fecha": "2007-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2007,
+"Valor": 72.903
+},
+{
+"Fecha": "2007-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2007,
+"Valor": 72.445
+},
+{
+"Fecha": "2007-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2007,
+"Valor": 72.265
+},
+{
+"Fecha": "2006-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2006,
+"Valor": 72.047
+},
+{
+"Fecha": "2006-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2006,
+"Valor": 71.774
+},
+{
+"Fecha": "2006-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2006,
+"Valor": 71.708
+},
+{
+"Fecha": "2006-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2006,
+"Valor": 71.55
+},
+{
+"Fecha": "2006-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2006,
+"Valor": 71.432
+},
+{
+"Fecha": "2006-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2006,
+"Valor": 71.348
+},
+{
+"Fecha": "2006-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2006,
+"Valor": 71.337
+},
+{
+"Fecha": "2006-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2006,
+"Valor": 71.046
+},
+{
+"Fecha": "2006-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2006,
+"Valor": 70.841
+},
+{
+"Fecha": "2006-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2006,
+"Valor": 70.396
+},
+{
+"Fecha": "2006-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2006,
+"Valor": 69.81
+},
+{
+"Fecha": "2006-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2006,
+"Valor": 69.468
+},
+{
+"Fecha": "2005-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2005,
+"Valor": 69.222
+},
+{
+"Fecha": "2005-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2005,
+"Valor": 68.873
+},
+{
+"Fecha": "2005-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2005,
+"Valor": 68.715
+},
+{
+"Fecha": "2005-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2005,
+"Valor": 68.516
+},
+{
+"Fecha": "2005-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2005,
+"Valor": 68.448
+},
+{
+"Fecha": "2005-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2005,
+"Valor": 68.48
+},
+{
+"Fecha": "2005-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2005,
+"Valor": 68.688
+},
+{
+"Fecha": "2005-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2005,
+"Valor": 68.462
+},
+{
+"Fecha": "2005-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2005,
+"Valor": 68.349
+},
+{
+"Fecha": "2005-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2005,
+"Valor": 67.934
+},
+{
+"Fecha": "2005-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2005,
+"Valor": 67.54
+},
+{
+"Fecha": "2005-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2005,
+"Valor": 67.299
+},
+{
+"Fecha": "2004-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2004,
+"Valor": 67.241
+},
+{
+"Fecha": "2004-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2004,
+"Valor": 67.18
+},
+{
+"Fecha": "2004-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2004,
+"Valor": 67.05
+},
+{
+"Fecha": "2004-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2004,
+"Valor": 66.976
+},
+{
+"Fecha": "2004-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2004,
+"Valor": 66.859
+},
+{
+"Fecha": "2004-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2004,
+"Valor": 66.839
+},
+{
+"Fecha": "2004-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2004,
+"Valor": 67.011
+},
+{
+"Fecha": "2004-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2004,
+"Valor": 66.87
+},
+{
+"Fecha": "2004-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2004,
+"Valor": 66.718
+},
+{
+"Fecha": "2004-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2004,
+"Valor": 66.393
+},
+{
+"Fecha": "2004-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2004,
+"Valor": 66.159
+},
+{
+"Fecha": "2004-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2004,
+"Valor": 66.063
+},
+{
+"Fecha": "2003-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2003,
+"Valor": 65.935
+},
+{
+"Fecha": "2003-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2003,
+"Valor": 65.746
+},
+{
+"Fecha": "2003-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2003,
+"Valor": 65.644
+},
+{
+"Fecha": "2003-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2003,
+"Valor": 65.531
+},
+{
+"Fecha": "2003-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2003,
+"Valor": 65.394
+},
+{
+"Fecha": "2003-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2003,
+"Valor": 65.435
+},
+{
+"Fecha": "2003-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2003,
+"Valor": 65.625
+},
+{
+"Fecha": "2003-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2003,
+"Valor": 65.512
+},
+{
+"Fecha": "2003-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2003,
+"Valor": 65.422
+},
+{
+"Fecha": "2003-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2003,
+"Valor": 65.143
+},
+{
+"Fecha": "2003-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2003,
+"Valor": 64.791
+},
+{
+"Fecha": "2003-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2003,
+"Valor": 64.649
+},
+{
+"Fecha": "2002-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2002,
+"Valor": 64.543
+},
+{
+"Fecha": "2002-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2002,
+"Valor": 64.311
+},
+{
+"Fecha": "2002-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2002,
+"Valor": 64.209
+},
+{
+"Fecha": "2002-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2002,
+"Valor": 64.139
+},
+{
+"Fecha": "2002-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2002,
+"Valor": 63.881
+},
+{
+"Fecha": "2002-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M07",
+"Anyo": 2002,
+"Valor": 63.805
+},
+{
+"Fecha": "2002-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M06",
+"Anyo": 2002,
+"Valor": 63.859
+},
+{
+"Fecha": "2002-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2002,
+"Valor": 63.69
+},
+{
+"Fecha": "2002-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M04",
+"Anyo": 2002,
+"Valor": 63.465
+},
+{
+"Fecha": "2002-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M03",
+"Anyo": 2002,
+"Valor": 63.204
+},
+{
+"Fecha": "2002-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M02",
+"Anyo": 2002,
+"Valor": 62.848
+},
+{
+"Fecha": "2002-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M01",
+"Anyo": 2002,
+"Valor": 62.617
+}
+]
+}
+]

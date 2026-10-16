@@ -1,0 +1,338 @@
+[
+{
+"COD": "IPC308264",
+"Nombre": "Valladolid. Índice general. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 304092,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Índice general",
+"Codigo": "00"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 105.046
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 104.787
+}
+]
+},
+{
+"COD": "IPC308263",
+"Nombre": "Valladolid. Índice general. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 304092,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Índice general",
+"Codigo": "00"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 5.1
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.4
+}
+]
+},
+{
+"COD": "IPC308300",
+"Nombre": "Valladolid. Actividades recreativas, deporte y cultura. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418057,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Actividades recreativas, deporte y cultura",
+"Codigo": "09"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 103.272
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 106.018
+}
+]
+},
+{
+"COD": "IPC308299",
+"Nombre": "Valladolid. Actividades recreativas, deporte y cultura. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418057,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Actividades recreativas, deporte y cultura",
+"Codigo": "09"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 3.2
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 0.1
+}
+]
+},
+{
+"COD": "IPC308308",
+"Nombre": "Valladolid. Restaurantes y servicios de alojamiento. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418059,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Restaurantes y servicios de alojamiento",
+"Codigo": "11"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 105.688
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 105.473
+}
+]
+},
+{
+"COD": "IPC308307",
+"Nombre": "Valladolid. Restaurantes y servicios de alojamiento. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418059,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Restaurantes y servicios de alojamiento",
+"Codigo": "11"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 4.6
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.4
+}
+]
+},
+{
+"COD": "IPC308316",
+"Nombre": "Valladolid. Cuidado personal, protección social, y bienes y servicios diversos. Índice. ",
+"T3_Unidad": "Índice",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418061,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Cuidado personal, protección social, y bienes y servicios diversos",
+"Codigo": "13"
+},
+{
+"Id": 83,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Índice",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 104.416
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 104.703
+}
+]
+},
+{
+"COD": "IPC308315",
+"Nombre": "Valladolid. Cuidado personal, protección social, y bienes y servicios diversos. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 418061,
+"T3_Variable": "Grupos ECOICOP",
+"Nombre": "Cuidado personal, protección social, y bienes y servicios diversos",
+"Codigo": "13"
+},
+{
+"Id": 74,
+"T3_Variable": "Índices y Tasas",
+"Nombre": "Variación anual",
+"Codigo": "2"
+}
+],
+"Data": [
+{
+"Fecha": "2026-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2026,
+"Valor": 4.3
+},
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.9
+}
+]
+}
+]
