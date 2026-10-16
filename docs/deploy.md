@@ -33,7 +33,8 @@ REGION=europe-west1
 gcloud config set project "$PROJECT"
 gcloud services enable run.googleapis.com artifactregistry.googleapis.com
 gcloud artifacts repositories create mcp --repository-format=docker --location="$REGION"
-# Keep only the latest image: Artifact Registry's free storage is 0.5 GB.
+# Keep only the latest image: Artifact Registry's free storage is 0.5 GB and the image is
+# about 870 MB unpacked (roughly a third of that compressed).
 gcloud artifacts repositories set-cleanup-policies mcp --location="$REGION" \
   --policy=<(echo '[{"name":"keep-latest","action":{"type":"Keep"},"mostRecentVersions":{"keepCount":1}}]')
 
