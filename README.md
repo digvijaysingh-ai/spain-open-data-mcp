@@ -13,6 +13,12 @@ today, down to census tract. The national
 open-data catalogue (datos.gob.es), market sizing, price bands and charts are next. See
 [the roadmap](#roadmap).
 
+**Map:** the [Spain Opportunity Atlas](https://digvijaysingh-ai.github.io/spain-open-data-mcp/) shows every
+municipality's score for 19 business categories, rebuilt monthly with the same engine as the tools.
+Its predictions are registered (dated and checksummed on the
+[atlas release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/atlas)) and checked each
+quarter against INE's official business openings; until results exist the map says it is not yet validated.
+
 ## What it can answer today
 
 - "How many people live in Valladolid, and how is the population changing?"
