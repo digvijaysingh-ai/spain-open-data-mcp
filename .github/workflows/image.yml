@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths: [Dockerfile, .dockerignore, pyproject.toml, uv.lock, "src/**", .github/workflows/image.yml]
     tags: ["v*"]
+  pull_request:
+    paths: [Dockerfile, .dockerignore, pyproject.toml, uv.lock, "src/**", .github/workflows/image.yml]
   workflow_dispatch:
 
 permissions:
