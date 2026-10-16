@@ -17,8 +17,15 @@ from pydantic import BaseModel, Field
 from ..core.envelope import Check, Confidence, Envelope, Source, confidence_from, dedupe_sources
 from ..core.errors import DataError
 from ..core.text import quoted
-from ..places.codes import PROVINCES
-from ..places.resolver import Place, place_from_code, population_in
+from ..places.areas import (
+    SPAIN,
+    SUB_UNIT_CODE_LENGTH,
+    SubUnit,
+    benchmark_ladder,
+    code_prefixes,
+    population_of,
+)
+from ..places.resolver import Place, place_from_code
 from ..sources.ine.adrh import UnitValues, by_unit
 from ..sources.ine.datasets import ADRH_NAME, DIRCE_NAME, IneData, latest_year, register_source, source_for
 from ..sources.osm import snapshot as osm
@@ -152,10 +159,8 @@ def resolve_what(category: str | None) -> _What:
     )
 
 
-def area_of(p: Place) -> osm.Area:
-    if p.level == "ccaa":
-        return osm.Area(tuple(code for code, (_n, ccaa, _a) in PROVINCES.items() if f"CA{ccaa}" == p.code))
-    return osm.Area((p.code,))
+def area_of(code: str) -> osm.Area:
+    return osm.Area(code_prefixes(code))
 
 
 def _rate(count: int, population: int | None) -> float | None:
@@ -238,7 +243,7 @@ async def _coverage(
     companies = by_cnae.get(cnae)
     if not companies:
         return None, None
-    osm_n = snap.count(area_of(region_place), osm.Selection.categories([c.key for c in family]))
+    osm_n = snap.count(area_of(region), osm.Selection.categories([c.key for c in family]))
     year = latest_year(result.series)
     date = f"{year}-01-01" if year else "latest"
     cov = Coverage(
@@ -283,156 +288,160 @@ def _coverage_check(cov: Coverage) -> Check:
     )
 
 
-async def businesses(
-    ine: IneData,
-    store: osm.SnapshotStore,
-    place: str,
-    category: str | None = None,
-    sub_areas: SubAreaLevel = "none",
-    rank_by: RankBy = "count",
-) -> Envelope[BusinessesData]:
-    p, checks = resolve_place_arg(place)
-    what = resolve_what(category)
-    snap = await store.get()
-    sel = what.selection
-    sources: list[Source] = osm_sources(snap)
-    area = area_of(p)
+@dataclass(frozen=True)
+class _Residents:
+    """Residents by area code from the income atlas, INE's only source below municipality level."""
 
-    # Population: the bundled Padrón for municipalities and above; the income atlas
-    # (INE's only source by district and tract) below, and for sub-areas.
-    adrh_units: dict[str, UnitValues] = {}
-    adrh_year: int | None = None
-    if p.level in ("district", "tract") or (sub_areas != "none" and p.level == "municipality"):
-        adrh = await ine.adrh("demographics", p, whole_province=True)
-        adrh_units = by_unit(adrh.series)
-        adrh_year = latest_year(adrh.series)
-        sources.append(source_for(adrh, ADRH_NAME + ": indicadores demográficos", str(adrh_year)))
+    units: dict[str, UnitValues]
+    year: int | None
 
-    def adrh_population(code: str) -> int | None:
-        u = adrh_units.get(code)
-        v = u.value("population", adrh_year) if u and adrh_year else None
+    def of(self, code: str) -> int | None:
+        u = self.units.get(code)
+        v = u.value("population", self.year) if u and self.year else None
         return int(v) if v else None
 
+
+async def _residents(ine: IneData, p: Place, sub_areas: SubAreaLevel, sources: list[Source]) -> _Residents:
+    if p.level not in ("district", "tract") and not (sub_areas != "none" and p.level == "municipality"):
+        return _Residents({}, None)
+    adrh = await ine.adrh("demographics", p, whole_province=True)
+    year = latest_year(adrh.series)
+    sources.append(source_for(adrh, ADRH_NAME + ": indicadores demográficos", str(year)))
+    return _Residents(by_unit(adrh.series), year)
+
+
+def _main_count(
+    snap: osm.Snapshot, sel: osm.Selection, p: Place, residents: _Residents, sources: list[Source]
+) -> AreaCount:
+    """The place itself: Padrón residents for municipalities and up, income-atlas residents below."""
     if p.level in ("district", "tract"):
-        pop, pop_year = adrh_population(p.code), adrh_year
+        pop, year = residents.of(p.code), residents.year
     else:
-        pop, date = population_in(p.code)
-        pop_year = _padron_year(date)
+        pop, date = population_of(p.code)
+        year = _padron_year(date)
         sources.append(register_source())
-    main = _counted(snap, sel, p.code, p.name, p.level, area, pop, pop_year)
+    return _counted(snap, sel, p.code, p.name, p.level, area_of(p.code), pop, year)
 
-    # Benchmarks: the municipality, province, region and Spain around the place.
-    bench: list[AreaCount] = []
-    levels: list[tuple[str, str]] = []
-    if p.level in ("district", "tract") and p.municipality_code:
-        levels.append((p.municipality_code, "municipality"))
-    if p.level in ("municipality", "district", "tract") and p.province_code:
-        levels.append((p.province_code, "province"))
-    if p.level != "ccaa" and p.ccaa_code:
-        single = sum(1 for _c, (_n, ccaa, _a) in PROVINCES.items() if f"CA{ccaa}" == p.ccaa_code) == 1
-        if not single:
-            levels.append((p.ccaa_code, "ccaa"))
-    for code, level in levels:
-        bp = place_from_code(code)
-        bpop, bdate = population_in(code)
-        bench.append(_counted(snap, sel, code, bp.name, level, area_of(bp), bpop, _padron_year(bdate)))
-    es_pop, es_date = population_in("")
-    bench.append(_counted(snap, sel, "ES", "España", "country", osm.Area(()), es_pop, _padron_year(es_date)))
-    sources.append(register_source())
 
-    # Breakdown by category, for 'all businesses' and sectors.
-    by_category: list[CategoryCount] = []
-    if what.listed:
-        counts = snap.count_by_category(area)
-        for c in what.listed:
-            n = counts.get(c.key, 0)
-            if n:
-                by_category.append(
-                    CategoryCount(category=c.key, label=c.label, count=n, per_10k_residents=_rate(n, pop))
-                )
-        if not what.categories and counts.get(None):
-            n = counts[None]
-            by_category.append(
-                CategoryCount(
-                    category="other",
-                    label="Other shops, offices and crafts",
-                    count=n,
-                    per_10k_residents=_rate(n, pop),
-                )
-            )
-        by_category.sort(key=lambda c: -c.count)
-
-    brands, branded = snap.brands(area, sel, limit=8)
-    top_brands = [
-        BrandCount(brand=b, count=n, share_pct=round(n / main.count * 100, 1))
-        for b, n in brands
-        if main.count
-    ]
-
-    # Sub-areas.
-    subs: list[AreaCount] = []
-    total_subs = 0
-    if sub_areas != "none":
-        if p.level != "municipality":
-            checks.append(
-                Check(
-                    kind="scope",
-                    severity="warning",
-                    message="Sub-areas are listed for municipalities only; pass a municipality.",
-                )
-            )
+def _benchmarks(snap: osm.Snapshot, sel: osm.Selection, p: Place, sources: list[Source]) -> list[AreaCount]:
+    out: list[AreaCount] = []
+    for code in benchmark_ladder(p):
+        pop, date = population_of(code)
+        if code == SPAIN:
+            name, level = "España", "country"
         else:
-            length = 7 if sub_areas == "district" else 10
-            counts = snap.count_by_unit(area, length, sel)
-            areas = snap.area_km2_by_unit(area, length)
-            for code, km2 in areas.items():
-                n = counts.get(code, 0)
-                u = adrh_units.get(code)
-                spop = adrh_population(code)
-                subs.append(
-                    AreaCount(
-                        code=code,
-                        name=u.name if u else place_from_code(code).name,
-                        level=sub_areas,
-                        count=n,
-                        population=spop,
-                        population_year=adrh_year if spop else None,
-                        per_10k_residents=_rate(n, spop),
-                        area_km2=round(km2, 3),
-                        per_km2=_density(n, km2),
-                    )
-                )
-            total_subs = len(subs)
-            subs.sort(key=lambda s: (getattr(s, rank_by) is None, -(getattr(s, rank_by) or 0), s.code))
-            if total_subs > MAX_SUB_AREAS:
-                half = MAX_SUB_AREAS // 2
-                ranked = [s for s in subs if getattr(s, rank_by) is not None]
-                subs = ranked[:half] + ranked[-half:]
-                checks.append(
-                    Check(
-                        kind="scope",
-                        severity="info",
-                        message=f"{total_subs} {sub_areas}s; showing the top {half} and bottom {half} by {rank_by}.",
-                    )
-                )
-            if sub_areas == "tract" or adrh_year:
-                missing = sum(1 for s in subs if s.population is None)
-                checks.append(
-                    Check(
-                        kind="scope",
-                        severity="info",
-                        message=f"Places are assigned to INE's {snap.tracts_year} {sub_areas}s; residents come from the "
-                        f"{adrh_year} income atlas, which uses that year's boundaries."
-                        + (
-                            f" {missing} {sub_areas}s shown have no resident figure (redrawn since)."
-                            if missing
-                            else ""
-                        ),
-                    )
-                )
+            bp = place_from_code(code)
+            name, level = bp.name, bp.level
+        out.append(_counted(snap, sel, code, name, level, area_of(code), pop, _padron_year(date)))
+    sources.append(register_source())
+    return out
 
-    # Cross-check against INE's company directory.
-    coverage: Coverage | None = None
+
+def _category_breakdown(
+    snap: osm.Snapshot, area: osm.Area, what: _What, population: int | None
+) -> list[CategoryCount]:
+    """Counts by category, for 'all businesses' and sectors."""
+    if not what.listed:
+        return []
+    counts = snap.count_by_category(area)
+    out = [
+        CategoryCount(category=c.key, label=c.label, count=n, per_10k_residents=_rate(n, population))
+        for c in what.listed
+        if (n := counts.get(c.key, 0))
+    ]
+    if not what.categories and counts.get(None):
+        n = counts[None]
+        out.append(
+            CategoryCount(
+                category="other",
+                label="Other shops, offices and crafts",
+                count=n,
+                per_10k_residents=_rate(n, population),
+            )
+        )
+    return sorted(out, key=lambda c: -c.count)
+
+
+def _top_brands(
+    snap: osm.Snapshot, area: osm.Area, sel: osm.Selection, count: int
+) -> tuple[list[BrandCount], float | None]:
+    if not count:
+        return [], None
+    brands, branded = snap.brands(area, sel, limit=8)
+    top = [BrandCount(brand=b, count=n, share_pct=round(n / count * 100, 1)) for b, n in brands]
+    return top, round(branded / count * 100, 1)
+
+
+def _sub_areas(
+    snap: osm.Snapshot,
+    sel: osm.Selection,
+    p: Place,
+    level: SubUnit,
+    rank_by: RankBy,
+    residents: _Residents,
+    checks: list[Check],
+) -> tuple[list[AreaCount], int]:
+    """Districts or tracts of a municipality, ranked; top and bottom halves when there are many."""
+    if p.level != "municipality":
+        checks.append(
+            Check(
+                kind="scope",
+                severity="warning",
+                message="Sub-areas are listed for municipalities only; pass a municipality.",
+            )
+        )
+        return [], 0
+    length = SUB_UNIT_CODE_LENGTH[level]
+    area = area_of(p.code)
+    counts = snap.count_by_unit(area, length, sel)
+    subs: list[AreaCount] = []
+    for code, km2 in snap.area_km2_by_unit(area, length).items():
+        n = counts.get(code, 0)
+        u = residents.units.get(code)
+        pop = residents.of(code)
+        subs.append(
+            AreaCount(
+                code=code,
+                name=u.name if u else place_from_code(code).name,
+                level=level,
+                count=n,
+                population=pop,
+                population_year=residents.year if pop else None,
+                per_10k_residents=_rate(n, pop),
+                area_km2=round(km2, 3),
+                per_km2=_density(n, km2),
+            )
+        )
+    total = len(subs)
+    subs.sort(key=lambda s: (getattr(s, rank_by) is None, -(getattr(s, rank_by) or 0), s.code))
+    if total > MAX_SUB_AREAS:
+        half = MAX_SUB_AREAS // 2
+        ranked = [s for s in subs if getattr(s, rank_by) is not None]
+        subs = ranked[:half] + ranked[-half:]
+        checks.append(
+            Check(
+                kind="scope",
+                severity="info",
+                message=f"{total} {level}s; showing the top {half} and bottom {half} by {rank_by}.",
+            )
+        )
+    missing = sum(1 for s in subs if s.population is None)
+    checks.append(
+        Check(
+            kind="scope",
+            severity="info",
+            message=f"Places are assigned to INE's {snap.tracts_year} {level}s; residents come from the "
+            f"{residents.year} income atlas, which uses that year's boundaries."
+            + (f" {missing} {level}s shown have no resident figure (redrawn since)." if missing else ""),
+        )
+    )
+    return subs, total
+
+
+async def _checked_coverage(
+    ine: IneData, snap: osm.Snapshot, p: Place, what: _What, sources: list[Source], checks: list[Check]
+) -> Coverage | None:
+    """Cross-check against INE's company directory, where an activity matches closely enough."""
     try:
         coverage, dirce_source = await _coverage(ine, snap, p, what)
     except DataError as e:
@@ -443,13 +452,16 @@ async def businesses(
                 message=f"The company-directory cross-check was skipped: {e.problem}",
             )
         )
-    else:
-        if coverage and dirce_source:
-            sources.append(dirce_source)
-            checks.append(_coverage_check(coverage))
+        return None
+    if coverage and dirce_source:
+        sources.append(dirce_source)
+        checks.append(_coverage_check(coverage))
+    return coverage
 
-    # Checks that apply to every OSM count.
-    checks.append(
+
+def _osm_checks(snap: osm.Snapshot, p: Place, main: AreaCount, residents: _Residents) -> list[Check]:
+    """Checks that apply to every OpenStreetMap count."""
+    checks = [
         Check(
             kind="scope",
             severity="info",
@@ -457,7 +469,7 @@ async def businesses(
             "counts are lower bounds and completeness varies between towns; compare areas of similar size and "
             "type. Each place is counted once, by its main tag.",
         )
-    )
+    ]
     age = (datetime.now(UTC) - snap.osm_date).days
     if age > STALE_DAYS:
         checks.append(
@@ -479,14 +491,42 @@ async def businesses(
                 message=f"Only {main.count} places: one opening or closure moves the rates a lot.",
             )
         )
-    if p.level in ("district", "tract") and adrh_year:
+    if p.level in ("district", "tract") and residents.year:
         checks.append(
             Check(
                 kind="stale",
                 severity="info",
-                message=f"Residents for this {p.level} are from the {adrh_year} income atlas.",
+                message=f"Residents for this {p.level} are from the {residents.year} income atlas.",
             )
         )
+    return checks
+
+
+async def businesses(
+    ine: IneData,
+    store: osm.SnapshotStore,
+    place: str,
+    category: str | None = None,
+    sub_areas: SubAreaLevel = "none",
+    rank_by: RankBy = "count",
+) -> Envelope[BusinessesData]:
+    p, checks = resolve_place_arg(place)
+    what = resolve_what(category)
+    snap = await store.get()
+    sel = what.selection
+    sources: list[Source] = osm_sources(snap)
+    area = area_of(p.code)
+
+    residents = await _residents(ine, p, sub_areas, sources)
+    main = _main_count(snap, sel, p, residents, sources)
+    bench = _benchmarks(snap, sel, p, sources)
+    by_category = _category_breakdown(snap, area, what, main.population)
+    top_brands, branded_share = _top_brands(snap, area, sel, main.count)
+    subs, total_subs = (
+        ([], 0) if sub_areas == "none" else _sub_areas(snap, sel, p, sub_areas, rank_by, residents, checks)
+    )
+    coverage = await _checked_coverage(ine, snap, p, what, sources, checks)
+    checks += _osm_checks(snap, p, main, residents)
 
     floor: Confidence = "medium"  # volunteer-mapped data is never more than medium
     if coverage and coverage.ratio < COVERAGE_LOW:
@@ -500,7 +540,7 @@ async def businesses(
         benchmarks=bench,
         by_category=by_category,
         top_brands=top_brands,
-        branded_share_pct=round(branded / main.count * 100, 1) if main.count else None,
+        branded_share_pct=branded_share,
         coverage=coverage,
         sub_area_level=sub_areas,
         sub_area_rank_by=rank_by,

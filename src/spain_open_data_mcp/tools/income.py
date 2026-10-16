@@ -7,7 +7,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from ..core.envelope import Check, Envelope, Source, confidence_from, dedupe_sources
-from ..places.codes import PROVINCES
+from ..places.areas import benchmark_ladder
 from ..places.resolver import Place
 from ..sources.ine.adrh import UnitValues, by_unit
 from ..sources.ine.datasets import ADRH_NAME, IneData, latest_year, source_for
@@ -153,9 +153,8 @@ async def income(
     # Benchmarks: province, CCAA, Spain
     bench = await ine.adrh_benchmarks("income", last_n=1)
     bunits = by_unit(bench.series)
-    single_province_ccaa = p.ccaa_code and len(provinces_in_ccaa(p.ccaa_code)) == 1
-    for code in (p.province_code, None if single_province_ccaa else p.ccaa_code, "ES"):
-        if code and code != p.code and code in bunits:
+    for code in benchmark_ladder(p):
+        if code in bunits:  # the atlas aggregates hold provinces, regions and Spain
             u = bunits[code]
             data.benchmarks.append(
                 AreaIncome(code=u.code, name=u.name, level=u.level, figures=figures_for([u]))
@@ -263,10 +262,6 @@ def top_coded(values: list[float | None], min_ties: int = 3) -> tuple[float, int
     top = max(vals)
     n = sum(1 for v in vals if v == top)
     return (top, n) if n >= min_ties else None
-
-
-def provinces_in_ccaa(ccaa_code: str) -> list[str]:
-    return [p for p, (_n, ccaa, _a) in PROVINCES.items() if f"CA{ccaa}" == ccaa_code]
 
 
 def raise_missing(p: Place) -> None:
