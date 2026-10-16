@@ -347,6 +347,25 @@ Decisions made while implementing, against live data:
 - Categories sharing spending codes (restaurant, cafe, bar, fast food on 11.1.1; hairdresser
   and beauty on 13.1.2) split the pool by national share of mapped places.
 
+## Method 1.1: visitors and the supply floor (2026-10-16)
+- Visitor demand, for restaurants, cafés, bars and fast food only (visitor_food in the
+  registry): foreign visitors' hotel nights in the last 12 months × their average daily spend
+  in the destination region (EGATUR, table 75714) × food and drink's share of their spend
+  (EGATUR "manutención", table 75717, about 16%) × 80% eaten out (an assumption, range
+  60-100%, shown in every answer) × the category's share of the pool. Spanish visitors (daily
+  spend from ETR, table 24927) are added to the high end only, because residents' household
+  budgets already hold part of their spending away from home (OV3).
+- Hotel nights: INE's 138 tourist points (table 75197; EOH codes most of them internally, e.g.
+  'H1' is Málaga, mapped to INE municipality codes by name in scripts/build_reference.py and
+  checked by hand). Elsewhere, the province's nights (table 2074) minus its points, shared by
+  tourist-flat beds (table 39363). Nights in tourist flats, campsites and second homes are not
+  measured, so visitor demand is a lower bound. Computed for municipalities and up.
+- Visitor accommodation (guest houses) still has no market model: no source counts nights in
+  tourist flats.
+- Supply floor: supply is never below half the area's population share of the region's
+  companies. Without it, towns of 10,000 with no mapped bar (Pizarra, Archidona) scored 10-12.
+  The floor also keeps supply rising with every mapped place, which a randomised test checks.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.

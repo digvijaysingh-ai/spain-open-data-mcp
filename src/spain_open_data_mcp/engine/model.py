@@ -18,14 +18,18 @@ from dataclasses import dataclass
 
 from .estimate import Estimate
 
-METHOD_VERSION = "opportunity-1.0"
+# 1.0: residents only. 1.1: adds visitors' food and drink spend (hotel nights, EGATUR, ETR).
+METHOD_VERSION = "opportunity-1.1"
 PSEUDO_BUSINESSES = 1.0  # keeps the score finite where no business is mapped
 SUPPLY_LOW_FACTOR = 0.8
 SUPPLY_HIGH_FACTOR = 1.25
 MAPPED_ONLY_HIGH_FACTOR = 1.5  # no DIRCE yardstick: the true count is above what is mapped
-COMPLETENESS_LOW = (
-    0.5  # mapped well-covered places per resident vs the region, below which the map looks thin
-)
+# Mapped well-covered places per resident vs the region, below which the map looks thin.
+COMPLETENESS_LOW = 0.5
+POPULATION_FLOOR = 0.5  # supply is never below half the population-proportional share
+# Share of visitors' food and drink spend (EGATUR "manutención", which includes groceries)
+# that goes to restaurants, cafés and bars. An assumption, shown in every answer that uses it.
+EATING_OUT_SHARE = (0.6, 0.8, 1.0)
 
 
 def market(
@@ -37,6 +41,24 @@ def market(
     EPF code 11.1.1) by their national share of mapped places.
     """
     return households * spend_per_household * income_ratio * family_share
+
+
+def visitor_food_market(
+    nights: float, daily_spend: float, food_share: float, family_share: Estimate
+) -> Estimate:
+    """Visitors' yearly spend in a category's food-and-drink pool, in euros:
+    nights × spend per visitor per day × food-and-drink share × eating-out share × category share."""
+    return Estimate.exact(nights * daily_spend * food_share) * Estimate(*EATING_OUT_SHARE) * family_share
+
+
+def with_visitors(residents: Estimate, foreign: Estimate, domestic: Estimate) -> Estimate:
+    """Residents plus foreign visitors; Spanish visitors raise only the high end, because their
+    spending away from home is partly already in residents' household budgets."""
+    return Estimate(
+        residents.low + foreign.low,
+        residents.base + foreign.base,
+        residents.high + foreign.high + domestic.high,
+    )
 
 
 @dataclass(frozen=True)
@@ -68,12 +90,15 @@ def supply(x: SupplyInputs) -> tuple[Estimate, str]:
         category_companies = x.companies_region * (
             x.osm_region_category / x.osm_region_family if x.osm_region_family else 0.0
         )
-        if x.osm_region_category:
-            base = category_companies * x.osm_area / x.osm_region_category
-            method = "dirce_calibrated"
+        by_places = category_companies * x.osm_area / x.osm_region_category if x.osm_region_category else 0.0
+        # Floor: an area has at least half its population's share of the region's companies. A
+        # town of thousands with no mapped bar has unmapped bars, not none; the floor also keeps
+        # supply rising with every mapped place, so a new competitor never raises the score.
+        floor = category_companies * x.population_share * POPULATION_FLOOR
+        if by_places >= floor:
+            base, method = by_places, "dirce_calibrated"
         else:
-            base = category_companies * x.population_share
-            method = "dirce_population_share"
+            base, method = floor, "dirce_population_floor"
         est = Estimate(base * SUPPLY_LOW_FACTOR, base, base * SUPPLY_HIGH_FACTOR)
         return est.clamp_low(min(x.osm_area, base)), method
     base = float(x.osm_area)

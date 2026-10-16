@@ -81,9 +81,16 @@ def test_supply_never_below_mapped():
     assert est.low >= 0.5 and est.low <= est.base
 
 
-def test_supply_uses_population_when_region_has_nothing_mapped():
-    est, method = model.supply(SupplyInputs(0, 10, 0, 100, 0.2))
-    assert method == "dirce_population_share" and est.base == 0.0
+def test_supply_floor_when_little_is_mapped():
+    # 200 companies, this category is half the family's mapped places -> 100; the area has 5% of
+    # the region's residents but nothing mapped -> floor of 100 x 5% x 0.5 = 2.5, not 0
+    est, method = model.supply(SupplyInputs(0, 50, 25, 200, 0.05))
+    assert method == "dirce_population_floor" and est.base == pytest.approx(2.5)
+
+
+def test_supply_by_places_above_the_floor():
+    est, method = model.supply(SupplyInputs(10, 50, 25, 200, 0.05))
+    assert method == "dirce_calibrated" and est.base == pytest.approx(40)
 
 
 def test_supply_without_yardstick_is_the_mapped_count():

@@ -16,8 +16,17 @@ from ..core.errors import DataError
 from ..places.areas import SPAIN, code_prefixes, population_of, provinces_in_ccaa
 from ..places.resolver import Place
 from ..sources.ine.adrh import UnitValues, by_unit
-from ..sources.ine.datasets import ADRH_NAME, DIRCE_NAME, EPF_NAME, IneData, latest_year, source_for
+from ..sources.ine.datasets import (
+    ADRH_NAME,
+    DIRCE_NAME,
+    EPF_NAME,
+    TOURISM_NAME,
+    IneData,
+    latest_year,
+    source_for,
+)
 from ..sources.ine.epf import Epf
+from ..sources.ine.tourism import DOMESTIC, FOREIGN, Tourism
 from ..sources.osm import snapshot as osm
 from . import model
 from .estimate import Estimate
@@ -57,6 +66,10 @@ class AreaResult:
     completeness: float | None
     too_small: bool
     notes: list[str] = field(default_factory=list)
+    visitor_nights: dict[str, float] = field(default_factory=dict)  # origin -> hotel nights, 12 months
+    visitor_method: str | None = None
+    visitor_foreign: Estimate | None = None
+    visitor_domestic: Estimate | None = None
 
 
 @dataclass
@@ -73,6 +86,7 @@ class MarketContext:
     _aggregates: dict[str, dict[str, UnitValues]] = field(default_factory=dict)  # kind -> units
     _family_share: Estimate | None = None
     _reference: dict[str, Estimate] = field(default_factory=dict)  # region -> density
+    _tourism: Tourism | None = None
 
     @classmethod
     async def create(cls, ine: IneData, snap: osm.Snapshot, category_key: str) -> MarketContext:
@@ -143,6 +157,42 @@ class MarketContext:
         income = _latest(inc, key, "net_income_per_household")
         return size, (income / 12 if income else None), notes
 
+    async def tourism(self, provinces: list[str]) -> Tourism:
+        if self._tourism is None:
+            self._tourism, results = await self.ine.tourism()
+            self.sources += [source_for(r, TOURISM_NAME, "last 12 months") for r in results]
+        for prov in provinces:
+            res = await self.ine.tourism_province(self._tourism, prov)
+            if res is not None:
+                self.sources.append(source_for(res, TOURISM_NAME + ": provincias", "last 12 months"))
+        return self._tourism
+
+    async def visitors(
+        self, code: str, level: str, region: str
+    ) -> tuple[Estimate, Estimate, dict[str, float], str] | None:
+        """(foreign, domestic) visitor food spend for the category, hotel nights and method."""
+        if not self.profile.visitor_food or level not in ("municipality", "province", "ccaa"):
+            return None
+        provinces = provinces_of(code) if level != "municipality" else [code[:2]]
+        tour = await self.tourism(provinces)
+        if level == "municipality":
+            nights, method = tour.nights(code)
+        else:
+            nights = {}
+            for prov in provinces:
+                for origin, v in tour.province_nights.get(prov, {}).items():
+                    nights[origin] = nights.get(origin, 0.0) + v
+            method = "province hotel nights"
+        food = tour.foreign_food_share
+        if not food:
+            return None
+        share = self.family_share()
+        f_daily = tour.foreign_daily.get(region) or tour.foreign_daily.get(SPAIN, 0.0)
+        d_daily = tour.domestic_daily.get(region) or tour.domestic_daily.get(SPAIN, 0.0)
+        foreign = model.visitor_food_market(nights.get(FOREIGN, 0.0), f_daily, food, share)
+        domestic = model.visitor_food_market(nights.get(DOMESTIC, 0.0), d_daily, food, share)
+        return foreign, domestic, nights, method
+
     # Counts from the OSM snapshot
 
     def osm_count(self, area_code: str, keys: list[str]) -> int:
@@ -203,6 +253,9 @@ class MarketContext:
         notes += ratio_notes
         share = self.family_share()
         market = model.market(households, spend, income_ratio, share) if households else None
+        visit = await self.visitors(code, level, region) if market is not None else None
+        if market is not None and visit is not None:
+            market = model.with_visitors(market, visit[0], visit[1])
 
         region_pop = population_of(region)[0]
         inputs = await self.supply_inputs(code, region, (population or 0) / region_pop if region_pop else 0.0)
@@ -235,6 +288,10 @@ class MarketContext:
             completeness=self.completeness(code, population, region, region_pop),
             too_small=too_small,
             notes=notes,
+            visitor_nights=visit[2] if visit else {},
+            visitor_method=visit[3] if visit else None,
+            visitor_foreign=visit[0] if visit else None,
+            visitor_domestic=visit[1] if visit else None,
         )
 
     async def reference_density(self, region: str) -> Estimate | None:

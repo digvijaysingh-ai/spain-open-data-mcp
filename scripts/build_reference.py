@@ -183,6 +183,81 @@ def build_cpi() -> dict[str, Any]:
     return {"cpi": out}
 
 
+# Tourism tables, pinned with their names checked (same reason as CPI): (operation, id, name).
+TOURISM_TABLES = {
+    "hotel_nights_points": (238, 75197, "Viajeros y pernoctaciones por puntos turísticos"),
+    "hotel_nights_provinces": (238, 2074, "Viajeros y pernoctaciones por comunidades autónomas y provincias"),
+    "tourist_flats_municipalities": (
+        410,
+        39363,
+        "Viviendas turísticas, plazas y plazas por vivienda turística. Municipios",
+    ),
+    "foreign_spend_by_region": (
+        329,
+        75714,
+        "Gasto de los turistas internacionales según comunidad autónoma de destino principal",
+    ),
+    "foreign_spend_by_item": (329, 75717, "Gasto de los turistas internacionales según partidas de gasto"),
+    "domestic_trips_by_destination": (
+        334,
+        24927,
+        "Viajes, pernoctaciones, duración media y gasto por destino principal (extranjero y comunidades autónomas)",
+    ),
+}
+
+
+# EOH tourist point names that need province context to resolve to one municipality.
+TOURIST_POINT_NAMES: dict[str, str] = {}
+
+
+def build_tourism() -> dict[str, Any]:
+    """Hotel nights, tourist flats and visitor spending table ids."""
+    print("Tourism tables...")
+    names: dict[int, str] = {}
+    for op in sorted({op for op, _i, _n in TOURISM_TABLES.values()}):
+        names |= {t["Id"]: t["Nombre"].strip() for t in get(f"TABLAS_OPERACION/{op}")}
+    for key, (_op, table_id, name) in TOURISM_TABLES.items():
+        if names.get(table_id) != name:
+            raise SystemExit(
+                f"tourism {key}: table {table_id} is now '{names.get(table_id)}', expected '{name}'"
+            )
+    out: dict[str, Any] = {k: v[1] for k, v in TOURISM_TABLES.items()}
+    out["point_municipalities"] = tourist_point_municipalities(TOURISM_TABLES["hotel_nights_points"][1])
+    return {"tourism": out}
+
+
+def tourist_point_municipalities(table_id: int) -> dict[str, str]:
+    """EOH tourist point code -> INE municipality code. Most points use INE-internal codes
+    ('H1' is Málaga), so they are matched by name with the place resolver; ambiguous or
+    unknown names stop the build so they can be added by hand."""
+    from spain_open_data_mcp.core.errors import DataError
+    from spain_open_data_mcp.places.resolver import resolve_one
+
+    points: dict[str, str] = {}
+    for series in get(f"DATOS_TABLA/{table_id}", nult=1, tip="AM"):
+        for m in series["MetaData"]:
+            if m["T3_Variable"].upper().startswith("PUNTOS"):
+                points[m["Codigo"]] = m["Nombre"].strip()
+    out: dict[str, str] = {}
+    failed = []
+    for code, name in sorted(points.items()):
+        if len(code) == 5 and code.isdigit():
+            out[code] = code
+            continue
+        try:
+            place, _others = resolve_one(TOURIST_POINT_NAMES.get(name, name))
+        except DataError as e:
+            failed.append(f"{code} {name}: {e.problem}")
+            continue
+        if place.level != "municipality":
+            failed.append(f"{code} {name}: resolved to a {place.level}")
+            continue
+        out[code] = place.code
+    if failed:
+        raise SystemExit("Unmatched tourist points (add to TOURIST_POINT_NAMES):\n" + "\n".join(failed))
+    return out
+
+
 def build_dirce() -> dict[str, Any]:
     """Companies by region and CNAE group: the table id and the Tempus ids to filter it."""
     print("DIRCE companies by region and activity...")
@@ -214,7 +289,7 @@ def build_dirce() -> dict[str, Any]:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     padron_year = build_municipalities()
-    tables = build_tables() | build_dirce() | build_epf() | build_cpi()
+    tables = build_tables() | build_dirce() | build_epf() | build_cpi() | build_tourism()
     tables["generated_at"] = datetime.now(UTC).isoformat(timespec="seconds")
     tables["padron_year"] = padron_year
     (OUT / "ine_tables.json").write_text(json.dumps(tables, indent=2, ensure_ascii=False) + "\n")
