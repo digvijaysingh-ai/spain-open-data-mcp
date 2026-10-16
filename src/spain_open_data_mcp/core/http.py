@@ -38,6 +38,7 @@ class HostPolicy:
 POLICIES: dict[str, HostPolicy] = {
     "servicios.ine.es": HostPolicy(max_concurrency=3, min_interval_s=0.2),
     "www.ine.es": HostPolicy(max_concurrency=2, min_interval_s=0.5),
+    "datos.gob.es": HostPolicy(max_concurrency=2, min_interval_s=0.3),
 }
 
 
@@ -106,6 +107,7 @@ class HttpClient:
         *,
         ttl_s: float = 7 * DAY,
         source_name: str = "upstream",
+        accept: str | None = None,
     ) -> Fetched:
         key = self.cache_key(url, params)
         cached = self._cache.get(key)
@@ -119,7 +121,7 @@ class HttpClient:
                 fix="Unset SPAIN_MCP_OFFLINE or warm the cache by running the request once online.",
             )
         try:
-            body = await self._fetch(url, params, source_name)
+            body = await self._fetch(url, params, source_name, accept)
         except UpstreamError:
             if cached:  # serve stale rather than fail
                 return Fetched(json.loads(cached[1]), _utc(cached[0]), from_cache=True, stale=True)
@@ -135,7 +137,7 @@ class HttpClient:
         self._cache.put(key, now, body)
         return Fetched(data, _utc(now), from_cache=False)
 
-    async def _fetch(self, url: str, params: Any, source_name: str) -> bytes:
+    async def _fetch(self, url: str, params: Any, source_name: str, accept: str | None = None) -> bytes:
         host = urlsplit(url).hostname or ""
         policy = POLICIES.get(host, HostPolicy())
         sem = self._sems.setdefault(host, asyncio.Semaphore(policy.max_concurrency))
@@ -153,7 +155,9 @@ class HttpClient:
                         await asyncio.sleep(wait)
                     self._last[host] = time.monotonic()
                 try:
-                    r = await self._client.get(url, params=params)
+                    r = await self._client.get(
+                        url, params=params, headers={"Accept": accept} if accept else None
+                    )
                 except httpx.TimeoutException:
                     last_error = f"timed out after {settings.http_timeout_s:.0f} s"
                 except httpx.HTTPError as e:

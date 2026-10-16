@@ -21,6 +21,8 @@ async def test_tools_are_annotated_for_the_connector_directory():
         "price_band",
         "chart",
         "catchment",
+        "find_datasets",
+        "read_dataset",
     }
     for t in tools:
         assert t.title, t.name
@@ -64,3 +66,14 @@ async def test_licence_resource():
     async with Client(mcp) as c:
         res = await c.read_resource("spain-open-data://data-licences")
     assert "CC BY 4.0" in res.contents[0].text  # type: ignore[union-attr]
+
+
+async def test_prompts():
+    async with Client(mcp) as c:
+        listed = {p.name for p in (await c.list_prompts()).prompts}
+        assert listed == {"size_a_market", "pick_a_location", "explore_public_datasets"}
+        got = await c.get_prompt(
+            "pick_a_location", {"business": "gym", "area": "Valladolid", "near": "Plaza Mayor, Valladolid"}
+        )
+    text = got.messages[0].content.text  # type: ignore[union-attr]
+    assert "compare_areas" in text and "catchment" in text and "Sources and caveats" in text
