@@ -1,0 +1,65 @@
+name: OSM snapshot
+
+# Rebuilds the OpenStreetMap business snapshot and publishes it on the rolling
+# 'osm-snapshot' release, where the server downloads it from.
+on:
+  schedule:
+    - cron: "17 4 3 * *" # 04:17 UTC on the 3rd of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: osm-snapshot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: osm-snapshot
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked --group snapshot
+      - name: Build
+        run: uv run --group snapshot python scripts/build_osm_snapshot.py --out build/osm
+      - name: Compare with the published snapshot
+        # A broken extract shows up as a sudden drop; refuse to publish it.
+        run: |
+          if gh release download "$TAG" -p osm_manifest.json -O build/previous.json 2>/dev/null; then
+            python3 - <<'EOF'
+          import json
+          new = json.load(open("build/osm/osm_manifest.json"))
+          old = json.load(open("build/previous.json"))
+          n, o = int(new["places"]), int(old["places"])
+          print(f"places: {o} -> {n} ({(n - o) / o:+.1%})")
+          if n < 0.9 * o:
+              raise SystemExit("more than 10% fewer places than the published snapshot")
+          EOF
+          else
+            echo "no published snapshot yet"
+          fi
+      - name: Publish
+        run: |
+          gzip -9 -k build/osm/osm_businesses.sqlite
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "OpenStreetMap snapshot" --latest=false \
+              --notes "Monthly OpenStreetMap business snapshot used by the businesses tool."
+          fi
+          # Data first, manifest last: clients read the manifest to find the data.
+          gh release upload "$TAG" build/osm/osm_businesses.sqlite.gz --clobber
+          gh release upload "$TAG" build/osm/osm_manifest.json --clobber
+          python3 - <<'EOF' > build/notes.md
+          import json
+          m = json.load(open("build/osm/osm_manifest.json"))
+          print(f"OpenStreetMap data of {m['osm_timestamp'][:10]}, built {m['built_at'][:10]}.")
+          print(f"{int(m['places']):,} places in INE {m['tracts_year']} census tracts.")
+          print()
+          print("Data © OpenStreetMap contributors, available under the Open Database Licence (ODbL 1.0):")
+          print("https://www.openstreetmap.org/copyright. Census tract boundaries: INE, CC BY 4.0.")
+          EOF
+          gh release edit "$TAG" --notes-file build/notes.md
