@@ -22,6 +22,7 @@ dependencies = [
     "matplotlib>=3.11.2",
     "mcp>=2.3,<3",
     "pydantic>=2.14.1",
+    "shapely>=2.2.0",
 ]
 
 [project.urls]
@@ -63,7 +64,7 @@ allowed-confusables = ["×", "÷"]  # formulas in docstrings and messages
 [tool.pyright]
 include = ["src", "tests", "scripts"]
 # Needs the 'snapshot' dependency group, whose libraries (osmium, pyshp) ship loose stubs.
-exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py"]
+exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py", "scripts/build_geometry.py"]
 pythonVersion = "3.11"
 typeCheckingMode = "standard"
 

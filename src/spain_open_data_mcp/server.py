@@ -20,11 +20,13 @@ from .core.envelope import Check, Envelope, confidence_from
 from .core.errors import DataError
 from .core.http import HttpClient
 from .places.resolver import Place, resolve
+from .sources.geo.geometry import GeometryStore
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
 from .sources.osm.snapshot import SnapshotStore
 from .status import data_status
 from .tools import businesses as businesses_mod
+from .tools import catchment as catchment_mod
 from .tools import chart as chart_mod
 from .tools import demographics as demographics_mod
 from .tools import income as income_mod
@@ -75,6 +77,7 @@ class _Services:
 
     _ine: IneData | None = None
     _osm: SnapshotStore | None = None
+    _geo: GeometryStore | None = None
 
     @classmethod
     def ine(cls) -> IneData:
@@ -95,6 +98,16 @@ class _Services:
     @classmethod
     def set_osm(cls, store: SnapshotStore) -> None:
         cls._osm = store
+
+    @classmethod
+    def geo(cls) -> GeometryStore:
+        if cls._geo is None:
+            cls._geo = GeometryStore()
+        return cls._geo
+
+    @classmethod
+    def set_geo(cls, store: GeometryStore) -> None:
+        cls._geo = store
 
 
 P = ParamSpec("P")
@@ -333,6 +346,34 @@ async def compare_areas(
     """
     return await market_mod.compare_areas_tool(
         _Services.ine(), _Services.osm(), within, category, level, limit
+    )
+
+
+@mcp.tool(title="Catchment around an address", annotations=READ_ONLY)
+@guarded
+async def catchment(
+    near: Annotated[
+        str,
+        Field(
+            description="Address as 'street number, municipality' (e.g. 'Calle Sierpes 40, Sevilla'), or "
+            "coordinates as 'lat, lon'. Floor and door are ignored and never stored."
+        ),
+    ],
+    radius_m: Annotated[
+        int, Field(ge=100, le=10_000, description="Radius in metres (e.g. 500, 800, 1500).")
+    ] = 800,
+    category: Annotated[
+        str | None, Field(description="Optional business category, to add market size and opportunity score.")
+    ] = None,
+) -> Annotated[CallToolResult, Envelope[catchment_mod.CatchmentData]]:
+    """Profile the area within a radius of an address: residents, households, income, age, and
+    the businesses mapped there. With a category, also the yearly market in euros, competing
+    businesses and an opportunity score against the region. Use for "who lives within 800 m of
+    this shop" or "is there room for a bakery near Calle X". Addresses are checked against the
+    municipality they name; ambiguous ones are refused with suggestions.
+    """
+    return await catchment_mod.catchment_tool(
+        _Services.ine(), _Services.osm(), _Services.geo(), near, radius_m, category
     )
 
 

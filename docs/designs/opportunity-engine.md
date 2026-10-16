@@ -366,6 +366,24 @@ Decisions made while implementing, against live data:
   companies. Without it, towns of 10,000 with no mapped bar (Pizarra, Archidona) scored 10-12.
   The floor also keeps supply rising with every mapped place, which a randomised test checks.
 
+## Catchments as built (2026-10-16)
+- One `catchment` tool (address or coordinates, radius, optional category) instead of radius
+  parameters on four tools: same capability, fewer parameters for the model to get wrong.
+- Geometry is its own release asset (geometry-v1, 28 MB compressed), downloaded the first time
+  a catchment is asked for (E4.1), built from INE's 2024 tract file: the income atlas's 2023
+  tract codes match 97.4-99.3% by province (2023 and 2025 files match slightly less). The
+  planned 99% gate (OV6) is above what INE's data allows; unmatched tracts are reported per
+  answer as a share of the circle.
+- Bounding-box columns and lazy shape loading (E7.1): an 800 m circle in central Valladolid
+  touches 51 tracts and takes 0.08 s.
+- Geocoding (E1.2): CartoCiudad's free text returns confident near misses ("Gran Via 28
+  Madrid" -> Gran Vía in Mula), so a result is used only if it is a street record in the named
+  municipality whose name matches exactly, or contains every word given with the same last
+  word ("Larios" -> "Marqués de Larios"; "Gran Vía" is not "Gran Vía de Hortaleza"). Nominatim
+  is the fallback, with its town required to equal the municipality (it matched a village in
+  the province of the same name). The point must then fall inside the municipality's tracts.
+- Walking-time catchments (E1.5) are the next step.
+
 ## Implementation Tasks
 - [x] **T1 (P1, human ~2h / CC ~10min)** osm-snapshot: integrity check on open, one re-download, truncated-file test (2.1). Done in PR #12.
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.

@@ -1,0 +1,44 @@
+name: Tract geometry
+
+# Builds the census tract shapes used for catchments and publishes them on the
+# 'geometry-v<schema>' release. Run by hand when INE publishes a new income atlas: the
+# shapes must be the atlas's tract year (e.g. 2024 for the atlas published in 2026).
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Tract boundaries year (the income atlas's)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      YEAR: ${{ inputs.year }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --locked --group snapshot
+      - name: Release tag for this schema
+        run: echo "TAG=$(uv run python -c 'from spain_open_data_mcp.sources.geo.geometry import RELEASE_TAG; print(RELEASE_TAG)')" >> "$GITHUB_ENV"
+      - name: Download INE tract boundaries
+        run: |
+          mkdir -p build/downloads
+          curl -sSfL -A "spain-open-data-mcp (+https://github.com/digvijaysingh-ai/spain-open-data-mcp)" \
+            -o "build/downloads/seccionado_${YEAR}.zip" "https://www.ine.es/prodyser/cartografia/seccionado_${YEAR}.zip"
+      - name: Build
+        run: uv run --group snapshot python scripts/build_geometry.py --year "$YEAR"
+      - name: Publish
+        run: |
+          gzip -9 -k build/geometry/tracts_geometry.sqlite
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "Census tract geometry" --latest=false --notes "Census tract shapes for catchments."
+          fi
+          gh release upload "$TAG" build/geometry/tracts_geometry.sqlite.gz --clobber
+          gh release upload "$TAG" build/geometry/geometry_manifest.json --clobber
+          gh release edit "$TAG" --notes "INE census tract boundaries ${YEAR}, simplified to about 10 m, for catchments. Fuente: INE (seccionado ${YEAR}), CC BY 4.0."

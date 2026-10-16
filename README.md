@@ -24,6 +24,7 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 - "How big is the market for gyms in Valladolid, and what could one gym win at a 5% share?"
 - "Which towns in Valladolid province are under-served for pharmacies?"
 - "A gym charged €40 a month in Madrid in 2023. What fits in Sevilla today?"
+- "Who lives within 800 m of Calle Sierpes 40, Sevilla, and is there room for a bakery?"
 
 ## Tools
 
@@ -34,6 +35,7 @@ open-data catalogue (datos.gob.es), market sizing, price bands and charts are ne
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
 | `market_size` | Yearly spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment, plus foreign visitors' spend on food and drink in tourist towns. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
 | `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by opportunity for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
+| `catchment` | Who lives within a radius of an address (or coordinates): residents, households, income and age from census tracts weighted by how much of each lies inside the circle, plus the businesses mapped there. With a category, the market in euros and an opportunity score. Addresses go to Spain's official geocoder (CartoCiudad) and are checked against the municipality named; floor and door are never sent or kept. |
 | `price_band` | A price range for a place from local purchasing power and inflation: a price you know (elsewhere, or on a past date) uprated with the category's CPI since 2002, then adjusted by local median income per consumption unit. Labelled as an estimate: public data has no competitor prices. |
 | `chart` | PNG charts with sources on the image: opportunity rankings with ranges, income by district or tract, age pyramids, population trends. If drawing fails, the text answer still comes back. |
 | `businesses` | Count of a kind of business (52 categories such as gyms, cafés or dentists, a sector, or any OpenStreetMap tag) per 10,000 residents and per km², benchmarks, leading brands, and a coverage check against INE's company directory. Optional district or tract ranking. |
@@ -111,6 +113,7 @@ Claude are planned for milestone 4.
 | `SPAIN_MCP_CACHE_DIR` | `~/.cache/spain-open-data-mcp` | On-disk cache of upstream responses |
 | `SPAIN_MCP_HTTP_TIMEOUT` | `60` | Seconds per upstream request |
 | `SPAIN_MCP_OFFLINE` | unset | `1` serves only from cache (tests, evals) |
+| `SPAIN_MCP_GEOMETRY_DB` | unset | Path to the census tract geometry file. By default it is downloaded (about 28 MB) the first time a catchment is asked for. |
 | `SPAIN_MCP_OSM_DB` | unset | Path to an OpenStreetMap snapshot file. By default it is downloaded (about 21 MB) on first use and refreshed monthly. |
 
 ## Architecture
