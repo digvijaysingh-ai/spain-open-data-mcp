@@ -152,7 +152,7 @@ async def main() -> None:
     args = ap.parse_args()
     if not os.environ.get("ANTHROPIC_API_KEY"):
         raise SystemExit("Set ANTHROPIC_API_KEY. This run makes paid API calls.")
-    import anthropic
+    import anthropic  # pyright: ignore[reportMissingImports]  # the evals group, not installed in CI
     from mcp import Client
 
     from spain_open_data_mcp.server import INSTRUCTIONS, mcp
