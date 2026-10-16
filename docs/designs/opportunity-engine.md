@@ -26,7 +26,8 @@ A Spain Opportunity Atlas. Every municipality and district gets an opportunity s
 business categories, from demand (residents and visitors), spending power (euros per household
 for the category) and calibrated supply (DIRCE regional company count distributed by OSM's local
 share). Supply refreshes monthly with OSM; demand refreshes yearly with INE releases; each
-release states the vintage of every input. The score is backtested against later openings.
+release states the vintage of every input. Each method version's scores are frozen and checked
+against INE's official business openings as each quarter is published.
 
 ### Platonic Ideal
 Asked "restaurants in Valladolid?", Claude returns in about 20 seconds a one-page brief: the
@@ -98,9 +99,11 @@ Inputs per area A (municipality, district, tract or catchment) and category K:
   up) or ADRH (district, tract). Catchments: tract values × share of tract area inside the
   circle (exact geometry).
 - spend_hh(K, R, band) = EPF euros per household per year for the ECOICOP 4-digit code(s) of K,
-  region R (table 73993). Income is handled once, through the income band: the ratio of band
-  spend to the regional mean from table 74002 (spend by household income level and region).
-  Band of A from ADRH mean household income. No separate income adjustment factor.
+  region R (table 73993). Regional 4-digit cells are noisy (Castilla y León restaurants
+  +33% from 2023 to 2025) and some are published as 0 when the sample is too small; a 0 is
+  treated as missing. Base value: the national 4-digit amount × the region's 3-digit
+  (subgroup) ratio to national, averaged over the last 3 EPF years.
+  Income is handled once, through the income band (see Market). No separate income factor.
 - visitor_nights(A): hotel overnight stays where A is an INE tourist point (EOH tables
   75197/75198) plus tourist-flat nights shared by beds (table 39363); elsewhere, provincial
   overnight stays (hotels and flats) shared out by A's share of the province's tourist beds.
@@ -114,8 +117,12 @@ Market:
   Low/high: spend × (1 ± 1.96 × CV), CV from EPF table 74005, capped at ±50%; ±20% on
   visitor terms.
   Income band: ADRH yearly household income / 12, deflated with CPI to the EPF year; the
-  band ratio is interpolated linearly between band midpoints of table 74002, at the finest
-  level 74002 publishes (COICOP 2-digit group), applied to the 4-digit spend of K.
+  band ratio is interpolated linearly between band midpoints of table 74002. That table gives
+  total spend only, in four bands of net monthly household income (under 1,000, 1,000-1,999,
+  2,000-2,999, 3,000 euros or more), not spend by category, so the same ratio applies to every
+  category and is flagged as an estimate. It likely understates how fast discretionary spend
+  (restaurants, personal care) rises with income; category-specific elasticities from the
+  national spend-quintile table (73828) are a later refinement.
   Visitor-only categories (flag in engine/categories, e.g. guest_house) use the visitor term
   only.
 
@@ -123,7 +130,7 @@ Supply (category-specific shares):
   supply(A, K) = companies(R, CNAE(K)) × OSM_K(A) / OSM_K(R)
   where OSM_K(x) is the count of OSM places of category K in x. If OSM_K(R) = 0, the share is
   A's population share of R. Low = min(base, max(OSM_K(A), base × 0.8)).
-  High = base × 1.2 / min(1, coverage(R, K)), capped at base × 2. Where K has no CNAE
+  High = base × 1.25 (coverage is already in base; OV2). Where K has no CNAE
   yardstick, supply = OSM_K(A) / national coverage of the proxy sector named in the
   engine/categories column `coverage_proxy`, flagged low confidence.
 
@@ -133,7 +140,8 @@ Opportunity:
   density(A, K) = market_eur(A, K) / (supply(A, K) + k), with k = 1 pseudo-business.
   score(A, K) = density(A, K) / median base density over peer areas (the median uses base
   values only; the area's low, base and high are each divided by it).
-  Peers: same level, same size band (population quintile within Spain), any region.
+  Peers: same level, same log-population band (2x wide) or the 50 nearest areas by population,
+  any region (OV2).
   A score of 1.0 means "as much market per business as similar areas".
   Rankings use the low end of the score, not the base (CM2).
   Mapping completeness(A): OSM places per resident for well-covered categories (pharmacy, bar)
@@ -168,22 +176,32 @@ to its ECOICOP codes, CNAE code and tourism flag is the first file written (engi
   Eustat and Nastat income series are a later TODO.
 - Tracts with suppressed ADRH values: use the district value with an estimate check.
 
-## Backtest specification
-- Level: municipality (no tract boundary recasting needed).
-- Years: score on 1 January of Y using the Jan-1 Geofabrik extract of Y; outcomes are openings
-  by 1 January of Y+1. Y = 2023, 2024, 2025 (extracts verified on download.geofabrik.de).
-- Opening: a place of category K in Y+1 with no place of category K within 30 m in Y (same
-  brand or tags where present), so redrawn or retyped places are not openings. Counted only in
-  municipalities where mapping activity is stable (total tagged objects changed under 15%).
-- Inputs pinned to each year's vintage (DIRCE, ADRH, EPF, Padrón of that year).
-- Metric: openings per 10,000 residents in the top score quintile vs bottom quintile (not per
-  existing business, which would be biased by construction), with a 95% interval from a
-  bootstrap over municipalities, compared against a population-only baseline score.
-- Placebo (CM1): the same lift computed for newly mapped places that were already open
-  (OSM start_date before Y, or present nearby in an older extract). The README reports real
-  lift minus placebo lift, and makes no claim unless that is clearly positive.
-- Spike first: build one historical snapshot (2025-01-01) and confirm tags and tract
-  assignment before the full run.
+## Validation: pre-registered forward test
+Replaces the OSM backtest (CM1, 1.4), after the spike below showed it cannot work.
+- Each method version's scores are frozen and published (atlas CSV with a SHA-256 and date) the
+  moment the method version is released. This is the registered prediction.
+- Outcome: INE's business demography statistics (CODEM, operation 426), which come from the
+  business register, not OSM: openings ("altas") by province and CNAE division each quarter
+  (table 82131, e.g. food and drink, division 56), and opening and closure rates for all 8,133
+  municipalities (table 82132, all sectors). The series starts in 2026 Q1.
+- Metric: openings per 1,000 existing units in the top vs bottom score quintile of provinces
+  (sector level) and municipalities (all sectors), with bootstrap 95% intervals, against a
+  population-only baseline. First read after four quarters of data following registration
+  (about mid-2027), then every quarter.
+- The README states the registration date and shows results only when there are some; until
+  then it says "prediction registered, not yet validated".
+- OSM appearances between snapshots are reported only as mapping activity, never as openings.
+
+### Spike results (2026-10-16)
+- OSM changes do not measure openings. Spain's mapped places grew from 447,398 (2025-01-01) to
+  535,657 (2026-10-15), +20% in 21 months, against roughly 1-2% a year real business growth.
+- In Valladolid, Sevilla and Zaragoza, 1,869 places appeared. About 80% are new map objects with
+  no date and 17% are retagged objects; fewer than 2% carry evidence either way (a former vacant
+  unit, or a start date). The planned placebo (places dated before the snapshot) had 4 members.
+- EPF (2025 data published) has the 4-digit codes the categories need (11.1.1 restaurants and
+  cafés, 13.1.2 hairdressing and beauty, 06.2.1 dental, 09.4.1 sport and recreation, 03.1.1
+  clothes, 01.1.1 bread) by region; coefficients of variation only at 3-digit level (e.g. 5.3%
+  for restaurants in Castilla y León); table 74002 has total spend by income band only.
 
 ## Atlas and hero export
 - Published at municipality and district level. Tract scores only on demand, low confidence.
@@ -198,7 +216,7 @@ to its ECOICOP codes, CNAE code and tourism flag is the first file written (engi
 | # | Proposal | Effort (human / CC) | Decision | Reasoning |
 |---|----------|--------|----------|-----------|
 | 1 | Household spending (EPF), market size in euros | ~3 days / ~1-2 h | ACCEPTED | "How big is the market" means euros |
-| 2 | Backtest the score against later openings | ~1.5 weeks / ~3-4 h | ACCEPTED | Measured hit rate is the strongest credibility signal |
+| 2 | Validate the score against later openings (now a pre-registered forward test, see Validation) | ~1 week / ~2-3 h | ACCEPTED | Measured hit rate is the strongest credibility signal |
 | 3 | Open Opportunity Atlas: release + public map page; hero JSON as a slice | ~1 week / ~2-3 h | ACCEPTED | One click to see the product; feeds djcrafted |
 | 4 | Point or address catchments (radius) | ~1 week / ~2-3 h | ACCEPTED | Business owners think in walking distance |
 | 5 | Visitor demand from INE tourism statistics | ~4 days / ~1-2 h | ACCEPTED | Tourist cities are badly underestimated otherwise |
@@ -213,7 +231,7 @@ to its ECOICOP codes, CNAE code and tourism flag is the first file written (engi
 - Tools: market_size, compare_areas, price_band, chart; catchment parameters on demographics,
   income, businesses and market_size.
 - Atlas build, release, map page, hero export.
-- Backtest script and README results.
+- Registration of frozen scores, quarterly scoring script against CODEM, README results.
 - Golden-set evals (30 to 50 questions), written first.
 - Polish bundle (5 items).
 
@@ -224,7 +242,7 @@ to its ECOICOP codes, CNAE code and tourism flag is the first file written (engi
 - Tract-level atlas publication (new issue).
 
 ## Outside voice decisions
-- CM1 A: backtest placebo, net lift reported.
+- CM1 A: backtest placebo, net lift reported. Superseded by the pre-registered forward test after the spike.
 - CM2 A: completeness flag, minimum population per category, rank by low end.
 - CM3 B: keep expansion order (hosting, evals and GIF at step 7).
 - CM4 B: keep exact geometry and addresses.
@@ -239,7 +257,7 @@ to its ECOICOP codes, CNAE code and tourism flag is the first file written (engi
    cities); engine/categories table; EPF; engine; market_size; compare_areas.
 4. Tourism demand, tract geometry and catchments, polish bundle.
 5. Charts, atlas build, hero export, map page.
-6. Full backtest.
+6. Register the first frozen scores; quarterly scoring against CODEM from then on.
 7. Hosting (Cloud Run), registry, directory submission, demo GIF.
 8. datos.gob.es, rents, crime.
 
@@ -300,8 +318,9 @@ answer says so); snapshot queries < 100 ms; geometry for a catchment < 300 ms; c
 - OV3 A: categories tagged local or destination; destination categories scored at municipality
   level and up, district views labelled as residents' spending; away-from-home share removed
   from visitor demand so domestic tourists count once.
-- OV4 A: atlas release requires a committed backtest result with real lift above placebo for the
-  current method version; until then a "preview, not validated" banner and no hero export.
+- OV4 A (amended after the spike): the atlas release requires the current method version's
+  scores to be registered (frozen, dated, checksummed); until validation results exist the page
+  shows "prediction registered, not yet validated" and no hero export is produced.
 - OV5 A: hosted image bakes in core and geometry bundles and walking graphs for the 10 largest
   provinces; fetch-on-need for local installs only; image size, memory and cold start measured at
   step 4.
@@ -316,8 +335,8 @@ answer says so); snapshot queries < 100 ms; geometry for a catchment < 300 ms; c
 - [x] **T2 (P1, human ~2h / CC ~15min)** businesses: sanitise upstream text, brands need 3+ places, malicious-brand test (3.2). Done in PR #12.
 - [x] **T3 (P1, human ~2h / CC ~10min)** osm-snapshot: release tag osm-snapshot-v1 (9.1). Done in PR #12.
 - [x] **T4 (P2, human ~4h / CC ~20min)** areas module, split businesses() (5.1).
-- [ ] **T5 (P2, human ~4h / CC ~30min)** verify EPF 73993/74002/74005; engine/categories table (CM6, spec).
-- [ ] **T6 (P2, human ~4h / CC ~1h)** backtest spike with placebo in 3 cities (1.4, CM1).
+- [x] **T5 (P2, human ~4h / CC ~30min)** verify EPF 73993/74002/74005 (done; findings in Validation > Spike results). engine/categories table still to do.
+- [x] **T6 (P2, human ~4h / CC ~1h)** backtest spike in 3 cities (done; OSM backtest dropped, see Validation).
 - [ ] **T7 (P2, human ~1w / CC ~3h)** pure engine: ranges, completeness flag, minimum population, method version, property tests (1.1, CM2, 6.1, 10.1).
 - [ ] **T8 (P2, human ~3d / CC ~2h)** bundle yearly INE inputs into the snapshot release (CM6).
 - [ ] **T9 (P2, human ~1d / CC ~30min)** data-status resource, job failure auto-issues, structured call logs (8.1).

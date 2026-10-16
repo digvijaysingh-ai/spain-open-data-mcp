@@ -60,7 +60,7 @@ ignore = ["E501"]  # line length is left to `ruff format`; long strings stay rea
 [tool.pyright]
 include = ["src", "tests", "scripts"]
 # Needs the 'snapshot' dependency group, whose libraries (osmium, pyshp) ship loose stubs.
-exclude = ["scripts/build_osm_snapshot.py"]
+exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py"]
 pythonVersion = "3.11"
 typeCheckingMode = "standard"
 
