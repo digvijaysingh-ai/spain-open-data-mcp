@@ -64,8 +64,8 @@ allowed-confusables = ["×", "÷"]  # formulas in docstrings and messages
 
 [tool.pyright]
 include = ["src", "tests", "scripts"]
-# Needs the 'snapshot' dependency group, whose libraries (osmium, pyshp) ship loose stubs.
-exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py", "scripts/build_geometry.py", "scripts/build_walk_graphs.py"]
+# Need the snapshot group (osmium, pyshp ship loose stubs) or Playwright (browser tests).
+exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py", "scripts/build_geometry.py", "scripts/build_walk_graphs.py", "tests/e2e"]
 pythonVersion = "3.11"
 typeCheckingMode = "standard"
 
