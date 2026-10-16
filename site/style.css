@@ -53,6 +53,7 @@ select, button {
   border-radius: 6px;
   padding: 6px 10px;
   min-height: 40px;
+  max-width: 100%;
 }
 button[aria-pressed="true"] { border-color: var(--accent); }
 .status { margin: 0; padding: 6px 16px; font-size: 0.85rem; color: var(--muted); background: var(--panel); }
@@ -106,6 +107,6 @@ th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line
 @media (max-width: 640px) {
   .bar { align-items: start; }
   .controls { width: 100%; }
-  .controls select { flex: 1; }
+  .controls select { flex: 1; min-width: 0; }
   main { min-height: 55vh; }
 }
