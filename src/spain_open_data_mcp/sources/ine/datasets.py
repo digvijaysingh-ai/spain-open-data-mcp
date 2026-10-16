@@ -46,6 +46,10 @@ EPF_NAME = "Encuesta de Presupuestos Familiares (EPF): gasto de los hogares"
 TOURISM_NAME = "Estadísticas de turismo (EOH, viviendas turísticas, EGATUR, ETR)"
 DIRCE_NAME = "Directorio Central de Empresas (DIRCE): empresas por comunidad autónoma y actividad principal"
 
+IPVA_NAME = "Índice de Precios de Vivienda en Alquiler (IPVA), estadística experimental"
+# IPVA tables by level (operation IPVA): general index, 2015 = 100, and annual change.
+IPVA_TABLES = {"ccaa": 59056, "province": 59058, "municipality": 59060, "district": 59061}
+
 # Statistics change once a year; refetch weekly at most.
 TTL = 7 * DAY
 
@@ -189,6 +193,10 @@ class IneData:
     async def cpi_groups_since_2002(self) -> TableResult:
         """National CPI by ECOICOP group on the 2025 base, monthly since January 2002."""
         return await self.tempus.table(tables()["cpi"]["national_groups_since_2002"], last_n=400, ttl_s=DAY)
+
+    async def rent_index(self, level: str) -> TableResult:
+        """IPVA rent index for every area of a level ('ccaa' also has the national total)."""
+        return await self.tempus.table(IPVA_TABLES[level], last_n=12, ttl_s=30 * DAY)
 
     async def cpi_province(self, province: str) -> TableResult:
         t = tables()["cpi"]

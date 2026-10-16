@@ -10,7 +10,7 @@ date, and with checks for suppressed values, small samples, stale data and estim
 **Status: early development (milestone 2 of 4).** Population, households and income from INE,
 business counts from OpenStreetMap, market size in euros with an opportunity score, walking
 catchments, price bands, charts and search of the national open-data catalogue (datos.gob.es)
-work today, down to census tract. Rental and crime statistics and hosting are next. See
+work today, down to census tract, along with rents and recorded crime. Hosting is next. See
 [the roadmap](#roadmap).
 
 **Map:** the [Spain Opportunity Atlas](https://digvijaysingh-ai.github.io/spain-open-data-mcp/) shows every
@@ -46,6 +46,8 @@ quarter against INE's official business openings; until results exist the map sa
 | `price_band` | A price range for a place from local purchasing power and inflation: a price you know (elsewhere, or on a past date) uprated with the category's CPI since 2002, then adjusted by local median income per consumption unit. Labelled as an estimate: public data has no competitor prices. |
 | `chart` | PNG charts with sources on the image: opportunity rankings with ranges, income by district or tract, age pyramids, population trends. If drawing fails, the text answer still comes back. |
 | `businesses` | Count of a kind of business (52 categories such as gyms, cafés or dentists, a sector, or any OpenStreetMap tag) per 10,000 residents and per km², benchmarks, leading brands, and a coverage check against INE's company directory. Optional district or tract ranking. |
+| `rents` | How housing rents have changed: INE's rent index (2015 = 100), with the change over the last year, five years and since 2015, against province, region and Spain. Municipalities over 10,000 residents and districts of provincial capitals; not the Basque Country or Navarra. Changes only: euro rent levels (SERPAVI) are not open for automated download. |
+| `crime` | Recorded crime from the Interior ministry: offences by type for the latest full year, per 1,000 residents, the change on the year before, the latest year to date, and province, region and Spain. Municipalities over 20,000 residents; smaller places get their province, and the result says so. |
 | `find_datasets` | Searches Spain's national open-data catalogue (datos.gob.es) by title and keyword, optionally preferring a place. Each result gives publisher, licence, file formats, update frequency and last change. |
 | `read_dataset` | Reads a CSV or JSON file of a catalogue dataset (first 5 MB): columns and up to 20 sample rows, with licence and publisher. Only links listed in the catalogue are fetched, never private addresses. Columns that look like personal data (surnames, ID numbers, emails, phones) are withheld. |
 
@@ -184,7 +186,7 @@ OpenStreetMap snapshot locally (a 1.5 GB download, then about 5 minutes) with
 ## Roadmap
 
 1. **Skeleton**: place resolver, `demographics`, `income`, CI.
-2. **Supply and catalogue** (in progress): OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE) (done); datos.gob.es search and dataset reading (done); `market_size`, `price_band`, `compare_areas`, `chart`; rental reference index and crime statistics by municipality.
+2. **Supply and catalogue** (done): OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE); datos.gob.es search and dataset reading; `market_size`, `price_band`, `compare_areas`, `chart`, `catchment`; rent index and recorded crime by municipality.
 3. **Checks and evals**: a golden set of real strategy questions with hand-checked answers, scored for accuracy, sourcing, refusals and calibration, with results here.
 4. **Publishing**: hosted connector, PyPI, MCP Registry, Claude connectors directory.
 
