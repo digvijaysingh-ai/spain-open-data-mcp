@@ -1,0 +1,422 @@
+[
+{
+"COD": "VTE71",
+"Nombre": "Total Nacional. Viviendas turísticas. Dato base. ",
+"T3_Unidad": "Vivienda",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 382508,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viviendas turísticas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 341001.0
+}
+]
+},
+{
+"COD": "VTE215",
+"Nombre": "Total Nacional. Plazas. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 382510,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 1714702.0
+}
+]
+},
+{
+"COD": "VTE214",
+"Nombre": "Total Nacional. Plazas por vivienda turística. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 382509,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas por vivienda turística",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 5.03
+}
+]
+},
+{
+"COD": "VTE64",
+"Nombre": "Castilla y León. Viviendas turísticas. Dato base. ",
+"T3_Unidad": "Vivienda",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 382508,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viviendas turísticas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 7573.0
+}
+]
+},
+{
+"COD": "VTE201",
+"Nombre": "Castilla y León. Plazas. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 382510,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 46028.0
+}
+]
+},
+{
+"COD": "VTE200",
+"Nombre": "Castilla y León. Plazas por vivienda turística. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 382509,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas por vivienda turística",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 6.08
+}
+]
+},
+{
+"COD": "VTE28",
+"Nombre": "Valladolid. Viviendas turísticas. Dato base. ",
+"T3_Unidad": "Vivienda",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 382508,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viviendas turísticas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 556.0
+}
+]
+},
+{
+"COD": "VTE129",
+"Nombre": "Valladolid. Plazas. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 382510,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 3043.0
+}
+]
+},
+{
+"COD": "VTE128",
+"Nombre": "Valladolid. Plazas por vivienda turística. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 382509,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas por vivienda turística",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 5.47
+}
+]
+},
+{
+"COD": "VTE994",
+"Nombre": "Valladolid. Viviendas turísticas. Dato base. ",
+"T3_Unidad": "Vivienda",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 382508,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viviendas turísticas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 259.0
+}
+]
+},
+{
+"COD": "VTE9839",
+"Nombre": "Valladolid. Plazas. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 382510,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 942.0
+}
+]
+},
+{
+"COD": "VTE9838",
+"Nombre": "Valladolid. Plazas por vivienda turística. Dato base. ",
+"T3_Unidad": "Plazas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 495,
+"T3_Variable": "Municipios",
+"Nombre": "Valladolid",
+"Codigo": "47186"
+},
+{
+"Id": 382509,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Plazas por vivienda turística",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 3.64
+}
+]
+}
+]

@@ -1,0 +1,746 @@
+[
+{
+"COD": "EOT1619",
+"Nombre": "Zamora. Viajeros. Total.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 28817.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 21302.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 19188.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 20355.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 18525.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 16332.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 12149.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9786.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 13412.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 15665.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 20527.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 20688.0
+}
+]
+},
+{
+"COD": "EOT1620",
+"Nombre": "Zamora. Viajeros. Residentes en España.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 24214.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 19109.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 16687.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 16579.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 15989.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 15053.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 11089.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 8759.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 12332.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 14226.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 17833.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 17396.0
+}
+]
+},
+{
+"COD": "EOT1621",
+"Nombre": "Zamora. Viajeros. Residentes en el extranjero.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4603.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 2193.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2501.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 3777.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2536.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1279.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1060.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1026.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1080.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1438.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2694.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 3291.0
+}
+]
+},
+{
+"COD": "EOT1622",
+"Nombre": "Zamora. Pernoctaciones. Total.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 48650.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 34578.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 29782.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 33490.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 30523.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 27361.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 19912.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 16370.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 21288.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 27142.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 33932.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 34848.0
+}
+]
+},
+{
+"COD": "EOT1623",
+"Nombre": "Zamora. Pernoctaciones. Residentes en España.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 41702.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 31519.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 26397.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 27823.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 26402.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 25659.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 18263.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 14866.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 19742.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 24437.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 30050.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 29968.0
+}
+]
+},
+{
+"COD": "EOT1624",
+"Nombre": "Zamora. Pernoctaciones. Residentes en el extranjero.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 49,
+"T3_Variable": "Provincias",
+"Nombre": "Zamora",
+"Codigo": "49"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 6949.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3059.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 3385.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 5667.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 4121.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1702.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1649.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1504.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1546.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 2704.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 3881.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 4880.0
+}
+]
+}
+]

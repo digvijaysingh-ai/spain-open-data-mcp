@@ -1,0 +1,3778 @@
+[
+{
+"COD": "FREG375",
+"Nombre": "Gasto total. Total Nacional. Turista. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 17838.23
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 18217.95
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 13579.04
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 13553.47
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 11685.64
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 9606.4
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 7606.44
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7804.61
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7993.41
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 8087.84
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 12803.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 13404.59
+}
+]
+},
+{
+"COD": "FREG372",
+"Nombre": "Gasto total. Total Nacional. Turista. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 9.16
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 10.86
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 4.05
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 10.85
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 7.45
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 5.43
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 4.59
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.26
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 5.31
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 4.93
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.6
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 6.28
+}
+]
+},
+{
+"COD": "FREG1053",
+"Nombre": "Turista. Gasto total. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 99892.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 82054.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 63836.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 50257.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 36703.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 25017.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 15411.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7805.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 134743.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 126750.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 118662.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 105859.0
+}
+]
+},
+{
+"COD": "FREG1061",
+"Nombre": "Turista. Gasto total. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8.04
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 7.81
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 6.96
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 7.78
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 6.68
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 6.33
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 6.91
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.26
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6.82
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 6.91
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.05
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 6.99
+}
+]
+},
+{
+"COD": "FREG760",
+"Nombre": "Turista. Gasto en paquete turístico. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299039,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 3291.36
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3515.93
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2487.3
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2335.38
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 1705.08
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1336.38
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1099.17
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1042.07
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1007.13
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1197.07
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2302.63
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2423.1
+}
+]
+},
+{
+"COD": "FREG767",
+"Nombre": "Turista. Gasto en paquete turístico. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299039,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 9.85
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 19.03
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 9.95
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 15.09
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 7.01
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": -0.28
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1.07
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 4.8
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 3.41
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 12.74
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 5.24
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 0.15
+}
+]
+},
+{
+"COD": "FREG1052",
+"Nombre": "Turista. Gasto en paquete turístico. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299039,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 16813.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 13521.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 10005.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 7518.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 5183.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 3478.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2141.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1042.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 22187.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 21180.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 19983.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 17680.0
+}
+]
+},
+{
+"COD": "FREG1060",
+"Nombre": "Turista. Gasto en paquete turístico. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299039,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 10.2
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 10.28
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 7.51
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 6.72
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 3.34
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1.62
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2.85
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 4.8
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 5.24
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 5.33
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 4.92
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 4.88
+}
+]
+},
+{
+"COD": "FREG759",
+"Nombre": "Turista. Gasto no incluido en paquete turístico. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299040,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto no incluido en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 14546.87
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 14702.03
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 11091.74
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 11218.09
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 9980.56
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 8270.02
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 6507.27
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 6762.54
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6986.28
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 6890.76
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 10500.37
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 10981.49
+}
+]
+},
+{
+"COD": "FREG766",
+"Nombre": "Turista. Gasto no incluido en paquete turístico. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299040,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto no incluido en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 9.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 9.08
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2.81
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 10.01
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 7.52
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 6.41
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 5.21
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.99
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 5.59
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 3.69
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 8.13
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.73
+}
+]
+},
+{
+"COD": "FREG1051",
+"Nombre": "Turista. Gasto no incluido en paquete turístico. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299040,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto no incluido en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 83079.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 68532.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 53830.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 42738.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 31520.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 21540.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 13270.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 6763.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 112557.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 105570.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 98680.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 88179.0
+}
+]
+},
+{
+"COD": "FREG1059",
+"Nombre": "Turista. Gasto no incluido en paquete turístico. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299040,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto no incluido en paquete turístico",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 7.62
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 7.33
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 6.86
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 7.97
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 7.26
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 7.13
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 7.59
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.99
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7.13
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7.24
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.49
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.42
+}
+]
+},
+{
+"COD": "FREG758",
+"Nombre": "Turista. Gasto en transporte internacional. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299041,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en transporte internacional",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 3255.79
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3489.82
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2779.42
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2818.35
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2437.87
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 2176.65
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1782.98
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1769.1
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1598.2
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1812.66
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2633.94
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2683.68
+}
+]
+},
+{
+"COD": "FREG765",
+"Nombre": "Turista. Gasto en transporte internacional. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299041,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en transporte internacional",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 10.09
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 12.84
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 7.16
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 9.55
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 5.55
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 8.49
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 11.02
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 10.22
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 3.92
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 4.01
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 6.37
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 8.76
+}
+]
+},
+{
+"COD": "FREG1050",
+"Nombre": "Turista. Gasto en transporte internacional. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299041,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en transporte internacional",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 20510.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 17254.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 13764.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 10985.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 8167.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 5729.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 3552.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1769.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 27472.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 25874.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 24061.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 21427.0
+}
+]
+},
+{
+"COD": "FREG1058",
+"Nombre": "Turista. Gasto en transporte internacional. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299041,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en transporte internacional",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 9.42
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 9.3
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 8.44
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 8.77
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 8.5
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 9.8
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 10.62
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 10.22
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7.21
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7.42
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.68
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.85
+}
+]
+},
+{
+"COD": "FREG757",
+"Nombre": "Turista. Gasto en alojamiento. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299042,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en alojamiento",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 3697.02
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3610.38
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2379.13
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2433.32
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2061.69
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1754.93
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1306.68
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1262.45
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1412.01
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1401.63
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2149.14
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2314.33
+}
+]
+},
+{
+"COD": "FREG764",
+"Nombre": "Turista. Gasto en alojamiento. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299042,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en alojamiento",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 9.42
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 6.68
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2.99
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 9.52
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 11.35
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 13.21
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 4.98
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 15.67
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 9.63
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 6.89
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 5.03
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.15
+}
+]
+},
+{
+"COD": "FREG1049",
+"Nombre": "Turista. Gasto en alojamiento. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299042,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en alojamiento",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 18506.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 14809.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 11198.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 8819.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 6386.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4324.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2569.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1262.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 24310.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 22898.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 21496.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 19347.0
+}
+]
+},
+{
+"COD": "FREG1057",
+"Nombre": "Turista. Gasto en alojamiento. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299042,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en alojamiento",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8.65
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 8.46
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 9.04
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 10.8
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 11.29
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 11.27
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 9.97
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 15.67
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7.49
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7.36
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.39
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.66
+}
+]
+},
+{
+"COD": "FREG756",
+"Nombre": "Turista. Gasto en manutención. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299043,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en manutención",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 2708.15
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 2723.32
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2114.51
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2101.42
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 1988.64
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1600.44
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1228.13
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1256.86
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1322.27
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1349.09
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2024.03
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2115.97
+}
+]
+},
+{
+"COD": "FREG763",
+"Nombre": "Turista. Gasto en manutención. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299043,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en manutención",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8.52
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 7.37
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 1.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 9.47
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 6.81
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4.05
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1.71
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7.59
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 3.04
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 2.41
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.64
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 5.97
+}
+]
+},
+{
+"COD": "FREG1048",
+"Nombre": "Turista. Gasto en manutención. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299043,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en manutención",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 15721.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 13013.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 10290.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 8175.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 6074.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4085.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2485.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1257.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 21632.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 20310.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 18961.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 16937.0
+}
+]
+},
+{
+"COD": "FREG1056",
+"Nombre": "Turista. Gasto en manutención. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299043,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en manutención",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 6.08
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 5.58
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 5.12
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 6.24
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 5.17
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4.38
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 4.6
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7.59
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6.87
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7.13
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.48
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.46
+}
+]
+},
+{
+"COD": "FREG755",
+"Nombre": "Turista. Gasto en actividades. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299044,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en actividades",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 3287.53
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3293.86
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2734.67
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2745.97
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2461.6
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1933.86
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1553.54
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1829.06
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1935.9
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1659.11
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2549.34
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2715.28
+}
+]
+},
+{
+"COD": "FREG762",
+"Nombre": "Turista. Gasto en actividades. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299044,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en actividades",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8.18
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 9.19
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2.13
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 11.69
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 9.26
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 4.59
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2.61
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7.9
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7.14
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1.67
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 10.52
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 8.8
+}
+]
+},
+{
+"COD": "FREG1047",
+"Nombre": "Turista. Gasto en actividades. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299044,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en actividades",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 19840.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 16553.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 13259.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 10524.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 7778.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 5316.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 3383.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1829.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 27363.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 25427.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 23768.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 21218.0
+}
+]
+},
+{
+"COD": "FREG1055",
+"Nombre": "Turista. Gasto en actividades. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299044,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto en actividades",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 7.23
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 7.04
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 6.52
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 7.72
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 6.39
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 5.11
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 5.4
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7.9
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 7.29
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7.31
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 7.72
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.4
+}
+]
+},
+{
+"COD": "FREG754",
+"Nombre": "Turista. Otros gastos. Total Nacional. Dato base. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Millones",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299045,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Otros gastos",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato base",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 1598.37
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 1584.64
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 1084.02
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 1119.04
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 1030.75
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 804.13
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 635.95
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 645.08
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 717.9
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 668.28
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 1143.93
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 1152.22
+}
+]
+},
+{
+"COD": "FREG761",
+"Nombre": "Turista. Otros gastos. Total Nacional. Tasa de variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299045,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Otros gastos",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 81,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8.37
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 9.4
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": -2.63
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 9.22
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2.41
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": -2.92
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 3.77
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.57
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 2.54
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 4.01
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 14.28
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 7.3
+}
+]
+},
+{
+"COD": "FREG1046",
+"Nombre": "Turista. Otros gastos. Total Nacional. Acumulado en lo que va de año. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299045,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Otros gastos",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 298086,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Acumulado en lo que va de año",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 8502.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 6904.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 5319.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 4235.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 3116.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 2085.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1281.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 645.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 11780.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 11062.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 10394.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 9250.0
+}
+]
+},
+{
+"COD": "FREG1054",
+"Nombre": "Turista. Otros gastos. Total Nacional. Tasa de variación acumulada. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 298009,
+"T3_Variable": "Tipo de visitante",
+"Nombre": "Turista",
+"Codigo": ""
+},
+{
+"Id": 299045,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Otros gastos",
+"Codigo": ""
+},
+{
+"Id": 16473,
+"T3_Variable": "Total Nacional",
+"Nombre": "Total Nacional",
+"Codigo": "00"
+},
+{
+"Id": 15278,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Tasa de variación acumulada",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4.99
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 4.24
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 2.8
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 4.28
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2.62
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 2.72
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 6.61
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9.57
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6.35
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 6.61
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 6.78
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 5.92
+}
+]
+}
+]

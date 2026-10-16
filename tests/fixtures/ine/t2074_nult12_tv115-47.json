@@ -1,0 +1,746 @@
+[
+{
+"COD": "EOT1613",
+"Nombre": "Valladolid. Viajeros. Total.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 78915.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 65117.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 68328.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 67470.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 59766.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 54673.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 49302.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 44651.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 51070.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 56750.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 64022.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 66959.0
+}
+]
+},
+{
+"COD": "EOT1614",
+"Nombre": "Valladolid. Viajeros. Residentes en España.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 50063.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 45284.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 55085.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 53539.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 49820.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 46321.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 41895.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 37366.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 44311.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 49343.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 51413.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 51221.0
+}
+]
+},
+{
+"COD": "EOT1615",
+"Nombre": "Valladolid. Viajeros. Residentes en el extranjero.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 28852.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 19833.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 13243.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 13930.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 9946.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 8352.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 7407.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 7285.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6759.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 7406.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 12609.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 15738.0
+}
+]
+},
+{
+"COD": "EOT1616",
+"Nombre": "Valladolid. Pernoctaciones. Total.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 127480.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 109380.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 116385.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 121092.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 105392.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 97298.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 83363.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 76421.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 89565.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 100346.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 115566.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 117137.0
+}
+]
+},
+{
+"COD": "EOT1617",
+"Nombre": "Valladolid. Pernoctaciones. Residentes en España.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 85896.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 79085.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 93882.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 93192.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 87277.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 80673.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 70413.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 63771.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 78372.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 84839.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 90790.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 86429.0
+}
+]
+},
+{
+"COD": "EOT1618",
+"Nombre": "Valladolid. Pernoctaciones. Residentes en el extranjero.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 47,
+"T3_Variable": "Provincias",
+"Nombre": "Valladolid",
+"Codigo": "47"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 41584.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 30295.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 22503.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 27901.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 18115.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 16625.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 12950.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 12650.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 11193.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 15507.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 24777.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 30709.0
+}
+]
+}
+]

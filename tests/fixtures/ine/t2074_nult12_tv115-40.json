@@ -1,0 +1,746 @@
+[
+{
+"COD": "EOT1601",
+"Nombre": "Segovia. Viajeros. Total.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 64898.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 53381.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 42734.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 49964.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 45476.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 40675.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 29740.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 28970.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 38804.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 42404.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 52516.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 55550.0
+}
+]
+},
+{
+"COD": "EOT1602",
+"Nombre": "Segovia. Viajeros. Residentes en España.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 48065.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 42792.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 34056.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 36363.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 34596.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 32757.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 24643.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 22707.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 31857.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 34340.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 38741.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 40301.0
+}
+]
+},
+{
+"COD": "EOT1603",
+"Nombre": "Segovia. Viajeros. Residentes en el extranjero.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 16833.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 10589.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 8678.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 13601.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 10880.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 7917.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 5097.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 6263.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 6947.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 8064.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 13775.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 15249.0
+}
+]
+},
+{
+"COD": "EOT1604",
+"Nombre": "Segovia. Pernoctaciones. Total.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 108616.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 89023.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 65173.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 87357.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 79681.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 77060.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 55981.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 54433.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 69353.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 78155.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 95828.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 99490.0
+}
+]
+},
+{
+"COD": "EOT1605",
+"Nombre": "Segovia. Pernoctaciones. Residentes en España.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 80655.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 71188.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 50449.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 61419.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 59297.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 57433.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 42951.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 40031.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 52382.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 59434.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 65784.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 69020.0
+}
+]
+},
+{
+"COD": "EOT1606",
+"Nombre": "Segovia. Pernoctaciones. Residentes en el extranjero.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 40,
+"T3_Variable": "Provincias",
+"Nombre": "Segovia",
+"Codigo": "40"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 27961.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 17835.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 14724.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 25938.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 20384.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 19627.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 13030.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 14402.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 16971.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 18721.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 30044.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 30470.0
+}
+]
+}
+]

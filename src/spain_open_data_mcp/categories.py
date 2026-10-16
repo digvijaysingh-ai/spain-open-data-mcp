@@ -519,6 +519,7 @@ class MarketProfile:
     min_population: below this an area is too small to score.
     tourism: visitors add to demand.
     visitor_only: only visitors buy it locally (accommodation).
+    visitor_food: visitors' food and drink spend (EGATUR "manutención") adds to the market.
     """
 
     ecoicop: tuple[str, ...]
@@ -526,14 +527,15 @@ class MarketProfile:
     min_population: int
     tourism: bool = False
     visitor_only: bool = False
+    visitor_food: bool = False
 
 
 _FOOD_SPEND = ("11.1.1",)
 MARKET: Mapping[str, MarketProfile] = {
-    "restaurant": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
-    "cafe": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
-    "bar": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True),
-    "fast_food": MarketProfile(_FOOD_SPEND, "destination", 2_000, tourism=True),
+    "restaurant": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True, visitor_food=True),
+    "cafe": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True, visitor_food=True),
+    "bar": MarketProfile(_FOOD_SPEND, "destination", 1_000, tourism=True, visitor_food=True),
+    "fast_food": MarketProfile(_FOOD_SPEND, "destination", 2_000, tourism=True, visitor_food=True),
     "bakery": MarketProfile(("01.1.1", "01.1.8"), "local", 1_000, tourism=True),
     "butcher": MarketProfile(("01.1.2", "01.1.3"), "local", 1_000),
     "greengrocer": MarketProfile(("01.1.6", "01.1.7"), "local", 1_000),

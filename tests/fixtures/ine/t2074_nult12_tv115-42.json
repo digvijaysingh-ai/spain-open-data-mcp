@@ -1,0 +1,746 @@
+[
+{
+"COD": "EOT1607",
+"Nombre": "Soria. Viajeros. Total.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 31737.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 23056.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 22691.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 24559.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 22750.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 19352.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 13452.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 10296.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 14727.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 19724.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 25773.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 25873.0
+}
+]
+},
+{
+"COD": "EOT1608",
+"Nombre": "Soria. Viajeros. Residentes en España.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 27066.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 21323.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 20702.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 21938.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 20708.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 17659.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 12423.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 9521.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 13856.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 18383.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 23287.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 23126.0
+}
+]
+},
+{
+"COD": "EOT1609",
+"Nombre": "Soria. Viajeros. Residentes en el extranjero.",
+"T3_Unidad": "Viajeros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284332,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajero",
+"Codigo": "B"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 4671.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 1733.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 1989.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 2621.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 2042.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 1692.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 1029.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 775.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 871.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 1342.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 2486.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 2747.0
+}
+]
+},
+{
+"COD": "EOT1610",
+"Nombre": "Soria. Pernoctaciones. Total.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 9975,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 63875.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 44665.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 43999.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 45548.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 41696.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 34641.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 24675.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 19377.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 26758.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 36639.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 46559.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 46758.0
+}
+]
+},
+{
+"COD": "EOT1611",
+"Nombre": "Soria. Pernoctaciones. Residentes en España.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19964,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en España",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 52388.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 41488.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 40047.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 41179.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 37952.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 31621.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 22509.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 17412.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 24827.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 33465.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 41773.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 41383.0
+}
+]
+},
+{
+"COD": "EOT1612",
+"Nombre": "Soria. Pernoctaciones. Residentes en el extranjero.",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 42,
+"T3_Variable": "Provincias",
+"Nombre": "Soria",
+"Codigo": "42"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": "C"
+},
+{
+"Id": 9834,
+"T3_Variable": "TIPO DE CATEGORIA",
+"Nombre": "Total categorías",
+"Codigo": ""
+},
+{
+"Id": 19965,
+"T3_Variable": "RESIDENCIA/ORIGEN",
+"Nombre": "Residentes en el Extranjero",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Dato",
+"Codigo": "0"
+}
+],
+"Data": [
+{
+"Fecha": "2026-08-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M08",
+"Anyo": 2026,
+"Valor": 11487.0
+},
+{
+"Fecha": "2026-07-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M07",
+"Anyo": 2026,
+"Valor": 3177.0
+},
+{
+"Fecha": "2026-06-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M06",
+"Anyo": 2026,
+"Valor": 3952.0
+},
+{
+"Fecha": "2026-05-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M05",
+"Anyo": 2026,
+"Valor": 4369.0
+},
+{
+"Fecha": "2026-04-01T00:00:00.000+02:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M04",
+"Anyo": 2026,
+"Valor": 3744.0
+},
+{
+"Fecha": "2026-03-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M03",
+"Anyo": 2026,
+"Valor": 3020.0
+},
+{
+"Fecha": "2026-02-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M02",
+"Anyo": 2026,
+"Valor": 2166.0
+},
+{
+"Fecha": "2026-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Provisional",
+"T3_Periodo": "M01",
+"Anyo": 2026,
+"Valor": 1964.0
+},
+{
+"Fecha": "2025-12-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M12",
+"Anyo": 2025,
+"Valor": 1931.0
+},
+{
+"Fecha": "2025-11-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M11",
+"Anyo": 2025,
+"Valor": 3174.0
+},
+{
+"Fecha": "2025-10-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M10",
+"Anyo": 2025,
+"Valor": 4786.0
+},
+{
+"Fecha": "2025-09-01T00:00:00.000+02:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "M09",
+"Anyo": 2025,
+"Valor": 5375.0
+}
+]
+}
+]

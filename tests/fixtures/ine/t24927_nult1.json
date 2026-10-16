@@ -1,0 +1,1820 @@
+[
+{
+"COD": "ETR27873527",
+"Nombre": "Total. Viajes. Valor absoluto. ",
+"T3_Unidad": "Viajes",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 175702648.0
+}
+]
+},
+{
+"COD": "ETR27873526",
+"Nombre": "Total. Viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 100.0
+}
+]
+},
+{
+"COD": "ETR27873525",
+"Nombre": "Total. Viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": -4.73
+}
+]
+},
+{
+"COD": "ETR27873524",
+"Nombre": "Total. Duración media de los viajes. Valor absoluto. ",
+"T3_Unidad": "Días",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.49
+}
+]
+},
+{
+"COD": "ETR27873523",
+"Nombre": "Total. Duración media de los viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873522",
+"Nombre": "Total. Duración media de los viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.02
+}
+]
+},
+{
+"COD": "ETR27873521",
+"Nombre": "Total. Pernoctaciones. Valor absoluto. ",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 788401749.0
+}
+]
+},
+{
+"COD": "ETR27873520",
+"Nombre": "Total. Pernoctaciones. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 100.0
+}
+]
+},
+{
+"COD": "ETR27873519",
+"Nombre": "Total. Pernoctaciones. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": -2.81
+}
+]
+},
+{
+"COD": "ETR27873518",
+"Nombre": "Total. Gasto total. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Miles",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 63853442.1
+}
+]
+},
+{
+"COD": "ETR27873517",
+"Nombre": "Total. Gasto total. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 100.0
+}
+]
+},
+{
+"COD": "ETR27873516",
+"Nombre": "Total. Gasto total. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.6
+}
+]
+},
+{
+"COD": "ETR27873515",
+"Nombre": "Total. Gasto medio por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 363.42
+}
+]
+},
+{
+"COD": "ETR27873514",
+"Nombre": "Total. Gasto medio por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873513",
+"Nombre": "Total. Gasto medio por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.7
+}
+]
+},
+{
+"COD": "ETR27873512",
+"Nombre": "Total. Gasto medio diario por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 80.99
+}
+]
+},
+{
+"COD": "ETR27873511",
+"Nombre": "Total. Gasto medio diario por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873510",
+"Nombre": "Total. Gasto medio diario por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 16420,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Total",
+"Codigo": ""
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.57
+}
+]
+},
+{
+"COD": "ETR27873509",
+"Nombre": "Extranjera. Viajes. Valor absoluto. ",
+"T3_Unidad": "Viajes",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 22756737.0
+}
+]
+},
+{
+"COD": "ETR27873508",
+"Nombre": "Extranjera. Viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 13.0
+}
+]
+},
+{
+"COD": "ETR27873507",
+"Nombre": "Extranjera. Viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 5.24
+}
+]
+},
+{
+"COD": "ETR27873506",
+"Nombre": "Extranjera. Duración media de los viajes. Valor absoluto. ",
+"T3_Unidad": "Días",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.9
+}
+]
+},
+{
+"COD": "ETR27873505",
+"Nombre": "Extranjera. Duración media de los viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873504",
+"Nombre": "Extranjera. Duración media de los viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": -3.4
+}
+]
+},
+{
+"COD": "ETR27873503",
+"Nombre": "Extranjera. Pernoctaciones. Valor absoluto. ",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 179851889.0
+}
+]
+},
+{
+"COD": "ETR27873502",
+"Nombre": "Extranjera. Pernoctaciones. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 22.8
+}
+]
+},
+{
+"COD": "ETR27873501",
+"Nombre": "Extranjera. Pernoctaciones. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.66
+}
+]
+},
+{
+"COD": "ETR27873500",
+"Nombre": "Extranjera. Gasto total. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Miles",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 23561905.93
+}
+]
+},
+{
+"COD": "ETR27873499",
+"Nombre": "Extranjera. Gasto total. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 36.9
+}
+]
+},
+{
+"COD": "ETR27873498",
+"Nombre": "Extranjera. Gasto total. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.02
+}
+]
+},
+{
+"COD": "ETR27873497",
+"Nombre": "Extranjera. Gasto medio por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1035.38
+}
+]
+},
+{
+"COD": "ETR27873496",
+"Nombre": "Extranjera. Gasto medio por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873495",
+"Nombre": "Extranjera. Gasto medio por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.64
+}
+]
+},
+{
+"COD": "ETR27873494",
+"Nombre": "Extranjera. Gasto medio diario por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 131.01
+}
+]
+},
+{
+"COD": "ETR27873493",
+"Nombre": "Extranjera. Gasto medio diario por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27873492",
+"Nombre": "Extranjera. Gasto medio diario por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 274512,
+"T3_Variable": "Países y Continentes",
+"Nombre": "Extranjera",
+"Codigo": "2"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 6.25
+}
+]
+},
+{
+"COD": "ETR27876794",
+"Nombre": "Castilla y León. Viajes. Valor absoluto. ",
+"T3_Unidad": "Viajes",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 14444563.0
+}
+]
+},
+{
+"COD": "ETR27876793",
+"Nombre": "Castilla y León. Viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 8.2
+}
+]
+},
+{
+"COD": "ETR27876792",
+"Nombre": "Castilla y León. Viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 291971,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": -2.86
+}
+]
+},
+{
+"COD": "ETR27876791",
+"Nombre": "Castilla y León. Duración media de los viajes. Valor absoluto. ",
+"T3_Unidad": "Días",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.26
+}
+]
+},
+{
+"COD": "ETR27876790",
+"Nombre": "Castilla y León. Duración media de los viajes. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27876789",
+"Nombre": "Castilla y León. Duración media de los viajes. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 292658,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Duración media de los viajes",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.97
+}
+]
+},
+{
+"COD": "ETR27876788",
+"Nombre": "Castilla y León. Pernoctaciones. Valor absoluto. ",
+"T3_Unidad": "Pernoctaciones",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 61560784.0
+}
+]
+},
+{
+"COD": "ETR27876787",
+"Nombre": "Castilla y León. Pernoctaciones. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.8
+}
+]
+},
+{
+"COD": "ETR27876786",
+"Nombre": "Castilla y León. Pernoctaciones. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 284333,
+"T3_Variable": "Concepto turístico",
+"Nombre": "Pernoctaciones",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 1.0
+}
+]
+},
+{
+"COD": "ETR27876785",
+"Nombre": "Castilla y León. Gasto total. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": "Miles",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3004114.79
+}
+]
+},
+{
+"COD": "ETR27876784",
+"Nombre": "Castilla y León. Gasto total. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 4.7
+}
+]
+},
+{
+"COD": "ETR27876783",
+"Nombre": "Castilla y León. Gasto total. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9604,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto total",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 3.99
+}
+]
+},
+{
+"COD": "ETR27876782",
+"Nombre": "Castilla y León. Gasto medio por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 207.98
+}
+]
+},
+{
+"COD": "ETR27876781",
+"Nombre": "Castilla y León. Gasto medio por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27876780",
+"Nombre": "Castilla y León. Gasto medio por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 9607,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 7.05
+}
+]
+},
+{
+"COD": "ETR27876779",
+"Nombre": "Castilla y León. Gasto medio diario por persona. Valor absoluto. ",
+"T3_Unidad": "Euros",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 72,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Valor absoluto",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 48.8
+}
+]
+},
+{
+"COD": "ETR27876778",
+"Nombre": "Castilla y León. Gasto medio diario por persona. Distribución porcentual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 77,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Distribución porcentual",
+"Codigo": ""
+}
+],
+"Data": []
+},
+{
+"COD": "ETR27876777",
+"Nombre": "Castilla y León. Gasto medio diario por persona. Variación anual. ",
+"T3_Unidad": "Tasas",
+"T3_Escala": " ",
+"MetaData": [
+{
+"Id": 9003,
+"T3_Variable": "Comunidades y Ciudades Autónomas",
+"Nombre": "Castilla y León",
+"Codigo": "07"
+},
+{
+"Id": 298015,
+"T3_Variable": "Gastos totales y medios (monetario)",
+"Nombre": "Gasto medio diario por persona",
+"Codigo": ""
+},
+{
+"Id": 74,
+"T3_Variable": "Tipo de dato",
+"Nombre": "Variación anual",
+"Codigo": ""
+}
+],
+"Data": [
+{
+"Fecha": "2025-01-01T00:00:00.000+01:00",
+"T3_TipoDato": "Definitivo",
+"T3_Periodo": "A",
+"Anyo": 2025,
+"Valor": 2.96
+}
+]
+}
+]

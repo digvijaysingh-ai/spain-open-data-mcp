@@ -95,7 +95,7 @@ async def test_market_size_gyms_in_valladolid(ine: IneData, store: SnapshotStore
     assert any("upper bounds" in c.message for c in env.checks)
     assert any(s.dataset_id == "73993" for s in env.sources)
     text = render_market(env)
-    assert "Yearly household spending pool" in text and "user assumption" in text
+    assert "Yearly spending pool" in text and "user assumption" in text
 
 
 async def test_market_size_restaurants_use_dirce_and_flag_destination(ine: IneData, store: SnapshotStore):
@@ -103,7 +103,7 @@ async def test_market_size_restaurants_use_dirce_and_flag_destination(ine: IneDa
     assert env.data.area.supply_method == "dirce_calibrated"
     assert 0 < env.data.family_share.base < 1
     assert any("destination category" in c.message for c in env.checks)
-    assert any("visitors are not counted" in c.message for c in env.checks)
+    assert any("Visitor demand is computed for municipalities and up" in c.message for c in env.checks)
 
 
 @pytest.mark.parametrize(
@@ -161,3 +161,38 @@ async def test_compare_districts_ranks_by_cautious_score(ine: IneData, store: Sn
 async def test_compare_rejects_impossible_levels(ine: IneData, store: SnapshotStore):
     with pytest.raises(DataError):
         await compare_areas(ine, store, "47", "gym", level="district")
+
+
+# Visitor demand
+
+
+async def test_restaurants_in_valladolid_include_foreign_visitors(ine: IneData, store: SnapshotStore):
+    env = await market_size(ine, store, "Valladolid", "restaurant")
+    a = env.data.area
+    assert a.visitor_method == "tourist point"  # EOH point 'L6' maps to 47186
+    assert a.visitor_hotel_nights["foreign"] > 0 and a.visitor_hotel_nights["domestic"] > 0
+    assert a.visitor_eur and a.market_eur and 0 < a.visitor_eur.base < a.market_eur.base
+    assert any("80% eaten out" in s.value or "80%" in s.value for s in env.data.assumptions)
+    assert any(s.dataset_id == "75197" for s in env.sources)
+
+
+def test_spanish_visitors_raise_only_the_high_end():
+    from spain_open_data_mcp.engine.estimate import Estimate
+    from spain_open_data_mcp.engine.model import with_visitors
+
+    total = with_visitors(Estimate(100, 200, 300), Estimate(10, 20, 30), Estimate(5, 50, 70))
+    assert (total.low, total.base, total.high) == (110, 220, 400)
+
+
+def test_nights_outside_tourist_points_are_shared_by_flat_beds():
+    from spain_open_data_mcp.sources.ine.tourism import Tourism
+
+    t = Tourism(
+        point_nights={"47186": {"foreign": 100.0, "domestic": 300.0}},
+        province_nights={"47": {"foreign": 200.0, "domestic": 500.0}},
+        flat_beds={"47186": 900.0, "47010": 75.0, "47076": 25.0},
+    )
+    assert t.nights("47186") == ({"foreign": 100.0, "domestic": 300.0}, "tourist point")
+    nights, method = t.nights("47010")  # 75% of the beds outside the point
+    assert method == "province share by tourist-flat beds"
+    assert nights == {"foreign": 75.0, "domestic": 150.0}

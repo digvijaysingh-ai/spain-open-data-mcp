@@ -12,6 +12,7 @@ import pytest
 from mcp import Client
 
 from spain_open_data_mcp.core.errors import DataError
+from spain_open_data_mcp.engine.model import METHOD_VERSION
 from spain_open_data_mcp.server import _Services, mcp
 from spain_open_data_mcp.sources.ine.datasets import IneData
 from spain_open_data_mcp.sources.osm.snapshot import SnapshotStore
@@ -109,7 +110,7 @@ async def test_status_resource(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
     async with Client(mcp) as c:
         res = await c.read_resource("spain-open-data://status")
     text = res.contents[0].text  # type: ignore[union-attr]
-    assert "OpenStreetMap snapshot" in text and "opportunity-1.0" in text and "Release calendar" in text
+    assert "OpenStreetMap snapshot" in text and METHOD_VERSION in text and "Release calendar" in text
 
 
 async def test_every_call_is_logged_without_arguments(ine: IneData, caplog: pytest.LogCaptureFixture):

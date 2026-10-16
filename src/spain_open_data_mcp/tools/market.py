@@ -71,6 +71,14 @@ class AreaOpportunity(BaseModel):
     )
     too_small: bool
     thin_map: bool = Field(default=False, description="Mapping looks too thin to trust the supply estimate.")
+    visitor_eur: Range | None = Field(
+        default=None,
+        description="Foreign visitors' share of market_eur (Spanish visitors raise only the high end).",
+    )
+    visitor_hotel_nights: dict[str, float] = Field(
+        default_factory=dict, description="Hotel nights in the last 12 months by origin (domestic, foreign)."
+    )
+    visitor_method: str | None = None
 
 
 class MarketData(BaseModel):
@@ -125,6 +133,9 @@ def to_area(r: AreaResult) -> AreaOpportunity:
         mapping_completeness=round(r.completeness, 2) if r.completeness is not None else None,
         too_small=r.too_small,
         thin_map=r.completeness is not None and r.completeness < model.COMPLETENESS_LOW,
+        visitor_eur=Range.of(r.visitor_foreign),
+        visitor_hotel_nights={k: round(v) for k, v in r.visitor_nights.items()},
+        visitor_method=r.visitor_method,
     )
 
 
@@ -155,13 +166,40 @@ def engine_checks(
             "breakdown), so it likely understates how fast spending on eating out or personal care rises with income.",
         ),
     ]
-    if ctx.profile.tourism:
+    if ctx.profile.visitor_food and level in ("municipality", "province", "ccaa"):
+        estimated = [r.name for r in results if r.visitor_method == "province share by tourist-flat beds"]
+        checks.append(
+            Check(
+                kind="estimate",
+                severity="info",
+                message="Includes foreign visitors' food and drink spend: hotel nights (INE, last 12 months) × their "
+                "daily spend in the region (EGATUR) × the food and drink share × 80% eaten out (an assumption, "
+                "range 60-100%). Spanish visitors raise only the high end, since residents' budgets already "
+                "include some of it. Nights in tourist flats and second homes are not measured, so visitor "
+                "demand is a lower bound."
+                + (
+                    f" Not an INE tourist point, so its hotel nights are the province's shared out by tourist-flat beds: "
+                    f"{', '.join(estimated[:5])}."
+                    if estimated
+                    else ""
+                ),
+            )
+        )
+    elif ctx.profile.visitor_food:
         checks.append(
             Check(
                 kind="scope",
                 severity="warning",
-                message="Residents' spending only: visitors are not counted yet, which understates the market in "
-                "tourist areas.",
+                message="Visitor demand is computed for municipalities and up; this figure is residents' spending only.",
+            )
+        )
+    elif ctx.profile.tourism:
+        checks.append(
+            Check(
+                kind="scope",
+                severity="warning",
+                message="Residents' spending only: visitors are not counted for this category, which understates the "
+                "market in tourist areas.",
             )
         )
     if ctx.profile.scope == "destination" and level in ("district", "tract"):
@@ -180,6 +218,17 @@ def engine_checks(
                 severity="warning",
                 message=f"INE's company directory has no yardstick for {ctx.category.label.lower()} (chains count once), "
                 "so supply is the mapped count, which is below the true count. Scores are upper bounds.",
+            )
+        )
+    unmapped = [r.name for r in results if r.supply_method == "dirce_population_floor"]
+    if unmapped:
+        checks.append(
+            Check(
+                kind="estimate",
+                severity="warning",
+                message=f"Few or no {ctx.category.label.lower()} mapped in {len(unmapped)} area(s) "
+                f"({', '.join(unmapped[:5])}): their supply is set to half their population's share of the "
+                "region's DIRCE companies, a floor rather than a count, which caps how high they can score.",
             )
         )
     thin = [r for r in results if r.completeness is not None and r.completeness < model.COMPLETENESS_LOW]
@@ -283,13 +332,29 @@ async def market_size(
             value=f"{r.supply.base:,.0f}",
             source={
                 "dirce_calibrated": "DIRCE companies in the region × the area's share of mapped places",
-                "dirce_population_share": "DIRCE companies in the region × the area's share of residents",
+                "dirce_population_floor": "half of DIRCE companies in the region × the area's share of residents (floor)",
                 "mapped_only": "mapped places (OpenStreetMap)",
                 "user": "user",
             }[r.supply_method],
             user_set=competitors is not None,
         ),
     ]
+    if r.visitor_foreign is not None:
+        nights = r.visitor_nights
+        assumptions.append(
+            Assumption(
+                name="Visitor hotel nights, last 12 months",
+                value=f"{nights.get('foreign', 0):,.0f} foreign, {nights.get('domestic', 0):,.0f} Spanish",
+                source=f"INE hotel occupancy survey ({r.visitor_method})",
+            )
+        )
+        assumptions.append(
+            Assumption(
+                name="Share of visitors' food and drink spend eaten out",
+                value="80% (60-100%)",
+                source="assumption; EGATUR's food and drink item also covers groceries",
+            )
+        )
     obtainable = None
     if capture_share is not None and r.market is not None:
         obtainable = r.market * capture_share
@@ -416,7 +481,9 @@ def render_market(env: Envelope[MarketData]) -> str:
     lines = [
         f"Market for {d.label.lower()} in {a.name} ({a.level}, INE code {a.code}), method {d.method_version}"
     ]
-    lines.append(f"Yearly household spending pool: {_r(a.market_eur, money=True)}")
+    lines.append(f"Yearly spending pool: {_r(a.market_eur, money=True)}")
+    if a.visitor_eur:
+        lines.append(f"  of which foreign visitors: {_r(a.visitor_eur, money=True)}")
     if d.obtainable_eur:
         lines.append(f"Obtainable at the given capture share: {_r(d.obtainable_eur, money=True)}")
     lines.append(

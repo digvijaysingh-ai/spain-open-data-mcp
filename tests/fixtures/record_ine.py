@@ -85,6 +85,16 @@ def keep_cpi(series: dict[str, Any]) -> bool:
     return group in ("00", "09", "11", "13") and kind in ("Índice", "Variación anual")
 
 
+def keep_points(series: dict[str, Any]) -> bool:
+    """EOH tourist points: Valladolid (L6) and Málaga (H1) only."""
+    codes = [
+        m.get("Codigo")
+        for m in series.get("MetaData", [])
+        if m.get("T3_Variable", "").upper().startswith("PUNTOS")
+    ]
+    return bool(codes) and codes[0] in ("L6", "H1")
+
+
 def record(
     table_id: int, params: list[tuple[str, Any]], keep: Callable[[dict[str, Any]], bool] = keep
 ) -> None:
@@ -118,6 +128,16 @@ def main() -> None:
         cpi["provincial"],
         [("nult", 2), ("tip", "AM"), ("tv", f"115:{cpi['province_value_ids']['47']}")],
         keep_cpi,
+    )
+    tour = t["tourism"]
+    record(tour["hotel_nights_points"], [("nult", 12), ("tip", "AM")], keep_points)
+    record(tour["tourist_flats_municipalities"], [("nult", 1), ("tip", "AM")])
+    record(tour["foreign_spend_by_region"], [("nult", 12), ("tip", "AM")])
+    record(tour["foreign_spend_by_item"], [("nult", 12), ("tip", "AM")])
+    record(tour["domestic_trips_by_destination"], [("nult", 1), ("tip", "AM")])
+    record(
+        tour["hotel_nights_provinces"],
+        [("nult", 12), ("tip", "AM"), ("tv", f"115:{t['census_province_value_ids']['47']}")],
     )
     dirce = [("tv", f"{var}:{val}") for var, val in t["dirce_total_filters"]]
     for key, n in (("spend_by_code", 3), ("spend_by_income", 1), ("cv_by_subgroup", 1)):

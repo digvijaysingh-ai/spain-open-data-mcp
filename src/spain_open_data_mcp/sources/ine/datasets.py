@@ -21,6 +21,14 @@ from ...places.codes import PROVINCES
 from ...places.resolver import Place, census_value_id
 from .epf import Epf, parse_epf
 from .tempus import ATTRIBUTION, LICENCE, TABLE_PAGE, Series, TableResult, TempusClient
+from .tourism import (
+    Tourism,
+    parse_daily_spend,
+    parse_flat_beds,
+    parse_food_share,
+    parse_points,
+    parse_province_nights,
+)
 
 # Tempus variable ids (stable across tables)
 VAR_PROVINCE = 115
@@ -35,6 +43,7 @@ ADRH_NAME = "Atlas de Distribución de Renta de los Hogares (ADRH)"
 CENSUS_NAME = "Censo anual de población: población por sexo y edad"
 PADRON_NAME = "Cifras oficiales de población de los municipios (Padrón)"
 EPF_NAME = "Encuesta de Presupuestos Familiares (EPF): gasto de los hogares"
+TOURISM_NAME = "Estadísticas de turismo (EOH, viviendas turísticas, EGATUR, ETR)"
 DIRCE_NAME = "Directorio Central de Empresas (DIRCE): empresas por comunidad autónoma y actividad principal"
 
 # Statistics change once a year; refetch weekly at most.
@@ -187,6 +196,37 @@ class IneData:
         result = await self.tempus.table(t["provincial"], last_n=2, filters=[(VAR_PROVINCE, vid)], ttl_s=DAY)
         check_units(result, {province})
         return result
+
+    async def tourism(self) -> tuple[Tourism, list[TableResult]]:
+        """Hotel nights by tourist point, tourist-flat beds and visitor spend (no provinces yet;
+        add them with tourism_province)."""
+        t = tables()["tourism"]
+        month = 30 * DAY
+        points = await self.tempus.table(t["hotel_nights_points"], last_n=12, ttl_s=7 * DAY)
+        flats = await self.tempus.table(t["tourist_flats_municipalities"], last_n=1, ttl_s=month)
+        foreign = await self.tempus.table(t["foreign_spend_by_region"], last_n=12, ttl_s=month)
+        items = await self.tempus.table(t["foreign_spend_by_item"], last_n=12, ttl_s=month)
+        domestic = await self.tempus.table(t["domestic_trips_by_destination"], last_n=1, ttl_s=month)
+        tour = Tourism(
+            point_nights=parse_points(points.series, t["point_municipalities"]),
+            flat_beds=parse_flat_beds(flats.series),
+            foreign_daily=parse_daily_spend(foreign.series),
+            domestic_daily=parse_daily_spend(domestic.series),
+            foreign_food_share=parse_food_share(items.series),
+        )
+        return tour, [points, flats, foreign, items, domestic]
+
+    async def tourism_province(self, tour: Tourism, province: str) -> TableResult | None:
+        """Add a province's hotel nights (last 12 months) to `tour`, once."""
+        if province in tour.province_nights:
+            return None
+        t = tables()["tourism"]
+        vid = tables()["census_province_value_ids"][province]
+        res = await self.tempus.table(
+            t["hotel_nights_provinces"], last_n=12, filters=[(VAR_PROVINCE, vid)], ttl_s=7 * DAY
+        )
+        tour.province_nights[province] = parse_province_nights(res.series, province)
+        return res
 
     async def adrh_benchmarks(self, kind: AdrhKind, last_n: int = 1) -> TableResult:
         """Spain, CCAA and province values for comparison."""
