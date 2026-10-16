@@ -19,7 +19,7 @@ INE: www.ine.es", and that reuse does not suggest INE endorses it. See the
 OpenStreetMap data is © OpenStreetMap contributors and available under the
 [Open Database Licence](https://www.openstreetmap.org/copyright). The monthly snapshot this
 server builds is a derived database under the same licence; it is published with each
-[snapshot release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot).
+[snapshot release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot-v1).
 
 ## How figures are checked
 

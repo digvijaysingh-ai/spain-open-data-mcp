@@ -117,7 +117,7 @@ src/spain_open_data_mcp/
 
 - Upstream responses are cached on disk with their original retrieval time, so cached figures still report when they were fetched. If an upstream service is down, the last cached copy is served and marked stale.
 - Requests are rate limited per host, retried with backoff, and identify the project in the User-Agent.
-- Business counts come from a monthly snapshot rather than live Overpass queries, which are slow and rate limited. `scripts/build_osm_snapshot.py` reads the Geofabrik extracts for Spain and the Canary Islands, keeps shops and services, and places each one in an INE census tract. A [GitHub Action](.github/workflows/osm-snapshot.yml) publishes it on the [osm-snapshot release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot) each month.
+- Business counts come from a monthly snapshot rather than live Overpass queries, which are slow and rate limited. `scripts/build_osm_snapshot.py` reads the Geofabrik extracts for Spain and the Canary Islands, keeps shops and services, and places each one in an INE census tract. A [GitHub Action](.github/workflows/osm-snapshot.yml) publishes it on the [osm-snapshot-v1 release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot-v1) each month.
 - INE table ids are not hard-coded in the tools. `scripts/build_reference.py` rebuilds the map when INE publishes new tables, for example each October's income atlas.
 
 ## Development

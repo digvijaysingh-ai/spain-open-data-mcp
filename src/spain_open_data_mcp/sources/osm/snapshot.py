@@ -9,7 +9,11 @@ Lookup order:
 2. <cache dir>/osm/osm_businesses.sqlite, downloaded on first use and checked against the
    published manifest's SHA-256. The manifest is re-read at most once a day; a newer
    snapshot replaces the local one. If the download fails, the local copy is used and
-   reported as stale.
+   reported as stale. A local copy that fails its integrity check is deleted and
+   downloaded once more.
+
+Each schema version has its own release (osm-snapshot-v1, -v2, ...), so a format change
+leaves older installs on their last good snapshot instead of breaking them.
 """
 
 from __future__ import annotations
@@ -33,6 +37,7 @@ import httpx
 
 from ...config import PROJECT_URL, settings
 from ...core.errors import UpstreamError
+from ...core.text import clean_text
 from .categories import NOT_IN_TOTAL
 
 log = logging.getLogger(__name__)
@@ -40,8 +45,11 @@ log = logging.getLogger(__name__)
 SCHEMA_VERSION = 1
 DB_NAME = "osm_businesses.sqlite"
 MANIFEST_NAME = "osm_manifest.json"
-RELEASE_URL = f"{PROJECT_URL}/releases/download/osm-snapshot/"
+RELEASE_TAG = f"osm-snapshot-v{SCHEMA_VERSION}"
+RELEASE_URL = f"{PROJECT_URL}/releases/download/{RELEASE_TAG}/"
+RELEASE_PAGE = f"{PROJECT_URL}/releases/tag/{RELEASE_TAG}"
 CHECK_EVERY_S = 24 * 3600
+MIN_BRAND_PLACES = 3
 
 # One row per place, with the census tract it lies in. Only tags are kept, never names,
 # phone numbers or addresses.
@@ -101,13 +109,30 @@ class Selection:
         return cls(f"(category IS NULL OR category NOT IN ({','.join('?' * len(keys))}))", tuple(keys))
 
 
+class SnapshotCorrupt(Exception):
+    """The snapshot file is unreadable, truncated or not a snapshot."""
+
+
 class Snapshot:
-    """Read-only queries over one snapshot file."""
+    """Read-only queries over one snapshot file. Raises SnapshotCorrupt if the file is damaged."""
 
     def __init__(self, path: Path, *, stale_reason: str | None = None) -> None:
         self.path = path
         self.stale_reason = stale_reason
         self._db = sqlite3.connect(f"file:{path}?mode=ro", uri=True, check_same_thread=False)
+        try:
+            ok = self._db.execute("PRAGMA quick_check").fetchone()[0]
+            if ok != "ok":
+                raise SnapshotCorrupt(f"integrity check failed: {ok}")
+            missing = {"schema_version", "osm_timestamp", "tracts_year"} - set(self.meta)
+            if missing:
+                raise SnapshotCorrupt(f"metadata missing: {', '.join(sorted(missing))}")
+        except sqlite3.DatabaseError as e:
+            self._db.close()
+            raise SnapshotCorrupt(str(e)) from e
+        except SnapshotCorrupt:
+            self._db.close()
+            raise
 
     @cached_property
     def meta(self) -> dict[str, str]:
@@ -149,14 +174,20 @@ class Snapshot:
         return dict(rows)
 
     def brands(self, area: Area, sel: Selection | None, limit: int = 10) -> tuple[list[tuple[str, int]], int]:
-        """Most common brands and the number of branded places."""
+        """Most common brands and the number of branded places.
+
+        Brands are free text anyone can edit, so only brands on MIN_BRAND_PLACES or more
+        places in the area are listed (a one-off edit never reaches the model), and each is
+        cleaned again on the way out.
+        """
         where, args = self._where(area, sel)
         rows = self._db.execute(
             f"SELECT brand, count(*) AS n FROM poi WHERE {where} AND brand IS NOT NULL "
             "GROUP BY brand ORDER BY n DESC, brand",
             args,
         ).fetchall()
-        return [(b, n) for b, n in rows[:limit]], sum(n for _b, n in rows)
+        listed = [(clean, n) for b, n in rows if n >= MIN_BRAND_PLACES and (clean := clean_text(b))]
+        return listed[:limit], sum(n for _b, n in rows)
 
     def area_km2(self, area: Area) -> float:
         where, args = area.where("code")
@@ -227,12 +258,42 @@ class SnapshotStore:
                             cause=f"SPAIN_MCP_OSM_DB points to {self.fixed_path}, which does not exist.",
                             fix="Fix the path, or unset SPAIN_MCP_OSM_DB to download the published snapshot.",
                         )
-                    self._snapshot = Snapshot(self.fixed_path)
+                    try:
+                        self._snapshot = Snapshot(self.fixed_path)
+                    except SnapshotCorrupt as e:
+                        raise UpstreamError(
+                            problem="The OpenStreetMap snapshot file is damaged.",
+                            cause=f"{self.fixed_path}: {e}.",
+                            fix="Rebuild it with scripts/build_osm_snapshot.py, or unset SPAIN_MCP_OSM_DB "
+                            "to download the published snapshot.",
+                        ) from e
                 return self._snapshot
             if self._snapshot is None or time.time() - self._checked_at > CHECK_EVERY_S:
-                await self._refresh()
+                try:
+                    await self._refresh()
+                except SnapshotCorrupt as e:
+                    # Damaged local copy (interrupted write, full disk): start again, once.
+                    log.warning("snapshot %s is damaged (%s); downloading it again", self.db_path, e)
+                    self._discard()
+                    try:
+                        await self._refresh()
+                    except SnapshotCorrupt as e2:
+                        self._discard()
+                        raise UpstreamError(
+                            problem="The OpenStreetMap snapshot is damaged, and so was a fresh download.",
+                            cause=str(e2),
+                            fix="Check free disk space in the cache directory and try again, or set "
+                            "SPAIN_MCP_OSM_DB to a snapshot you built.",
+                        ) from e2
             assert self._snapshot is not None
             return self._snapshot
+
+    def _discard(self) -> None:
+        if self._snapshot is not None:
+            self._snapshot.close()
+            self._snapshot = None
+        for name in (DB_NAME, MANIFEST_NAME, "checked_at"):
+            (self.directory / name).unlink(missing_ok=True)
 
     async def _refresh(self) -> None:
         have = self.db_path.exists()

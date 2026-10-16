@@ -42,6 +42,7 @@ from pyproj import Geod, Transformer
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from spain_open_data_mcp.config import settings  # noqa: E402
+from spain_open_data_mcp.core.text import clean_text  # noqa: E402
 from spain_open_data_mcp.sources.osm.categories import (  # noqa: E402
     CATEGORIES_VERSION,
     LISTED_KEYS,
@@ -163,7 +164,7 @@ def read_pois(pbf: Path) -> list[Poi]:
         tag, category = found
         lon = sum(c[0] for c in coords) / len(coords)
         lat = sum(c[1] for c in coords) / len(coords)
-        brand = (tags.get("brand") or "").strip()[:80] or None
+        brand = clean_text(tags.get("brand"))
         pois.append(Poi(lon, lat, tag, category, brand, osm))
     log.info("%s: %d places, %d without coordinates", pbf.name, len(pois), skipped)
     return pois

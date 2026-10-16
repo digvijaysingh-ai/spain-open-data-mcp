@@ -1,7 +1,8 @@
 name: OSM snapshot
 
 # Rebuilds the OpenStreetMap business snapshot and publishes it on the rolling
-# 'osm-snapshot' release, where the server downloads it from.
+# 'osm-snapshot-v<schema>' release, where the server downloads it from. Each schema
+# version has its own release, so older installs keep their last good snapshot.
 on:
   schedule:
     - cron: "17 4 3 * *" # 04:17 UTC on the 3rd of each month
@@ -20,11 +21,12 @@ jobs:
     timeout-minutes: 90
     env:
       GH_TOKEN: ${{ github.token }}
-      TAG: osm-snapshot
     steps:
       - uses: actions/checkout@v5
       - uses: astral-sh/setup-uv@v10.3.0
       - run: uv sync --locked --group snapshot
+      - name: Release tag for this schema
+        run: echo "TAG=$(uv run python -c 'from spain_open_data_mcp.sources.osm.snapshot import RELEASE_TAG; print(RELEASE_TAG)')" >> "$GITHUB_ENV"
       - name: Build
         run: uv run --group snapshot python scripts/build_osm_snapshot.py --out build/osm
       - name: Compare with the published snapshot

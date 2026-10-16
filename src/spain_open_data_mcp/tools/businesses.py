@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field
 
 from ..core.envelope import Check, Confidence, Envelope, Source, confidence_from, dedupe_sources
 from ..core.errors import DataError
+from ..core.text import quoted
 from ..places.codes import PROVINCES
 from ..places.resolver import Place, place_from_code, population_in
 from ..sources.ine.adrh import UnitValues, by_unit
@@ -32,7 +33,6 @@ THIN_COUNT = 10
 # OSM places per DIRCE company below which the map is likely missing many businesses.
 COVERAGE_LOW = 0.4
 COVERAGE_PARTIAL = 0.7
-SNAPSHOT_PAGE = "https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot"
 
 
 class AreaCount(BaseModel):
@@ -202,7 +202,7 @@ def osm_sources(snap: osm.Snapshot) -> list[Source]:
             publisher="OpenStreetMap contributors (extract by Geofabrik)",
             dataset="OpenStreetMap shops and services, monthly snapshot",
             dataset_id=f"osm-snapshot {snap.osm_date:%Y-%m-%d}",
-            url=SNAPSHOT_PAGE,
+            url=osm.RELEASE_PAGE,
             licence=osm.LICENCE,
             attribution=osm.ATTRIBUTION,
             data_period=f"{snap.osm_date:%Y-%m-%d}",
@@ -539,7 +539,7 @@ def render(env: Envelope[BusinessesData]) -> str:
     if d.top_brands:
         lines.append(
             f"Brands: {fmt_pct(d.branded_share_pct)} of places carry a brand. Top: "
-            + ", ".join(f"{b.brand} {b.count}" for b in d.top_brands)
+            + ", ".join(f"{quoted(b.brand)} {b.count}" for b in d.top_brands)
         )
     if d.by_category:
         lines.append("")
