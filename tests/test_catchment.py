@@ -173,3 +173,62 @@ async def test_catchment_rejects_bad_radius_and_sea(ine: IneData, stores):
         await catchment(ine, snap, geo, "41.601, -4.705", 20_000)
     with pytest.raises(PlaceNotFound):
         await catchment(ine, snap, geo, "43.6, -3.0", 800)
+
+
+# Walking catchments
+
+
+async def test_walk_area_follows_the_grid(tmp_path: Path):
+    from spain_open_data_mcp.sources.geo.walk import WalkGraphs, walk_area
+    from tests.fixtures.walk_mini import CENTRE, make_walk_graph, serve
+
+    published = make_walk_graph(tmp_path / "published")
+    graphs = WalkGraphs(tmp_path / "cache", transport=serve(published), offline=False)
+    assert await graphs.provinces_near(*CENTRE, 500) == ["47"]
+    g = await graphs.graph("47")
+    area = walk_area([g], *CENTRE, 5)  # 375 m on a 100 m grid: Manhattan distance <= 3 blocks
+    assert area.reached_nodes == 25  # the diamond |dx| + |dy| <= 3
+    assert 0 < area.area_km2 < 3.1416 * 0.375**2  # smaller than the straight-line circle
+
+
+async def test_walk_graph_checksum_is_enforced(tmp_path: Path):
+    import json as _json
+
+    from spain_open_data_mcp.core.errors import UpstreamError
+    from spain_open_data_mcp.sources.geo.walk import MANIFEST_NAME, WalkGraphs
+    from tests.fixtures.walk_mini import make_walk_graph, serve
+
+    published = make_walk_graph(tmp_path / "published")
+    m = _json.loads((published / MANIFEST_NAME).read_text())
+    m["provinces"]["47"]["sha256"] = "0" * 64
+    (published / MANIFEST_NAME).write_text(_json.dumps(m))
+    with pytest.raises(UpstreamError):
+        await WalkGraphs(tmp_path / "cache", transport=serve(published), offline=False).graph("47")
+
+
+async def test_far_from_any_street(tmp_path: Path):
+    from spain_open_data_mcp.sources.geo.walk import WalkGraphs, walk_area
+    from tests.fixtures.walk_mini import make_walk_graph, serve
+
+    g = await WalkGraphs(
+        tmp_path / "c", transport=serve(make_walk_graph(tmp_path / "p")), offline=False
+    ).graph("47")
+    with pytest.raises(PlaceNotFound):
+        walk_area([g], -4.65, 41.6, 10)  # about 4 km east of the grid
+
+
+async def test_catchment_walking_network_and_fallback(ine: IneData, stores, tmp_path: Path):
+    from spain_open_data_mcp.sources.geo.walk import WalkGraphs
+    from tests.fixtures.walk_mini import make_walk_graph, serve
+
+    snap, geo = stores
+    walk_store = WalkGraphs(tmp_path / "wc", transport=serve(make_walk_graph(tmp_path / "wp")), offline=False)
+    env = await catchment(ine, snap, geo, "41.601, -4.705", walk_minutes=10, walk_store=walk_store)
+    assert env.data.area_method == "walking network" and env.data.walk_minutes == 10
+    assert "minutes' walk" in render(env)
+    empty = WalkGraphs(tmp_path / "none", transport=serve(tmp_path / "missing"), offline=False)
+    env = await catchment(ine, snap, geo, "41.601, -4.705", walk_minutes=10, walk_store=empty)
+    assert env.data.area_method == "walking estimate (circle)"
+    assert any("No walking graph" in c.message for c in env.checks)
+    with pytest.raises(DataError):
+        await catchment(ine, snap, geo, "41.601, -4.705", walk_minutes=90, walk_store=walk_store)

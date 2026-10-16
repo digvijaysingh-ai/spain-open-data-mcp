@@ -211,6 +211,26 @@ class Snapshot:
         r2 = radius_m * radius_m
         return [(c, b) for c, b, x, y in rows if ((x - lon) * m_lon) ** 2 + ((y - lat) * m_lat) ** 2 <= r2]
 
+    def within_shape(
+        self, shape_wgs84: Any, lon: float, lat: float, reach_m: float, sel: Selection | None = None
+    ) -> list[tuple[str | None, str | None]]:
+        """(category, brand) of each place inside an area (e.g. a walking area)."""
+        import shapely
+
+        m_lat = 110_574.0
+        m_lon = m_lat * math.cos(math.radians(lat))
+        dlon, dlat = reach_m / m_lon, reach_m / m_lat
+        where = "lon BETWEEN ? AND ? AND lat BETWEEN ? AND ?"
+        args: list[object] = [lon - dlon, lon + dlon, lat - dlat, lat + dlat]
+        if sel is not None:
+            where += f" AND {sel.sql}"
+            args += list(sel.args)
+        rows = self._db.execute(f"SELECT category, brand, lon, lat FROM poi WHERE {where}", args).fetchall()
+        if not rows:
+            return []
+        inside = shapely.contains_xy(shape_wgs84, [r[2] for r in rows], [r[3] for r in rows])
+        return [(c, b) for (c, b, _x, _y), ok in zip(rows, inside, strict=True) if ok]
+
     def tags_like(self, pattern: str, limit: int = 8) -> list[str]:
         rows = self._db.execute(
             "SELECT tag FROM poi WHERE tag LIKE ? GROUP BY tag ORDER BY count(*) DESC LIMIT ?",

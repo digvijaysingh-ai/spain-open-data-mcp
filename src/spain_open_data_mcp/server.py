@@ -21,6 +21,7 @@ from .core.errors import DataError
 from .core.http import HttpClient
 from .places.resolver import Place, resolve
 from .sources.geo.geometry import GeometryStore
+from .sources.geo.walk import WalkGraphs
 from .sources.ine.datasets import IneData, register_source
 from .sources.ine.tempus import TempusClient
 from .sources.osm.snapshot import SnapshotStore
@@ -78,6 +79,7 @@ class _Services:
     _ine: IneData | None = None
     _osm: SnapshotStore | None = None
     _geo: GeometryStore | None = None
+    _walk: WalkGraphs | None = None
 
     @classmethod
     def ine(cls) -> IneData:
@@ -108,6 +110,12 @@ class _Services:
     @classmethod
     def set_geo(cls, store: GeometryStore) -> None:
         cls._geo = store
+
+    @classmethod
+    def walk(cls) -> WalkGraphs:
+        if cls._walk is None:
+            cls._walk = WalkGraphs()
+        return cls._walk
 
 
 P = ParamSpec("P")
@@ -365,15 +373,30 @@ async def catchment(
     category: Annotated[
         str | None, Field(description="Optional business category, to add market size and opportunity score.")
     ] = None,
+    walk_minutes: Annotated[
+        int | None,
+        Field(
+            ge=3,
+            le=30,
+            description="Use the area reachable on foot in this many minutes instead of a circle.",
+        ),
+    ] = None,
 ) -> Annotated[CallToolResult, Envelope[catchment_mod.CatchmentData]]:
-    """Profile the area within a radius of an address: residents, households, income, age, and
+    """Profile the area within a radius (or a walking time) of an address: residents, households, income, age, and
     the businesses mapped there. With a category, also the yearly market in euros, competing
     businesses and an opportunity score against the region. Use for "who lives within 800 m of
     this shop" or "is there room for a bakery near Calle X". Addresses are checked against the
     municipality they name; ambiguous ones are refused with suggestions.
     """
     return await catchment_mod.catchment_tool(
-        _Services.ine(), _Services.osm(), _Services.geo(), near, radius_m, category
+        _Services.ine(),
+        _Services.osm(),
+        _Services.geo(),
+        _Services.walk(),
+        near,
+        radius_m,
+        category,
+        walk_minutes,
     )
 
 
