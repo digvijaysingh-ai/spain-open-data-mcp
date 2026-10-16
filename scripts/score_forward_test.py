@@ -139,6 +139,11 @@ async def main() -> None:
                 f"- {cat} (CNAE {c['division']}): lift {m['lift']:.2f} ({m['ci_low']:.2f}-{m['ci_high']:.2f}) "
                 f"vs population baseline {b['lift']:.2f}"
             )
+        else:
+            lines.append(
+                f"- {cat} (CNAE {c['division']}): not computed (fewer than 10 provinces with both a score and "
+                "an outcome, or no openings in the bottom fifth)"
+            )
     (OUT / f"{stem}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
