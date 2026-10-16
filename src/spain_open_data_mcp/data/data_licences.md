@@ -5,6 +5,7 @@ The code of spain-open-data-mcp is MIT-licensed. The data it returns keeps the l
 | Source | Used for | Licence | Attribution |
 |---|---|---|---|
 | INE, Censo anual de población (table 65034) | Population by sex and age | CC BY 4.0 | Fuente: INE |
+| INE, Censo anual de población, bulk file by census tract (table 65034) | Age bands and sex for districts and tracts | CC BY 4.0 | Fuente: INE |
 | INE, Cifras oficiales del Padrón (table 29005) | Official municipal population | CC BY 4.0 | Fuente: INE |
 | INE, Atlas de Distribución de Renta de los Hogares (ADRH) | Income, inequality, income sources, household profile, down to census tract | CC BY 4.0 | Fuente: INE |
 | INE municipality register | Place names and codes | CC BY 4.0 | Fuente: INE |
