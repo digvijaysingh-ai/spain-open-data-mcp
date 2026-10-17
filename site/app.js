@@ -130,7 +130,8 @@ async function loadCategory(key) {
   const label = meta.categories.find((c) => c.key === key)?.label ?? key;
   setStatus(
     `${label}: ${fmtInt.format(ranked(areas).length)} municipalities scored. Method ${meta.method}, data of ${meta.built_at.slice(0, 10)}. ` +
-      "Prediction registered, not yet validated against INE's business openings."
+      "Score = market per business against the region, not a forecast. A first check against INE's business " +
+      "openings found population alone ranked provinces better in 15 of 19 categories."
   );
   const url = new URL(location.href);
   url.searchParams.set("category", key);
