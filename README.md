@@ -26,6 +26,11 @@ Its predictions are registered (dated and checksummed on the
 [atlas release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/atlas)) and checked each
 quarter against INE's official business openings; until results exist the map says it is not yet validated.
 
+![Claude answering "where should I open a barber shop in Valladolid" with this server: a table of three walking catchments with residents, income, competitors and opportunity score ranges](docs/img/barber-valladolid.png)
+
+*A real question in Claude through the hosted connector (2026-10-17). Every figure in the table
+matches the server's output.*
+
 ## What it can answer today
 
 - "How many people live in Valladolid, and how is the population changing?"
@@ -43,7 +48,24 @@ quarter against INE's official business openings; until results exist the map sa
 
 ## Example conversations
 
-Three unedited answers from the model eval run, in full in [docs/examples.md](docs/examples.md).
+**From real use in Claude** (hosted connector, 2026-10-17; each figure rechecked against the server):
+
+- **"Where should I open a barber shop in Valladolid?"** Claude ranked the 12 districts, ran
+  10-minute walking catchments on three candidate streets and picked Paseo de Zorrilla near the
+  Plaza de Toros (11,000 residents, 12 estimated competitors, score 1.97, range 1.13 to 3.30). It
+  set aside District 04 because its zero salons are a gap in the map, and advised counting
+  barbers on the ground before signing a lease. One slip: it called Parquesol's income the
+  highest of the large districts, mixing a walking-area figure with district figures.
+- **"Where should I open an Irish bar in Valladolid?"** Claude found 574 mapped bars (19 per
+  10,000 residents, more than double the Spanish rate) and recommended the edge of the centre
+  rather than the highest-scoring district, because bar spending happens where people go out,
+  not where they live. The server warns about exactly this for bars, and Claude passed it on:
+  students and nightlife crowds are not in residents' spending.
+
+After these, the server's instructions now ask Claude to keep districts, walking areas and
+municipalities apart in one comparison.
+
+**From the model eval run:** three unedited answers, in full in [docs/examples.md](docs/examples.md).
 
 **"Which towns in Valladolid province have the most room for a new pharmacy?"** Claude ranks
 towns by market per mapped pharmacy using the cautious end of each range: Medina del Campo
