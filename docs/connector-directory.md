@@ -78,6 +78,6 @@ Questions about specific people are declined; the server holds aggregate data on
 ## Before submitting
 
 - [x] Deploy and fill in the server URL above and in `server.json` (`remotes`).
-- [ ] Add the URL as a custom connector in Claude and run the five example prompts.
-- [ ] Record the demo GIF for the README.
+- [x] Add the URL as a custom connector in Claude and run real prompts (pharmacy, barber, Irish bar in Valladolid, 2026-10-17).
+- [x] Demo for the README (a screenshot of a real conversation, docs/img/barber-valladolid.png).
 - [x] Tag a release so PyPI and the MCP Registry listing match the hosted version.

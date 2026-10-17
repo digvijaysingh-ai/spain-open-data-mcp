@@ -60,6 +60,9 @@ How to use:
   results you used.
 - If a check says a place name was a spelling guess or has other readings, say in the
   answer which place you used (e.g. "read as Valladolid").
+- Keep levels apart: a district, a walking catchment and a municipality are different
+  areas. Do not put their figures in one ranking without labelling each, and attach each
+  warning (thin map, low confidence) to the area it came from.
 - Districts and tracts are INE numbers; refer to them with the neighbourhood names the
   results give in brackets ("district 10, Parquesol and Girón"), and say they are
   neighbourhoods inside the district, not official INE names.
