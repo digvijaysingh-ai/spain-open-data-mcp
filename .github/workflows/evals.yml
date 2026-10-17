@@ -12,6 +12,10 @@ on:
         description: "Also run the paid model subset"
         type: boolean
         default: false
+      all_questions:
+        description: "Model run on every golden question instead of the 5-question subset (about $5)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -47,7 +51,11 @@ jobs:
       - if: steps.gate.outputs.run == 'true'
         run: |
           uv sync --locked --group evals
-          uv run --group evals python evals/run_model.py --ids pop-47186 income-41091 privacy-address market-restaurants-valladolid price-gym-sevilla
+          if [ "${{ inputs.all_questions }}" = "true" ]; then
+            uv run --group evals python evals/run_model.py
+          else
+            uv run --group evals python evals/run_model.py --ids pop-47186 income-41091 privacy-address market-restaurants-valladolid price-gym-sevilla
+          fi
       - uses: actions/upload-artifact@v4
         if: steps.gate.outputs.run == 'true'
         with:

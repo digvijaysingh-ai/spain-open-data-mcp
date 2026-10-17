@@ -29,14 +29,14 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path[:0] = [str(ROOT / "src"), str(ROOT)]
 from evals.layer1 import load  # noqa: E402
 
 RESULTS = Path(__file__).with_name("results")
 MAX_TURNS = 8
 TOOL_RESULT_CHARS = 20_000
 GRADER = """You grade an assistant's answer against rubric items. For each item, decide strictly
-whether the answer meets it. Reply with JSON only: {"met": [true or false for each item, in order]}.
+whether the answer meets it. Reply with JSON only: {{"met": [true or false for each item, in order]}}.
 
 Question: {question}
 
