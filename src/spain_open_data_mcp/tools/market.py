@@ -160,6 +160,13 @@ def engine_checks(
             "market per business vs the region. Formulas: docs/designs/opportunity-engine.md.",
         ),
         Check(
+            kind="scope",
+            severity="info",
+            message="The score is not yet validated as a predictor of where businesses open. In a first check "
+            "against INE's business openings (2026 Q1-Q2, by province), population alone ranked provinces better "
+            "in 15 of 19 categories. Read it as market per business, not a forecast. validation/README.md",
+        ),
+        Check(
             kind="estimate",
             severity="info",
             message="The income-band ratio comes from INE's total spend by household income band (no category "

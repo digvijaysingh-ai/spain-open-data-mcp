@@ -45,8 +45,8 @@ log = logging.getLogger(__name__)
 
 INSTRUCTIONS = """\
 Answers market questions about Spain from official public data (INE) and OpenStreetMap:
-population, households, income, businesses, market size in euros and where the
-opportunity is, down to municipality, district and census tract.
+population, households, income, businesses, market size in euros and market per
+competing business, down to municipality, district and census tract.
 
 How to use:
 - For "how big is the market" use market_size; for "where should I open" use
@@ -58,6 +58,11 @@ How to use:
   with a short "Sources and caveats" block built from them.
 - Never state a conclusion more strongly than the lowest `confidence` among the
   results you used.
+- If a check says a place name was a spelling guess or has other readings, say in the
+  answer which place you used (e.g. "read as Valladolid").
+- The opportunity score is market per competing business against the region. It has not
+  yet been shown to predict where businesses open; describe it that way, never as a
+  forecast, and state the method version the result gives.
 - This server returns aggregate statistics only. It holds no data about individuals;
   decline requests to identify or profile people.
 """
@@ -220,7 +225,8 @@ async def resolve_place(
             Check(
                 kind="scope",
                 severity="warning",
-                message=f"No exact match for '{query}'; these are spelling guesses.",
+                message=f"No exact match for '{query}'; read as {places[0].name} ({places[0].level}, code "
+                f"{places[0].code}), a spelling guess. Say so in the answer.",
             )
         )
     env: Envelope[list[Place]] = Envelope(
@@ -348,8 +354,8 @@ async def market_size(
 
     Market = households × INE household spending on the category × an income adjustment.
     Supply = competing businesses, calibrated against INE's company directory. Returns market
-    per business and an opportunity score against the region (1.0 = same as the region), with
-    every assumption listed. Assumptions can be overridden to test scenarios. Use for "how big
+    per business and an opportunity score: market per business against the region (1.0 = same as
+    the region), not a forecast of openings. Every assumption is listed. Assumptions can be overridden to test scenarios. Use for "how big
     is the market for X in Y" and "is Y under-served for X".
     """
     return await market_mod.market_size_tool(
@@ -376,7 +382,7 @@ async def compare_areas(
     ] = "auto",
     limit: Annotated[int, Field(ge=1, le=40, description="How many areas to return, best first.")] = 20,
 ) -> Annotated[CallToolResult, Envelope[market_mod.CompareData]]:
-    """Rank areas by opportunity for a business category: where is there most market per business.
+    """Rank areas by market per competing business for a category (the opportunity score).
 
     Each area gets a yearly market in euros, estimated competing businesses and an opportunity
     score against its region, all with ranges. Areas are ranked by the cautious (low) end of

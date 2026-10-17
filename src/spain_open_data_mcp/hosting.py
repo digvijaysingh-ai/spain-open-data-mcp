@@ -2,6 +2,7 @@
 rate limits, plus a health check.
 
     request ─▶ RateLimit ─▶ /health        (200 "ok", never limited)
+                         ├▶ browser GET   (short HTML page: how to add the server in Claude)
                          └▶ /mcp            (MCP; Host and Origin checked against settings)
 
 Settings (environment):
@@ -124,6 +125,9 @@ class RateLimit:
         if scope["path"] == "/health":
             await _respond(send, 200, b"ok", "text/plain")
             return
+        if _wants_page(scope):
+            await _respond(send, 200, LANDING, "text/html; charset=utf-8")
+            return
         now = time.monotonic()
         wait = self._bucket(client_address(scope, self.proxy_hops)).take(now) or self.all.take(now)
         if wait:
@@ -139,6 +143,33 @@ class RateLimit:
             )
             return
         await self.app(scope, receive, send)
+
+
+LANDING = b"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spain Open Data MCP server</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;color:#1a1a1a;background:#fff}
+code{background:#f2f2f2;padding:.1rem .3rem;border-radius:3px;word-break:break-all}
+@media (prefers-color-scheme:dark){body{color:#e8e8e8;background:#161616}code{background:#2a2a2a}a{color:#8ab4f8}}</style>
+</head><body>
+<h1>Spain Open Data</h1>
+<p>This is an MCP server: an address for Claude and other AI assistants, not a web page. It answers
+market, income, population, rent and crime questions about Spain from public data, with every
+figure sourced and dated.</p>
+<p><strong>To use it in Claude:</strong> Settings, Connectors, Add custom connector, then paste
+this page's address, ending in <code>/mcp</code>.</p>
+<p>Documentation, install options and the privacy policy:
+<a href="https://github.com/digvijaysingh-ai/spain-open-data-mcp">github.com/digvijaysingh-ai/spain-open-data-mcp</a></p>
+</body></html>
+"""
+
+
+def _wants_page(scope: Scope) -> bool:
+    """A browser opening the address: GET for HTML on / or /mcp. MCP clients never ask for HTML."""
+    if scope["method"] != "GET" or scope["path"] not in ("/", "/mcp"):
+        return False
+    accept = next((v for k, v in scope["headers"] if k == b"accept"), b"").decode("latin-1")
+    return "text/html" in accept and "text/event-stream" not in accept
 
 
 async def _respond(

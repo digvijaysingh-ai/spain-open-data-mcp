@@ -7,7 +7,7 @@ import pytest
 
 from spain_open_data_mcp import hosting
 from spain_open_data_mcp.core.http import _Cache
-from spain_open_data_mcp.hosting import Bucket, RateLimit, client_address, is_shared
+from spain_open_data_mcp.hosting import Bucket, RateLimit, _wants_page, client_address, is_shared
 
 INIT = {
     "jsonrpc": "2.0",
@@ -61,6 +61,20 @@ async def test_health_and_mcp_initialize(app):
         assert (await c.get("/health")).text == "ok"
         r = await c.post("/mcp", json=INIT, headers=HEADERS)
         assert r.status_code == 200, r.text
+        assert r.json()["result"]["serverInfo"]["name"] == "spain-open-data"
+
+
+async def test_browser_gets_a_page_and_mcp_clients_do_not(app):
+    inner, outer = app()
+    browser = {"accept": "text/html,application/xhtml+xml,*/*;q=0.8"}
+    async with inner.router.lifespan_context(inner), await _client(outer) as c:
+        for path in ("/", "/mcp"):
+            r = await c.get(path, headers=browser)
+            assert r.status_code == 200 and "Add custom connector" in r.text
+        assert not _wants_page(
+            {"method": "GET", "path": "/mcp", "headers": [(b"accept", b"text/event-stream")]}
+        )
+        r = await c.post("/mcp", json=INIT, headers={**HEADERS, **browser, "accept": HEADERS["accept"]})
         assert r.json()["result"]["serverInfo"]["name"] == "spain-open-data"
 
 

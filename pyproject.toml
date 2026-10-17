@@ -1,6 +1,6 @@
 [project]
 name = "spain-open-data-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server for market questions about Spain from public data (INE, OpenStreetMap, datos.gob.es), with every figure sourced, dated and checked."
 readme = "README.md"
 license = "MIT"

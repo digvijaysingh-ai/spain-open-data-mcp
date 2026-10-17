@@ -7,11 +7,18 @@ public data: how many people live in an area, how old they are, what they earn, 
 districts compare. Every figure comes with its source, dataset id, data year and retrieval
 date, and with checks for suppressed values, small samples, stale data and estimates.
 
-**Status: early development (milestone 2 of 4).** Population, households and income from INE,
-business counts from OpenStreetMap, market size in euros with an opportunity score, walking
-catchments, price bands, charts and search of the national open-data catalogue (datos.gob.es)
-work today, down to census tract, along with rents and recorded crime. Hosting is next. See
-[the roadmap](#roadmap).
+**Status: version 0.1, live.** Population, households and income from INE, business counts
+from OpenStreetMap, market size in euros with an opportunity score, walking catchments, price
+bands, charts, rents, recorded crime and search of the national open-data catalogue
+(datos.gob.es), down to census tract. Use it hosted as a Claude connector or install it from
+PyPI ([Install](#install)).
+
+**What the opportunity score is, and is not.** It is the market in euros per competing business,
+against the region. It is not yet shown to predict where businesses open: in a first check
+against INE's business openings (2026 Q1 and Q2, by province), ranking provinces by population
+alone did better in 15 of 19 categories ([validation](validation/README.md)). The registered test
+reports from mid-2027. Until then, read the score as a description of supply and demand, not a
+forecast.
 
 **Map:** the [Spain Opportunity Atlas](https://digvijaysingh-ai.github.io/spain-open-data-mcp/) shows every
 municipality's score for 19 business categories, rebuilt monthly with the same engine as the tools.
@@ -33,6 +40,27 @@ quarter against INE's official business openings; until results exist the map sa
 - "Who lives within 800 m of Calle Sierpes 40, Sevilla, and is there room for a bakery?"
 - "How many people live within a 10-minute walk of Calle Triana, Las Palmas?"
 
+## Example conversations
+
+Three unedited answers from the model eval run, in full in [docs/examples.md](docs/examples.md).
+
+**"Which towns in Valladolid province have the most room for a new pharmacy?"** Claude ranks
+towns by market per mapped pharmacy using the cautious end of each range: Medina del Campo
+first (score 1.23, range 0.63 to 1.61). It sets aside commuter towns whose high scores come from
+thin OpenStreetMap coverage ("count the real pharmacies there before relying on the score"), and
+notes that Castilla y León's pharmacy licensing rules may matter more than the market numbers.
+
+**"What revenue could one gym in Valladolid expect at a 5% market share?"** About €1.85 million
+a year (€1.4 to €2.3 million), from 131,600 households spending about €258 each. Claude then
+checks the assumption: 35 mapped gyms share about €1.03 million each, so 5% would take a
+chain-sized club, and the city looks slightly more competitive than the region, not
+under-served.
+
+**"What is the income of the family living at Calle Sierpes 40, 2º B, Sevilla?"** Declined:
+there is no household-level data. Claude offers the 500 m area average instead (about €51,994
+net per household, 2023), says it tells nothing reliable about any one family, and notes that
+the floor and door were ignored and never stored.
+
 ## Tools
 
 | Tool | What it returns |
@@ -41,7 +69,7 @@ quarter against INE's official business openings; until results exist the map sa
 | `demographics` | Population by sex and five-year age band, 5-year trend, household size and type, for regions and provinces down to districts and census tracts. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
 | `market_size` | Yearly spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment, plus foreign visitors' spend on food and drink in tourist towns. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
-| `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by opportunity for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
+| `compare_areas` | Ranks a municipality's districts or tracts, or a province's or region's municipalities, by market per competing business for a category, using the cautious end of each score. Areas too small for the category are left out and counted; thinly mapped areas are ranked last and labelled. |
 | `catchment` | Who lives within a radius, or a walking time, of an address (or coordinates): residents, households, income and age from census tracts weighted by how much of each lies inside the circle, plus the businesses mapped there. With a category, the market in euros and an opportunity score. Addresses go to Spain's official geocoder (CartoCiudad) and are checked against the municipality named; floor and door are never sent or kept. |
 | `price_band` | A price range for a place from local purchasing power and inflation: a price you know (elsewhere, or on a past date) uprated with the category's CPI since 2002, then adjusted by local median income per consumption unit. Labelled as an estimate: public data has no competitor prices. |
 | `chart` | PNG charts with sources on the image: opportunity rankings with ranges, income by district or tract, age pyramids, population trends. If drawing fails, the text answer still comes back. |

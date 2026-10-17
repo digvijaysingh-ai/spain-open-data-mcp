@@ -14,7 +14,8 @@ deployed (see [deploy.md](deploy.md)) and its URL is filled in below.
   to census tracts, using official public data: INE (population, households, income, household
   spending, consumer prices, rents, tourism, company counts), OpenStreetMap (businesses and
   chains), the Interior ministry (recorded crime) and the national open-data catalogue
-  (datos.gob.es). It sizes markets in euros with ranges, ranks areas by opportunity for a
+  (datos.gob.es). It sizes markets in euros with ranges, ranks areas by market per competing business (an opportunity score, not yet
+  validated as a forecast) for a
   business, profiles the walking catchment of an address, and suggests local price ranges.
   Every result lists its sources, data year and licence, the checks it ran (suppressed values,
   small samples, stale data, estimates), and a confidence level.
@@ -38,7 +39,7 @@ return structured output with a schema.
 | `income` | Household income | Income per person and household, inequality, benchmarks, down to census tract | INE |
 | `businesses` | Businesses and competitors | Businesses of a kind per 10,000 residents and per km², chains, coverage check | OpenStreetMap snapshot, INE |
 | `market_size` | Market size in euros | Yearly spending pool for a category, with a range, competitors and an opportunity score | INE, OpenStreetMap |
-| `compare_areas` | Compare areas for a business | Areas ranked by opportunity, cautious end first | INE, OpenStreetMap |
+| `compare_areas` | Compare areas for a business | Areas ranked by market per competing business, cautious end first | INE, OpenStreetMap |
 | `catchment` | Catchment around an address | Residents, income, age and businesses within a radius or walking time | INE, CartoCiudad, OpenStreetMap |
 | `price_band` | Price range for a place | Price range from local purchasing power and inflation (labelled an estimate) | INE |
 | `chart` | Chart | PNG chart of a result, with sources on the image | INE, OpenStreetMap |
