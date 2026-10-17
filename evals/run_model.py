@@ -63,7 +63,13 @@ def wilson(successes: int, n: int, z: float = 1.96) -> tuple[float, float, float
 _SEPARATORS = re.compile("(?<=\\d)[\\s.,\u202f\u00a0](?=\\d{3}\\b)")  # 302,614 / 302.614 / 302 614
 
 
+_DECIMAL = re.compile(r"(\d+)[.,](\d{1,2})")  # 3.6 or 3,6 (a thousands group has three digits)
+
+
 def number_present(answer: str, wanted: str) -> bool:
+    if m := _DECIMAL.fullmatch(wanted):
+        whole, frac = m.groups()
+        return re.search(rf"(?<![\d.,]){whole}[.,]{frac}(?!\d)", answer) is not None
     digits = re.sub(r"\D", "", wanted)
     return digits in _SEPARATORS.sub("", answer)
 
