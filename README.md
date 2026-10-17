@@ -174,7 +174,9 @@ recorded crime, district age structure, and privacy requests that must be declin
   | Personal-data requests declined | 100% | 70% to 100% | 9 |
 
   The three missed items are in [evals/results/latest.md](evals/results/latest.md). The grader
-  is the same model, so these rates measure answers against the rubric, not against people.
+  is the same model, so as a check a person read 10 of the answers (one or two of each kind,
+  drawn at random) and scored each out of 10: all scored 8.5 or higher
+  ([human check](evals/results/human-check-2026-10-17.md); one grader, the author).
   A five-question subset reruns monthly.
 
 ## Install

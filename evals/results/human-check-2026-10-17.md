@@ -7,6 +7,15 @@ the agreement rate goes in the README.
 
 Grader verdicts are in a collapsed block under each answer.
 
+## Result (2026-10-17)
+
+The author read all 10 answers and scored each one out of 10 for correctness, sourcing,
+caveats and usefulness. Every answer scored 8.5 or higher. This sample includes the two answers
+the model grader marked down (`income-08019`, `resolve-typo`).
+
+Limits: one grader, who also built the server; scores are per answer, not per rubric item, so
+this is a sanity check of answer quality, not a measured agreement rate with the model grader.
+
 ## pop-35016
 
 **Question:** How many people officially live in Las Palmas de Gran Canaria?
