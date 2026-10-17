@@ -51,6 +51,10 @@ def test_model_runner_scoring():
     assert run_model.number_present("Valladolid tiene 302.614 habitantes", "302,614")
     assert run_model.number_present("about 302 614 people", "302,614")
     assert not run_model.number_present("about 300,000 people", "302,614")
+    assert run_model.number_present("rents rose 3.6% last year", "3.6")
+    assert run_model.number_present("subieron un 3,6 %", "3.6")
+    assert not run_model.number_present("rents rose 13.6%", "3.6")
+    assert not run_model.number_present("rents rose 3.65%", "3.6")
     p, lo, hi = run_model.wilson(30, 33)
     assert 0.9 < p < 0.92 and lo < p < hi and hi <= 1
     rows = [

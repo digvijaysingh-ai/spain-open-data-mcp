@@ -111,8 +111,19 @@ recorded crime, district age structure, and privacy requests that must be declin
 - **Layer 2, the assistant** ([evals/run_model.py](evals/run_model.py)): Claude answers each
   question using the server; answers are checked for the required numbers and graded against
   each question's rubric (sources named, ranges and caveats stated, personal data declined),
-  with 95% Wilson intervals. Paid API calls; not yet run. Results will appear in
-  [evals/results/](evals/results/).
+  with 95% Wilson intervals. Latest run (2026-10-17, Claude Sonnet 5.5, all 38 questions):
+
+  | Metric | Rate | 95% interval | n |
+  |---|---|---|---|
+  | Required numbers in the answer | 100% | 87% to 100% | 26 |
+  | Rubric items met | 96% | 90% to 99% | 84 |
+  | Sources named | 100% | 90% to 100% | 35 |
+  | Ranges, estimates and data years stated | 100% | 81% to 100% | 16 |
+  | Personal-data requests declined | 100% | 70% to 100% | 9 |
+
+  The three missed items are in [evals/results/latest.md](evals/results/latest.md). The grader
+  is the same model, so these rates measure answers against the rubric, not against people.
+  A five-question subset reruns monthly.
 
 ## Install
 
