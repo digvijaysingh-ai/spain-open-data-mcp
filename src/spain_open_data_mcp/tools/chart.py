@@ -24,6 +24,7 @@ from mcp_types import CallToolResult, ImageContent, TextContent
 
 from ..core.envelope import Check, Envelope, confidence_from, render_footer
 from ..core.errors import DataError
+from ..places import area_names
 from ..sources.ine.datasets import IneData
 from ..sources.osm import snapshot as osm
 from . import demographics as demo_mod
@@ -61,6 +62,16 @@ def _png(fig: Any) -> str:
     return base64.b64encode(buf.getvalue()).decode()
 
 
+def axis_label(code: str, name: str) -> str:
+    """Districts and tracts by number and first neighbourhood name, short enough for an axis."""
+    if len(code) not in (7, 10):
+        return name
+    unit = f"distrito {code[5:]}" if len(code) == 7 else f"sección {code[5:7]}-{code[7:]}"
+    first = area_names.short_label(code)
+    text = f"{unit} {first}" if first else unit
+    return text if len(text) <= 34 else text[:33] + "…"
+
+
 def draw_opportunity(d: market_mod.CompareData, source: str) -> str:
     # Thinly mapped areas get huge, unreliable scores that would flatten every other bar, so
     # they are listed under the chart instead of drawn.
@@ -70,7 +81,7 @@ def draw_opportunity(d: market_mod.CompareData, source: str) -> str:
         raise ValueError("no reliably mapped areas to draw")
     fig = _figure(max(3.0, 0.32 * len(areas) + 1.5))
     ax = fig.add_subplot(111)
-    names = [a.name for a in areas][::-1]
+    names = [axis_label(a.code, a.name) for a in areas][::-1]
     base = [a.score.base for a in areas if a.score][::-1]
     lo = [a.score.base - a.score.low for a in areas if a.score][::-1]
     hi = [a.score.high - a.score.base for a in areas if a.score][::-1]
@@ -78,7 +89,9 @@ def draw_opportunity(d: market_mod.CompareData, source: str) -> str:
     ax.axvline(1.0, color=INK, lw=0.8, ls="--")
     label = "Opportunity score vs region (1.0 = region average, dashed); whiskers show low-high"
     if thin:
-        label += f"\nNot drawn, map too thin to trust: {', '.join(a.name for a in thin[:4])}"
+        label += (
+            f"\nNot drawn, map too thin to trust: {', '.join(axis_label(a.code, a.name) for a in thin[:4])}"
+        )
     ax.set_xlabel(label, fontsize=8, color=INK)
     _style(ax, f"{d.label}: opportunity by {d.level}, {d.within.name}", source)
     return _png(fig)
@@ -90,7 +103,8 @@ def draw_income(d: income_mod.IncomeData, source: str, metric: str) -> str:
         raise ValueError("no sub-areas with income to draw")
     fig = _figure(max(3.0, 0.3 * len(rows) + 1.5))
     ax = fig.add_subplot(111)
-    ax.barh([r.name for r in rows][::-1], [getattr(r.figures, metric) for r in rows][::-1], color=ACCENT)
+    labels = [axis_label(r.code, r.name) for r in rows]
+    ax.barh(labels[::-1], [getattr(r.figures, metric) for r in rows][::-1], color=ACCENT)
     own = getattr(d.figures, metric)
     if own:
         ax.axvline(own, color=INK, lw=0.8, ls="--")

@@ -12,6 +12,7 @@ The code of spain-open-data-mcp is MIT-licensed. The data it returns keeps the l
 | INE, Directorio Central de Empresas (DIRCE, table 73020) | Companies by region and activity, to check OpenStreetMap coverage | CC BY 4.0 | Fuente: INE |
 | INE, census tract boundaries (seccionado) | Placing businesses in tracts, area in km² | CC BY 4.0 | Fuente: INE |
 | OpenStreetMap, via Geofabrik extracts | Business counts and brands | ODbL 1.0 | © OpenStreetMap contributors |
+| OpenStreetMap place names (neighbourhoods, quarters, suburbs, villages, sub-municipal boundaries) | Naming INE districts and tracts; finding a district from a neighbourhood name | ODbL 1.0 | © OpenStreetMap contributors |
 | INE, Índice de Precios de Vivienda en Alquiler (IPVA, tables 59056, 59058, 59060, 59061) | Rent index by region, province, municipality and district | CC BY 4.0 | Fuente: INE |
 | Ministerio del Interior, Balance de Criminalidad (Portal Estadístico de Criminalidad) | Recorded crime by municipality (over 20,000 residents), province and region | Public sector information, reused under Ley 37/2007: cite the source, do not distort the data, state the date | Fuente: Ministerio del Interior, Balance de Criminalidad |
 | datos.gob.es catalogue and the datasets it lists | find_datasets, read_dataset | Each dataset's own licence (often CC BY 4.0), shown with every result | The publisher named in the result, and datos.gob.es |
@@ -24,6 +25,8 @@ OpenStreetMap data is © OpenStreetMap contributors and available under the
 [Open Database Licence](https://www.openstreetmap.org/copyright). The monthly snapshot this
 server builds is a derived database under the same licence; it is published with each
 [snapshot release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/osm-snapshot-v1).
+The neighbourhood names file (`area_names.json.gz`, built by `scripts/build_area_names.py`) is
+also a derived database under the ODbL, shipped inside the package.
 
 ## How figures are checked
 

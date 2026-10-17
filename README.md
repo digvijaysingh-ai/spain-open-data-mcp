@@ -30,6 +30,7 @@ quarter against INE's official business openings; until results exist the map sa
 
 - "How many people live in Valladolid, and how is the population changing?"
 - "Which districts of Valladolid have the highest household income?"
+- "How old is the population of Parquesol, in Valladolid?"
 - "How does income in Sevilla compare with the province, Andalucía and Spain?"
 - "Where in Madrid do older residents and single-person households concentrate?"
 - "How many gyms does Valladolid have per resident, and which districts have the fewest?"
@@ -65,7 +66,7 @@ the floor and door were ignored and never stored.
 
 | Tool | What it returns |
 |---|---|
-| `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. |
+| `resolve_place` | INE code and level for a place name: autonomous community, province, municipality, district or census tract. Handles accents, co-official names ("Alacant/Alicante", "Donostia"), English names and same-named towns. Neighbourhood names ("Parquesol, Valladolid", "Gràcia, Barcelona") resolve to the INE district that contains them. |
 | `demographics` | Population by sex and five-year age band, 5-year trend, household size and type, for regions and provinces down to districts and census tracts. Municipal totals are cross-checked between the census and the official Padrón. Optional district or tract breakdown. |
 | `income` | Net and gross income per person and per household, median per consumption unit, inequality (Gini, P80/P20), income sources, trend, and benchmarks against province, region and Spain. Optional district or tract ranking. |
 | `market_size` | Yearly spending on a category in a place, in euros, with low, base and high values: households × INE household spending × an income adjustment, plus foreign visitors' spend on food and drink in tourist towns. Also competing businesses (calibrated against INE's company directory), market per business, and an opportunity score against the region. Every assumption is listed and can be overridden. |
@@ -120,6 +121,7 @@ tells the model which tools to call and to answer with ranges, assumptions and a
 - **Top-coded incomes are flagged.** INE caps the highest incomes in its income atlas. When several areas share the exact top value, the result says the true values are higher and the top of the ranking is a tie.
 - **Two sources, one number.** Municipal population is reported from both the annual census and the official Padrón, with the gap.
 - **Spelling guesses are never silent.** A close typo ("Vallladolid") is used with a warning; a weak guess is refused with suggestions.
+- **Neighbourhoods are named, not invented.** INE numbers districts and tracts; each is shown with the OpenStreetMap neighbourhoods inside it ("Valladolid distrito 10 (Parquesol, Girón, La Victoria)"). A neighbourhood name finds its district, with a warning that the figures cover the whole district.
 - **Map gaps are measured.** OpenStreetMap counts are lower bounds. Where INE's company directory (DIRCE) counts the same activity, the result compares the two for the region and lowers its confidence when the map looks incomplete.
 - **Upstream changes fail loudly.** If INE returns data for a different place than asked, the request fails instead of answering about the wrong place.
 - **No personal data.** The server returns aggregate statistics only. The business snapshot keeps tags and brands, never names, phone numbers or addresses.

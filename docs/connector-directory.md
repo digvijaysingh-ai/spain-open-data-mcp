@@ -34,7 +34,7 @@ return structured output with a schema.
 
 | Tool | Title | What it does | Data |
 |---|---|---|---|
-| `resolve_place` | Resolve a Spanish place | INE code and level for a place name | local |
+| `resolve_place` | Resolve a Spanish place | INE code and level for a place or neighbourhood name | local |
 | `demographics` | Population and households | Population by sex and age, trend, household profile | INE |
 | `income` | Household income | Income per person and household, inequality, benchmarks, down to census tract | INE |
 | `businesses` | Businesses and competitors | Businesses of a kind per 10,000 residents and per km², chains, coverage check | OpenStreetMap snapshot, INE |

@@ -39,7 +39,7 @@ from .tools import income as income_mod
 from .tools import market as market_mod
 from .tools import price as price_mod
 from .tools import rents as rents_mod
-from .tools.common import to_result
+from .tools.common import neighbourhood_check, to_result
 
 log = logging.getLogger(__name__)
 
@@ -60,6 +60,9 @@ How to use:
   results you used.
 - If a check says a place name was a spelling guess or has other readings, say in the
   answer which place you used (e.g. "read as Valladolid").
+- Districts and tracts are INE numbers; refer to them with the neighbourhood names the
+  results give in brackets ("district 10, Parquesol and Girón"), and say they are
+  neighbourhoods inside the district, not official INE names.
 - The opportunity score is market per competing business against the region. It has not
   yet been shown to predict where businesses open; describe it that way, never as a
   forecast, and state the method version the result gives.
@@ -210,8 +213,9 @@ async def resolve_place(
     Use this first when a question names a place. Returns the best match first, with
     alternatives (e.g. 'Valencia' is both a city and a province). Handles accents, Basque,
     Catalan and Galician names, and common English names (Seville, Catalonia).
-    Neighbourhood names are not supported; use districts or tracts from `demographics`
-    or `income` with `sub_areas`.
+    Districts and tracts are shown with the OpenStreetMap neighbourhood names inside them
+    ('Valladolid distrito 10 (Parquesol, Girón, La Victoria)'), and a neighbourhood name
+    ('Parquesol, Valladolid', 'Gràcia, Barcelona') returns the INE district that contains it.
     """
     places = resolve(query, limit=6)
     lines = [f"Matches for '{query}' (best first):"]
@@ -220,6 +224,8 @@ async def resolve_place(
         pop = f", population {p.population:,} ({p.population_date})" if p.population else ""
         lines.append(f"- {p.name} ({p.level}{extra}): code {p.code}{pop}")
     checks = []
+    if places[0].match == "neighbourhood":
+        checks.append(neighbourhood_check(places[0]))
     if places[0].match == "fuzzy":
         checks.append(
             Check(

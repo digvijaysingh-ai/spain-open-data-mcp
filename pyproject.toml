@@ -1,6 +1,6 @@
 [project]
 name = "spain-open-data-mcp"
-version = "0.1.2"
+version = "0.1.3"
 description = "MCP server for market questions about Spain from public data (INE, OpenStreetMap, datos.gob.es), with every figure sourced, dated and checked."
 readme = "README.md"
 license = "MIT"
@@ -68,7 +68,7 @@ allowed-confusables = ["×", "÷"]  # formulas in docstrings and messages
 [tool.pyright]
 include = ["src", "tests", "scripts", "evals"]
 # Need the snapshot group (osmium, pyshp ship loose stubs) or Playwright (browser tests).
-exclude = ["scripts/build_osm_snapshot.py", "scripts/backtest_spike.py", "scripts/build_geometry.py", "scripts/build_walk_graphs.py", "tests/e2e"]
+exclude = ["scripts/build_osm_snapshot.py", "scripts/build_area_names.py", "scripts/backtest_spike.py", "scripts/build_geometry.py", "scripts/build_walk_graphs.py", "tests/e2e"]
 pythonVersion = "3.11"
 typeCheckingMode = "standard"
 

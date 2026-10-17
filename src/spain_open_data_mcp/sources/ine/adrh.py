@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from ...places.area_names import with_names
 from ...places.resolver import natural_name
 from .datasets import unit_code
 from .tempus import Series
@@ -80,7 +81,9 @@ def by_unit(series: list[Series], into: dict[str, UnitValues] | None = None) -> 
         code, name = unit
         u = units.get(code)
         if u is None:
-            u = units[code] = UnitValues(code=code, name=natural_name(name.strip()), level=level_of(code))
+            u = units[code] = UnitValues(
+                code=code, name=with_names(code, natural_name(name.strip())), level=level_of(code)
+            )
         for p in s.points:
             if p.status == "ok" and p.value is not None:
                 u.values.setdefault(key, {})[p.year] = p.value
