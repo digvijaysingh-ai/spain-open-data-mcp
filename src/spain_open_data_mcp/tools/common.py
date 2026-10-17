@@ -41,6 +41,8 @@ def resolve_place_arg(place: str) -> tuple[Place, list[Check]]:
                 f"({best.level}, code {best.code}). Confirm this is the place meant.",
             )
         )
+    if best.match == "neighbourhood":
+        checks.append(neighbourhood_check(best))
     if others and not place.strip().isdigit():
         alts = ", ".join(f"{p.name} ({p.level}, code {p.code})" for p in others[:3])
         checks.append(
@@ -52,6 +54,16 @@ def resolve_place_arg(place: str) -> tuple[Place, list[Check]]:
             )
         )
     return best, checks
+
+
+def neighbourhood_check(p: Place) -> Check:
+    return Check(
+        kind="scope",
+        severity="warning",
+        message=f"'{p.matched_name}' is a neighbourhood name (OpenStreetMap), not an INE area. Using the INE "
+        f"district that contains it, {p.name} (code {p.code}): figures cover the whole district, which may be "
+        "larger. For a closer fit use sub_areas='tract' or the catchment tool around an address there.",
+    )
 
 
 def summary_stats(values: Iterable[float]) -> dict[str, float] | None:

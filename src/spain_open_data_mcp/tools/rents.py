@@ -14,6 +14,7 @@ from pydantic import BaseModel, Field
 
 from ..core.envelope import Check, Envelope, confidence_from, dedupe_sources
 from ..core.errors import DataError
+from ..places.area_names import with_names
 from ..places.areas import SPAIN, benchmark_ladder
 from ..places.resolver import Place, natural_name
 from ..sources.ine.datasets import IPVA_NAME, IneData, source_for
@@ -49,7 +50,7 @@ def _code(s: Series) -> tuple[str, str] | None:
         if var.startswith("Comunidades"):
             return f"CA{code}", natural_name(name)
         if var in ("Provincias", "Municipios", "Distritos"):
-            return code, natural_name(name)
+            return code, with_names(code, natural_name(name))
     return None
 
 

@@ -9,6 +9,10 @@ Levels and code formats:
 
 Names are matched accent- and case-insensitively, handling INE's 'Coruña, A' style and
 bilingual 'Alacant/Alicante' names. 'Name, Province' narrows the search.
+
+Districts and tracts carry the OpenStreetMap neighbourhood names inside them
+('Valladolid distrito 10 (Parquesol, Girón, La Victoria)'), and a neighbourhood name
+('Parquesol, Valladolid') resolves to the INE district that contains it.
 """
 
 from __future__ import annotations
@@ -25,6 +29,7 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 from ..core.errors import AmbiguousPlace, PlaceNotFound
+from . import area_names
 from .codes import CCAA, MUNICIPALITY_ALIASES, PROVINCES
 
 Level = Literal["ccaa", "province", "municipality", "district", "tract"]
@@ -47,9 +52,16 @@ class Place(BaseModel):
     municipality: str | None = None
     population: int | None = Field(default=None, description="Official population (Padrón), when known.")
     population_date: str | None = None
-    match: Literal["code", "exact", "prefix", "fuzzy"] = Field(
-        default="exact", description="How the query matched. 'fuzzy' means a spelling guess: confirm it."
+    area_names: str | None = Field(
+        default=None,
+        description="For districts and tracts: OpenStreetMap neighbourhood names inside it (not official INE names).",
     )
+    match: Literal["code", "exact", "prefix", "fuzzy", "neighbourhood"] = Field(
+        default="exact",
+        description="How the query matched. 'fuzzy' means a spelling guess: confirm it. 'neighbourhood' means a "
+        "neighbourhood name was found inside this INE district.",
+    )
+    matched_name: str | None = Field(default=None, description="The neighbourhood name that matched, if any.")
     match_score: float = Field(default=1.0, description="Name similarity, 0-1.")
 
 
@@ -220,9 +232,23 @@ def place_from_code(code: str) -> Place:
             population_date=muni.population_date,
             **mbase,
         )
+    names = area_names.label(code)
+    suffix = f" ({names})" if names else ""
     if len(code) == 7:
-        return Place(code=code, level="district", name=f"{mname} distrito {code[5:]}", **mbase)
-    return Place(code=code, level="tract", name=f"{mname} sección {code[5:7]}-{code[7:]}", **mbase)
+        return Place(
+            code=code,
+            level="district",
+            name=f"{mname} distrito {code[5:]}{suffix}",
+            area_names=names,
+            **mbase,
+        )
+    return Place(
+        code=code,
+        level="tract",
+        name=f"{mname} sección {code[5:7]}-{code[7:]}{suffix}",
+        area_names=names,
+        **mbase,
+    )
 
 
 def _population(p: Place) -> int:
@@ -245,11 +271,17 @@ def resolve(query: str, *, limit: int = 5) -> list[Place]:
             return [place_from_code(f"{base.code}{int(m.group(2)):02d}")]
 
     scope: str | None = None
-    if "," in q:  # 'Mérida, Badajoz' or 'Coruña, A'
+    muni_scope: list[str] = []
+    if "," in q:  # 'Mérida, Badajoz' or 'Coruña, A' or 'Parquesol, Valladolid'
         head, tail = (s.strip() for s in q.rsplit(",", 1))
-        tail_hits = [c for lvl, c in _index().get(normalize(tail), []) if lvl in ("province", "ccaa")]
-        if tail_hits and normalize(q) not in _index():
-            q, scope = head, tail_hits[0]
+        tail_all = _index().get(normalize(tail), [])
+        tail_hits = [c for lvl, c in tail_all if lvl in ("province", "ccaa")]
+        if normalize(q) not in _index():
+            muni_scope = [c for lvl, c in tail_all if lvl == "municipality"]
+            if tail_hits:
+                q, scope = head, tail_hits[0]
+            elif muni_scope:
+                q = head
 
     idx = _index()
     nq = normalize(q)
@@ -259,6 +291,10 @@ def resolve(query: str, *, limit: int = 5) -> list[Place]:
     if not hits and len(nq) >= 4:  # 'l hospitalet' -> "L'Hospitalet de Llobregat"
         hits = [h for name, hs in idx.items() if name.startswith(nq + " ") for h in hs]
         match = "prefix"
+    if not hits:
+        found = _neighbourhoods(nq, scope, muni_scope)
+        if found:
+            return found[:limit]
     if not hits:  # spelling mistakes, ranked by similarity
         match = "fuzzy"
         close = difflib.get_close_matches(nq, idx.keys(), n=limit, cutoff=0.8)
@@ -277,16 +313,46 @@ def resolve(query: str, *, limit: int = 5) -> list[Place]:
             for p in places
             if (p.province_code == scope if not scope.startswith("CA") else p.ccaa_code == scope)
         ]
+    if not places and match != "fuzzy":  # 'El Palmar, Murcia': a municipality elsewhere, a neighbourhood here
+        places = _neighbourhoods(nq, scope, muni_scope)
     if not places:
         raise PlaceNotFound(
             problem=f"No Spanish place matches '{query}'.",
-            cause="The name is not an INE municipality, province or autonomous community "
-            "(neighbourhood names are not supported yet).",
-            fix="Check the spelling, use the official municipality name, or add the province: 'Mérida, Badajoz'.",
+            cause="The name is not an INE municipality, province or autonomous community, nor a "
+            "neighbourhood name in OpenStreetMap.",
+            fix="Check the spelling, use the official municipality name, or add the province or city: "
+            "'Mérida, Badajoz', 'Parquesol, Valladolid'.",
         )
     if match != "fuzzy":
         places.sort(key=lambda p: (LEVEL_RANK[p.level], -_population(p)))
     return places[:limit]
+
+
+def _neighbourhoods(nq: str, scope: str | None, muni_scope: list[str]) -> list[Place]:
+    """INE districts containing a neighbourhood called `nq`, biggest municipality first. With a
+    city or province given, also names starting with it ('Delicias, Valladolid' finds
+    'Delicias - Canterac')."""
+    idx = area_names.index()
+    if len(nq) < 3:
+        return []
+    munis = _municipalities()
+
+    def within(tract: str) -> bool:
+        if muni_scope and tract[:5] not in muni_scope:
+            return False
+        if scope:
+            prov = tract[:2]
+            return PROVINCES[prov][1] == scope[2:] if scope.startswith("CA") else prov == scope
+        return True
+
+    entries = [e for e in idx.get(nq, []) + idx.get(area_names.strip_article(nq), []) if within(e[1])]
+    if not entries and (scope or muni_scope):  # 'Delicias, Valladolid' -> 'Delicias - Canterac'
+        entries = [e for name, es in idx.items() if name.startswith(nq + " ") for e in es if within(e[1])]
+    out: dict[str, Place] = {}
+    for written, tract in entries:
+        p = place_from_code(tract[:7])
+        out.setdefault(p.code, p.model_copy(update={"match": "neighbourhood", "matched_name": written}))
+    return sorted(out.values(), key=lambda p: -(munis[p.code[:5]].population or 0))
 
 
 def resolve_one(query: str) -> tuple[Place, list[Place]]:

@@ -101,3 +101,43 @@ def test_places_carry_both_names():
     assert p.name == "Las Palmas de Gran Canaria" and p.official_name == "Palmas de Gran Canaria, Las"
     assert p.province == "Las Palmas" and place_from_code("CA13").name == "Comunidad de Madrid"
     assert resolve("Las Palmas de Gran Canaria")[0].code == "35016"
+
+
+def test_districts_and_tracts_carry_neighbourhood_names():
+    d = place_from_code("4718610")
+    assert d.name.startswith("Valladolid distrito 10 (") and "Parquesol" in d.name
+    assert d.area_names and "Parquesol" in d.area_names
+    assert "Parquesol" in place_from_code("4718610030").name
+    assert place_from_code("2807901").name.startswith("Madrid distrito 01 (Centro")
+
+
+@pytest.mark.parametrize(
+    ("query", "code"),
+    [
+        ("Parquesol, Valladolid", "4718610"),
+        ("Parquesol", "4718610"),
+        ("Gràcia, Barcelona", "0801906"),
+        ("Poblenou, Barcelona", "0801910"),  # stored as 'El Poblenou'
+        ("Triana, Sevilla", "4109106"),
+        ("El Palmar, Murcia", "3003005"),  # also a municipality name elsewhere
+    ],
+)
+def test_neighbourhood_names_resolve_to_their_district(query: str, code: str):
+    best, _ = resolve_one(query)
+    assert best.code == code and best.level == "district" and best.match == "neighbourhood"
+    assert best.matched_name
+
+
+def test_neighbourhood_prefix_needs_a_city():
+    best, _ = resolve_one("Delicias, Valladolid")  # 'Delicias - Arco de Ladrillo'
+    assert best.code[:5] == "47186" and best.match == "neighbourhood"
+    with pytest.raises(PlaceNotFound):
+        resolve_one("Parquesol, Madrid")
+
+
+def test_chart_axis_labels_stay_short():
+    from spain_open_data_mcp.tools.chart import axis_label
+
+    assert axis_label("4718610", place_from_code("4718610").name) == "distrito 10 Parquesol"
+    assert len(axis_label("0801901", place_from_code("0801901").name)) <= 34
+    assert axis_label("47186", "Valladolid") == "Valladolid"
