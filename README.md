@@ -116,13 +116,23 @@ recorded crime, district age structure, and privacy requests that must be declin
 
 ## Install
 
-Requires [uv](https://docs.astral.sh/uv/). No API keys are needed.
+No API keys are needed.
 
-**Claude Code**
+**Hosted (no install)**: in Claude, open Settings → Connectors → Add custom connector and paste
+
+```
+https://spain-open-data-mcp-165703905656.europe-west1.run.app/mcp
+```
+
+It is a free public server with rate limits; see the [privacy policy](docs/privacy.md).
+
+**Claude Code** (runs locally; requires [uv](https://docs.astral.sh/uv/))
 
 ```bash
-claude mcp add spain-open-data -- uvx --from git+https://github.com/digvijaysingh-ai/spain-open-data-mcp spain-open-data-mcp
+claude mcp add spain-open-data -- uvx spain-open-data-mcp
 ```
+
+or, for the hosted server, `claude mcp add --transport http spain-open-data https://spain-open-data-mcp-165703905656.europe-west1.run.app/mcp`.
 
 **Claude Desktop**: add this to `claude_desktop_config.json` and restart Claude.
 
@@ -131,20 +141,20 @@ claude mcp add spain-open-data -- uvx --from git+https://github.com/digvijaysing
   "mcpServers": {
     "spain-open-data": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/digvijaysingh-ai/spain-open-data-mcp", "spain-open-data-mcp"]
+      "args": ["spain-open-data-mcp"]
     }
   }
 }
 ```
 
-**Self-hosted over HTTP**: `spain-open-data-mcp http --host 0.0.0.0 --port 8080` serves
-Streamable HTTP at `/mcp`, or build the [Dockerfile](Dockerfile), which includes the data files.
-`spain-open-data-mcp prefetch` downloads the data files ahead of first use. Deployment to Cloud
-Run is in [docs/deploy.md](docs/deploy.md); the [privacy policy](docs/privacy.md) covers the
-hosted server.
+The package is on [PyPI](https://pypi.org/project/spain-open-data-mcp/) and in the
+[MCP Registry](https://registry.modelcontextprotocol.io/) as
+`io.github.digvijaysingh-ai/spain-open-data-mcp`.
 
-A PyPI release (`uvx spain-open-data-mcp`) and a hosted URL for use as a custom connector in
-Claude are being prepared (milestone 4).
+**Self-hosted over HTTP**: `spain-open-data-mcp http --host 0.0.0.0 --port 8080` serves
+Streamable HTTP at `/mcp`, or run the image `ghcr.io/digvijaysingh-ai/spain-open-data-mcp`,
+which includes the data files. `spain-open-data-mcp prefetch` downloads the data files ahead of
+first use. Deployment to Cloud Run is in [docs/deploy.md](docs/deploy.md).
 
 ### Settings
 
@@ -196,7 +206,7 @@ OpenStreetMap snapshot locally (a 1.5 GB download, then about 5 minutes) with
 1. **Skeleton**: place resolver, `demographics`, `income`, CI.
 2. **Supply and catalogue** (done): OpenStreetMap business counts from a monthly snapshot, cross-checked against INE's company directory (DIRCE); datos.gob.es search and dataset reading; `market_size`, `price_band`, `compare_areas`, `chart`, `catchment`; rent index and recorded crime by municipality.
 3. **Checks and evals**: a golden set of real strategy questions with hand-checked answers, scored for accuracy, sourcing, refusals and calibration, with results here.
-4. **Publishing**: hosted connector, PyPI, MCP Registry, Claude connectors directory.
+4. **Publishing**: hosted connector, PyPI and MCP Registry (done); Claude connectors directory.
 
 ## Data licences
 

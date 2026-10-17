@@ -58,7 +58,7 @@ async def _client(asgi) -> httpx.AsyncClient:
 async def test_health_and_mcp_initialize(app):
     inner, outer = app()
     async with inner.router.lifespan_context(inner), await _client(outer) as c:
-        assert (await c.get("/healthz")).text == "ok"
+        assert (await c.get("/health")).text == "ok"
         r = await c.post("/mcp", json=INIT, headers=HEADERS)
         assert r.status_code == 200, r.text
         assert r.json()["result"]["serverInfo"]["name"] == "spain-open-data"
@@ -80,7 +80,7 @@ async def test_rate_limit_returns_429(app):
         assert codes == [200, 200, 429]
         r = await c.post("/mcp", json=INIT, headers=HEADERS)
         assert int(r.headers["retry-after"]) >= 1
-        assert (await c.get("/healthz")).status_code == 200  # never limited
+        assert (await c.get("/health")).status_code == 200  # never limited
 
 
 def test_http_cache_drops_oldest_past_its_cap(tmp_path: Path):

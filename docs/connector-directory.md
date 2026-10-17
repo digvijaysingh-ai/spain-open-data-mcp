@@ -6,7 +6,7 @@ deployed (see [deploy.md](deploy.md)) and its URL is filled in below.
 ## Listing
 
 - **Name:** Spain Open Data
-- **Server URL:** `https://<cloud-run-host>/mcp` (Streamable HTTP, stateless)
+- **Server URL:** `https://spain-open-data-mcp-165703905656.europe-west1.run.app/mcp` (Streamable HTTP, stateless)
 - **Authentication:** none. All data is public; there are no accounts.
 - **Short description (one line):** Market sizing, prices, rents, crime and locations in Spain
   from INE and other public data, each figure sourced and dated.
@@ -76,7 +76,7 @@ Questions about specific people are declined; the server holds aggregate data on
 
 ## Before submitting
 
-- [ ] Deploy and fill in the server URL above and in `server.json` (`remotes`).
+- [x] Deploy and fill in the server URL above and in `server.json` (`remotes`).
 - [ ] Add the URL as a custom connector in Claude and run the five example prompts.
 - [ ] Record the demo GIF for the README.
-- [ ] Tag a release (`v0.1.0`) so PyPI and the MCP Registry listing match the hosted version.
+- [x] Tag a release so PyPI and the MCP Registry listing match the hosted version.

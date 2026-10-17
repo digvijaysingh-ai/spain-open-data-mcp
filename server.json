@@ -8,17 +8,23 @@
     "source": "github"
   },
   "websiteUrl": "https://digvijaysingh-ai.github.io/spain-open-data-mcp/",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "spain-open-data-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
       }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://spain-open-data-mcp-165703905656.europe-west1.run.app/mcp"
     }
   ]
 }

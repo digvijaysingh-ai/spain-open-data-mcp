@@ -1,7 +1,7 @@
 """The hosted HTTP server: Streamable HTTP (stateless, JSON responses) behind host checks and
 rate limits, plus a health check.
 
-    request ─▶ RateLimit ─▶ /healthz        (200 "ok", never limited)
+    request ─▶ RateLimit ─▶ /health        (200 "ok", never limited)
                          └▶ /mcp            (MCP; Host and Origin checked against settings)
 
 Settings (environment):
@@ -88,7 +88,7 @@ def is_shared(address: str) -> bool:
 
 
 class RateLimit:
-    """ASGI middleware: per-address and per-instance request limits, and GET /healthz."""
+    """ASGI middleware: per-address and per-instance request limits, and GET /health."""
 
     def __init__(
         self,
@@ -121,7 +121,7 @@ class RateLimit:
         if scope["type"] != "http":
             await self.app(scope, receive, send)
             return
-        if scope["path"] == "/healthz":
+        if scope["path"] == "/health":
             await _respond(send, 200, b"ok", "text/plain")
             return
         now = time.monotonic()
