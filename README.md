@@ -26,10 +26,10 @@ Its predictions are registered (dated and checksummed on the
 [atlas release](https://github.com/digvijaysingh-ai/spain-open-data-mcp/releases/tag/atlas)) and checked each
 quarter against INE's official business openings; until results exist the map says it is not yet validated.
 
-![Claude answering "where should I open a barber shop in Valladolid" with this server: a table of three walking catchments with residents, income, competitors and opportunity score ranges](docs/img/barber-valladolid.png)
+![Claude answering a gym chain's question about Madrid with this server: a chart of the yearly gym market in euros (low, base and high) for ten districts, and a shortlist of Ciudad Lineal, Hortaleza and Salamanca](docs/img/gym-madrid.png)
 
-*A real question in Claude through the hosted connector (2026-10-17). Every figure in the table
-matches the server's output.*
+*A real question in Claude through the hosted connector (2026-10-18): a gym chain choosing its
+next three sites in Madrid. Every figure matches the server's output.*
 
 ## What it can answer today
 
@@ -48,7 +48,17 @@ matches the server's output.*
 
 ## Example conversations
 
-**From real use in Claude** (hosted connector, 2026-10-17; each figure rechecked against the server):
+**From real use in Claude** (hosted connector, 2026-10-17 and 18; each figure rechecked against the server):
+
+- **"I lead expansion for a mid-size gym chain. Rank Madrid's districts for our next 3 sites."**
+  Claude ranked all 21 districts by market (€7.8M to €37.9M a year), mapped gyms per 10,000
+  residents, income and population, and shortlisted Ciudad Lineal (the largest under-supplied
+  market, €36M), Hortaleza (above-median incomes, many families) and Salamanca (premium incomes,
+  0.76 gyms per 10,000 against 1.3 to 1.4 next door). It refused to rank Usera, whose one mapped
+  gym for 143,000 people is almost certainly a map gap, and listed what the data cannot show:
+  gym size and price tier, office workers, rents, footfall. One slip: it called Hortaleza's
+  share of children (19.2%) the highest of any large district; Villa de Vallecas (19.7%) is
+  higher.
 
 - **"Where should I open a barber shop in Valladolid?"** Claude ranked the 12 districts, ran
   10-minute walking catchments on three candidate streets and picked Paseo de Zorrilla near the
